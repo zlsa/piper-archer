@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim>
+    <description>Piper PA-28-181 Archer LX</description>
+    <author>Forest Ka</author>
+
+    <status>beta</status>
+
+    <rating>
+      <FDM type="int">0</FDM>
+      <systems type="int">0</systems>
+      <cockpit type="int">0</cockpit>
+      <model type="int">0</model>
+    </rating>
+
+    <flight-model>jsb</flight-model>
+    <aero>pa28-181-jsbsim</aero>
+
+    <model>
+      <path>Aircraft/pa28-181/Models/pa28-181-model.xml</path>
+      <livery>
+        <file type="string">trainer</file>
+        <index type="int">0</index>
+      </livery>
+    </model>
+
+    <sound>
+      <path>Aircraft/pa28-181/Sounds/pa28-181-sound.xml</path>
+    </sound>
+
+    <view n="0">
+      <name type="string">Pilot</name>
+      <internal>true</internal>
+      <config>
+	<x-offset-m>-0.23</x-offset-m>
+	<y-offset-m>0.48</y-offset-m>
+	<z-offset-m>-1.4</z-offset-m>
+	<default-field-of-view-deg type="double">81</default-field-of-view-deg>
+	<pitch-offset-deg>-5</pitch-offset-deg>
+      </config>
+    </view>
+
+    <view n="101">
+      <name type="string">Copilot</name>
+      <internal>true</internal>
+      <type>lookfrom</type>
+      <config>
+	<x-offset-m>0.23</x-offset-m>
+	<y-offset-m>0.48</y-offset-m>
+	<z-offset-m>-1.4</z-offset-m>
+        <from-model type="bool">true</from-model>
+        <heading-offset-deg type="double">0</heading-offset-deg>
+        <default-heading-offset-deg>0</default-heading-offset-deg>
+	<default-field-of-view-deg type="double">81</default-field-of-view-deg>
+	<pitch-offset-deg>0</pitch-offset-deg>
+        <limits>
+          <enabled type="bool">true</enabled>
+        </limits>
+      </config>
+    </view>
+
+    <menubar include="Dialogs/menu.xml"/>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb archive="y">180</weight-lb>
+      <max-lb>3000</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Copilot</name>
+      <weight-lb archive="y">180</weight-lb>
+      <max-lb>3000</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Left passenger</name>
+      <weight-lb archive="y">0</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="3">
+      <name>Right passenger</name>
+      <weight-lb archive="y">0</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="4">
+      <name>Baggage</name>
+      <weight-lb archive="y">50</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+  </sim>
+
+  <instrumentation>
+    <magnetic-compass>
+      <heading-bug-deg type="double" archive="y">0</heading-bug-deg>
+    </magnetic-compass>
+  </instrumentation>
+  
+  <systems>
+    <electrical>
+      <outputs>
+        <instrument-lights type="int">0</instrument-lights>
+      </outputs>
+    </electrical>
+  </systems>
+
+  <options>
+    <wheel-fairing type="bool" archive="y">true</wheel-fairing>
+  </options>
+
+  <multiplay>
+    <generic>
+      <bool n="0" alias="/options/wheel-fairing"/>
+
+      <float n="0" alias="/gear/gear[0]/compression-m"/>
+      <float n="1" alias="/gear/gear[1]/compression-m"/>
+      <float n="2" alias="/gear/gear[2]/compression-m"/>
+      <string alias="/sim/multiplay/callsign"/>
+    </generic>
+  </multiplay>
+  
+  <flight-recorder>
+    <replay-config type="int">0</replay-config>
+    <config n="0" include="/Aircraft/Generic/flightrecorder/generic-piston-propeller-1.xml">
+      <name type="string">Piper PA28-181 Archer LX Flight Recorder</name>
+        <signal>
+          <type>float</type>
+          <property type="string">/gear/gear[0]/compression-m</property>
+          <interpolation>linear</interpolation>
+        </signal>
+        <signal>
+          <type>float</type>
+          <property type="string">/gear/gear[1]/compression-m</property>
+          <interpolation>linear</interpolation>
+        </signal>
+        <signal>
+          <type>float</type>
+          <property type="string">/gear/gear[2]/compression-m</property>
+          <interpolation>linear</interpolation>
+        </signal>
+    </config>
+  </flight-recorder>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+	<name>Left</name>
+	<capacity-gal_us type="double">25</capacity-gal_us>
+	<level-gal_us type="double" archive="y">25</level-gal_us>
+	<selected type="bool">true</selected>
+      </tank>
+      <tank n="1">
+	<name>Right</name>
+	<capacity-gal_us type="double">25</capacity-gal_us>
+	<level-gal_us type="double" archive="y">25</level-gal_us>
+	<selected type="bool">false</selected>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <controls>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+    <switches>
+      <master type="bool">false</master>
+    </switches>
+    <door type="double">0</door>
+  </controls>
+
+  <engines>
+    <engine n="0">
+      <rpm type="double">0</rpm>
+    </engine>
+  </engines>
+
+  <limits>
+    <vne>154</vne>
+    
+    <max-positive-g>3.8</max-positive-g>
+    <max-negative-g>0.0</max-negative-g>
+  </limits>
+
+  <nasal>
+    <pa28_181>
+      <file>Aircraft/pa28-181/Nasal/util.nas</file>
+      <file>Aircraft/Generic/limits.nas</file>
+      <file>Aircraft/pa28-181/Nasal/liveries.nas</file>
+ <!--      <file>Aircraft/pa28-181/Nasal/electrical.nas</file>-->
+    </pa28_181>
+    <performance>
+      <file>Aircraft/pa28-181/Nasal/util.nas</file>
+      <!-- <file>Aircraft/pa28-181/Nasal/performance.nas</file> -->
+    </performance>
+  </nasal>
+
+</PropertyList>

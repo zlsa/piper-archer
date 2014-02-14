@@ -1,0 +1,618 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <!-- Export X/Y -->
+  <path>Models/pa28-181.ac</path>
+
+  <!-- COCKPIT -->
+
+  <effect>
+    <inherits-from>Aircraft/pa28-181/Models/Effects/brown-plastic</inherits-from>
+    <object-name>dashboard</object-name>
+    <object-name>throttle quadrant</object-name>
+  </effect>
+
+  <model>
+    <name>airspeed</name>
+    <path>Aircraft/pa28-181/Instruments/airspeed/airspeed.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.31</y-m>
+      <z-m>0.25</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>attitude</name>
+    <path>Aircraft/pa28-181/Instruments/attitude/attitude.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.22</y-m>
+      <z-m>0.25</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>altimeter</name>
+    <path>Aircraft/pa28-181/Instruments/altimeter/altimeter.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.13</y-m>
+      <z-m>0.25</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>bank</name>
+    <path>Aircraft/pa28-181/Instruments/bank/bank.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.31</y-m>
+      <z-m>0.16</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>compass</name>
+    <path>Aircraft/pa28-181/Instruments/compass/compass.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.22</y-m>
+      <z-m>0.16</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>vsi</name>
+    <path>Aircraft/pa28-181/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.13</y-m>
+      <z-m>0.16</z-m>
+    </offsets>
+  </model>
+
+  <!-- SHADERS -->
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/pa28-181/Models/Effects/exterior-chrome.png</texture>
+    <object-name>prop spinner</object-name>
+    <object-name>left main piston</object-name>
+    <object-name>right main piston</object-name>
+    <object-name>nose gear piston</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/pa28-181/Models/Effects/interior-chrome.png</texture>
+    <object-name>yoke rod</object-name>
+    <object-name>yoke rod gasket</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/pa28-181/Models/Effects/glossy-black-plastic.png</texture>
+    <object-name>throttle lever</object-name>
+    <object-name>left yoke</object-name>
+    <object-name>right yoke</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/pa28-181/Models/Effects/glass.png</texture>
+    <object-name>windshield</object-name>
+    <object-name>side windows</object-name>
+    <object-name>door window</object-name>
+  </animation>
+
+  <!-- INTERNAL/EXTERNAL -->
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <not>
+        <property>sim/current-view/internal</property>
+      </not>
+    </condition>
+    <object-name>windshield</object-name>
+    <object-name>side windows</object-name>
+    <object-name>door window</object-name>
+  </animation>
+
+  <!-- fairings-->
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <property>options/wheel-fairing</property>
+    </condition>
+    <object-name>main gear fairing</object-name>
+    <object-name>left main fairing</object-name>
+    <object-name>right main fairing</object-name>
+    <object-name>nose gear fairing</object-name>
+  </animation>
+
+  <!-- COCKPIT -->
+
+  <animation>
+    <type>translate</type>
+    <object-name>yoke rod</object-name>
+    <object-name>left yoke</object-name>
+    <object-name>right yoke</object-name>
+    <object-name>left yoke logo</object-name>
+    <object-name>right yoke logo</object-name>
+    <property>controls/flight/elevator</property>
+    <factor>-0.07</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>left yoke</object-name>
+    <object-name>left yoke logo</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>-90</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>1.85</x-m>
+      <y-m>-0.23</y-m>
+      <z-m>0.06</z-m>
+    </center>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>right yoke</object-name>
+    <object-name>right yoke logo</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>-90</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>1.85</x-m>
+      <y-m>0.23</y-m>
+      <z-m>0.06</z-m>
+    </center>
+  </animation>
+  
+  <animation>
+    <type>knob</type>
+    <object-name>throttle lever</object-name>
+    <property>controls/engines/engine/throttle</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>1</ind>
+	<dep>-60</dep>
+      </entry>
+    </interpolation>
+    <drag-direction>vertical</drag-direction>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>-1.95</x-m>
+      <y-m>0.3</y-m>
+      <z-m>-0.095</z-m>
+    </center>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+	<property>controls/engines/engine/throttle</property>
+	<factor>0.1</factor>
+	<min>0.0</min>
+	<max>1.0</max>                
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>throttle</tooltip-id>
+	<label>Throttle: %d%%</label>
+	<mapping>percent</mapping>
+	<property>controls/engines/engine/throttle</property>
+      </binding>
+    </hovered>
+
+  </animation>
+
+  <!-- ENGINE -->
+  
+  <!-- prop -->
+
+  <animation>
+    <type>spin</type>
+    <object-name>prop blade</object-name>
+    <property>engines/engine/rpm</property>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>prop disc</object-name>
+    <object-name>prop disc internal</object-name>
+    <property>engines/engine/rpm</property>
+    <factor>0.018</factor>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+  </animation>
+  
+  <!-- prop fade-->
+
+  <animation>
+    <type>select</type>
+    <object-name>prop blade</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine/rpm</property>
+        <value>150</value>
+      </less-than>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>prop disc internal</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine/rpm</property>
+        <value>150</value>
+      </greater-than>
+      <property>sim/current-view/internal</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>prop disc</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine/rpm</property>
+        <value>150</value>
+      </greater-than>
+      <not>
+        <property>sim/current-view/internal</property>
+      </not>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>blend</type>
+    <object-name>prop disc</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>0.0002</factor>
+    <max>1.0</max>
+    <min>0.0</min>
+  </animation>
+  
+  <animation>
+    <type>blend</type>
+    <object-name>prop disc internal</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>0.0004</factor>
+    <max>1.0</max>
+    <min>0.7</min>
+  </animation>
+  
+  <!-- GEAR -->
+
+  <!-- compression -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>nose gear lower arm</object-name>
+    <property>gear/gear[0]/compression-ft</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.6303</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.7504192</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>nose gear upper arm</object-name>
+    <property>gear/gear[0]/compression-ft</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.6666</ind>
+        <dep>-80</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.556</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.541</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>nose wheel</object-name>
+    <object-name>nose gear fairing</object-name>
+    <object-name>nose gear piston</object-name>
+    <object-name>nose gear axle</object-name>
+    <object-name>nose gear lower arm</object-name>
+    <property>gear/gear[0]/compression-ft</property>
+    <factor>0.3</factor>
+    <axis>
+      <x>0.1</x>
+      <y>0</y>
+      <z>0.9</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>left main gear lower arm</object-name>
+    <property>gear/gear[1]/compression-ft</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>-40</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-0.7402972</x-m>
+      <y-m>-1.38703</y-m>
+      <z-m>-0.8650201</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-0.994004</y>
+      <z>0.10934</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left main gear upper arm</object-name>
+    <property>gear/gear[1]/compression-ft</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.333</ind>
+        <dep>25</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>65</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-0.728472</x-m>
+      <y-m>-1.35513</y-m>
+      <z-m>-0.5585561</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-0.994004</y>
+      <z>0.10934</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>left main wheel</object-name>
+    <object-name>left main piston</object-name>
+    <object-name>left main fairing</object-name>
+    <object-name>left main axle</object-name>
+    <object-name>left main gear lower arm</object-name>
+    <property>gear/gear[1]/compression-ft</property>
+    <factor>0.3</factor>
+    <axis>
+      <x>0</x>
+      <y>0.10934</y>
+      <z>0.994004</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>right main gear lower arm</object-name>
+    <property>gear/gear[2]/compression-ft</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>40</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-0.7402972</x-m>
+      <y-m>1.38703</y-m>
+      <z-m>-0.8650201</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0.994004</y>
+      <z>0.10934</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right main gear upper arm</object-name>
+    <property>gear/gear[2]/compression-ft</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.333</ind>
+        <dep>-25</dep>
+      </entry>
+      <entry>
+        <ind>1</ind>
+        <dep>-65</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-0.728472</x-m>
+      <y-m>1.35513</y-m>
+      <z-m>-0.5585561</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0.994004</y>
+      <z>0.10934</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>right main wheel</object-name>
+    <object-name>right main piston</object-name>
+    <object-name>right main fairing</object-name>
+    <object-name>right main axle</object-name>
+    <object-name>right main gear lower arm</object-name>
+    <property>gear/gear[1]/compression-ft</property>
+    <factor>0.3</factor>
+    <axis>
+      <x>0</x>
+      <y>-0.10934</y>
+      <z>0.994004</z>
+    </axis>
+  </animation>
+  
+  <!-- steering -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>nose wheel</object-name>
+    <object-name>nose gear fairing</object-name>
+    <object-name>nose gear cylinder</object-name>
+    <object-name>nose gear piston</object-name>
+    <object-name>nose gear axle</object-name>
+    <factor>-30</factor>
+    <property>controls/flight/rudder</property>
+    <axis>
+      <x>0.2</x>
+      <y>0</y>
+      <z>0.8</z>
+    </axis>
+    <center>
+      <x-m>-2.75</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.98</z-m>
+    </center>
+  </animation>
+
+  <!-- LIVERY -->
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <property-base>sim/model/livery/</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>fuselage-n301dp.png</texture>
+  </animation>
+
+  <!-- DOOR -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>door</object-name>
+    <object-name>door window</object-name>
+    <property>controls/door</property>
+    <factor>90</factor>
+    <axis>
+      <x1-m>-1.91226</x1-m>
+      <y1-m>0.5664281</y1-m>
+      <z1-m>-0.189439</z1-m>
+      <x2-m>-1.91022</x2-m>
+      <y2-m>0.5463464</y2-m>
+      <z2-m>0.0711347</z2-m>
+    </axis>
+  </animation>
+  
+</PropertyList>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Instruments/airspeed/airspeed.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>legend</object-name>
+    <object-name>needle</object-name>
+<!--    <object-name>tas legend</object-name>-->
+    <emission>
+      <red>0.02</red>
+      <green>0.015</green>
+      <blue>0.005</blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/pa28-181/Models/Effects/glossy-black-plastic.png</texture>
+    <object-name>case</object-name>
+    <object-name>tas adjustment knob</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      <entry>
+        <ind>10</ind>
+        <dep>7.62</dep>
+      </entry>
+      <entry>
+        <ind>20</ind>
+        <dep>19.8</dep>
+      </entry>
+      <entry>
+        <ind>40</ind>
+        <dep>45.15</dep>
+      </entry>
+      <entry>
+        <ind>160</ind>
+        <dep>315</dep>
+      </entry>
+    </interpolation>
+    
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    
+  </animation>
+
+</PropertyList>

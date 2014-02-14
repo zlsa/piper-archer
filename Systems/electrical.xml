@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <electrical>
+
+    <source>
+      <name>battery</name>
+      <type>battery</type>
+      <capacity type="double">200</capacity>
+      <voltage type="double">12</voltage>
+      <prop type="string">/systems/electrical/battery</prop>
+    </source>
+
+    <source>
+      <name>alternator</name>
+      <type>alternator</type>
+      <voltage type="double">14</voltage>
+      <rpm-source>/engines/engine[0]/rpm</rpm-source>
+      <nominal-rpm type="double">1800</nominal-rpm>
+      <power type="double">100</power> <!-- 100 watt alternator-->
+      <prop type="string">/systems/electrical/alternator</prop>
+    </source>
+    
+    <bus>
+      <name>charge circuit</name>
+      <input>alternator</input>
+      <output>battery</output>
+    </bus>
+    
+    <bus>
+      <name>primary bus</name>
+      <switch>/controls/switches/primary</switch>
+      <input>battery</input>
+      <output>instrument lights switch</output>
+    </bus>
+    
+    <bus>
+      <name>primary bus</name>
+      <switch>/controls/switches/master</switch>
+      <input>battery</input>
+      <output>instrument lights switch</output>
+    </bus>
+    
+    <component>
+      <name>instrument lights</name>
+      <voltage-prop type="string">/systems/electrical/outputs</voltage-prop>
+    </component>
+    
+  </electrical>
+  
+</PropertyList>
