@@ -3,26 +3,29 @@
 This is Piper's PA28-181 Archer LX for the FlightGear flight
 simulator.
 
-# Status
+# How to install
 
-FDM: 0/5
-Systems: 1/5
-Cockpit: 2/5
-Model: 1/5
-__Overall__: Alpha
+__Please note that the aircraft is currently unflyable.__
 
-## FDM _0/5_
+1. Install `git`.
+2. Go to `$FG_ROOT/Aircraft/`.
+3. Run `git clone https://github.com/zlsa/pa28-181.git`
+4. Run FGFS with the `--aircraft=pa28-181` option.
+
+# Status (Alpha)
+
+## FDM _0/5_ (UNFLYABLE)
 
 JSBSim. Direct from Aeromatic with correct bogey locations (three
 wheels and wingtips) and engine settings. Currently unflyable and the
 engine cannot start unless the throttle is increased to about 1/3.
 
-## Systems _1/5_
+## Systems _1/5_ (None at all)
 
 JSBSim engine starts and stops. Flaps work (but I don't know what they
 do yet in JSBSim :P).
 
-## Cockpit _2/5_
+## Cockpit _2/5_ (Major instruments only)
 
 _Please note that I will hand-model every instrument to match the real
 life one as closely as possible._
@@ -30,10 +33,20 @@ life one as closely as possible._
 Normal-mapped instrument panel. Currently flyable (all major instruments are in place). Throttle
 quadrant and yokes are animated, as are all gauges.
 
-## Model: _1/5_
+## Model: _1/5_ (Animated gear)
 
 _The model is currently medium-poly, with about 3 verts per 90 degree
 round corner on the model._
 
 The engine area is a bit wonky (incorrect shape). The door is modeled
 (but not animated). The gear is modeled and animated with proper reflective materials.
+
+# License
+
+GPLv3
+
+# Contact
+
+Email: username zlsa, domain outlook dot com.
+Reddit: /u/zlsa
+Flightgear forums: zlsa
