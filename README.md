@@ -7,7 +7,7 @@ simulator.
 
 __Please note that the aircraft is currently unflyable.__
 
-1. Install `git`.
+1. Install Git.
 2. Go to `$FG_ROOT/Aircraft/`.
 3. Run `git clone https://github.com/zlsa/pa28-181.git`
 4. Run FGFS with the `--aircraft=pa28-181` option.
@@ -48,5 +48,7 @@ GPLv3
 # Contact
 
 Email: username zlsa, domain outlook dot com.
-Reddit: /u/zlsa
+
+Reddit: [/u/zlsa](http://www.reddit.com/u/zlsa)
+
 Flightgear forums: zlsa
