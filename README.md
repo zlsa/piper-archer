@@ -14,11 +14,10 @@ __Please note that the aircraft is currently unflyable.__
 
 # Status (Alpha)
 
-## FDM _0/5_ (UNFLYABLE)
+## FDM _1/5_ (UNFLYABLE)
 
-JSBSim. Direct from Aeromatic with correct bogey locations (three
-wheels and wingtips) and engine settings. Currently unflyable and the
-engine cannot start unless the throttle is increased to about 1/3.
+JSBSim. Modified from Aeromatic with correct bogey locations (three
+wheels and wingtips) and tweaked engine and lift/drag settings.
 
 ## Systems _1/5_ (None at all)
 
@@ -30,7 +29,7 @@ do yet in JSBSim :P).
 _Please note that I will hand-model every instrument to match the real
 life one as closely as possible._
 
-Normal-mapped instrument panel. Currently flyable (all major instruments are in place). Throttle
+Normal-mapped instrument panel. Currently flyable (all six major instruments are in place). Throttle
 quadrant and yokes are animated, as are all gauges.
 
 ## Model: _1/5_ (Animated gear)
@@ -43,11 +42,9 @@ The engine area is a bit wonky (incorrect shape). The door is modeled
 
 # License
 
-GPLv3
+CC0
 
 # Contact
-
-Email: username zlsa, domain outlook dot com.
 
 Reddit: [/u/zlsa](http://www.reddit.com/u/zlsa)
 

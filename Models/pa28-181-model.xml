@@ -123,6 +123,24 @@
     <object-name>door window</object-name>
   </animation>
 
+  <!-- REMBRANDT -->
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>shadow catcher</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>windshield</object-name>
+    <object-name>side windows</object-name>
+    <object-name>door window</object-name>
+    <object-name>prop disc</object-name>
+  </effect>
+
   <!-- INTERNAL/EXTERNAL -->
 
   <animation>

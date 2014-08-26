@@ -5,7 +5,7 @@
   <diameter unit="IN">76.0</diameter>
   <numblades>2</numblades>
   <gearratio>1.0</gearratio>
-  <p_factor>-3.00</p_factor>
+  <p_factor>-30.00</p_factor>
 
   <table name="C_THRUST" type="internal">
      <tableData>

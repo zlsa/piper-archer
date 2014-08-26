@@ -12,7 +12,7 @@ injected?       no
 -->
 
 <piston_engine name="O360-A4A">
-  <minmp unit="INHG">6.5</minmp>
+  <minmp unit="INHG">7.5</minmp>
   <maxmp unit="INHG">28.5</maxmp>
   <displacement unit="IN3">361</displacement>
   <maxhp>180.00</maxhp>
