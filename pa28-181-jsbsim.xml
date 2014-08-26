@@ -21,7 +21,7 @@
    <vtailarea unit="M2">13.54</vtailarea>
    <vtailarm unit="M">4.356</vtailarm>
    <location name="AERORP" unit="M">
-     <x>-0.55</x>
+     <x>-0.50</x>
      <y> 0.00</y>
      <z> 0.00</z>
    </location>
@@ -43,7 +43,7 @@
    <izz unit="SLUG*FT2">1631</izz>
    <emptywt unit="LBS">1416</emptywt>
    <location name="CG" unit="M">
-     <x>-0.50</x>
+     <x>-0.70</x>
      <y> 0.00</y>
      <z> 0.00</z>
    </location>
@@ -518,7 +518,7 @@
          <property>metrics/Sw-sqft</property>
          <property>metrics/bw-ft</property>
          <property>fcs/left-aileron-pos-rad</property>
-         <value>0.17</value>
+         <value>0.20</value>
        </product>
      </function>
 
