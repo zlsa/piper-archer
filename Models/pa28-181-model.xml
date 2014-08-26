@@ -276,7 +276,6 @@
   <animation>
     <type>spin</type>
     <object-name>prop disc</object-name>
-    <object-name>prop disc internal</object-name>
     <property>engines/engine/rpm</property>
     <factor>0.018</factor>
     <axis>
@@ -299,53 +298,29 @@
     <condition>
       <less-than>
         <property>engines/engine/rpm</property>
-        <value>150</value>
+        <value>400</value>
       </less-than>
     </condition>
   </animation>
   
   <animation>
     <type>select</type>
-    <object-name>prop disc internal</object-name>
-    <condition>
-      <greater-than>
-        <property>engines/engine/rpm</property>
-        <value>150</value>
-      </greater-than>
-      <property>sim/current-view/internal</property>
-    </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
     <object-name>prop disc</object-name>
     <condition>
       <greater-than>
         <property>engines/engine/rpm</property>
-        <value>150</value>
+        <value>400</value>
       </greater-than>
-      <not>
-        <property>sim/current-view/internal</property>
-      </not>
     </condition>
   </animation>
   
   <animation>
     <type>blend</type>
     <object-name>prop disc</object-name>
-    <property>engines/engine[0]/rpm</property>
-    <factor>0.0002</factor>
-    <max>1.0</max>
-    <min>0.0</min>
-  </animation>
-  
-  <animation>
-    <type>blend</type>
-    <object-name>prop disc internal</object-name>
     <property>engines/engine[0]/rpm</property>
     <factor>0.0004</factor>
     <max>1.0</max>
-    <min>0.7</min>
+    <min>0.0</min>
   </animation>
   
   <!-- GEAR -->

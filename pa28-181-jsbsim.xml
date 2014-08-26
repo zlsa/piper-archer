@@ -21,19 +21,19 @@
    <vtailarea unit="M2">13.54</vtailarea>
    <vtailarm unit="M">4.356</vtailarm>
    <location name="AERORP" unit="M">
-     <x>-1.4275</x>
-     <y>0.00</y>
-     <z>0.00</z>
+     <x>-0.10</x>
+     <y> 0.00</y>
+     <z> 0.00</z>
    </location>
    <location name="EYEPOINT" unit="M">
      <x>0.23</x>
      <y>-0.13</y>
      <z>0.50</z>
    </location>
-   <location name="VRP" unit="IN">
-     <x>0</x>
-     <y>0</y>
-     <z>0</z>
+   <location name="VRP" unit="M">
+     <x> 0.0</x>
+     <y> 0.0</y>
+     <z>-0.2</z>
    </location>
  </metrics>
 
@@ -76,7 +76,7 @@
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
      <rolling_friction>0.02</rolling_friction>
-     <spring_coeff unit="LBS/FT">1900.00</spring_coeff>
+     <spring_coeff unit="LBS/FT">3000.00</spring_coeff>
      <damping_coeff unit="LBS/FT/SEC">1275.00</damping_coeff>
      <max_steer unit="DEG">30.00</max_steer>
      <brake_group>NONE</brake_group>
@@ -382,9 +382,10 @@
            <independentVar lookup="row">aero/alpha-rad</independentVar>
            <tableData>
               -0.20 -0.750
-              0.000.250
-              0.231.400
-              0.600.710
+
+               0.00  0.250
+               0.23  1.400
+               0.60  0.710
            </tableData>
          </table>
        </product>
@@ -396,7 +397,7 @@
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <property>fcs/flap-pos-deg</property>
-         <value>0.01333</value>
+         <value>0.02</value>
        </product>
      </function>
 
@@ -422,11 +423,11 @@
          <table>
            <independentVar lookup="row">aero/alpha-rad</independentVar>
            <tableData>
-              -1.571.500
-              -0.260.036
-              0.000.028
-              0.260.036
-              1.571.500
+              -1.57  1.500
+              -0.26  0.036
+               0.00  0.028
+               0.26  0.036
+               1.57  1.500
            </tableData>
          </table>
        </product>
@@ -442,30 +443,13 @@
        </product>
      </function>
 
-     <function name="aero/force/Drag_mach">
-       <description>Drag due to mach</description>
-       <product>
-         <property>aero/qbar-psf</property>
-         <property>metrics/Sw-sqft</property>
-         <table>
-           <independentVar lookup="row">velocities/mach</independentVar>
-           <tableData>
-              0.000.000
-              0.70.000
-              1.100.023
-              1.800.015
-           </tableData>
-         </table>
-       </product>
-     </function>
-
      <function name="aero/force/Drag_flap">
        <description>Drag due to flaps</description>
        <product>
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <property>fcs/flap-pos-deg</property>
-         <value>0.00200</value>
+         <value>0.00600</value>
        </product>
      </function>
 
@@ -477,11 +461,11 @@
          <table>
            <independentVar lookup="row">aero/beta-rad</independentVar>
            <tableData>
-              -1.571.230
-              -0.260.050
-              0.000.000
-              0.260.050
-              1.571.230
+              -1.57  1.230
+              -0.26  0.050
+               0.00  0.000
+               0.26  0.050
+               1.57  1.230
            </tableData>
          </table>
        </product>

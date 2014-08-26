@@ -12,15 +12,15 @@ injected?       no
 -->
 
 <piston_engine name="O360-A4A">
-  <minmp unit="INHG">4.5</minmp>
+  <minmp unit="INHG">6.5</minmp>
   <maxmp unit="INHG">28.5</maxmp>
   <displacement unit="IN3">361</displacement>
   <maxhp>180.00</maxhp>
   <cylinders>4.0</cylinders>
   <maxrpm>2700.0</maxrpm>
-  <idlerpm>600.0</idlerpm>
+  <idlerpm>500.0</idlerpm>
   <cycles>4.0</cycles>
-  <sparkfaildrop>0.8</sparkfaildrop>
+  <!--<sparkfaildrop>0.8</sparkfaildrop>-->
   <!--<volumetric-efficiency>0.85</volumetric-efficiency>-->
   <compression-ratio>8.5</compression-ratio>
   <!--<bsfc>0.45</bsfc>-->
