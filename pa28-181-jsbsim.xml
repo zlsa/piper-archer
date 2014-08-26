@@ -21,7 +21,7 @@
    <vtailarea unit="M2">13.54</vtailarea>
    <vtailarm unit="M">4.356</vtailarm>
    <location name="AERORP" unit="M">
-     <x>-0.05</x>
+     <x>-0.55</x>
      <y> 0.00</y>
      <z> 0.00</z>
    </location>
@@ -33,7 +33,7 @@
    <location name="VRP" unit="M">
      <x> 0.0</x>
      <y> 0.0</y>
-     <z>-0.2</z>
+     <z>-0.25</z>
    </location>
  </metrics>
 
@@ -43,9 +43,9 @@
    <izz unit="SLUG*FT2">1631</izz>
    <emptywt unit="LBS">1416</emptywt>
    <location name="CG" unit="M">
-     <x>0.00</x>
-     <y>0.00</y>
-     <z>0.00</z>
+     <x>-0.50</x>
+     <y> 0.00</y>
+     <z> 0.00</z>
    </location>
 
    <pointmass name="Payload">
@@ -64,9 +64,9 @@
 
    <contact type="BOGEY" name="NOSE">
      <location unit="M">
-       <x>-1.32</x>
-       <y>0.00</y>
-       <z>-1.29</z>
+       <x>-2.75</x>
+       <y> 0.00</y>
+       <z>-1.5</z>
      </location>
      <orientation unit="DEG">
        <pitch>14</pitch>
@@ -76,8 +76,8 @@
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
      <rolling_friction>0.02</rolling_friction>
-     <spring_coeff unit="LBS/FT">3000.00</spring_coeff>
-     <damping_coeff unit="LBS/FT/SEC">1275.00</damping_coeff>
+     <spring_coeff unit="LBS/FT">1500.00</spring_coeff>
+     <damping_coeff unit="LBS/FT/SEC">500.00</damping_coeff>
      <max_steer unit="DEG">22.00</max_steer>
      <brake_group>NONE</brake_group>
      <retractable>0</retractable>
@@ -85,7 +85,7 @@
 
    <contact type="BOGEY" name="LEFT_MAIN">
      <location unit="M">
-       <x>0.63</x>
+       <x> 0.63</x>
        <y>-1.5</y>
        <z>-1.21</z>
      </location>
@@ -101,8 +101,8 @@
 
    <contact type="BOGEY" name="RIGHT_MAIN">
      <location unit="M">
-       <x>0.63</x>
-       <y>1.5</y>
+       <x> 0.63</x>
+       <y> 1.5</y>
        <z>-1.21</z>
      </location>
      <static_friction>0.80</static_friction>
@@ -113,30 +113,6 @@
      <max_steer unit="DEG">0</max_steer>
      <brake_group>RIGHT</brake_group>
      <retractable>0</retractable>
-   </contact>
-
-   <contact type="STRUCTURE" name="LEFT_WINGTIP">
-     <location unit="M">
-       <x>0.38</x>
-       <y>-5.3</y>
-       <z>0.1</z>
-     </location>
-     <static_friction>1.00</static_friction>
-     <dynamic_friction>1.00</dynamic_friction>
-     <spring_coeff unit="LBS/FT">2550.00</spring_coeff>
-     <damping_coeff unit="LBS/FT/SEC">2550.00</damping_coeff>
-   </contact>
-
-   <contact type="STRUCTURE" name="RIGHT_WINGTIP">
-     <location unit="M">
-       <x>0.38</x>
-       <y>5.3</y>
-       <z>0.1</z>
-     </location>
-     <static_friction>1.00</static_friction>
-     <dynamic_friction>1.00</dynamic_friction>
-     <spring_coeff unit="LBS/FT">2550.00</spring_coeff>
-     <damping_coeff unit="LBS/FT/SEC">2550.00</damping_coeff>
    </contact>
 
  </ground_reactions>
@@ -450,7 +426,7 @@
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <property>fcs/flap-pos-deg</property>
-         <value>0.00600</value>
+         <value>0.00450</value>
        </product>
      </function>
 

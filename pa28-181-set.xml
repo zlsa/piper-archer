@@ -3,8 +3,8 @@
 <PropertyList>
 
   <sim>
-    <description>Piper PA-28-181 Archer LX</description>
-    <author>Forest Ka</author>
+    <description>Piper PA-28-181 Archer TX</description>
+    <author>Jon Ross</author>
 
     <status>beta</status>
 
@@ -109,7 +109,7 @@
   </systems>
 
   <options>
-    <wheel-fairing type="bool" archive="y">true</wheel-fairing>
+    <wheel-fairing type="bool" userarchive="y">true</wheel-fairing>
   </options>
 
   <multiplay>

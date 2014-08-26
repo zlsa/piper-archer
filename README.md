@@ -1,6 +1,6 @@
 # About
 
-This is Piper's PA28-181 Archer LX for the FlightGear flight
+This is Piper's PA28-181 Archer TX for the FlightGear flight
 simulator.
 
 # How to install

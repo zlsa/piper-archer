@@ -138,17 +138,17 @@
       </volume>
     </touchdown>
 
-    <flaps>
-      <name>flaps</name>
-      <mode>in-transit</mode>
-      <path>Sounds/flaps.wav</path>
-      <property>surface-positions/flap-pos-norm</property>
-      <volume>
-	<property>sim/current-view/internal</property>
-	<factor>-0.2</factor>
-	<offset>0.5</offset>
-      </volume>
-    </flaps>
+    <!-- <flaps> -->
+    <!--   <name>flaps</name> -->
+    <!--   <mode>in-transit</mode> -->
+    <!--   <path>Sounds/flaps.wav</path> -->
+    <!--   <property>surface-positions/flap-pos-norm</property> -->
+    <!--   <volume> -->
+    <!--     <property>sim/current-view/internal</property> -->
+    <!--     <factor>-0.2</factor> -->
+    <!--     <offset>0.5</offset> -->
+    <!--   </volume> -->
+    <!-- </flaps> -->
 
   </fx>
   

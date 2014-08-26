@@ -7,11 +7,11 @@
 
   <!-- COCKPIT -->
 
-  <effect>
-    <inherits-from>Aircraft/pa28-181/Models/Effects/brown-plastic</inherits-from>
-    <object-name>dashboard</object-name>
-    <object-name>throttle quadrant</object-name>
-  </effect>
+  <!-- <effect> -->
+  <!--   <inherits-from>Aircraft/pa28-181/Models/Effects/brown-plastic</inherits-from> -->
+  <!--   <object-name>dashboard</object-name> -->
+  <!--   <object-name>throttle quadrant</object-name> -->
+  <!-- </effect> -->
 
   <model>
     <name>airspeed</name>
@@ -103,6 +103,7 @@
     <texture>Aircraft/pa28-181/Models/Effects/interior-chrome.png</texture>
     <object-name>yoke rod</object-name>
     <object-name>yoke rod gasket</object-name>
+    <object-name>flap lever</object-name>
   </animation>
 
   <animation>
@@ -170,6 +171,8 @@
 
   <!-- COCKPIT -->
 
+  <!-- yoke -->
+
   <animation>
     <type>translate</type>
     <object-name>yoke rod</object-name>
@@ -221,6 +224,27 @@
       <z-m>0.06</z-m>
     </center>
   </animation>
+
+  <!-- flaps -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>flap lever</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>45</factor>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>-1.56</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.409</z-m>
+    </center>
+  </animation>
+
+  <!-- throttle lever -->
   
   <animation>
     <type>knob</type>
@@ -343,6 +367,27 @@
   
   <!-- GEAR -->
 
+  <!-- fairing select -->
+
+  <animation>
+    <type>pick</type>
+    <object-name>left main fairing</object-name>
+    <object-name>right main fairing</object-name>
+    <object-name>nose gear fairing</object-name>
+
+    <object-name>left main wheel</object-name>
+    <object-name>right main wheel</object-name>
+    <object-name>nose wheel</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>options/wheel-fairing</property>
+      </binding>
+    </action>
+  </animation>
+
   <!-- compression -->
   
   <animation>
@@ -356,7 +401,7 @@
       </entry>
       <entry>
         <ind>1</ind>
-        <dep>90</dep>
+        <dep>70</dep>
       </entry>
     </interpolation>
     <center>
@@ -382,7 +427,7 @@
       </entry>
       <entry>
         <ind>0.6666</ind>
-        <dep>-80</dep>
+        <dep>-60</dep>
       </entry>
     </interpolation>
     <center>
