@@ -359,10 +359,10 @@
            <tableData>
               -0.20 -0.750
                0.00  0.400
-               0.23  1.900
-               0.34  1.800
+               0.12  1.200
+               0.18  1.000
                0.4   0.800
-               0.60  0.600
+               0.60  0.050
            </tableData>
          </table>
        </product>
@@ -373,8 +373,14 @@
        <product>
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
-         <property>fcs/flap-pos-deg</property>
-         <value>0.02</value>
+         <table>
+           <independentVar lookup="row">fcs/flap-pos-deg</independentVar>
+           <tableData>
+              0.00 0.00
+              0.66 0.10
+              1.00 0.30
+           </tableData>
+         </table>
        </product>
      </function>
 
@@ -403,7 +409,7 @@
               -1.57  1.500
               -0.26  0.036
                0.00  0.028
-               0.26  0.036
+               0.12  0.036
                1.57  1.500
            </tableData>
          </table>
@@ -426,7 +432,7 @@
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <property>fcs/flap-pos-deg</property>
-         <value>0.00450</value>
+         <value>0.0040</value>
        </product>
      </function>
 
@@ -540,11 +546,17 @@
      <function name="aero/moment/Pitch_alpha">
        <description>Pitch moment due to alpha</description>
        <product>
-         <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <property>metrics/cbarw-ft</property>
-         <property>aero/alpha-rad</property>
-         <value>-0.5</value>
+         <table>
+           <independentVar lookup="row">aero/alpha-rad</independentVar>
+           <tableData>
+               0.00  0.000
+               0.11 -0.030
+               0.17 -2.200
+               0.20 -3.050
+           </tableData>
+         </table>
        </product>
      </function>
 
@@ -586,6 +598,24 @@
          <property>aero/ci2vel</property>
          <property>aero/alphadot-rad_sec</property>
          <value>-7</value>
+       </product>
+     </function>
+
+     <function name="aero/moment/Pitch_flap">
+       <description>Pitch moment due to flaps</description>
+       <product>
+         <property>aero/qbar-psf</property>
+         <property>metrics/Sw-sqft</property>
+         <property>metrics/cbarw-ft</property>
+         <property>aero/alpha-rad</property>
+         <table>
+           <independentVar lookup="row">fcs/flap-pos-deg</independentVar>
+           <tableData>
+              0.00 0.00
+              0.66 0.01
+              1.00 0.04
+           </tableData>
+         </table>
        </product>
      </function>
 
