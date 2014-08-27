@@ -7,11 +7,11 @@
 
   <!-- COCKPIT -->
 
-  <!-- <effect> -->
-  <!--   <inherits-from>Aircraft/pa28-181/Models/Effects/brown-plastic</inherits-from> -->
-  <!--   <object-name>dashboard</object-name> -->
-  <!--   <object-name>throttle quadrant</object-name> -->
-  <!-- </effect> -->
+  <effect>
+    <inherits-from>Aircraft/pa28-181/Models/Effects/brown-plastic</inherits-from>
+    <object-name>dashboard</object-name>
+    <object-name>throttle quadrant</object-name>
+  </effect>
 
   <model>
     <name>airspeed</name>

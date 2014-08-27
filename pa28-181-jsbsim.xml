@@ -132,7 +132,7 @@
      </orient>
      <feed>0</feed>
      <thruster file="prop">
-       <sense>1</sense>
+       <sense>-1</sense>
        <location unit="M">
          <x>0.38</x>
          <y>0.00</y>
@@ -360,8 +360,8 @@
               -0.20 -0.750
                0.00  0.400
                0.17  1.200
-               0.25  1.050
-               0.40  0.800
+               0.25  1.100
+               0.40  0.900
                0.60  0.050
            </tableData>
          </table>
@@ -432,7 +432,7 @@
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <property>fcs/flap-pos-deg</property>
-         <value>0.0040</value>
+         <value>0.0050</value>
        </product>
      </function>
 
@@ -552,9 +552,9 @@
            <independentVar lookup="row">aero/alpha-rad</independentVar>
            <tableData>
                0.00  0.000
-               0.16 -0.030
+               0.16  0.000
                0.21 -2.200
-               0.27 -30.050
+               0.27 -8.000
            </tableData>
          </table>
        </product>
