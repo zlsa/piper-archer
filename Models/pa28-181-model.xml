@@ -315,23 +315,6 @@
     </center>
   </animation>
 
-  <animation>
-    <type>spin</type>
-    <object-name>prop disc</object-name>
-    <property>engines/engine/rpm</property>
-    <factor>0.018</factor>
-    <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-  </animation>
-  
   <!-- prop fade-->
 
   <animation>
@@ -360,7 +343,7 @@
     <type>blend</type>
     <object-name>prop disc</object-name>
     <property>engines/engine[0]/rpm</property>
-    <factor>0.0004</factor>
+    <factor>0.0003</factor>
     <max>1.0</max>
     <min>0.0</min>
   </animation>
