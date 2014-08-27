@@ -5,7 +5,7 @@ simulator.
 
 # How to install
 
-__Please note that the aircraft is currently unflyable.__
+__Please note that the aircraft is currently not even in alpha yet.__
 
 1. Install Git.
 2. Go to `$FG_ROOT/Aircraft/`.
@@ -14,15 +14,14 @@ __Please note that the aircraft is currently unflyable.__
 
 # Status (Alpha)
 
-## FDM _1/5_ (UNFLYABLE)
+## FDM _1/5_ (Flyable)
 
 JSBSim. Modified from Aeromatic with correct bogey locations (three
 wheels and wingtips) and tweaked engine and lift/drag settings.
 
 ## Systems _1/5_ (None at all)
 
-JSBSim engine starts and stops. Flaps work (but I don't know what they
-do yet in JSBSim :P).
+JSBSim engine starts and stops. Flaps work.
 
 ## Cockpit _2/5_ (Major instruments only)
 
@@ -48,4 +47,4 @@ CC0
 
 Reddit: [/u/zlsa](http://www.reddit.com/u/zlsa)
 
-Flightgear forums: zlsa
+FlightGear forums: zlsa
