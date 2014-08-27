@@ -92,7 +92,7 @@
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
      <rolling_friction>0.02</rolling_friction>
-     <spring_coeff unit="LBS/FT">2550.00</spring_coeff>
+     <spring_coeff unit="LBS/FT">3550.00</spring_coeff>
      <damping_coeff unit="LBS/FT/SEC">1275.00</damping_coeff>
      <max_steer unit="DEG">0</max_steer>
      <brake_group>LEFT</brake_group>
@@ -108,7 +108,7 @@
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
      <rolling_friction>0.02</rolling_friction>
-     <spring_coeff unit="LBS/FT">2550.00</spring_coeff>
+     <spring_coeff unit="LBS/FT">3550.00</spring_coeff>
      <damping_coeff unit="LBS/FT/SEC">1275.00</damping_coeff>
      <max_steer unit="DEG">0</max_steer>
      <brake_group>RIGHT</brake_group>
@@ -359,9 +359,9 @@
            <tableData>
               -0.20 -0.750
                0.00  0.400
-               0.12  1.200
-               0.18  1.000
-               0.4   0.800
+               0.17  1.200
+               0.25  1.050
+               0.40  0.800
                0.60  0.050
            </tableData>
          </table>
@@ -552,9 +552,9 @@
            <independentVar lookup="row">aero/alpha-rad</independentVar>
            <tableData>
                0.00  0.000
-               0.11 -0.030
-               0.17 -2.200
-               0.20 -3.050
+               0.16 -0.030
+               0.21 -2.200
+               0.27 -30.050
            </tableData>
          </table>
        </product>
@@ -653,7 +653,7 @@
          <property>metrics/Sw-sqft</property>
          <property>metrics/bw-ft</property>
          <property>fcs/rudder-pos-rad</property>
-         <value>-0.1</value>
+         <value>-0.05</value>
        </product>
      </function>
 
