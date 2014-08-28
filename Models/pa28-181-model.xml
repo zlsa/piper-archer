@@ -372,6 +372,31 @@
     </action>
   </animation>
 
+  <!-- steering -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>nose wheel</object-name>
+    <object-name>nose gear fairing</object-name>
+    <object-name>nose gear cylinder</object-name>
+    <object-name>nose gear piston</object-name>
+    <object-name>nose gear axle</object-name>
+    <object-name>nose gear lower arm</object-name>
+    <object-name>nose gear upper arm</object-name>
+    <factor>-30</factor>
+    <property>controls/flight/rudder</property>
+    <axis>
+      <x>0.2</x>
+      <y>0</y>
+      <z>0.8</z>
+    </axis>
+    <center>
+      <x-m>-2.75</x-m>
+      <y-m>0</y-m>
+      <z-m>-1.02</z-m>
+    </center>
+  </animation>
+
   <!-- compression -->
   
   <animation>
@@ -411,7 +436,7 @@
       </entry>
       <entry>
         <ind>0.6666</ind>
-        <dep>-60</dep>
+        <dep>-80</dep>
       </entry>
     </interpolation>
     <center>
@@ -436,9 +461,9 @@
     <property>gear/gear[0]/compression-ft</property>
     <factor>0.3</factor>
     <axis>
-      <x>0.1</x>
-      <y>0</y>
-      <z>0.9</z>
+      <x> 0.2</x>
+      <y> 0.0</y>
+      <z> 0.8</z>
     </axis>
   </animation>
   
@@ -584,29 +609,6 @@
       <y>-0.10934</y>
       <z>0.994004</z>
     </axis>
-  </animation>
-  
-  <!-- steering -->
-  
-  <animation>
-    <type>rotate</type>
-    <object-name>nose wheel</object-name>
-    <object-name>nose gear fairing</object-name>
-    <object-name>nose gear cylinder</object-name>
-    <object-name>nose gear piston</object-name>
-    <object-name>nose gear axle</object-name>
-    <factor>-30</factor>
-    <property>controls/flight/rudder</property>
-    <axis>
-      <x>0.2</x>
-      <y>0</y>
-      <z>0.8</z>
-    </axis>
-    <center>
-      <x-m>-2.75</x-m>
-      <y-m>0</y-m>
-      <z-m>-0.98</z-m>
-    </center>
   </animation>
 
   <!-- LIVERY -->
