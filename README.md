@@ -31,17 +31,16 @@ life one as closely as possible._
 Normal-mapped instrument panel. Currently flyable (all six major instruments are in place). Throttle
 quadrant and yokes are animated, as are all gauges.
 
-## Model: _1/5_ (Animated gear)
+## Model: _2/5_ (Animated gear)
 
 _The model is currently medium-poly, with about 3 verts per 90 degree
 round corner on the model._
 
-The engine area is a bit wonky (incorrect shape). The door is modeled
-(but not animated). The gear is modeled and animated with proper reflective materials.
+The door is modeled (but not animated). The gear is modeled and animated with proper reflective materials.
 
 # License
 
-CC0
+Will be CC0 when released; currently GPLV2 due to some audio.
 
 # Contact
 
