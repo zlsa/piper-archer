@@ -15,6 +15,10 @@
       <model type="int">0</model>
     </rating>
 
+    <startup>
+      <splash-texture>Aircraft/pa28-181/splash.png</splash-texture>
+    </startup>
+
     <flight-model>jsb</flight-model>
     <aero>pa28-181-jsbsim</aero>
 
