@@ -21,7 +21,7 @@
    <vtailarea unit="M2">13.54</vtailarea>
    <vtailarm unit="M">4.356</vtailarm>
    <location name="AERORP" unit="M">
-     <x>-0.90</x>
+     <x>-1.00</x>
      <y> 0.00</y>
      <z> 0.00</z>
    </location>
@@ -43,7 +43,7 @@
    <izz unit="SLUG*FT2">1631</izz>
    <emptywt unit="LBS">1416</emptywt>
    <location name="CG" unit="M">
-     <x>-1.20</x>
+     <x>-1.60</x>
      <y> 0.00</y>
      <z> 0.00</z>
    </location>
@@ -66,7 +66,7 @@
      <location unit="M">
        <x>-2.75</x>
        <y> 0.00</y>
-       <z>-1.5</z>
+       <z>-1.4</z>
      </location>
      <orientation unit="DEG">
        <pitch>14</pitch>
@@ -76,8 +76,8 @@
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
      <rolling_friction>0.02</rolling_friction>
-     <spring_coeff unit="LBS/FT">2500.00</spring_coeff>
-     <damping_coeff unit="LBS/FT/SEC">500.00</damping_coeff>
+     <spring_coeff unit="LBS/FT">1800.00</spring_coeff>
+     <damping_coeff unit="LBS/FT/SEC">600.00</damping_coeff>
      <max_steer unit="DEG">22.00</max_steer>
      <brake_group>NONE</brake_group>
      <retractable>0</retractable>
@@ -85,14 +85,14 @@
 
    <contact type="BOGEY" name="LEFT_MAIN">
      <location unit="M">
-       <x> 0.63</x>
+       <x>-0.63</x>
        <y>-1.5</y>
-       <z>-1.3</z>
+       <z>-1.35</z>
      </location>
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
      <rolling_friction>0.02</rolling_friction>
-     <spring_coeff unit="LBS/FT">4000.00</spring_coeff>
+     <spring_coeff unit="LBS/FT">6000.00</spring_coeff>
      <damping_coeff unit="LBS/FT/SEC">1275.00</damping_coeff>
      <max_steer unit="DEG">0</max_steer>
      <brake_group>LEFT</brake_group>
@@ -101,14 +101,14 @@
 
    <contact type="BOGEY" name="RIGHT_MAIN">
      <location unit="M">
-       <x> 0.63</x>
+       <x>-0.63</x>
        <y> 1.5</y>
-       <z>-1.3</z>
+       <z>-1.35</z>
      </location>
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
      <rolling_friction>0.02</rolling_friction>
-     <spring_coeff unit="LBS/FT">4000.00</spring_coeff>
+     <spring_coeff unit="LBS/FT">6000.00</spring_coeff>
      <damping_coeff unit="LBS/FT/SEC">1275.00</damping_coeff>
      <max_steer unit="DEG">0</max_steer>
      <brake_group>RIGHT</brake_group>
@@ -377,8 +377,8 @@
            <independentVar lookup="row">fcs/flap-pos-deg</independentVar>
            <tableData>
               0.00 0.00
-              0.66 0.15
-              1.00 0.35
+              0.66 0.20
+              1.00 0.40
            </tableData>
          </table>
        </product>
@@ -410,7 +410,7 @@
               -0.26  0.400
                0.00  0.028
                0.17  0.036
-               0.30  0.400
+               0.30  0.150
                1.57  1.500
            </tableData>
          </table>

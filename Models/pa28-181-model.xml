@@ -5,6 +5,24 @@
   <!-- Export X/Y -->
   <path>Models/pa28-181.ac</path>
 
+  <!-- REMBRANDT -->
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>shadow catcher</object-name>
+  </animation>
+
+  <effect>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>prop disc</object-name>
+  </effect>
+
   <!-- COCKPIT -->
 
   <effect>
@@ -115,6 +133,7 @@
     <object-name>right yoke</object-name>
   </animation>
 
+  <!-- Cannot have duplicate shaders; either rembrandt or chromey windows -->
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
@@ -123,24 +142,6 @@
     <object-name>side windows</object-name>
     <object-name>door window</object-name>
   </animation>
-
-  <!-- REMBRANDT -->
-
-  <animation>
-    <type>select</type>
-    <condition>
-      <property>/sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>shadow catcher</object-name>
-  </animation>
-
-  <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>windshield</object-name>
-    <object-name>side windows</object-name>
-    <object-name>door window</object-name>
-    <object-name>prop disc</object-name>
-  </effect>
 
   <!-- INTERNAL/EXTERNAL -->
 
