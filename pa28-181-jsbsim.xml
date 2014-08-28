@@ -87,7 +87,7 @@
      <location unit="M">
        <x>-0.63</x>
        <y>-1.5</y>
-       <z>-1.35</z>
+       <z>-1.4</z>
      </location>
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
@@ -103,7 +103,7 @@
      <location unit="M">
        <x>-0.63</x>
        <y> 1.5</y>
-       <z>-1.35</z>
+       <z>-1.4</z>
      </location>
      <static_friction>0.80</static_friction>
      <dynamic_friction>0.50</dynamic_friction>
