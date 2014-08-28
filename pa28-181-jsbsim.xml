@@ -21,7 +21,7 @@
    <vtailarea unit="M2">13.54</vtailarea>
    <vtailarm unit="M">4.356</vtailarm>
    <location name="AERORP" unit="M">
-     <x>-1.00</x>
+     <x>-0.90</x>
      <y> 0.00</y>
      <z> 0.00</z>
    </location>
@@ -361,7 +361,7 @@
                0.00  0.400
                0.17  1.300
                0.25  1.200
-               0.40  1.050
+               0.40  1.150
                0.60  0.050
            </tableData>
          </table>
@@ -483,6 +483,17 @@
 
    <axis name="ROLL">
 
+     <function name="aero/moment/Roll_dihedral">
+       <description>Roll moment due to dihedral</description>
+       <product>
+         <property>aero/qbar-psf</property>
+         <property>metrics/Sw-sqft</property>
+         <property>metrics/bw-ft</property>
+         <property>attitude/roll-rad</property>
+         <value>-0.005</value>
+       </product>
+     </function>
+
      <function name="aero/moment/Roll_beta">
        <description>Roll moment due to beta</description>
        <product>
@@ -547,10 +558,11 @@
      <function name="aero/moment/Pitch_alpha">
        <description>Pitch moment due to alpha</description>
        <product>
-         <property>metrics/Sw-sqft</property>
-         <property>metrics/cbarw-ft</property>
-         <property>aero/alpha-rad</property>
-         <value>1.0</value>
+          <property>aero/qbar-psf</property>
+          <property>metrics/Sw-sqft</property>
+          <property>metrics/cbarw-ft</property>
+          <property>aero/alpha-rad</property>
+          <value>-0.5</value>
        </product>
      </function>
 
