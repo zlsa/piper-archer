@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Instruments/placeholder/placeholder.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>backplate</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>0.02</red>
+      <green>0.015</green>
+      <blue>0.005</blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>
