@@ -30,7 +30,7 @@
     <type>rotate</type>
     <object-name>legend</object-name>
     <object-name>heading bug</object-name>
-    <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
+    <property>instrumentation/heading-indicator/indicated-heading-deg</property>
     <axis>
       <x>0</x>
       <y>0</y>
