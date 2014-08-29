@@ -178,12 +178,15 @@
     </gear>
     <fuel_selector type="int">0</fuel_selector>
     <switches>
-      <battery    type="bool">false</battery>
-      <alternator type="bool">false</alternator>
-      <fuel       type="bool">false</fuel>
-      <landing    type="bool">false</landing>
-      <beacon     type="bool">false</beacon>
-      <strobe     type="bool">false</strobe>
+      <navigation type="double"> 0.0   </navigation>
+      <battery    type="bool">   false </battery>
+      <alternator type="bool">   false </alternator>
+      <fuel       type="bool">   false </fuel>
+      <landing    type="bool">   false </landing>
+      <beacon     type="bool">   false </beacon>
+      <strobe     type="bool">   false </strobe>
+      <pitot      type="bool">   false </pitot>
+      <panel      type="double"> 0.0   </panel>
     </switches>
     <door type="double">0</door>
   </controls>
