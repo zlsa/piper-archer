@@ -130,8 +130,8 @@
   </model>
 
   <model>
-    <name>placeholder</name>
-    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <name>fuel-pressure</name>
+    <path>Aircraft/pa28-181/Instruments/fuel-pressure/fuel-pressure.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>

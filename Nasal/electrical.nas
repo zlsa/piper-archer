@@ -50,7 +50,7 @@ var update_elec=func {
         source.draw=max(0,source.draw);
         if(source.type == "alternator") {
             voltage=crange(0,getprop(source.rpm_source),source.ideal_rpm,
-                         0,source.nominal_voltage);
+                           0,source.nominal_voltage);
             power=crange(0,getprop(source.rpm_source),source.ideal_rpm,
                          0,source.power);
         } else if(source.type == "battery") {
@@ -58,7 +58,7 @@ var update_elec=func {
             source.charge-=source.draw*ts;
             source.charge=clamp(0,source.charge,1);
             voltage=crange(0,source.charge,1,
-                         source.nominal_voltage-deviation,source.nominal_voltage+deviation);
+                           source.nominal_voltage-deviation,source.nominal_voltage+deviation);
             voltage-=crange(0,source.draw,source.capacity);
         } else if(source.type == "bus") {
             var bus=buses[i];

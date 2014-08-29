@@ -5,8 +5,7 @@ var true=1;
 var false=0;
 
 var trange=func(il,i,ih,ol,oh) {
-    i=(i-il)/(ih-il);
-    return((i*(oh-ol))+ol);
+    return((((i-il)/(ih-il))*(oh-ol))+ol);
 };
 
 var clamp=func(il,i,ih) {
@@ -24,8 +23,6 @@ var clamp=func(il,i,ih) {
 }
 
 var crange=func(il,i,ih,ol,oh) {
-    i=trange(il,i,ih,ol,oh);
-    i=clamp(ol,i,oh);
-    return(i);
+    return(clamp(ol,trange(il,i,ih,ol,oh),oh));
 }
 

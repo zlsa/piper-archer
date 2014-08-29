@@ -170,8 +170,14 @@
     <gear>
       <brake-parking type="double">1</brake-parking>
     </gear>
+    <fuel_selector type="int">0</fuel_selector>
     <switches>
-      <master type="bool">false</master>
+      <battery    type="bool">false</battery>
+      <alternator type="bool">false</alternator>
+      <fuel       type="bool">false</fuel>
+      <landing    type="bool">false</landing>
+      <beacon     type="bool">false</beacon>
+      <strobe     type="bool">false</strobe>
     </switches>
     <door type="double">0</door>
   </controls>
@@ -179,6 +185,7 @@
   <engines>
     <engine n="0">
       <rpm type="double">0</rpm>
+      <fuel-pressure_psi type="double">0</fuel-pressure_psi>
     </engine>
   </engines>
 
@@ -194,8 +201,11 @@
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <file>Aircraft/Generic/limits.nas</file>
       <file>Aircraft/pa28-181/Nasal/liveries.nas</file>
- <!--      <file>Aircraft/pa28-181/Nasal/electrical.nas</file>-->
     </pa28_181>
+    <fuel>
+      <file>Aircraft/pa28-181/Nasal/util.nas</file>
+      <file>Aircraft/pa28-181/Nasal/fuel.nas</file>
+    </fuel>
     <performance>
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <!-- <file>Aircraft/pa28-181/Nasal/performance.nas</file> -->

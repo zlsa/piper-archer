@@ -113,7 +113,7 @@
       </condition>
       <volume>
 	<property>velocities/groundspeed-kt</property>
-	<factor>0.02</factor>
+	<factor>0.01</factor>
 	<min>0.0</min>
 	<max>0.5</max>
       </volume>
@@ -208,7 +208,7 @@
       </condition>
       <volume>
         <property>fdm/jsbsim/aero/alpha-deg</property>
-        <offset>-0.45</offset>
+        <offset>-0.6</offset>
         <factor>0.08</factor>
         <max>1.0</max>
       </volume>
