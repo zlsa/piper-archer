@@ -130,7 +130,7 @@
        <roll>0.00</roll>
        <yaw>0.00</yaw>
      </orient>
-     <feed>0</feed>
+     <feed>2</feed>
      <thruster file="prop">
        <sense>-1</sense>
        <location unit="M">
@@ -150,10 +150,10 @@
 
    <tank type="FUEL" number="0">
      <type>AVGAS</type>
-     <priority>1</priority>
+     <priority>3</priority>
      <location unit="M">
        <x>-0.3</x>
-       <y>-1</y>
+       <y>-1.0</y>
        <z>-0.3</z>
      </location>
      <capacity unit="LBS">168</capacity>
@@ -167,14 +167,31 @@
      <priority>2</priority>
      <location unit="M">
        <x>-0.3</x>
-       <y>1</y>
+       <y> 1.0</y>
        <z>-0.3</z>
      </location>
      <capacity unit="LBS">168</capacity>
      <contents unit="LBS">168</contents>
    </tank>
 
+   <!-- Collector tank -->
+
+   <tank type="FUEL" number="2">
+     <type>AVGAS</type>
+     <priority>1</priority>
+     <location unit="M">
+       <x>-0.5</x>
+       <y> 0.0</y>
+       <z> 0.2</z>
+     </location>
+     <!-- Avgas is 6lb/gallon -->
+     <capacity unit="LBS">1</capacity>
+     <contents unit="LBS">0</contents>
+   </tank>
+
  </propulsion>
+
+ <system file="fuel" />
 
  <flight_control name="FCS: pa28-181">
 

@@ -26,4 +26,5 @@ injected?       no
   <!--<bsfc>0.45</bsfc>-->
   <stroke unit="IN">4.375</stroke>
   <bore unit="IN">5.125</bore>
+  <feed>2</feed>
 </piston_engine>
