@@ -6,28 +6,6 @@
 
   <channel name="Fuel pumping">
     
-    <switch name="Left fuel pump">
-      <default value="-0.5"/>
-      <test logic="OR" value="0">
-        propulsion/fuel-selector        NE 0
-        propulsion/fuel-pump            NE 1
-        propulsion/tank[0]/contents-lbs LE 0
-        propulsion/tank[2]/contents-lbs GE 0.8
-      </test>
-      <output>propulsion/tank[0]/external-flow-rate-pps</output>
-    </switch>
-    
-    <switch name="Right fuel pump">
-      <default value="-0.5"/>
-      <test logic="OR" value="0">
-        propulsion/fuel-selector        NE 1
-        propulsion/fuel-pump            NE 1
-        propulsion/tank[1]/contents-lbs LE 0
-        propulsion/tank[2]/contents-lbs GE 0.8
-      </test>
-      <output>propulsion/tank[1]/external-flow-rate-pps</output>
-    </switch>
-    
     <switch name="Left tank with engine">
       <default value="-0.05"/>
       <test logic="OR" value="0">
@@ -48,6 +26,28 @@
         propulsion/tank[1]/contents-lbs LE 0
         propulsion/tank[2]/contents-lbs GE 0.8
         propulsion/tank[2]/contents-lbs LE 0.1
+      </test>
+      <output>propulsion/tank[1]/external-flow-rate-pps</output>
+    </switch>
+    
+    <switch name="Left fuel pump">
+      <default value="-0.5"/>
+      <test logic="OR" value="0">
+        propulsion/fuel-selector        NE 0
+        propulsion/fuel-pump            EQ 0
+        propulsion/tank[0]/contents-lbs LE 0
+        propulsion/tank[2]/contents-lbs GE 0.8
+      </test>
+      <output>propulsion/tank[0]/external-flow-rate-pps</output>
+    </switch>
+    
+    <switch name="Right fuel pump">
+      <default value="-0.5"/>
+      <test logic="OR" value="0">
+        propulsion/fuel-selector        NE 1
+        propulsion/fuel-pump            EQ 0
+        propulsion/tank[1]/contents-lbs LE 0
+        propulsion/tank[2]/contents-lbs GE 0.8
       </test>
       <output>propulsion/tank[1]/external-flow-rate-pps</output>
     </switch>

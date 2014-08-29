@@ -33,8 +33,7 @@ var update=func {
       pressure = 7;
   }
 
-  setprop("/fdm/jsbsim/propulsion/fuel-pump", fuel_pump);
-
+  setprop("/fdm/jsbsim/propulsion/fuel-pump", (fuel_pump?1:0));
   setprop("/fdm/jsbsim/propulsion/fuel-selector", selected);
 
   fuel_pressure.filter(pressure);
