@@ -177,6 +177,114 @@
     </offsets>
   </model>
 
+  <!-- engine instruments -->
+
+  <model>
+    <name>tachometer</name>
+    <path>Aircraft/pa28-181/Instruments/tachometer/tachometer.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.06</y-m>
+      <z-m>-0.04</z-m>
+    </offsets>
+  </model>
+
+
+  <!-- COCKPIT LIGHTING -->
+
+  <animation>
+    <type>material</type>
+    <condition>
+      <not>
+        <property>/sim/rendering/rembrandt/enabled</property>
+      </not>
+    </condition>
+    <object-name>dashboard</object-name>
+    <object-name>glareshield</object-name>
+    <object-name>yoke mount trim</object-name>
+    <object-name>engine gauge trim</object-name>
+    <object-name>left yoke logo</object-name>
+    <object-name>right yoke logo</object-name>
+    <object-name>engine gauge trim</object-name>
+    <object-name>throttle quadrant trim</object-name>
+    <object-name>throttle quadrant</object-name>
+    <object-name>knee padding</object-name>
+
+    <!-- <object-name>yoke rod</object-name> -->
+    <!-- <object-name>yoke rod gasket</object-name> -->
+    <!-- <object-name>left yoke</object-name> -->
+    <!-- <object-name>right yoke</object-name> -->
+    <!-- <object-name>throttle lever</object-name> -->
+    <emission>
+      <red>0.03</red>
+      <green>0.02</green>
+      <blue>0.02</blue>
+      <factor-prop>electrical/outputs/cockpit-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>cockpit light</name>
+    <object-name>cockpit light volume</object-name>
+    <nopreview />
+    <position>
+      <x>-1.50</x>
+      <y> 0.00</y>
+      <z> 0.62</z>
+    </position>
+    <ambient>
+      <r>0.03</r>
+      <g>0.03</g>
+      <b>0.03</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>0.7</r>
+      <g>0.7</g>
+      <b>0.6</b>
+      <a>1.0</a>
+    </diffuse>
+    <specular>
+      <r>0.7</r>
+      <g>0.7</g>
+      <b>0.7</b>
+      <a>1.0</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/cockpit-lights/brightness</property>
+      <factor>0.05</factor>
+    </dim-factor>
+    <attenuation>
+      <c>1.0</c>
+      <l>1.0</l>
+      <q>1.0</q>
+    </attenuation>
+    <near-m>0.05</near-m>
+    <far-m> 1.10</far-m>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>cockpit light</object-name>
+    <condition>
+      <and>
+        <property>/sim/rendering/rembrandt/enabled</property>
+        <greater-than>
+          <property>/sim/rendering/shaders/lights</property>
+          <value>2.0</value>
+        </greater-than>
+        <greater-than>
+          <property>electrical/outputs/cockpit-lights/brightness</property>
+          <value>0.05</value>
+        </greater-than>
+      </and>
+    </condition>
+  </animation>
+
   <!-- SHADERS -->
 
   <animation>

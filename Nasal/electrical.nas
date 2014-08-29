@@ -114,8 +114,8 @@ var update_elec=func {
                 }
             }
 
-            device.voltage = crange(0, switch, 1, device.min_voltage, device.nominal_voltage);
-
+            device.voltage *= switch;
+            
             if(switch < 0.01) device.voltage=0;
 
             device.powered=false;
@@ -321,7 +321,7 @@ var init_elec=func {
         device.voltage_lowpass = aircraft.lowpass.new(1);
         device.voltage_lowpass.set(0);
 
-        props.globals.getNode(device.prop).initNode("switch", 0, "BOOL");
+        props.globals.getNode(device.prop).initNode("switch", 0);
         props.globals.getNode(device.prop).initNode("voltage", 0);
 
         device.powered=0;
@@ -389,7 +389,7 @@ var init_elec=func {
         device.nominal_voltage = component.getNode("nominal-voltage").getValue();
 
         props.globals.getNode(device.prop).initNode("powered", 0, "BOOL");
-        props.globals.getNode(device.prop).initNode("switch", 0, "BOOL");
+        props.globals.getNode(device.prop).initNode("switch", 0);
         props.globals.getNode(device.prop).initNode("voltage", 0);
 
         device.powered=false;
@@ -447,7 +447,7 @@ var init_elec=func {
         devices[device.name]=device;
     }
 
-    print("Piper Archer electrical system initialized");
+    print("Electrical system initialized");
 
     settimer(update_elec, 0);
 };

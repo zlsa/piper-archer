@@ -60,12 +60,11 @@
     <axis>
       <x>1</x>
       <y>0</y>
-      <z>0</z>
     </axis>
   </animation>
 
   <animation>
-    <type>translate</type>
+    <type>textranslate</type>
     <object-name>horizon</object-name>
     <property>instrumentation/attitude-indicator/indicated-pitch-deg</property>
     <factor>-0.0008</factor>

@@ -372,14 +372,14 @@
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <table>
-           <independentVar lookup="row">aero/alpha-rad</independentVar>
+           <independentVar lookup="row">aero/alpha-deg</independentVar>
            <tableData>
-              -0.20 -0.750
-               0.00  0.400
-               0.17  1.300
-               0.25  1.200
-               0.40  1.150
-               0.60  0.050
+              -10 -0.750
+               00  0.400
+               10  1.550
+               14  1.600
+               22  1.300
+               45  0.800
            </tableData>
          </table>
        </product>
@@ -394,7 +394,7 @@
            <independentVar lookup="row">fcs/flap-pos-deg</independentVar>
            <tableData>
               0.00 0.00
-              0.66 0.20
+              0.66 0.15
               1.00 0.40
            </tableData>
          </table>
@@ -427,7 +427,7 @@
               -0.26  0.400
                0.00  0.028
                0.17  0.036
-               0.40  0.150
+               0.40  0.080
                1.57  1.500
            </tableData>
          </table>
@@ -453,8 +453,8 @@
            <independentVar lookup="row">fcs/flap-pos-deg</independentVar>
            <tableData>
               0.00 0.000
-              0.66 0.002
-              1.00 0.010
+              0.66 0.001
+              1.00 0.007
            </tableData>
          </table>
        </product>

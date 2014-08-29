@@ -2,18 +2,17 @@
 #        Lighting
 ###########################
 
-var PRESSURE=0;
-
 var panel_brightness=aircraft.lowpass.new(0.05);
 
 var update=func {
   var panel = 0;
 
-  panel = crange(8, getprop("/electrical/outputs/panel-lights/voltage"), 14, 0.2, 1);
+  panel = crange(8, getprop("/electrical/outputs/panel-lights/voltage"), 14, 0, 3);
 
   panel_brightness.filter(panel);
 
   setprop("/electrical/outputs/panel-lights/brightness", panel_brightness.get());
+  setprop("/electrical/outputs/cockpit-lights/brightness", panel_brightness.get() * 2);
   settimer(update, 0);
 
 };

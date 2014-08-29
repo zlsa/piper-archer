@@ -4,17 +4,27 @@
 
   <path>Instruments/switches/switches.ac</path>
 
-  <!-- <animation> -->
-  <!--   <type>material</type> -->
-  <!--   <object-name>fuel pump</object-name> -->
-  <!--   <object-name>landing lights</object-name> -->
-  <!--   <emission> -->
-  <!--     <red>0.02</red> -->
-  <!--     <green>0.015</green> -->
-  <!--     <blue>0.005</blue> -->
-  <!--     <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop> -->
-  <!--   </emission> -->
-  <!-- </animation> -->
+  <animation>
+    <type>material</type>
+    <condition>
+      <not>
+        <property>/sim/rendering/rembrandt/enabled</property>
+      </not>
+    </condition>
+    <object-name>backplate</object-name>
+    <object-name>nav light brightness</object-name>
+    <object-name>battery</object-name>
+    <object-name>alternator</object-name>
+    <object-name>fuel pump</object-name>
+    <object-name>landing lights</object-name>
+    <object-name>panel light brightness</object-name>
+    <emission>
+      <red>0.03</red>
+      <green>0.02</green>
+      <blue>0.02</blue>
+      <factor-prop>electrical/outputs/cockpit-lights/brightness</factor-prop>
+    </emission>
+  </animation>
 
   <!-- BATTERY -->
 
@@ -25,11 +35,11 @@
     <interpolation>
       <entry>
         <ind> 0.0</ind>
-        <dep>-10</dep>
+        <dep>-15.0</dep>
       </entry>
       <entry>
         <ind>  1.0</ind>
-        <dep> 10.0</dep>
+        <dep> 15.0</dep>
       </entry>
     </interpolation>
     <axis>
@@ -66,11 +76,11 @@
     <interpolation>
       <entry>
         <ind> 0.0</ind>
-        <dep>-10</dep>
+        <dep>-15.0</dep>
       </entry>
       <entry>
         <ind>  1.0</ind>
-        <dep> 10.0</dep>
+        <dep> 15.0</dep>
       </entry>
     </interpolation>
     <axis>
@@ -107,11 +117,11 @@
     <interpolation>
       <entry>
         <ind> 0.0</ind>
-        <dep>-10</dep>
+        <dep>-15.0</dep>
       </entry>
       <entry>
         <ind>  1.0</ind>
-        <dep> 10.0</dep>
+        <dep> 15.0</dep>
       </entry>
     </interpolation>
     <axis>
@@ -148,11 +158,11 @@
     <interpolation>
       <entry>
 	<ind>  0.0</ind>
-	<dep>-50.0</dep>
+	<dep>-25.0</dep>
       </entry>
       <entry>
 	<ind>  1.0</ind>
-	<dep> 50.0</dep>
+	<dep> 25.0</dep>
       </entry>
     </interpolation>
     <drag-direction>vertical</drag-direction>
@@ -171,7 +181,7 @@
       <binding>
 	<command>property-adjust</command>
         <property>controls/switches/panel-lights</property>
-	<factor>0.1</factor>
+	<factor>0.05</factor>
 	<min>0.0</min>
 	<max>1.0</max>                
 	<wrap>false</wrap>

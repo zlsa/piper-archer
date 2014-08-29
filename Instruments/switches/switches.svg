@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="517.03624"
-     inkscape:cy="81.650531"
+     inkscape:zoom="8"
+     inkscape:cx="454.64823"
+     inkscape:cy="114.45418"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -47,10 +47,6 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="-1,114"
-       id="guide3757" />
     <sodipodi:guide
        orientation="0,1"
        position="16,8"
@@ -548,5 +544,15 @@
        width="36"
        id="rect4116"
        style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#808080;fill-opacity:1;stroke:none"
+       id="path4118"
+       sodipodi:cx="380"
+       sodipodi:cy="20"
+       sodipodi:rx="12"
+       sodipodi:ry="12"
+       d="m 392,20 a 12,12 0 1 1 -24,0 12,12 0 1 1 24,0 z"
+       transform="matrix(0.83333333,0,0,0.83333333,93.333335,921.69551)" />
   </g>
 </svg>
