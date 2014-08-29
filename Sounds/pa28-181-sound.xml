@@ -25,6 +25,20 @@
       <max-dist>10000.0</max-dist>
     </engine>
 
+    <crank>
+      <name>cough</name>
+      <path>Sounds/coughing.wav</path>
+      <property>engines/engine/running</property>
+      <position>
+        <x>-1.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+      </position>
+      <volume>
+        <offset>0.3</offset>
+      </volume>
+    </crank>
+
     <engine>
       <name>cranking</name>
       <mode>looped</mode>
@@ -45,6 +59,30 @@
       <reference-dist>10.0</reference-dist>
       <max-dist>10000.0</max-dist>
     </engine>
+
+    <propeller>
+      <name>propeller</name>
+      <mode>looped</mode>
+      <path>Sounds/wasp.wav</path>
+      <condition>
+        <greater-than>
+          <property>engines/engine/rpm</property>
+          <value>10</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>engines/engine/rpm</property>
+        <factor>0.0001</factor>
+        <max>0.25</max>
+      </volume>
+      <pitch>
+        <property>engines/engine/rpm</property>
+        <factor>0.0004</factor>
+        <min>0.0</min>
+        <max>2.0</max>
+        <offset>0.01</offset>
+      </pitch>
+    </propeller>
 
     <wind>
       <name>wind</name>
@@ -76,7 +114,7 @@
       <volume>
 	<property>velocities/groundspeed-kt</property>
 	<factor>0.02</factor>
-	<min>0.01</min>
+	<min>0.0</min>
 	<max>0.5</max>
       </volume>
     </rattle>
@@ -113,7 +151,7 @@
       </volume>
       <volume>
 	<property>velocities/speed-down-fps</property>
-	<factor>0.1</factor>
+	<factor>0.17</factor>
 	<min>0.01</min>
 	<max>0.5</max>
       </volume>
@@ -132,7 +170,7 @@
       </volume>
       <volume>
 	<property>velocities/speed-down-fps</property>
-	<factor>0.1</factor>
+	<factor>0.17</factor>
 	<min>0.01</min>
 	<max>0.5</max>
       </volume>
@@ -149,6 +187,34 @@
         <offset>0.5</offset>
       </volume>
     </flaps>
+
+    <stall>
+      <name>stall</name>
+      <mode>looped</mode>
+      <path>Sounds/stall.wav</path>
+      <condition>
+        <and>
+          <property>sim/current-view/internal</property>
+          <greater-than>
+	    <property>velocities/airspeed-kt</property>
+            <value>10</value>
+          </greater-than>
+          <not>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+          </not>
+        </and>
+      </condition>
+      <volume>
+        <property>fdm/jsbsim/aero/alpha-deg</property>
+        <offset>-0.45</offset>
+        <factor>0.08</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>10.0</reference-dist>
+      <max-dist>50.0</max-dist>
+    </stall>
 
   </fx>
   

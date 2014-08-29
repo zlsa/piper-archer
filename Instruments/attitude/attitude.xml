@@ -69,8 +69,8 @@
     <object-name>horizon</object-name>
     <property>instrumentation/attitude-indicator/indicated-pitch-deg</property>
     <factor>-0.0008</factor>
-    <min-m>-0.01</min-m>
-    <max-m>0.01</max-m>
+    <min-m>-0.03</min-m>
+    <max-m>0.03</max-m>
     <axis>
       <x>1</x>
       <y>0</y>

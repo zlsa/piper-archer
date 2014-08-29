@@ -1,4 +1,4 @@
-# Piper PA-28-181 Archer LX
+# Piper PA-28-181 Archer TX
 #      Livery init
 ###########################
 

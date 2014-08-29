@@ -39,7 +39,7 @@
       <internal>true</internal>
       <config>
 	<x-offset-m>-0.23</x-offset-m>
-	<y-offset-m>0.48</y-offset-m>
+	<y-offset-m> 0.48</y-offset-m>
 	<z-offset-m>-1.4</z-offset-m>
 	<default-field-of-view-deg type="double">81</default-field-of-view-deg>
 	<pitch-offset-deg>-5</pitch-offset-deg>
@@ -51,14 +51,14 @@
       <internal>true</internal>
       <type>lookfrom</type>
       <config>
-	<x-offset-m>0.23</x-offset-m>
-	<y-offset-m>0.48</y-offset-m>
+	<x-offset-m> 0.23</x-offset-m>
+	<y-offset-m> 0.48</y-offset-m>
 	<z-offset-m>-1.4</z-offset-m>
         <from-model type="bool">true</from-model>
         <heading-offset-deg type="double">0</heading-offset-deg>
         <default-heading-offset-deg>0</default-heading-offset-deg>
 	<default-field-of-view-deg type="double">81</default-field-of-view-deg>
-	<pitch-offset-deg>0</pitch-offset-deg>
+	<pitch-offset-deg>-5</pitch-offset-deg>
         <limits>
           <enabled type="bool">true</enabled>
         </limits>
@@ -70,13 +70,13 @@
     <weight n="0">
       <name>Pilot</name>
       <weight-lb archive="y">180</weight-lb>
-      <max-lb>3000</max-lb>
+      <max-lb>300</max-lb>
     </weight>
 
     <weight n="1">
       <name>Copilot</name>
       <weight-lb archive="y">180</weight-lb>
-      <max-lb>3000</max-lb>
+      <max-lb>300</max-lb>
     </weight>
 
     <weight n="2">
@@ -130,7 +130,7 @@
   <flight-recorder>
     <replay-config type="int">0</replay-config>
     <config n="0" include="/Aircraft/Generic/flightrecorder/generic-piston-propeller-1.xml">
-      <name type="string">Piper PA28-181 Archer LX Flight Recorder</name>
+      <name type="string">Piper PA28-181 Archer TX Flight Recorder</name>
         <signal>
           <type>float</type>
           <property type="string">/gear/gear[0]/compression-m</property>
