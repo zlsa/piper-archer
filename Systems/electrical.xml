@@ -5,12 +5,17 @@
   <source>
     <name>battery</name>
     <type>battery</type>
+
     <power type="double">800</power> <!-- Max power draw -->
     <drop type="double">4</drop> <!-- Voltage drop at max power -->
-    <capacity type="double">200</capacity>
+    <capacity type="double">40000</capacity>
     <empty-voltage type="double">10</empty-voltage>
     <full-voltage type="double">14.5</full-voltage>
+
+    <switch>/controls/switches/battery</switch>
+
     <prop type="string">/electrical/battery</prop>
+
     <input>alternator</input>
     <output>primary bus</output>
   </source>
@@ -18,19 +23,23 @@
   <source>
     <name>alternator</name>
     <type>alternator</type>
+
     <voltage type="double">18</voltage>
     <rpm-source>/engines/engine[0]</rpm-source>
     <min-rpm type="double">300</min-rpm>
     <max-rpm type="double">2400</max-rpm>
     <power type="double">100</power> <!-- 100 watt alternator-->
+
+    <switch>/controls/switches/alternator</switch>
+
     <prop type="string">/electrical/alternator</prop>
+
     <output>battery</output>
   </source>
   
   <switch>
     <name>power bus</name>
     <prop type="string">/electrical/switches/power-bus</prop>
-    <switch>/controls/switches/fuel-pump</switch>
     <input>battery</input>
   </switch>
   
@@ -42,6 +51,17 @@
     <nominal-voltage type="double">12</nominal-voltage>
     <prop type="string">/electrical/outputs/fuel-pump</prop>
     <switch>/controls/switches/fuel-pump</switch>
+    <input>power bus</input>
+  </component>
+  
+  <component>
+    <name>panel lights</name>
+    <type>needs-power</type>
+    <power type="double">7</power>
+    <min-voltage type="double">8</min-voltage>
+    <nominal-voltage type="double">14</nominal-voltage>
+    <prop type="string">/electrical/outputs/panel-lights</prop>
+    <switch>/controls/switches/panel-lights</switch>
     <input>power bus</input>
   </component>
   

@@ -30,7 +30,7 @@ var update=func {
   }
 
   if(fuel_pump) {
-      pressure = 7;
+      pressure = crange(8, getprop("/electrical/outputs/fuel-pump/voltage"), 12, 4, 7);
   }
 
   setprop("/fdm/jsbsim/propulsion/fuel-pump", (fuel_pump?1:0));

@@ -28,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="219.23856"
-     inkscape:cy="68.50186"
+     inkscape:cx="517.03624"
+     inkscape:cy="81.650531"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -83,6 +83,10 @@
        orientation="1,0"
        position="252,-4"
        id="guide3914" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="360,44"
+       id="guide3314" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -424,5 +428,125 @@
          x="324"
          y="1016.3622"
          style="font-size:12px;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1">PITOT</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3316"
+       width="36"
+       height="128"
+       x="360"
+       y="924.36218" />
+    <rect
+       style="fill:#bfbfbf;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+       id="rect3318"
+       width="36"
+       height="4"
+       x="360"
+       y="4"
+       transform="translate(0,924.36218)" />
+    <rect
+       y="936.36218"
+       x="360"
+       height="4"
+       width="36"
+       id="rect4088"
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
+    <rect
+       y="944.36218"
+       x="360"
+       height="4"
+       width="36"
+       id="rect4090"
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none"
+       id="rect4092"
+       width="36"
+       height="4"
+       x="360"
+       y="952.36218" />
+    <rect
+       y="960.36218"
+       x="360"
+       height="4"
+       width="36"
+       id="rect4094"
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none"
+       id="rect4096"
+       width="36"
+       height="4"
+       x="360"
+       y="968.36218" />
+    <rect
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none"
+       id="rect4098"
+       width="36"
+       height="4"
+       x="360"
+       y="976.36218" />
+    <rect
+       y="984.36218"
+       x="360"
+       height="4"
+       width="36"
+       id="rect4100"
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none"
+       id="rect4102"
+       width="36"
+       height="4"
+       x="360"
+       y="992.36218" />
+    <rect
+       y="1000.3622"
+       x="360"
+       height="4"
+       width="36"
+       id="rect4104"
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
+    <rect
+       y="1008.3622"
+       x="360"
+       height="4"
+       width="36"
+       id="rect4106"
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none"
+       id="rect4108"
+       width="36"
+       height="4"
+       x="360"
+       y="1016.3622" />
+    <rect
+       y="1024.3622"
+       x="360"
+       height="4"
+       width="36"
+       id="rect4110"
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none"
+       id="rect4112"
+       width="36"
+       height="4"
+       x="360"
+       y="1032.3622" />
+    <rect
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none"
+       id="rect4114"
+       width="36"
+       height="4"
+       x="360"
+       y="1040.3622" />
+    <rect
+       y="1048.3622"
+       x="360"
+       height="4"
+       width="36"
+       id="rect4116"
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none" />
   </g>
 </svg>

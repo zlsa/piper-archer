@@ -4,29 +4,105 @@
 
   <path>Instruments/switches/switches.ac</path>
 
+  <!-- <animation> -->
+  <!--   <type>material</type> -->
+  <!--   <object-name>fuel pump</object-name> -->
+  <!--   <object-name>landing lights</object-name> -->
+  <!--   <emission> -->
+  <!--     <red>0.02</red> -->
+  <!--     <green>0.015</green> -->
+  <!--     <blue>0.005</blue> -->
+  <!--     <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop> -->
+  <!--   </emission> -->
+  <!-- </animation> -->
+
+  <!-- BATTERY -->
+
   <animation>
-    <type>material</type>
-    <object-name>fuel pump</object-name>
-    <object-name>landing lights</object-name>
-    <emission>
-      <red>0.02</red>
-      <green>0.015</green>
-      <blue>0.005</blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-    </emission>
+    <type>rotate</type>
+    <object-name>battery</object-name>
+    <property>controls/switches/battery</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0</ind>
+        <dep>-10</dep>
+      </entry>
+      <entry>
+        <ind>  1.0</ind>
+        <dep> 10.0</dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+    <center>
+      <x-m> 0.0  </x-m>
+      <y-m> 0.0  </y-m>
+      <z-m>-0.002</z-m>
+    </center>
   </animation>
 
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/pa28-181/Models/Effects/glossy-black-plastic.png</texture>
-    <object-name>backplate</object-name>
+    <type>pick</type>
+    <object-name>battery</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/battery</property>
+      </binding>
+    </action>
   </animation>
+
+  <!-- ALTERNATOR -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>alternator</object-name>
+    <property>controls/switches/alternator</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0</ind>
+        <dep>-10</dep>
+      </entry>
+      <entry>
+        <ind>  1.0</ind>
+        <dep> 10.0</dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+    <center>
+      <x-m> 0.0  </x-m>
+      <y-m> 0.0  </y-m>
+      <z-m>-0.002</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>alternator</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/alternator</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- FUEL PUMP -->
 
   <animation>
     <type>rotate</type>
     <object-name>fuel pump</object-name>
-    <factor>-30</factor>
     <property>controls/switches/fuel-pump</property>
     <interpolation>
       <entry>
@@ -61,6 +137,57 @@
         <property>controls/switches/fuel-pump</property>
       </binding>
     </action>
+  </animation>
+
+  <!-- PANEL LIGHTING -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>panel light brightness</object-name>
+    <property>controls/switches/panel-lights</property>
+    <interpolation>
+      <entry>
+	<ind>  0.0</ind>
+	<dep>-50.0</dep>
+      </entry>
+      <entry>
+	<ind>  1.0</ind>
+	<dep> 50.0</dep>
+      </entry>
+    </interpolation>
+    <drag-direction>vertical</drag-direction>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+    <center>
+      <x-m> 0.0  </x-m>
+      <y-m> 0.0  </y-m>
+      <z-m>-0.01 </z-m>
+    </center>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+        <property>controls/switches/panel-lights</property>
+	<factor>0.1</factor>
+	<min>0.0</min>
+	<max>1.0</max>                
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>throttle</tooltip-id>
+	<label>Panel brightness: %d%%</label>
+	<mapping>percent</mapping>
+        <property>controls/switches/panel-lights</property>
+      </binding>
+    </hovered>
+
   </animation>
 
 </PropertyList>

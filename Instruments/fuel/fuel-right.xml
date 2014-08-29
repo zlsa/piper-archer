@@ -10,10 +10,10 @@
     <object-name>backplate right</object-name>
     <object-name>needle</object-name>
     <emission>
-      <red>0.02</red>
-      <green>0.015</green>
-      <blue>0.005</blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>0.2</red>
+      <green>0.15</green>
+      <blue>0.05</blue>
+      <factor-prop>electrical/outputs/panel-lights/brightness</factor-prop>
     </emission>
   </animation>
 
