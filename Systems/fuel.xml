@@ -1,18 +1,18 @@
 <?xml version="1.0"?>  
 
-<system name="fuel"> 
+<system name="fuel">
   <property value="-1">propulsion/fuel-selector</property>
-  <property value=" 0">propulsion/fuel-pump</property>
+  <property value="0">propulsion/fuel-pump</property>
 
-  <property value=" 0">propulsion/tank[0]/engine-pump-rate-pps</property>
-  <property value=" 0">propulsion/tank[1]/engine-pump-rate-pps</property>
+  <property value="0">propulsion/tank[0]/engine-pump-rate-pps</property>
+  <property value="0">propulsion/tank[1]/engine-pump-rate-pps</property>
 
-  <property value=" 0">propulsion/tank[0]/fuel-pump-rate-pps</property>
-  <property value=" 0">propulsion/tank[1]/fuel-pump-rate-pps</property>
+  <property value="0">propulsion/tank[0]/fuel-pump-rate-pps</property>
+  <property value="0">propulsion/tank[1]/fuel-pump-rate-pps</property>
 
-  <channel name="Fuel pumping">
+  <channel name="propulsion/engine/pumping">
     
-    <switch name="Left tank with engine">
+    <switch name="propulsion/tank[0]/engine-pump">
       <default value="-0.05"/>
       <test logic="OR" value="0">
         propulsion/fuel-selector        NE 0
@@ -24,7 +24,7 @@
       <output>propulsion/tank[0]/engine-pump-rate-pps</output>
     </switch>
     
-    <switch name="Right tank with engine">
+    <switch name="propulsion/tank[1]/engine-pump">
       <default value="-0.05"/>
       <test logic="OR" value="0">
         propulsion/fuel-selector        NE 1
@@ -36,7 +36,7 @@
       <output>propulsion/tank[1]/engine-pump-rate-pps</output>
     </switch>
     
-    <switch name="Left fuel pump">
+    <switch name="propulsion/tank[0]/fuel-pump">
       <default value="-0.5"/>
       <test logic="OR" value="0">
         propulsion/fuel-selector        NE 0
@@ -47,7 +47,7 @@
       <output>propulsion/tank[0]/fuel-pump-rate-pps</output>
     </switch>
     
-    <switch name="Right fuel pump">
+    <switch name="propulsion/tank[1]/fuel-pump">
       <default value="-0.5"/>
       <test logic="OR" value="0">
         propulsion/fuel-selector        NE 1
@@ -58,13 +58,13 @@
       <output>propulsion/tank[1]/fuel-pump-rate-pps</output>
     </switch>
     
-    <summer>
+    <summer name="propulsion/tank[0]/pump-summer">
       <input> propulsion/tank[0]/engine-pump-rate-pps</input>
       <input> propulsion/tank[0]/fuel-pump-rate-pps</input>
       <output>propulsion/tank[0]/external-flow-rate-pps</output>
     </summer>
 
-    <summer>
+    <summer name="propulsion/tank[1]/pump-summer">
       <input> propulsion/tank[1]/engine-pump-rate-pps</input>
       <input> propulsion/tank[1]/fuel-pump-rate-pps</input>
       <output>propulsion/tank[1]/external-flow-rate-pps</output>

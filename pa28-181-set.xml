@@ -96,6 +96,11 @@
       <weight-lb archive="y">50</weight-lb>
       <max-lb>200</max-lb>
     </weight>
+
+    <systems>
+      <electrical include="Systems/electrical.xml"></electrical>
+    </systems>
+
   </sim>
 
   <instrumentation>
@@ -103,14 +108,6 @@
       <heading-bug-deg type="double" archive="y">0</heading-bug-deg>
     </magnetic-compass>
   </instrumentation>
-  
-  <systems>
-    <electrical>
-      <outputs>
-        <instrument-lights type="int">0</instrument-lights>
-      </outputs>
-    </electrical>
-  </systems>
 
   <options>
     <wheel-fairing type="bool" userarchive="y">true</wheel-fairing>
@@ -215,6 +212,10 @@
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <file>Aircraft/pa28-181/Nasal/fuel.nas</file>
     </fuel>
+    <electrical>
+      <file>Aircraft/pa28-181/Nasal/util.nas</file>
+      <file>Aircraft/pa28-181/Nasal/electrical.nas</file>
+    </electrical>
     <performance>
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <!-- <file>Aircraft/pa28-181/Nasal/performance.nas</file> -->

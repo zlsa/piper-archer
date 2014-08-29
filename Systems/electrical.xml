@@ -2,51 +2,36 @@
 
 <PropertyList>
 
-  <electrical>
+  <source>
+    <name>battery</name>
+    <type>battery</type>
+    <capacity type="double">200</capacity>
+    <empty-voltage type="double">8</empty-voltage>
+    <full-voltage type="double">12</full-voltage>
+    <prop type="string">/electrical/battery</prop>
+    <output>primary bus</output>
+  </source>
 
-    <source>
-      <name>battery</name>
-      <type>battery</type>
-      <capacity type="double">200</capacity>
-      <voltage type="double">12</voltage>
-      <prop type="string">/systems/electrical/battery</prop>
-    </source>
-
-    <source>
-      <name>alternator</name>
-      <type>alternator</type>
-      <voltage type="double">14</voltage>
-      <rpm-source>/engines/engine[0]/rpm</rpm-source>
-      <nominal-rpm type="double">1800</nominal-rpm>
-      <power type="double">100</power> <!-- 100 watt alternator-->
-      <prop type="string">/systems/electrical/alternator</prop>
-    </source>
-    
-    <bus>
-      <name>charge circuit</name>
-      <input>alternator</input>
-      <output>battery</output>
-    </bus>
-    
-    <bus>
-      <name>primary bus</name>
-      <switch>/controls/switches/primary</switch>
-      <input>battery</input>
-      <output>instrument lights switch</output>
-    </bus>
-    
-    <bus>
-      <name>primary bus</name>
-      <switch>/controls/switches/master</switch>
-      <input>battery</input>
-      <output>instrument lights switch</output>
-    </bus>
-    
-    <component>
-      <name>instrument lights</name>
-      <voltage-prop type="string">/systems/electrical/outputs</voltage-prop>
-    </component>
-    
-  </electrical>
+  <source>
+    <name>alternator</name>
+    <type>alternator</type>
+    <voltage type="double">14</voltage>
+    <rpm-source>/engines/engine[0]/rpm</rpm-source>
+    <min-rpm type="double">200</min-rpm>
+    <max-rpm type="double">2400</max-rpm>
+    <power type="double">100</power> <!-- 100 watt alternator-->
+    <prop type="string">/electrical/alternator</prop>
+    <output>battery</output>
+  </source>
+  
+  <component>
+    <name>fuel pump</name>
+    <type>needs-power</type>
+    <min-voltage type="double">8</min-voltage>
+    <nominal-voltage type="double">8</nominal-voltage>
+    <prop type="string">/electrical/outputs/fuel-pump</prop>
+    <switch>/controls/switches/fuel</switch>
+    <input>battery</input>
+  </component>
   
 </PropertyList>
