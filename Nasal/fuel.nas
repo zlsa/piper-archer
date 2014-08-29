@@ -29,10 +29,13 @@ var update=func {
       pressure = crange(200, getprop("/engines/engine[0]/rpm"), 2600, 4, 6);
   }
 
-  if(fuel_pump) pressure = 7;
+  if(fuel_pump) {
+      pressure = 7;
+  }
+
+  setprop("/fdm/jsbsim/propulsion/fuel-pump", fuel_pump);
 
   setprop("/fdm/jsbsim/propulsion/fuel-selector", selected);
-  setprop("/fdm/jsbsim/propulsion/fuel-pump", pressure > 0);
 
   fuel_pressure.filter(pressure);
   setprop("/engines/engine[0]/fuel-pressure_psi", fuel_pressure.get());
