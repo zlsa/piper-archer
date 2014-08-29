@@ -22,6 +22,18 @@
     <flight-model>jsb</flight-model>
     <aero>pa28-181-jsbsim</aero>
 
+    <flaps>
+      <setting>0.0</setting>
+      <setting>0.1</setting>
+      <setting>0.4</setting>
+      <setting>0.7</setting>
+      <setting>1.0</setting>
+    </flaps>
+    
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+    
+    <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+    
     <model>
       <path>Aircraft/pa28-181/Models/pa28-181-model.xml</path>
       <livery>

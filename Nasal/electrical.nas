@@ -280,7 +280,11 @@ var init_elec=func {
             }
             device.full_voltage = source.getNode("full-voltage").getValue();
 
-            device.charge = 1;
+            if(source.getNode("charge") == nil) {
+                device.charge = 1;
+            } else {
+                device.charge = source.getNode("charge").getValue();
+            }
 
             props.globals.getNode(device.prop).initNode("charge", 0, "DOUBLE");
             

@@ -7,10 +7,11 @@
     <type>battery</type>
 
     <power type="double">800</power> <!-- Max power draw -->
-    <drop type="double">4</drop> <!-- Voltage drop at max power -->
+    <drop type="double">2</drop> <!-- Voltage drop at max power -->
     <capacity type="double">40000</capacity>
     <empty-voltage type="double">10</empty-voltage>
-    <full-voltage type="double">14.5</full-voltage>
+    <full-voltage type="double">13.5</full-voltage>
+    <charge type="double">0.8</charge>
 
     <switch>/controls/switches/battery</switch>
 

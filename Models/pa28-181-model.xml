@@ -165,8 +165,60 @@
     </offsets>
   </model>
 
+  <!-- battery row -->
+
   <model>
     <name>placeholder</name>
+    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.43</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>battery</name>
+    <path>Aircraft/pa28-181/Instruments/battery/battery.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.39</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>placeholder</name>
+    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.35</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>placeholder</name>
+    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.31</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <!-- Switches -->
+
+  <model>
+    <name>switches</name>
     <path>Aircraft/pa28-181/Instruments/switches/switches.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
