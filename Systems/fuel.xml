@@ -4,30 +4,36 @@
   <property value="-1">propulsion/fuel-selector</property>
   <property value=" 0">propulsion/fuel-pump</property>
 
+  <property value=" 0">propulsion/tank[0]/engine-pump-rate-pps</property>
+  <property value=" 0">propulsion/tank[1]/engine-pump-rate-pps</property>
+
+  <property value=" 0">propulsion/tank[0]/fuel-pump-rate-pps</property>
+  <property value=" 0">propulsion/tank[1]/fuel-pump-rate-pps</property>
+
   <channel name="Fuel pumping">
     
     <switch name="Left tank with engine">
       <default value="-0.05"/>
       <test logic="OR" value="0">
         propulsion/fuel-selector        NE 0
-        propulsion/engine/engine-rpm    LE 500
+        propulsion/engine/engine-rpm    LE 550
         propulsion/tank[0]/contents-lbs LE 0
         propulsion/tank[2]/contents-lbs GE 0.8
         propulsion/tank[2]/contents-lbs LE 0.1
       </test>
-      <output>propulsion/tank[0]/external-flow-rate-pps</output>
+      <output>propulsion/tank[0]/engine-pump-rate-pps</output>
     </switch>
     
     <switch name="Right tank with engine">
       <default value="-0.05"/>
       <test logic="OR" value="0">
         propulsion/fuel-selector        NE 1
-        propulsion/engine/engine-rpm    LE 500
+        propulsion/engine/engine-rpm    LE 550
         propulsion/tank[1]/contents-lbs LE 0
         propulsion/tank[2]/contents-lbs GE 0.8
         propulsion/tank[2]/contents-lbs LE 0.1
       </test>
-      <output>propulsion/tank[1]/external-flow-rate-pps</output>
+      <output>propulsion/tank[1]/engine-pump-rate-pps</output>
     </switch>
     
     <switch name="Left fuel pump">
@@ -38,7 +44,7 @@
         propulsion/tank[0]/contents-lbs LE 0
         propulsion/tank[2]/contents-lbs GE 0.8
       </test>
-      <output>propulsion/tank[0]/external-flow-rate-pps</output>
+      <output>propulsion/tank[0]/fuel-pump-rate-pps</output>
     </switch>
     
     <switch name="Right fuel pump">
@@ -49,9 +55,21 @@
         propulsion/tank[1]/contents-lbs LE 0
         propulsion/tank[2]/contents-lbs GE 0.8
       </test>
-      <output>propulsion/tank[1]/external-flow-rate-pps</output>
+      <output>propulsion/tank[1]/fuel-pump-rate-pps</output>
     </switch>
     
+    <summer>
+      <input> propulsion/tank[0]/engine-pump-rate-pps</input>
+      <input> propulsion/tank[0]/fuel-pump-rate-pps</input>
+      <output>propulsion/tank[0]/external-flow-rate-pps</output>
+    </summer>
+
+    <summer>
+      <input> propulsion/tank[1]/engine-pump-rate-pps</input>
+      <input> propulsion/tank[1]/fuel-pump-rate-pps</input>
+      <output>propulsion/tank[1]/external-flow-rate-pps</output>
+    </summer>
+
     <summer>
       <input>-propulsion/tank[0]/external-flow-rate-pps</input>
       <input>-propulsion/tank[1]/external-flow-rate-pps</input>

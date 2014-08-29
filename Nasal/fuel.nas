@@ -25,7 +25,7 @@ var update=func {
 
   var fuel_pump = getprop("/controls/switches/fuel");
 
-  if(level > 0.0001 and running) {
+  if(level > 0.01 and running) {
       pressure = crange(200, getprop("/engines/engine[0]/rpm"), 2600, 4, 6);
   }
 
