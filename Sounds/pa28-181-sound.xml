@@ -222,7 +222,7 @@
       <name>fuel-pump</name>
       <mode>looped</mode>
       <path>Sounds/gear.wav</path>
-      <property>controls/switches/fuel</property>
+      <property>electrical/outputs/fuel-pump/powered</property>
       <volume>
         <property>engines/engine[0]/fuel-pressure_psi</property>
         <factor>0.005</factor>

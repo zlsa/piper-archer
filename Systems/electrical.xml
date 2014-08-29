@@ -5,33 +5,55 @@
   <source>
     <name>battery</name>
     <type>battery</type>
+    <power type="double">800</power> <!-- Max power draw -->
+    <drop type="double">4</drop> <!-- Voltage drop at max power -->
     <capacity type="double">200</capacity>
-    <empty-voltage type="double">8</empty-voltage>
-    <full-voltage type="double">12</full-voltage>
+    <empty-voltage type="double">10</empty-voltage>
+    <full-voltage type="double">14.5</full-voltage>
     <prop type="string">/electrical/battery</prop>
+    <input>alternator</input>
     <output>primary bus</output>
   </source>
 
   <source>
     <name>alternator</name>
     <type>alternator</type>
-    <voltage type="double">14</voltage>
-    <rpm-source>/engines/engine[0]/rpm</rpm-source>
-    <min-rpm type="double">200</min-rpm>
+    <voltage type="double">18</voltage>
+    <rpm-source>/engines/engine[0]</rpm-source>
+    <min-rpm type="double">300</min-rpm>
     <max-rpm type="double">2400</max-rpm>
     <power type="double">100</power> <!-- 100 watt alternator-->
     <prop type="string">/electrical/alternator</prop>
     <output>battery</output>
   </source>
   
+  <switch>
+    <name>power bus</name>
+    <prop type="string">/electrical/switches/power-bus</prop>
+    <switch>/controls/switches/fuel-pump</switch>
+    <input>battery</input>
+  </switch>
+  
   <component>
     <name>fuel pump</name>
     <type>needs-power</type>
+    <power type="double">5</power>
     <min-voltage type="double">8</min-voltage>
-    <nominal-voltage type="double">8</nominal-voltage>
+    <nominal-voltage type="double">12</nominal-voltage>
     <prop type="string">/electrical/outputs/fuel-pump</prop>
-    <switch>/controls/switches/fuel</switch>
-    <input>battery</input>
+    <switch>/controls/switches/fuel-pump</switch>
+    <input>power bus</input>
+  </component>
+  
+  <component>
+    <name>starter</name>
+    <type>needs-power</type>
+    <power type="double">700</power>
+    <min-voltage type="double">8</min-voltage>
+    <nominal-voltage type="double">12</nominal-voltage>
+    <prop type="string">/electrical/outputs/starter</prop>
+    <switch>/controls/engines/engine[0]/starter</switch>
+    <input>power bus</input>
   </component>
   
 </PropertyList>

@@ -9,7 +9,7 @@ var fuel_pressure=aircraft.lowpass.new(2.0);
 var update=func {
   var pressure  = 0;
 
-  var selected  = getprop("/controls/fuel_selector");
+  var selected  = getprop("/controls/fuel-selector");
   var level     = 0;
 
   setprop("/consumables/fuel/tank[0]/selected", false);
@@ -23,7 +23,7 @@ var update=func {
   level         = getprop("/consumables/fuel/tank[2]/level-gal_us");
   var running   = getprop("/engines/engine[0]/running");
 
-  var fuel_pump = getprop("/controls/switches/fuel");
+  var fuel_pump = getprop("/electrical/outputs/fuel-pump/powered");
 
   if(level > 0.01 and running) {
       pressure = crange(200, getprop("/engines/engine[0]/rpm"), 2600, 4, 6);

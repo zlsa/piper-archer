@@ -27,7 +27,7 @@
     <type>rotate</type>
     <object-name>fuel pump</object-name>
     <factor>-30</factor>
-    <property>controls/switches/fuel</property>
+    <property>controls/switches/fuel-pump</property>
     <interpolation>
       <entry>
         <ind> 0.0</ind>
@@ -58,7 +58,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>controls/switches/fuel</property>
+        <property>controls/switches/fuel-pump</property>
       </binding>
     </action>
   </animation>

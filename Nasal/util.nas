@@ -32,3 +32,8 @@ var max=func(a, b) {
     if(a > b) return a;
     else      return b;
 };
+
+var min=func(a, b) {
+    if(a < b) return a;
+    else      return b;
+};

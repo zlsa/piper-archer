@@ -173,12 +173,12 @@
     <gear>
       <brake-parking type="double">1</brake-parking>
     </gear>
-    <fuel_selector type="int">0</fuel_selector>
+    <fuel-selector type="int">0</fuel-selector>
     <switches>
       <navigation type="double"> 0.0   </navigation>
       <battery    type="bool">   false </battery>
       <alternator type="bool">   false </alternator>
-      <fuel       type="bool">   false </fuel>
+      <fuel-pump  type="bool">   false </fuel-pump>
       <landing    type="bool">   false </landing>
       <beacon     type="bool">   false </beacon>
       <strobe     type="bool">   false </strobe>

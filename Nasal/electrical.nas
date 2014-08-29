@@ -8,8 +8,12 @@ var devices={};
 
 var source_props=props.globals.getNode(config_path).getChildren("source");
 var component_props=props.globals.getNode(config_path).getChildren("component");
+var switch_props=props.globals.getNode(config_path).getChildren("switch");
 
 var update_elec=func {
+
+    var delta=1/30;
+    
     foreach(var i;keys(devices)) {
         var device=devices[i];
         var role = device.role;
@@ -19,14 +23,16 @@ var update_elec=func {
             if(getprop(device.switch) == false) switch=false;
         }
 
+        if(role == "source" or role == "switch") {
+            device.draw = 0;
+        }
+
         if(role == "source") {
             var voltage = 0;
             var type = device.type;
 
-            device.draw = 0; # watts being pulled out of the device
-
             if(type == "alternator") {
-                var rpm   = getprop(device.rpm_source);
+                var rpm   = getprop(device.rpm_source, "rpm");
                 var power = crange(device.min_rpm, rpm, device.max_rpm, 0, device.power);
 
                 if(switch == false) power=0;
@@ -36,18 +42,94 @@ var update_elec=func {
                 setprop(device.prop, "power", power);
             } else if(type == "battery") {
 
+                for(var j=0;j<size(device.inputs);j+=1) {
+                    var input_device=devices[device.inputs[j].getValue()];
+                    if(input_device.role == "source" and input_device.type == "alternator") {
+                        if(input_device.voltage > device.voltage_lowpass.get()) {
+                            device.charge += (input_device.power / (device.capacity * 60 * 60)) * delta;
+                            device.charge = min(device.charge, 1);
+                        }
+                    }
+                }
+
                 voltage = crange(0, device.charge, 1, device.empty_voltage, device.full_voltage);
 
                 if(switch == false) voltage=0;
-
-                device.voltage = voltage;
 
                 setprop(device.prop, "charge", device.charge);
             } else {
                 power=42;
             }
 
-            setprop(device.prop, "voltage", voltage);
+            device.voltage = voltage;
+
+            setprop(device.prop, "switch", switch);
+        }
+    }
+
+    foreach(var i;keys(devices)) {
+        var device=devices[i];
+        var role = device.role;
+
+        if(role == "component") {
+            var switch=true;
+            if(device.switch) {
+                if(getprop(device.switch) == false) switch=false;
+            }
+
+            device.draw=0;
+            for(var j=0;j<size(device.inputs);j+=1) {
+                var input_device=devices[device.inputs[j].getValue()];
+                if(input_device.voltage > device.min_voltage) {
+                    device.voltage=max(input_device.voltage, device.voltage); # choose the highest voltage device
+                }
+            }
+            if(switch == false) device.voltage=0;
+
+            if(device.voltage > 0) {
+                device.powered=true;
+                device.draw=crange(device.min_voltage, device.voltage, device.nominal_voltage, 0, device.power);
+            }
+
+            for(var j=0;j<size(device.inputs);j+=1) {
+                devices[device.inputs[j].getValue()].draw += (device.draw/size(device.inputs));
+            }
+
+            setprop(device.prop, "voltage", device.voltage);
+            setprop(device.prop, "powered", device.powered);
+            setprop(device.prop, "draw", device.draw);
+            setprop(device.prop, "switch", switch);
+        }
+    }
+
+    foreach(var i;keys(devices)) {
+        var device=devices[i];
+        var role = device.role;
+
+        if(role == "switch") {
+            var switch=true;
+            if(device.switch) {
+                if(getprop(device.switch) == false) switch=false;
+            }
+
+            device.voltage = 0;
+            if(switch == false) {
+                device.draw=0;
+            } else {
+                for(var j=0;j<size(device.inputs);j+=1) {
+                    var input_device=devices[device.inputs[j].getValue()];
+                    if(input_device.voltage > device.min_voltage) {
+                        device.voltage=max(input_device.voltage, device.voltage); # choose the highest voltage device
+                    }
+                    devices[device.inputs[j].getValue()].draw += (device.draw/size(device.inputs));
+                }
+            }
+
+            if(device.voltage > 0) device.powered=0;
+
+            setprop(device.prop, "voltage", device.voltage);
+            setprop(device.prop, "powered", device.powered);
+            setprop(device.prop, "draw", device.draw);
             setprop(device.prop, "switch", switch);
         }
     }
@@ -61,27 +143,36 @@ var update_elec=func {
             if(getprop(device.switch) == false) switch=false;
         }
 
-        if(role == "component") {
-            device.powered=false;
-            for(var j=0;j<size(device.inputs);j+=1) {
-                var input_device=devices[device.inputs[j].getValue()];
-                if(input_device.voltage > device.min_voltage) {
-                    device.voltage=max(input_device.voltage, device.voltage); # choose the highest voltage device
-                }
+        if(device.switch == false) continue;
+
+        if(role == "source") {
+            var voltage = 0;
+            var type = device.type;
+
+            if(type == "alternator") {
+
+            } else if(type == "battery") {
+
+                voltage = crange(0, device.draw, device.power, device.voltage, device.voltage-device.drop);
+                device.voltage = voltage;
+
+                var draw = device.draw * delta;
+                draw /= device.capacity * 60 * 60; # convert hours into seconds
+                device.charge -= draw;
+                
+                setprop(device.prop, "draw", device.draw);
             }
-            if(switch == false) device.voltage=0;
-            if(device.voltage > 0) device.powered=true;
-            setprop(device.prop, "voltage", device.voltage);
-            setprop(device.prop, "powered", device.powered);
-            setprop(device.prop, "switch", switch);
+
+            device.voltage_lowpass.filter(device.voltage);
+
+            setprop(device.prop, "voltage", device.voltage_lowpass.get());
         }
     }
-    
+
     settimer(update_elec, 0);
 };
 
 var init_elec=func {
-    print("Electrical init...");
 
     for(var i=0;i<size(source_props);i+=1) {
         var source=source_props[i];
@@ -95,7 +186,6 @@ var init_elec=func {
         device.name = source.getNode("name").getValue();
 
         device.inputs = source.getChildren("input");
-        device.outputs = source.getChildren("output");
 
         if(contains(devices, device.name)) {
             print("! Duplicate device '" ~ device.name ~ "'");
@@ -123,10 +213,22 @@ var init_elec=func {
 
         if(device.type == "battery") {
             if(source.getNode("capacity") == nil) {
-                print("! Expected amp-hour capacity of battery source '" ~ device.name ~ "'");
+                print("! Expected watt-hour capacity of battery source '" ~ device.name ~ "'");
                 continue;
             }
             device.capacity = source.getNode("capacity").getValue();
+
+            if(source.getNode("power") == nil) {
+                print("! Expected maximum draw in watts of battery source '" ~ device.name ~ "'");
+                continue;
+            }
+            device.power = source.getNode("power").getValue();
+
+            if(source.getNode("drop") == nil) {
+                print("! Expected voltage drop with maximum draw in watts of battery source '" ~ device.name ~ "'");
+                continue;
+            }
+            device.drop = source.getNode("drop").getValue();
 
             if(source.getNode("empty-voltage") == nil) {
                 print("! Expected empty voltage of battery source '" ~ device.name ~ "'");
@@ -178,6 +280,9 @@ var init_elec=func {
 
         }
 
+        device.voltage_lowpass = aircraft.lowpass.new(2);
+        device.voltage_lowpass.set(0);
+
         props.globals.getNode(device.prop).initNode("switch", 0, "BOOL");
         props.globals.getNode(device.prop).initNode("voltage", 0);
 
@@ -202,7 +307,6 @@ var init_elec=func {
         device.name = component.getNode("name").getValue();
 
         device.inputs = component.getChildren("input");
-        device.outputs = component.getChildren("output");
 
         if(contains(devices, device.name)) {
             print("! Duplicate device '" ~ device.name ~ "'");
@@ -228,11 +332,23 @@ var init_elec=func {
         }
         device.type = component.getNode("type").getValue();
 
+        if(component.getNode("power") == nil) {
+            print("! Expected maximum power draw of component '" ~ device.name ~ "'");
+            continue;
+        }
+        device.power = component.getNode("power").getValue();
+
         if(component.getNode("min-voltage") == nil) {
             print("! Expected minimum voltage of device '" ~ device.name ~ "'");
             continue;
         }
         device.min_voltage = component.getNode("min-voltage").getValue();
+
+        if(component.getNode("nominal-voltage") == nil) {
+            print("! Expected nominal voltage of device '" ~ device.name ~ "'");
+            continue;
+        }
+        device.nominal_voltage = component.getNode("nominal-voltage").getValue();
 
         props.globals.getNode(device.prop).initNode("powered", 0, "BOOL");
         props.globals.getNode(device.prop).initNode("switch", 0, "BOOL");
@@ -243,7 +359,57 @@ var init_elec=func {
         devices[device.name]=device;
     }
 
-    print("Electrical init done");
+    ##############
+    # SWITCHES
+    ##############
+
+    for(var i=0;i<size(switch_props);i+=1) {
+        var switch=switch_props[i];
+        var device={};
+        device.role = "switch";
+
+        if(switch.getNode("name") == nil) {
+            print("! Expected name of switch ", i);
+            continue;
+        }
+        device.name = switch.getNode("name").getValue();
+
+        device.inputs = switch.getChildren("input");
+
+        if(contains(devices, device.name)) {
+            print("! Duplicate device '" ~ device.name ~ "'");
+            continue;
+        }
+
+        if(switch.getNode("prop") == nil) {
+            print("! Expected destination property root for device '" ~ device.name ~ "'");
+            continue;
+        }
+        device.prop=switch.getNode("prop").getValue();
+        props.globals.initNode(device.prop);
+
+        if(switch.getNode("switch") == nil) {
+            device.switch=nil;
+        } else {
+            device.switch=switch.getNode("switch").getValue();
+        }
+
+        # if(switch.getNode("type") == nil) {
+        #     print("! Expected type of switch '" ~ device.name ~ "'");
+        #     continue;
+        # }
+        # device.type = switch.getNode("type").getValue();
+
+        props.globals.getNode(device.prop).initNode("powered", 0, "BOOL");
+        props.globals.getNode(device.prop).initNode("switch", 0, "BOOL");
+        props.globals.getNode(device.prop).initNode("voltage", 0);
+
+        device.powered=false;
+        device.voltage=0;
+        devices[device.name]=device;
+    }
+
+    print("Piper Archer electrical system initialized");
 
     settimer(update_elec, 0);
 };
