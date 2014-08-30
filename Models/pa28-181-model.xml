@@ -905,5 +905,76 @@
       <z2-m>0.0711347</z2-m>
     </axis>
   </animation>
-  
+
+  <!-- ELEVATOR -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>elevator</object-name>
+    <object-name>elevator trim tab</object-name>
+    <property>controls/flight/elevator</property>
+    <factor>5</factor>
+    <center>
+      <x-m> 2.74</x-m>
+      <y-m> 0.00</y-m>
+      <z-m> 0.12</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>elevator</object-name>
+    <object-name>elevator trim tab</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>3</factor>
+    <center>
+      <x-m> 3.388</x-m>
+      <y-m> 0.000</y-m>
+      <z-m> 0.110</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>elevator trim tab</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>-30</factor>
+    <center>
+      <x-m> 3.388</x-m>
+      <y-m> 0.000</y-m>
+      <z-m> 0.110</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <!-- RUDDER -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rudder</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <axis>
+      <x1-m> 2.9293</x1-m>
+      <y1-m> 0.0000</y1-m>
+      <z1-m> 0.3265</z1-m>
+      <x2-m> 3.3312</x2-m>
+      <y2-m> 0.0000</y2-m>
+      <z2-m> 1.4553</z2-m>
+    </axis>
+  </animation>
 </PropertyList>
