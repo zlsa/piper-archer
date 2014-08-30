@@ -45,7 +45,7 @@ var update_electrical=func {
                 for(var j=0;j<size(device.inputs);j+=1) {
                     var input_device=devices[device.inputs[j].getValue()];
                     if(input_device.role == "source" and input_device.type == "alternator") {
-                        if(input_device.voltage > device.voltage_lowpass.get()) {
+                        if(input_device.voltage > device.voltage_lowpass.get() and switch) {
                             device.charge += (input_device.power / device.capacity) * delta;
                             device.charge = min(device.charge, 1);
                         }
