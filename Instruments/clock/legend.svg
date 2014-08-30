@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="legend.svg"
-   inkscape:export-filename="/home/forest/projects/fgfs/pa28-181/Instruments/altimeter/legend.png"
+   inkscape:export-filename="/home/forest/projects/fgfs/pa28-181/Instruments/clock/legend.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -28,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="226.03952"
-     inkscape:cy="154.69816"
+     inkscape:cx="228.51439"
+     inkscape:cy="151.86974"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -66,7 +66,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

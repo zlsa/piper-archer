@@ -363,10 +363,6 @@
       <and>
         <property>/sim/rendering/rembrandt/enabled</property>
         <greater-than>
-          <property>/sim/time/sun-angle-rad</property>
-          <value>1.40</value>
-        </greater-than>
-        <greater-than>
           <property>/sim/rendering/shaders/lights</property>
           <value>2.0</value>
         </greater-than>
@@ -396,7 +392,6 @@
     <texture>Aircraft/pa28-181/Models/Effects/interior-chrome.png</texture>
     <object-name>yoke rod</object-name>
     <object-name>yoke rod gasket</object-name>
-    <object-name>flap lever</object-name>
   </animation>
 
   <animation>
@@ -548,8 +543,8 @@
       <z>0</z>
     </axis>
     <center>
-      <x-m>-1.56</x-m>
-      <y-m>0.0</y-m>
+      <x-m>-1.510</x-m>
+      <y-m> 0.000</y-m>
       <z-m>-0.409</z-m>
     </center>
   </animation>
@@ -1026,13 +1021,28 @@
     <type>rotate</type>
     <object-name>left aileron</object-name>
     <property>controls/flight/aileron</property>
-    <factor>-30</factor>
+    <factor>-25</factor>
     <axis>
       <x1-m>-0.244</x1-m>
       <y1-m>-2.703</y1-m>
       <z1-m>-0.134</z1-m>
       <x2-m>-0.482</x2-m>
       <y2-m>-5.438</y2-m>
+      <z2-m> 0.175</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right aileron</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>-25</factor>
+    <axis>
+      <x1-m>-0.244</x1-m>
+      <y1-m> 2.703</y1-m>
+      <z1-m>-0.134</z1-m>
+      <x2-m>-0.482</x2-m>
+      <y2-m> 5.438</y2-m>
       <z2-m> 0.175</z2-m>
     </axis>
   </animation>
@@ -1066,6 +1076,37 @@
       <z1-m>-0.4505</z1-m>
       <x2-m>-0.1580</x2-m>
       <y2-m>-2.5458</y2-m>
+      <z2-m>-0.2188</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right flap</object-name>
+    <object-name>right flap arm</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>50</factor>
+    <axis>
+      <x1-m>-0.238</x1-m>
+      <y1-m> 0.601</y1-m>
+      <z1-m>-0.376</z1-m>
+      <x2-m>-0.238</x2-m>
+      <y2-m> 2.699</y2-m>
+      <z2-m>-0.133</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right flap arm</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-35</factor>
+    <axis>
+      <x1-m>-0.1580</x1-m>
+      <y1-m> 0.6595</y1-m>
+      <z1-m>-0.4505</z1-m>
+      <x2-m>-0.1580</x2-m>
+      <y2-m> 2.5458</y2-m>
       <z2-m>-0.2188</z2-m>
     </axis>
   </animation>
