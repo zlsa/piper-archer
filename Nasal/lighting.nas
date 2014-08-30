@@ -2,7 +2,7 @@
 #        Lighting
 ###########################
 
-var panel_brightness=aircraft.lowpass.new(0.05);
+var panel_brightness=aircraft.lowpass.new(0.01);
 
 var update_lighting=func {
   var panel = 0;
