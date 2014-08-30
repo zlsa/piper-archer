@@ -84,8 +84,11 @@ var update_electrical=func {
             } else {
                 for(var j=0;j<size(device.inputs);j+=1) {
                     var input_device=devices[device.inputs[j].getValue()];
-                    if(input_device.voltage > device.voltage) {
-                        device.voltage=max(input_device.voltage, device.voltage); # choose the highest voltage device
+                    var voltage=input_device.voltage;
+                    if(input_device.role == "source" and input_device.type == "battery")
+                        voltage=input_device.voltage_lowpass.get();
+                    if(voltage > device.voltage) {
+                        device.voltage=max(voltage, device.voltage); # choose the highest voltage device
                     }
                 }
             }
@@ -158,9 +161,12 @@ var update_electrical=func {
             } else {
                 for(var j=0;j<size(device.inputs);j+=1) {
                     var input_device=devices[device.inputs[j].getValue()];
+                    var voltage=input_device.voltage;
+                    if(input_device.role == "source" and input_device.type == "battery")
+                        voltage=input_device.voltage_lowpass.get();
                     if(input_device.voltage > device.voltage) {
-                        device.voltage=max(input_device.voltage, device.voltage); # choose the highest voltage device
-                        devices[device.inputs[j].getValue()].draw += device.draw;
+                        device.voltage=max(voltage, device.voltage); # choose the highest voltage
+                        devices[device.inputs[j].getValue()].draw += device.draw * 1.1 + 1;
                         continue;
                     }
                 }
@@ -168,7 +174,9 @@ var update_electrical=func {
 
             if(device.voltage > 0) device.powered=0;
 
-            setprop(device.prop, "voltage", device.voltage);
+            device.voltage_lowpass.filter(device.voltage);
+
+            setprop(device.prop, "voltage", device.voltage_lowpass.get());
             setprop(device.prop, "powered", device.powered);
             setprop(device.prop, "draw", device.draw);
             setprop(device.prop, "switch", switch);
@@ -191,7 +199,10 @@ var update_electrical=func {
             var type = device.type;
 
             if(type == "alternator") {
+                voltage = crange(0, device.draw, device.power, device.voltage, 0);
+                device.voltage = voltage;
 
+                setprop(device.prop, "draw", device.draw);
             } else if(type == "battery") {
 
                 voltage = crange(0, device.draw, device.power, device.voltage, device.voltage-device.drop);
@@ -325,7 +336,7 @@ var init_electrical=func {
 
         }
 
-        device.voltage_lowpass = aircraft.lowpass.new(1);
+        device.voltage_lowpass = aircraft.lowpass.new(0.3);
         device.voltage_lowpass.set(0);
 
         props.globals.getNode(device.prop).initNode("switch", 0);
@@ -407,6 +418,10 @@ var init_electrical=func {
 
         device.powered=false;
         device.voltage=0;
+
+        device.voltage_lowpass = aircraft.lowpass.new(0.3);
+        device.voltage_lowpass.set(0);
+
         devices[device.name]=device;
     }
 
@@ -457,6 +472,10 @@ var init_electrical=func {
 
         device.powered=false;
         device.voltage=0;
+
+        device.voltage_lowpass = aircraft.lowpass.new(0.3);
+        device.voltage_lowpass.set(0);
+
         devices[device.name]=device;
     }
 

@@ -185,8 +185,8 @@
   </model>
 
   <model>
-    <name>battery</name>
-    <path>Aircraft/pa28-181/Instruments/battery/battery.xml</path>
+    <name>oil-pressure</name>
+    <path>Aircraft/pa28-181/Instruments/oil-pressure/oil-pressure.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -197,8 +197,8 @@
   </model>
 
   <model>
-    <name>placeholder</name>
-    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <name>battery</name>
+    <path>Aircraft/pa28-181/Instruments/battery/battery.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -209,8 +209,8 @@
   </model>
 
   <model>
-    <name>placeholder</name>
-    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <name>oil-temperature</name>
+    <path>Aircraft/pa28-181/Instruments/oil-temperature/oil-temperature.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>

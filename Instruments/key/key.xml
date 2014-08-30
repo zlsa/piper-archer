@@ -37,4 +37,23 @@
     </axis>
   </animation>
 
+  <animation>
+    <type>rotate</type>
+    <object-name>barrel</object-name>
+    <object-name>key</object-name>
+    <property>controls/start</property>
+    <condition>
+      <equals>
+        <property>controls/key</property>
+        <value>3</value>
+      </equals>
+    </condition>
+    <factor>30</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
 </PropertyList>

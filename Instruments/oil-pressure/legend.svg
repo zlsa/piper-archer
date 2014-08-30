@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="64"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="legend.svg"
+   inkscape:export-filename="/home/forest/projects/fgfs/pa28-181/Instruments/oil-pressure/legend.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3788">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect3790"
+         width="128"
+         height="20"
+         x="0"
+         y="8" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3796">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect3798"
+         width="128"
+         height="20"
+         x="0"
+         y="8" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3874">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect3876"
+         width="128"
+         height="19.999998"
+         x="1"
+         y="996.36218" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3125">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         id="rect3127"
+         width="128"
+         height="20"
+         x="0"
+         y="8.0000029" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3897">
+      <rect
+         y="8.0000029"
+         x="0"
+         height="20"
+         width="128"
+         id="rect3899"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3917">
+      <rect
+         y="8.0000029"
+         x="0"
+         height="20"
+         width="128"
+         id="rect3919"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8"
+     inkscape:cx="70.203165"
+     inkscape:cy="47.93227"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="727"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="64,-8"
+       id="guide2987" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="68,-32"
+       id="guide2989" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-988.36218)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect3780"
+       width="128"
+       height="64"
+       x="0"
+       y="988.36218" />
+    <path
+       style="fill:#ffd92f;fill-opacity:1;stroke:none"
+       d="m 64,996.36218 -36,-2e-5 8,16.00004 28,0 z"
+       id="path3176"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path3903"
+       d="m 104,996.36218 -40,0 0,16.00002 32,0 z"
+       style="fill:#40bc1a;fill-opacity:1;stroke:none" />
+    <path
+       sodipodi:nodetypes="cc"
+       transform="translate(0,988.36218)"
+       inkscape:connector-curvature="0"
+       id="path3784"
+       d="M 68,96 4,0"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       clip-path="url(#clipPath3897)" />
+    <path
+       clip-path="url(#clipPath3788)"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 68,96 4,0"
+       id="path3800"
+       inkscape:connector-curvature="0"
+       transform="matrix(-1,0,0,1,130,988.36218)"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#bfbfbf;fill-opacity:1;stroke:none;font-family:Sans"
+       x="64"
+       y="1042.3622"
+       id="text3841"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3843"
+         x="64"
+         y="1042.3622"
+         style="font-size:10px;font-weight:bold;text-align:center;text-anchor:middle;fill:#bfbfbf;fill-opacity:1">OIL PRESS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3878"
+       y="1027.3622"
+       x="32"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#bfbfbf;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:10px;font-weight:bold;text-align:center;text-anchor:middle;fill:#bfbfbf;fill-opacity:1"
+         y="1027.3622"
+         x="32"
+         id="tspan3880"
+         sodipodi:role="line">25</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#bfbfbf;fill-opacity:1;stroke:none;font-family:Sans"
+       x="64"
+       y="1027.3622"
+       id="text3882"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="64"
+         y="1027.3622"
+         style="font-size:10px;font-weight:bold;text-align:center;text-anchor:middle;fill:#bfbfbf;fill-opacity:1"
+         id="tspan3907">60</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#bfbfbf;fill-opacity:1;stroke:none;font-family:Sans"
+       x="100"
+       y="1027.3622"
+       id="text3890"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3892"
+         x="100"
+         y="1027.3622"
+         style="font-size:10px;font-weight:bold;text-align:center;text-anchor:middle;fill:#bfbfbf;fill-opacity:1">95</tspan></text>
+    <path
+       clip-path="url(#clipPath3125)"
+       style="fill:none;stroke:#ff1919;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 68,96 24,0"
+       id="path3117"
+       inkscape:connector-curvature="0"
+       transform="translate(0,988.36218)"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       transform="matrix(-1,0,0,1,130,988.36218)"
+       inkscape:connector-curvature="0"
+       id="path3174"
+       d="M 68,96 22,0"
+       style="fill:none;stroke:#ff1919;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       clip-path="url(#clipPath3788)" />
+  </g>
+</svg>
