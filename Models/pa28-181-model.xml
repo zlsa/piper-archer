@@ -977,4 +977,55 @@
       <z2-m> 1.4553</z2-m>
     </axis>
   </animation>
+
+  <!-- AILERONS -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left aileron</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>-30</factor>
+    <axis>
+      <x1-m>-0.244</x1-m>
+      <y1-m>-2.703</y1-m>
+      <z1-m>-0.134</z1-m>
+      <x2-m>-0.482</x2-m>
+      <y2-m>-5.438</y2-m>
+      <z2-m> 0.175</z2-m>
+    </axis>
+  </animation>
+
+  <!-- FLAPS -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left flap</object-name>
+    <object-name>left flap arm</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-50</factor>
+    <axis>
+      <x1-m>-0.238</x1-m>
+      <y1-m>-0.601</y1-m>
+      <z1-m>-0.376</z1-m>
+      <x2-m>-0.238</x2-m>
+      <y2-m>-2.699</y2-m>
+      <z2-m>-0.133</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left flap arm</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>35</factor>
+    <axis>
+      <x1-m>-0.1580</x1-m>
+      <y1-m>-0.6595</y1-m>
+      <z1-m>-0.4505</z1-m>
+      <x2-m>-0.1580</x2-m>
+      <y2-m>-2.5458</y2-m>
+      <z2-m>-0.2188</z2-m>
+    </axis>
+  </animation>
+
 </PropertyList>

@@ -119,7 +119,9 @@ var update_electrical=func {
                 }
             }
 
-            device.voltage *= switch;
+            if(device.voltage > 0.01) {
+                device.voltage = crange(0, switch, 1, device.min_voltage, device.voltage);
+            }
             
             if(switch < 0.01) device.voltage=0;
 
