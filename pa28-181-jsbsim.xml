@@ -21,7 +21,7 @@
    <vtailarea unit="M2">13.54</vtailarea>
    <vtailarm unit="M">4.356</vtailarm>
    <location name="AERORP" unit="M">
-     <x>-1.00</x>
+     <x>-1.50</x>
      <y> 0.00</y>
      <z> 0.00</z>
    </location>
@@ -43,7 +43,7 @@
    <izz unit="SLUG*FT2">1631</izz>
    <emptywt unit="LBS">1416</emptywt>
    <location name="CG" unit="M">
-     <x>-1.60</x>
+     <x>-2.10</x>
      <y> 0.00</y>
      <z> 0.00</z>
    </location>

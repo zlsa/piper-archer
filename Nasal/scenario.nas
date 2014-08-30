@@ -10,3 +10,11 @@ var init_scenario=func {
     setprop("/controls/fuel-selector", 0);
 };
 
+var autostart=func {
+    setprop("/consumables/fuel/tank[2]/level-gal_us", 0.16);
+    setprop("/controls/switches/battery", true);
+    setprop("/controls/switches/alternator", false);
+    setprop("/controls/switches/panel-lights", 0.5);
+    setprop("/controls/fuel-selector", 0);
+    setprop("/controls/key", 3);
+}

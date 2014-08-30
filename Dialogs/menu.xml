@@ -4,8 +4,15 @@
 
   <default>
     <menu n="10">
-      <label>PA28-181 Archer TX</label>
+      <label>PA28-181 Archer CX</label>
       <enabled type="bool">true</enabled>
+      <item>
+        <name>autostart</name>
+        <binding>
+          <command>nasal</command>
+          <script>pa28_181.autostart()</script>
+        </binding>
+      </item>
       <item>
         <name>select-livery</name>
         <binding>
