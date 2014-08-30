@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Instruments/key/key.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>backplate</object-name>
+    <emission>
+      <red>0.2</red>
+      <green>0.15</green>
+      <blue>0.05</blue>
+      <factor-prop>electrical/outputs/panel-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>barrel</object-name>
+    <object-name>key</object-name>
+    <property>controls/key</property>
+    <interpolation>
+      <entry>
+        <ind>  0</ind>
+        <dep>-60</dep>
+      </entry>
+      <entry>
+        <ind>  4</ind>
+        <dep> 60</dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
+</PropertyList>
