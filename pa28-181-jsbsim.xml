@@ -646,9 +646,9 @@
          <table>
            <independentVar lookup="row">fcs/flap-pos-deg</independentVar>
            <tableData>
-              0.00 0.00
-              0.66 0.01
-              1.00 0.04
+              0.00 0.000
+              0.66 0.002
+              1.00 0.005
            </tableData>
          </table>
        </product>
