@@ -37,7 +37,7 @@ var update_electrical=func {
 
                 if(switch == false) power=0;
 
-                if(power > 0) voltage = device.max_voltage;
+                voltage = crange(0, power, device.power/4, device.min_voltage, device.max_voltage);
 
                 setprop(device.prop, "power", power);
             } else if(type == "battery") {
@@ -104,6 +104,7 @@ var update_electrical=func {
 
         if(role == "component") {
             var switch=true;
+
             if(device.switch != nil) {
                 switch=getprop(device.switch);
             }
@@ -112,8 +113,9 @@ var update_electrical=func {
             device.voltage=0;
             for(var j=0;j<size(device.inputs);j+=1) {
                 var input_device=devices[device.inputs[j].getValue()];
-                if(input_device.voltage > device.min_voltage) {
-                    device.voltage=max(input_device.voltage, device.voltage); # choose the highest voltage device
+                var voltage=input_device.voltage_lowpass.get();
+                if(voltage > device.min_voltage) {
+                    device.voltage=max(voltage, device.voltage); # choose the highest voltage device
                 }
             }
 
@@ -161,9 +163,7 @@ var update_electrical=func {
             } else {
                 for(var j=0;j<size(device.inputs);j+=1) {
                     var input_device=devices[device.inputs[j].getValue()];
-                    var voltage=input_device.voltage;
-                    if(input_device.role == "source" and input_device.type == "battery")
-                        voltage=input_device.voltage_lowpass.get();
+                    var voltage=input_device.voltage_lowpass.get();
                     if(input_device.voltage > device.voltage) {
                         device.voltage=max(voltage, device.voltage); # choose the highest voltage
                         devices[device.inputs[j].getValue()].draw += device.draw * 1.1 + 1;
@@ -187,12 +187,10 @@ var update_electrical=func {
         var device=devices[i];
         var role = device.role;
 
-        var switch=true;
+        var switch=1;
         if(device.switch) {
-            if(getprop(device.switch) == false) switch=false;
+            switch=getprop(device.switch);
         }
-
-        if(device.switch == false) continue;
 
         if(role == "source") {
             var voltage = 0;
@@ -214,6 +212,8 @@ var update_electrical=func {
                 
                 setprop(device.prop, "draw", device.draw);
             }
+
+            if(switch <= false) device.voltage=0;
 
             device.voltage_lowpass.filter(device.voltage);
 
@@ -303,11 +303,18 @@ var init_electrical=func {
             props.globals.getNode(device.prop).initNode("charge", 0, "DOUBLE");
             
         } else if(device.type == "alternator") {
-            if(source.getNode("voltage") == nil) {
-                print("! Expected nominal voltage of source '" ~ device.name ~ "'");
+            if(source.getNode("max-voltage") == nil) {
+                print("! Expected 25% RPM voltage of source '" ~ device.name ~ "'");
                 continue;
             }
-            device.max_voltage = source.getNode("voltage").getValue();
+            device.max_voltage = source.getNode("max-voltage").getValue();
+
+            if(source.getNode("min-voltage") == nil) {
+                print("! Expected nominal min-voltage of source '" ~ device.name ~ "'");
+                continue;
+            }
+            device.min_voltage = source.getNode("min-voltage").getValue();
+
             if(source.getNode("rpm-source") == nil) {
                 print("! Expected RPM source property name for alternator source '" ~ device.name ~ "'");
                 continue;
@@ -336,7 +343,7 @@ var init_electrical=func {
 
         }
 
-        device.voltage_lowpass = aircraft.lowpass.new(0.3);
+        device.voltage_lowpass = aircraft.lowpass.new(0.1);
         device.voltage_lowpass.set(0);
 
         props.globals.getNode(device.prop).initNode("switch", 0);
@@ -419,7 +426,7 @@ var init_electrical=func {
         device.powered=false;
         device.voltage=0;
 
-        device.voltage_lowpass = aircraft.lowpass.new(0.3);
+        device.voltage_lowpass = aircraft.lowpass.new(0.1);
         device.voltage_lowpass.set(0);
 
         devices[device.name]=device;
@@ -473,7 +480,7 @@ var init_electrical=func {
         device.powered=false;
         device.voltage=0;
 
-        device.voltage_lowpass = aircraft.lowpass.new(0.3);
+        device.voltage_lowpass = aircraft.lowpass.new(0.1);
         device.voltage_lowpass.set(0);
 
         devices[device.name]=device;

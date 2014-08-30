@@ -25,9 +25,10 @@
     <name>alternator</name>
     <type>alternator</type>
 
-    <voltage type="double">14</voltage>
+    <min-voltage type="double">12</min-voltage>
+    <max-voltage type="double">14</max-voltage>
     <rpm-source>/engines/engine[0]</rpm-source>
-    <min-rpm type="double">300</min-rpm>
+    <min-rpm type="double">600</min-rpm>
     <max-rpm type="double">2400</max-rpm>
     <power type="double">200</power> <!-- 100 watt alternator-->
 
