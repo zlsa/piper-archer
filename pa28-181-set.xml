@@ -122,6 +122,7 @@
   </instrumentation>
 
   <options>
+    <yoke-visible  type="bool" userarchive="y">true</yoke-visible>
     <wheel-fairing type="bool" userarchive="y">true</wheel-fairing>
   </options>
 

@@ -45,6 +45,18 @@
   </effect>
 
   <model>
+    <name>clock</name>
+    <path>Aircraft/pa28-181/Instruments/clock/clock.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.39</y-m>
+      <z-m>0.24</z-m>
+    </offsets>
+  </model>
+
+  <model>
     <name>airspeed</name>
     <path>Aircraft/pa28-181/Instruments/airspeed/airspeed.xml</path>
     <offsets>
@@ -333,7 +345,7 @@
     </specular>
     <dim-factor>
       <property>electrical/outputs/cockpit-lights/brightness</property>
-      <factor>0.05</factor>
+      <factor>0.15</factor>
     </dim-factor>
     <attenuation>
       <c>1.0</c>
@@ -442,6 +454,19 @@
   <!-- yoke -->
 
   <animation>
+    <type>select</type>
+    <condition>
+      <property>options/yoke-visible</property>
+    </condition>
+    <object-name>yoke rod gasket</object-name>
+    <object-name>yoke rod</object-name>
+    <object-name>left yoke</object-name>
+    <object-name>right yoke</object-name>
+    <object-name>left yoke logo</object-name>
+    <object-name>right yoke logo</object-name>
+  </animation>
+
+  <animation>
     <type>translate</type>
     <object-name>yoke rod</object-name>
     <object-name>left yoke</object-name>
@@ -491,6 +516,19 @@
       <y-m>0.23</y-m>
       <z-m>0.06</z-m>
     </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>yoke mount trim</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>options/yoke-visible</property>
+      </binding>
+    </action>
   </animation>
 
   <!-- flaps -->

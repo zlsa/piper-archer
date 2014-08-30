@@ -230,21 +230,6 @@
       </volume>
     </fuel-pump>
 
-    <!-- click -->
-
-    <!-- <click> -->
-    <!--   <name>toggle</name> -->
-    <!--   <mode>in-transit</mode> -->
-    <!--   <path>Sounds/click.wav</path> -->
-    <!--   <condition> -->
-    <!--     <property>sim/current-view/internal</property> -->
-    <!--   </condition> -->
-    <!--   <property>controls/switches/battery</property> -->
-    <!--   <property>controls/switches/alternator</property> -->
-    <!--   <property>controls/switches/fuel-pump</property> -->
-    <!--   <property>controls/switches/landing-light</property> -->
-    <!-- </click> -->
-
   </fx>
   
 </PropertyList>

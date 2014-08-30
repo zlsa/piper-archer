@@ -2,6 +2,8 @@
 #     Main Nasal file
 ###########################
 
+var INIT=false;
+
 var oil_pressure_lowpass=aircraft.lowpass.new(0.5);
 
 var update=func {
@@ -20,12 +22,18 @@ var reinit=func {
 };
 
 var init=func {
-    init_scenario();
+    if(INIT) {
+        init_scenario();
+    } else {
+        INIT=true;
 
-    init_electrical();
+        init_scenario();
 
-    settimer(update, 0);
+        init_electrical();
+
+        settimer(update, 0);
+    }
 };
 
-setlistener("/sim/signals/reinit", reinit);
+setlistener("/sim/signals/reinit", init);
 setlistener("/sim/signals/fdm-initialized", init);
