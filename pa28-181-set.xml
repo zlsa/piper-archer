@@ -185,6 +185,8 @@
     <gear>
       <brake-parking type="double">1</brake-parking>
     </gear>
+    <key type="int">   0    </key>
+    <start type="bool">false</start>
     <fuel-selector type="int">-1</fuel-selector>
     <switches>
       <navigation   type="double"> 0.0   </navigation>
@@ -209,20 +211,58 @@
 
   <!-- Keybindings -->
 
-  <key n="115">
-    <name>s</name>
-    <desc>Fire Starter on Selected Engine(s)</desc>
-    <binding>
-      <command>nasal</command>
-      <script>controls.startEngine(1)</script>
-    </binding>
-    <mod-up>
-      <binding>
-        <command>nasal</command>
-        <script>controls.startEngine(0)</script>
-      </binding>
-    </mod-up>
-  </key>
+  <input>
+    <keyboard>
+      <key n="115">
+        <name>s</name>
+        <desc>Start engines</desc>
+        <binding>
+          <command>nasal</command>
+          <script>engine.start(1)</script>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>nasal</command>
+            <script>engine.start(0)</script>
+          </binding>
+        </mod-up>
+      </key>
+
+      <key n="123">
+        <name>{</name>
+        <desc>Turn key left</desc>
+        <repeat>false</repeat>
+        <binding>
+          <command>nasal</command>
+          <script>engine.key(-1)</script>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>nasal</command>
+            <script>engine.key(0)</script>
+          </binding>
+        </mod-up>
+      </key>
+
+      <key n="125">
+        <name>}</name>
+        <desc>Turn key right</desc>
+        <repeat>false</repeat>
+        <binding>
+          <command>nasal</command>
+          <script>engine.key(1)</script>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>nasal</command>
+            <script>engine.key(0)</script>
+          </binding>
+        </mod-up>
+      </key>
+    </keyboard>
+  </input>
+
+  <!-- Structural limits -->
 
   <limits>
     <vne>154</vne>
@@ -234,14 +274,23 @@
   <nasal>
     <pa28_181>
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
+
       <file>Aircraft/pa28-181/Nasal/fuel.nas</file>
-      <file>Aircraft/pa28-181/Nasal/electrical.nas</file>
+
       <file>Aircraft/pa28-181/Nasal/liveries.nas</file>
       <file>Aircraft/pa28-181/Nasal/lighting.nas</file>
-      <file>Aircraft/pa28-181/Nasal/pa28-181.nas</file>
+      <file>Aircraft/pa28-181/Nasal/electrical.nas</file>
+
       <file>Aircraft/pa28-181/Nasal/scenario.nas</file>
+
+      <file>Aircraft/pa28-181/Nasal/pa28-181.nas</file>
+
       <file>Aircraft/Generic/limits.nas</file>
     </pa28_181>
+    <engine>
+      <file>Aircraft/pa28-181/Nasal/util.nas</file>
+      <file>Aircraft/pa28-181/Nasal/engine.nas</file>
+    </engine>
     <performance>
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <!-- <file>Aircraft/pa28-181/Nasal/performance.nas</file> -->

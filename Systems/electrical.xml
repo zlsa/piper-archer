@@ -58,23 +58,32 @@
   <component>
     <name>panel lights</name>
     <type>needs-power</type>
+
     <power type="double">7</power>
     <min-voltage type="double">8</min-voltage>
     <nominal-voltage type="double">14</nominal-voltage>
+
     <prop type="string">/electrical/outputs/panel-lights</prop>
+
     <switch>/controls/switches/panel-lights</switch>
+
     <input>power bus</input>
   </component>
   
   <component>
     <name>starter</name>
     <type>needs-power</type>
+
     <power type="double">700</power>
     <min-voltage type="double">8</min-voltage>
     <nominal-voltage type="double">12</nominal-voltage>
+
     <prop type="string">/electrical/outputs/starter</prop>
-    <switch>/controls/engines/engine[0]/starter</switch>
+
+    <switch>/controls/start</switch>
+
     <input>power bus</input>
+
   </component>
   
 </PropertyList>

@@ -54,7 +54,7 @@
       <volume>
 	<property>sim/current-view/internal</property>
 	<factor>-0.2</factor>
-	<offset>0.7</offset>
+	<offset>0.9</offset>
       </volume>
       <reference-dist>10.0</reference-dist>
       <max-dist>10000.0</max-dist>
@@ -229,6 +229,21 @@
         <max>0.1</max>
       </volume>
     </fuel-pump>
+
+    <!-- click -->
+
+    <!-- <click> -->
+    <!--   <name>toggle</name> -->
+    <!--   <mode>in-transit</mode> -->
+    <!--   <path>Sounds/click.wav</path> -->
+    <!--   <condition> -->
+    <!--     <property>sim/current-view/internal</property> -->
+    <!--   </condition> -->
+    <!--   <property>controls/switches/battery</property> -->
+    <!--   <property>controls/switches/alternator</property> -->
+    <!--   <property>controls/switches/fuel-pump</property> -->
+    <!--   <property>controls/switches/landing-light</property> -->
+    <!-- </click> -->
 
   </fx>
   

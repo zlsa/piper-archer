@@ -129,6 +129,10 @@ var update_electrical=func {
                 devices[device.inputs[j].getValue()].draw += device.draw;
             }
 
+            if(device.output) {
+                setprop(device.output, device.powered);
+            }
+
             setprop(device.prop, "voltage", device.voltage);
             setprop(device.prop, "powered", device.powered);
             setprop(device.prop, "draw", device.draw);
@@ -365,6 +369,12 @@ var init_electrical=func {
             device.switch=nil;
         } else {
             device.switch=component.getNode("switch").getValue();
+        }
+
+        if(component.getNode("output") == nil) {
+            device.output=nil;
+        } else {
+            device.output=component.getNode("output").getValue();
         }
 
         if(component.getNode("type") == nil) {
