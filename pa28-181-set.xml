@@ -3,7 +3,7 @@
 <PropertyList>
 
   <sim>
-    <description>Piper PA-28-181 Archer TX</description>
+    <description>Piper PA-28-181</description>
     <author>Jon Ross</author>
 
     <status>beta</status>
@@ -139,7 +139,7 @@
   <flight-recorder>
     <replay-config type="int">0</replay-config>
     <config n="0" include="/Aircraft/Generic/flightrecorder/generic-piston-propeller-1.xml">
-      <name type="string">Piper PA28-181 Archer TX Flight Recorder</name>
+      <name type="string">Piper PA28-181 Flight Recorder</name>
         <signal>
           <type>float</type>
           <property type="string">/gear/gear[0]/compression-m</property>
@@ -185,7 +185,7 @@
     <gear>
       <brake-parking type="double">1</brake-parking>
     </gear>
-    <fuel-selector type="int">0</fuel-selector>
+    <fuel-selector type="int">-1</fuel-selector>
     <switches>
       <navigation   type="double"> 0.0   </navigation>
       <battery      type="bool">   false </battery>
@@ -207,6 +207,23 @@
     </engine>
   </engines>
 
+  <!-- Keybindings -->
+
+  <key n="115">
+    <name>s</name>
+    <desc>Fire Starter on Selected Engine(s)</desc>
+    <binding>
+      <command>nasal</command>
+      <script>controls.startEngine(1)</script>
+    </binding>
+    <mod-up>
+      <binding>
+        <command>nasal</command>
+        <script>controls.startEngine(0)</script>
+      </binding>
+    </mod-up>
+  </key>
+
   <limits>
     <vne>154</vne>
     
@@ -217,21 +234,14 @@
   <nasal>
     <pa28_181>
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
-      <file>Aircraft/Generic/limits.nas</file>
-      <file>Aircraft/pa28-181/Nasal/liveries.nas</file>
-    </pa28_181>
-    <fuel>
-      <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <file>Aircraft/pa28-181/Nasal/fuel.nas</file>
-    </fuel>
-    <electrical>
-      <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <file>Aircraft/pa28-181/Nasal/electrical.nas</file>
-    </electrical>
-    <lighting>
-      <file>Aircraft/pa28-181/Nasal/util.nas</file>
+      <file>Aircraft/pa28-181/Nasal/liveries.nas</file>
       <file>Aircraft/pa28-181/Nasal/lighting.nas</file>
-    </lighting>
+      <file>Aircraft/pa28-181/Nasal/pa28-181.nas</file>
+      <file>Aircraft/pa28-181/Nasal/scenario.nas</file>
+      <file>Aircraft/Generic/limits.nas</file>
+    </pa28_181>
     <performance>
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <!-- <file>Aircraft/pa28-181/Nasal/performance.nas</file> -->

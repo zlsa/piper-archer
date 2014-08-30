@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <!-- Export X/Y -->
+  <!-- Export X/Y with Mirror col. as Ambient -->
   <path>Models/pa28-181.ac</path>
 
   <!-- REMBRANDT -->
@@ -29,6 +29,11 @@
     <inherits-from>Aircraft/pa28-181/Models/Effects/brown-plastic</inherits-from>
     <object-name>dashboard</object-name>
     <object-name>throttle quadrant</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/pa28-181/Models/Effects/carpet</inherits-from>
+    <object-name>floor</object-name>
   </effect>
 
   <model>
@@ -254,6 +259,7 @@
       </not>
     </condition>
     <object-name>dashboard</object-name>
+    <object-name>cockpit registration</object-name>
     <object-name>glareshield</object-name>
     <object-name>yoke mount trim</object-name>
     <object-name>engine gauge trim</object-name>
@@ -373,7 +379,11 @@
     <shader>chrome</shader>
     <texture>Aircraft/pa28-181/Models/Effects/glass.png</texture>
     <object-name>windshield</object-name>
-    <object-name>side windows</object-name>
+    <object-name>window 1</object-name>
+    <object-name>window 3</object-name>
+    <object-name>window 4</object-name>
+    <object-name>window 5</object-name>
+    <object-name>window 6</object-name>
     <object-name>door window</object-name>
   </animation>
 
@@ -387,7 +397,11 @@
       </not>
     </condition>
     <object-name>windshield</object-name>
-    <object-name>side windows</object-name>
+    <object-name>window 1</object-name>
+    <object-name>window 3</object-name>
+    <object-name>window 4</object-name>
+    <object-name>window 5</object-name>
+    <object-name>window 6</object-name>
     <object-name>door window</object-name>
   </animation>
 

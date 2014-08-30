@@ -1,4 +1,4 @@
-# Piper PA-28-181 Archer TX
+#     Piper PA-28-181
 #     Fuel handling
 ###########################
 
@@ -6,7 +6,7 @@ var PRESSURE=0;
 
 var fuel_pressure=aircraft.lowpass.new(2.0);
 
-var update=func {
+var update_fuel=func {
   var pressure  = 0;
 
   var selected  = getprop("/controls/fuel-selector");
@@ -38,17 +38,6 @@ var update=func {
 
   fuel_pressure.filter(pressure);
   setprop("/engines/engine[0]/fuel-pressure_psi", fuel_pressure.get());
-  settimer(update, 0);
 
 };
 
-var reinit=func {
-
-};
-
-var init=func {
-  update();
-};
-
-setlistener("/sim/signals/reinit",reinit);
-setlistener("/sim/signals/fdm-initialized",init);

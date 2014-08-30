@@ -1,4 +1,4 @@
-# Piper PA-28-181 Archer TX
+#     Piper PA-28-181
 #    Electrical system
 ###########################
 
@@ -10,7 +10,7 @@ var source_props=props.globals.getNode(config_path).getChildren("source");
 var component_props=props.globals.getNode(config_path).getChildren("component");
 var switch_props=props.globals.getNode(config_path).getChildren("switch");
 
-var update_elec=func {
+var update_electrical=func {
 
     var delta=1/30;
     
@@ -207,10 +207,9 @@ var update_elec=func {
         }
     }
 
-    settimer(update_elec, 0);
 };
 
-var init_elec=func {
+var init_electrical=func {
 
     for(var i=0;i<size(source_props);i+=1) {
         var source=source_props[i];
@@ -453,7 +452,6 @@ var init_elec=func {
 
     print("Electrical system initialized");
 
-    settimer(update_elec, 0);
+    settimer(update_electrical, 0);
 };
 
-init_elec();

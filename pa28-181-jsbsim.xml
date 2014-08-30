@@ -596,6 +596,7 @@
          <property>metrics/Sw-sqft</property>
          <property>metrics/cbarw-ft</property>
          <property>fcs/elevator-pos-rad</property>
+         <value>-0.8</value>
          <table>
            <independentVar lookup="row">aero/alpha-deg</independentVar>
            <tableData>
