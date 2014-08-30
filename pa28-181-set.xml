@@ -9,10 +9,10 @@
     <status>beta</status>
 
     <rating>
-      <FDM type="int">0</FDM>
-      <systems type="int">0</systems>
-      <cockpit type="int">0</cockpit>
-      <model type="int">0</model>
+      <FDM type="int">1</FDM>
+      <systems type="int">2</systems>
+      <cockpit type="int">4</cockpit>
+      <model type="int">1</model>
     </rating>
 
     <startup>
@@ -54,7 +54,7 @@
 	<y-offset-m> 0.48</y-offset-m>
 	<z-offset-m>-1.4</z-offset-m>
 	<default-field-of-view-deg type="double">81</default-field-of-view-deg>
-	<pitch-offset-deg>-5</pitch-offset-deg>
+	<pitch-offset-deg>-12</pitch-offset-deg>
       </config>
     </view>
 
@@ -70,7 +70,7 @@
         <heading-offset-deg type="double">0</heading-offset-deg>
         <default-heading-offset-deg>0</default-heading-offset-deg>
 	<default-field-of-view-deg type="double">81</default-field-of-view-deg>
-	<pitch-offset-deg>-5</pitch-offset-deg>
+	<pitch-offset-deg>-12</pitch-offset-deg>
         <limits>
           <enabled type="bool">true</enabled>
         </limits>
