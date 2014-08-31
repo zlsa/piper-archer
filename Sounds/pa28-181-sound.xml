@@ -9,6 +9,11 @@
       <mode>looped</mode>
       <path>Sounds/wasp.wav</path>
       <property>engines/engine[0]/running</property>
+      <position>
+        <x>-3.0</x>
+        <y> 0.0</y>
+        <z> 0.0</z>
+      </position>
       <pitch>
 	<property>engines/engine[0]/rpm</property>
 	<factor>0.0004</factor>
@@ -30,9 +35,9 @@
       <path>Sounds/coughing.wav</path>
       <property>engines/engine/running</property>
       <position>
-        <x>-1.0</x>
-        <y>0.0</y>
-        <z>0.0</z>
+        <x>-3.0</x>
+        <y> 0.0</y>
+        <z> 0.0</z>
       </position>
       <volume>
         <offset>0.3</offset>
@@ -43,6 +48,11 @@
       <name>cranking</name>
       <mode>looped</mode>
       <path>Sounds/cranking.wav</path>
+      <position>
+        <x>-3.0</x>
+        <y> 0.0</y>
+        <z> 0.0</z>
+      </position>
       <condition>
         <and>
           <property>engines/engine[0]/cranking</property>
@@ -64,6 +74,11 @@
       <name>propeller</name>
       <mode>looped</mode>
       <path>Sounds/wasp.wav</path>
+      <position>
+        <x>-3.0</x>
+        <y> 0.0</y>
+        <z> 0.0</z>
+      </position>
       <condition>
         <greater-than>
           <property>engines/engine/rpm</property>
@@ -88,10 +103,9 @@
       <name>wind</name>
       <mode>looped</mode>
       <path>Sounds/wind.wav</path>
-      <property>sim/current-view/internal</property>
       <volume>
 	<property>velocities/airspeed-kt</property>
-	<factor>0.001</factor>
+	<factor>0.0005</factor>
 	<min>0.01</min>
 	<max>0.4</max>
       </volume>
