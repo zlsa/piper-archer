@@ -2,6 +2,8 @@
 
 <PropertyList>
 
+  <!-- BATTERY -->
+
   <source>
     <name>battery</name>
     <type>battery</type>
@@ -21,14 +23,16 @@
     <output>primary bus</output>
   </source>
 
+  <!-- ALTERNATOR -->
+
   <source>
     <name>alternator</name>
     <type>alternator</type>
 
-    <min-voltage type="double">12</min-voltage>
-    <max-voltage type="double">14</max-voltage>
+    <min-voltage type="double">13</min-voltage>
+    <max-voltage type="double">15</max-voltage>
     <rpm-source>/engines/engine[0]</rpm-source>
-    <min-rpm type="double">600</min-rpm>
+    <min-rpm type="double">450</min-rpm>
     <max-rpm type="double">2400</max-rpm>
     <power type="double">200</power>
 
@@ -38,6 +42,8 @@
 
     <output>battery</output>
   </source>
+
+  <!-- MAIN POWER BUS -->
   
   <switch>
     <name>power bus</name>
@@ -46,17 +52,10 @@
     <input>battery</input>
     <input>alternator</input>
   </switch>
-  
-  <component>
-    <name>fuel pump</name>
-    <type>needs-power</type>
-    <power type="double">5</power>
-    <min-voltage type="double">8</min-voltage>
-    <nominal-voltage type="double">12</nominal-voltage>
-    <prop type="string">/electrical/outputs/fuel-pump</prop>
-    <switch>/controls/switches/fuel-pump</switch>
-    <input>power bus</input>
-  </component>
+
+  <!-- LIGHTING -->
+
+  <!-- panel -->
   
   <component>
     <name>panel lights</name>
@@ -73,6 +72,8 @@
     <input>power bus</input>
   </component>
   
+  <!-- landing -->
+  
   <component>
     <name>landing lights</name>
     <type>needs-power</type>
@@ -87,6 +88,25 @@
 
     <input>power bus</input>
   </component>
+  
+  <!-- navigation -->
+  
+  <component>
+    <name>navigation lights</name>
+    <type>needs-power</type>
+    
+    <power type="double">10</power>
+    <min-voltage type="double">8</min-voltage>
+    <nominal-voltage type="double">12</nominal-voltage>
+
+    <prop type="string">/electrical/outputs/navigation-lights</prop>
+
+    <switch>/controls/switches/navigation-lights</switch>
+
+    <input>power bus</input>
+  </component>
+
+  <!-- STARTER -->
   
   <component>
     <name>starter</name>

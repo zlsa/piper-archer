@@ -11,16 +11,19 @@
         <property>/sim/rendering/rembrandt/enabled</property>
       </not>
     </condition>
-    <object-name>nav light brightness</object-name>
+    <object-name>navigation light brightness</object-name>
     <object-name>battery</object-name>
     <object-name>alternator</object-name>
     <object-name>fuel pump</object-name>
     <object-name>landing lights</object-name>
+    <object-name>beacon</object-name>
+    <object-name>strobe</object-name>
+    <object-name>pitot heat</object-name>
     <object-name>panel light brightness</object-name>
     <emission>
-      <red>0.03</red>
-      <green>0.02</green>
-      <blue>0.02</blue>
+      <red>0.05</red>
+      <green>0.04</green>
+      <blue>0.03</blue>
       <factor-prop>electrical/outputs/cockpit-lights/brightness</factor-prop>
     </emission>
   </animation>
@@ -39,6 +42,57 @@
       <blue>0.01</blue>
       <factor-prop>electrical/outputs/cockpit-lights/brightness</factor-prop>
     </emission>
+  </animation>
+
+  <!-- NAV LIGHTS -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>navigation light brightness</object-name>
+    <property>controls/switches/navigation-lights</property>
+    <interpolation>
+      <entry>
+	<ind>  0.0</ind>
+	<dep>-25.0</dep>
+      </entry>
+      <entry>
+	<ind>  1.0</ind>
+	<dep> 25.0</dep>
+      </entry>
+    </interpolation>
+    <drag-direction>vertical</drag-direction>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+    <center>
+      <x-m> 0.0  </x-m>
+      <y-m> 0.0  </y-m>
+      <z-m>-0.01 </z-m>
+    </center>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+        <property>controls/switches/navigation-lights</property>
+	<factor>0.05</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>throttle</tooltip-id>
+	<label>Navigation light brightness: %d%%</label>
+	<mapping>percent</mapping>
+        <property>controls/switches/navigation-lights</property>
+      </binding>
+    </hovered>
+
   </animation>
 
   <!-- BATTERY -->
@@ -205,6 +259,88 @@
     </action>
   </animation>
 
+  <!-- BEACON -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>beacon</object-name>
+    <property>controls/switches/beacon</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0</ind>
+        <dep>-15.0</dep>
+      </entry>
+      <entry>
+        <ind>  1.0</ind>
+        <dep> 15.0</dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+    <center>
+      <x-m> 0.0  </x-m>
+      <y-m> 0.0  </y-m>
+      <z-m>-0.002</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>beacon</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/beacon</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- STROBE -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>strobe</object-name>
+    <property>controls/switches/strobe</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0</ind>
+        <dep>-15.0</dep>
+      </entry>
+      <entry>
+        <ind>  1.0</ind>
+        <dep> 15.0</dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+    <center>
+      <x-m> 0.0  </x-m>
+      <y-m> 0.0  </y-m>
+      <z-m>-0.002</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>strobe</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/strobe</property>
+      </binding>
+    </action>
+  </animation>
+
   <!-- PANEL LIGHTING -->
 
   <animation>
@@ -239,7 +375,7 @@
         <property>controls/switches/panel-lights</property>
 	<factor>0.05</factor>
 	<min>0.0</min>
-	<max>1.0</max>                
+	<max>1.0</max>
 	<wrap>false</wrap>
       </binding>
     </action>

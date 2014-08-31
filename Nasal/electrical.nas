@@ -39,6 +39,8 @@ var update_electrical=func {
 
                 voltage = crange(0, power, device.power/4, device.min_voltage, device.max_voltage);
 
+                if(power < 0.01) voltage=0;
+
                 setprop(device.prop, "power", power);
             } else if(type == "battery") {
 

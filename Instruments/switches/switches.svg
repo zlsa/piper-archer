@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8"
-     inkscape:cx="454.64823"
-     inkscape:cy="114.45418"
+     inkscape:zoom="2"
+     inkscape:cx="158.58689"
+     inkscape:cy="39.414805"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -92,7 +92,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -425,7 +425,7 @@
          y="1016.3622"
          style="font-size:12px;font-weight:bold;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1">PITOT</tspan></text>
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:none"
        id="rect3316"
        width="36"
        height="128"
@@ -552,7 +552,7 @@
        sodipodi:cy="20"
        sodipodi:rx="12"
        sodipodi:ry="12"
-       d="m 392,20 a 12,12 0 1 1 -24,0 12,12 0 1 1 24,0 z"
+       d="m 392,20 c 0,6.627417 -5.37258,12 -12,12 -6.62742,0 -12,-5.372583 -12,-12 0,-6.627417 5.37258,-12 12,-12 6.62742,0 12,5.372583 12,12 z"
        transform="matrix(0.83333333,0,0,0.83333333,93.333335,921.69551)" />
   </g>
 </svg>

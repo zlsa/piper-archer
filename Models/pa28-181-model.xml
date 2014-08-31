@@ -248,9 +248,9 @@
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
-      <x-m>-1.961</x-m>
-      <y-m> 0.094</y-m>
-      <z-m> 0.05</z-m>
+      <x-m>-1.9610</x-m>
+      <y-m> 0.1000</y-m>
+      <z-m> 0.0505</z-m>
     </offsets>
   </model>
 
@@ -307,9 +307,9 @@
     <!-- <object-name>right yoke</object-name> -->
     <!-- <object-name>throttle lever</object-name> -->
     <emission>
-      <red>0.03</red>
-      <green>0.02</green>
-      <blue>0.02</blue>
+      <red>0.3</red>
+      <green>0.2</green>
+      <blue>0.2</blue>
       <factor-prop>electrical/outputs/cockpit-lights/brightness</factor-prop>
     </emission>
   </animation>
@@ -1236,6 +1236,81 @@
         </greater-than>
       </and>
     </condition>
+  </animation>
+
+  <!-- Navigation lights -->
+
+  <animation>
+    <type>material</type>
+    <object-name>left navigation light source</object-name>
+    <emission>
+      <red>1</red>
+      <green>0.0</green>
+      <blue>0.0</blue>
+      <factor-prop>electrical/outputs/navigation-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>right navigation light source</object-name>
+    <emission>
+      <red>0.0</red>
+      <green>1.0</green>
+      <blue>0.0</blue>
+      <factor-prop>electrical/outputs/navigation-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>blend</type>
+    <object-name>left navigation light flare</object-name>
+    <object-name>right navigation light flare</object-name>
+    <property>electrical/outputs/navigation-lights/brightness</property>
+    <offset>1</offset>
+    <factor>-0.8</factor>
+  </animation>
+
+  <animation>
+    <type>flash</type>
+    <object-name>left navigation light flare</object-name>
+    <offset>0.0</offset>
+    <factor>0.8</factor>
+    <power>1.5</power>
+    <two-sides type="bool">false</two-sides>
+    <min>0.0</min>
+    <max>1.0</max>
+    <center>
+      <x-m>-0.83</x-m>
+      <y-m>-5.65</y-m>
+      <z-m> 0.21</z-m>
+    </center>
+    <axis>
+      <x> 0.0</x>
+      <y>-1.0</y>
+      <z> 0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>flash</type>
+    <object-name>right navigation light flare</object-name>
+    <offset>0.0</offset>
+    <factor>0.8</factor>
+    <power>1.5</power>
+    <two-sides type="bool">false</two-sides>
+    <min>0.0</min>
+    <max>1.0</max>
+    <center>
+      <x-m>-0.83</x-m>
+      <y-m> 5.65</y-m>
+      <z-m> 0.21</z-m>
+    </center>
+    <axis>
+      <x> 0.0</x>
+      <y> 1.0</y>
+      <z> 0.0</z>
+    </axis>
   </animation>
 
 </PropertyList>
