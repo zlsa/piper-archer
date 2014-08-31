@@ -123,7 +123,6 @@
     <input>power bus</input>
   </component>
   
-
   <!-- STARTER -->
   
   <component>
@@ -137,6 +136,22 @@
     <prop type="string">/electrical/outputs/starter</prop>
 
     <switch>/controls/start</switch>
+
+    <input>power bus</input>
+
+  </component>
+  
+  <!-- STALL HORN -->
+  
+  <component>
+    <name>stall horn</name>
+    <type>needs-power</type>
+
+    <power type="double">0.1</power>
+    <min-voltage type="double">10</min-voltage>
+    <nominal-voltage type="double">14</nominal-voltage>
+
+    <prop type="string">/electrical/outputs/stall-horn</prop>
 
     <input>power bus</input>
 

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Instruments/fuel-selector/fuel-selector.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>mount</object-name>
+    <object-name>knob</object-name>
+    <emission>
+      <red>0.2</red>
+      <green>0.15</green>
+      <blue>0.05</blue>
+      <factor-prop>electrical/outputs/cockpit-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>knob</object-name>
+    <property>controls/fuel-selector</property>
+    <factor>-90</factor>
+    <drag-direction>horizontal</drag-direction>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <center>
+      <x-m>0.0</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+    </center>
+
+    <action>
+      <drag-scale>90</drag-scale>
+      <binding>
+	<command>property-adjust</command>
+	<property>controls/fuel-selector</property>
+	<factor>1</factor>
+	<min>-1.0</min>
+	<max> 1.0</max>                
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>fuel-selector</tooltip-id>
+	<mapping>nasal</mapping>
+	<property>controls/fuel-selector</property>
+        <label>%s fuel tank selected</label>
+        <script>
+          if(arg[0] == -1)
+            return "No";
+          var modes = ["Left", "Right"];
+          return modes[arg[0]];
+        </script>
+      </binding>
+    </hovered>
+
+  </animation>
+
+</PropertyList>

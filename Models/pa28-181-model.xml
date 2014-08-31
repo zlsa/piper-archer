@@ -45,6 +45,19 @@
   </effect>
 
   <model>
+    <name>fuel selector</name>
+    <path>Aircraft/pa28-181/Instruments/fuel-selector/fuel-selector.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <heading-deg>90</heading-deg>
+      <x-m>-1.710</x-m>
+      <y-m>-0.485</y-m>
+      <z-m>-0.080</z-m>
+    </offsets>
+  </model>
+
+  <model>
     <name>clock</name>
     <path>Aircraft/pa28-181/Instruments/clock/clock.xml</path>
     <offsets>
@@ -1301,7 +1314,7 @@
     <object-name>right navigation light flare</object-name>
     <property>electrical/outputs/navigation-lights/brightness</property>
     <offset>1</offset>
-    <factor>-0.8</factor>
+    <factor>-1.0</factor>
   </animation>
 
   <animation>
@@ -1354,7 +1367,7 @@
     <object-name>right strobe light flare</object-name>
     <property>electrical/outputs/strobe/light/state</property>
     <offset>1</offset>
-    <factor>-0.8</factor>
+    <factor>-1.0</factor>
   </animation>
   
   <!-- left -->
@@ -1451,7 +1464,7 @@
     <object-name>tail beacon light flare</object-name>
     <property>electrical/outputs/beacon/brightness</property>
     <offset>1</offset>
-    <factor>-0.7</factor>
+    <factor>-1.0</factor>
   </animation>
 
   <animation>

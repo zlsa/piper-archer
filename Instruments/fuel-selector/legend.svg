@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="128"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="legend.svg"
+   inkscape:export-filename="/home/forest/projects/fgfs/pa28-181/Instruments/fuel-selector/legend.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="129.74086"
+     inkscape:cy="72.311945"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="727"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="128,32"
+       id="guide3780" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="200,64"
+       id="guide3782" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="64,192"
+       id="guide3784" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-924.36218)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect3006"
+       width="256"
+       height="112"
+       x="0"
+       y="924.36218" />
+    <text
+       xml:space="preserve"
+       style="font-size:40.0003891px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="31.999994"
+       y="950.36218"
+       id="text3776"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3778"
+         x="31.999994"
+         y="950.36218"
+         style="font-size:20px;font-weight:bold;text-align:center;text-anchor:middle">FUEL</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3786"
+       y="976.36218"
+       x="32"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:26px;font-weight:bold;text-align:center;text-anchor:middle"
+         y="976.36218"
+         x="32"
+         id="tspan3788"
+         sodipodi:role="line">OFF</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3790"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(0,924.36217)"><flowRegion
+         id="flowRegion3792"><rect
+           id="rect3794"
+           width="111.5"
+           height="67.25"
+           x="-42"
+           y="-11.25" /></flowRegion><flowPara
+         id="flowPara3796"> </flowPara></flowRoot>    <text
+       sodipodi:linespacing="125%"
+       id="text3798"
+       y="962.36218"
+       x="96"
+       style="font-size:40.0003891px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:14px;font-weight:bold;text-align:center;text-anchor:middle"
+         y="962.36218"
+         x="96"
+         id="tspan3800"
+         sodipodi:role="line">TANK</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 64,964.36217 64,0 0,18 c 0,3.324 -2.676,6 -6,6 l -52,0 c -3.324,0 -6,-2.676 -6,-6 z"
+       id="rect3806"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccsscc" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#080808;fill-opacity:1;stroke:none;font-family:Sans"
+       x="84"
+       y="984.36218"
+       id="text3808"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3810"
+         x="84"
+         y="984.36218"
+         style="font-size:20px;font-weight:bold;text-align:center;text-anchor:middle;fill:#080808;fill-opacity:1">24</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3812"
+       y="981.36218"
+       x="112"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#080808;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:12px;font-weight:normal;text-align:center;text-anchor:middle;fill:#080808;fill-opacity:1"
+         y="981.36218"
+         x="112"
+         id="tspan3814"
+         sodipodi:role="line">GAL</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 93,928.36217 -6,0 0,20 18,0 0,-6 -12,0"
+       id="path3821"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40.0003891px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="160"
+       y="962.36218"
+       id="text3823"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3825"
+         x="160"
+         y="962.36218"
+         style="font-size:14px;font-weight:bold;text-align:center;text-anchor:middle">TANK</tspan></text>
+    <path
+       sodipodi:nodetypes="cccsscc"
+       inkscape:connector-curvature="0"
+       id="path3827"
+       d="m 128,964.36217 64,0 0,18 c 0,3.324 -2.676,6 -6,6 l -52,0 c -3.324,0 -6,-2.676 -6,-6 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3829"
+       y="984.36218"
+       x="148"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#080808;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:20px;font-weight:bold;text-align:center;text-anchor:middle;fill:#080808;fill-opacity:1"
+         y="984.36218"
+         x="148"
+         id="tspan3831"
+         sodipodi:role="line">24</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#080808;fill-opacity:1;stroke:none;font-family:Sans"
+       x="176"
+       y="981.36218"
+       id="text3833"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3835"
+         x="176"
+         y="981.36218"
+         style="font-size:12px;font-weight:normal;text-align:center;text-anchor:middle;fill:#080808;fill-opacity:1">GAL</tspan></text>
+    <path
+       sodipodi:nodetypes="cccccccccscc"
+       inkscape:connector-curvature="0"
+       id="path3837"
+       d="m 156,948.36217 -6,0 0,-20 12,0 c 10,0 10,13 4,14 l 4,6 -8,0 -5,-7 0,-4 5,0 c 3.16228,0 2,-3 0,-3 l -6,0"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 24,1016.3622 12,-12 180,0 12,12 -12,12 -180,0 z"
+       id="path3839"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3845"
+       y="1023.3622"
+       x="72"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#080808;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:18px;font-weight:bold;text-align:center;text-anchor:middle;fill:#080808;fill-opacity:1"
+         y="1023.3622"
+         x="72"
+         id="tspan3847"
+         sodipodi:role="line">F</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#080808;fill-opacity:1;stroke:none;font-family:Sans"
+       x="108.07031"
+       y="1023.3622"
+       id="text3849"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3851"
+         x="108.07031"
+         y="1023.3622"
+         style="font-size:18px;font-weight:bold;text-align:center;text-anchor:middle;fill:#080808;fill-opacity:1">U</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3853"
+       y="1023.3622"
+       x="143.90332"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#080808;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:18px;font-weight:bold;text-align:center;text-anchor:middle;fill:#080808;fill-opacity:1"
+         y="1023.3622"
+         x="143.90332"
+         id="tspan3855"
+         sodipodi:role="line">E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#080808;fill-opacity:1;stroke:none;font-family:Sans"
+       x="179.48145"
+       y="1023.3622"
+       id="text3857"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3859"
+         x="179.48145"
+         y="1023.3622"
+         style="font-size:18px;font-weight:bold;text-align:center;text-anchor:middle;fill:#080808;fill-opacity:1">L</tspan></text>
+  </g>
+</svg>

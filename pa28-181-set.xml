@@ -51,8 +51,8 @@
       <internal>true</internal>
       <config>
 	<x-offset-m>-0.23</x-offset-m>
-	<y-offset-m> 0.48</y-offset-m>
-	<z-offset-m>-1.4</z-offset-m>
+	<y-offset-m> 0.52</y-offset-m>
+	<z-offset-m>-1.28</z-offset-m>
 	<default-field-of-view-deg type="double">81</default-field-of-view-deg>
 	<pitch-offset-deg>-12</pitch-offset-deg>
       </config>
@@ -64,8 +64,8 @@
       <type>lookfrom</type>
       <config>
 	<x-offset-m> 0.23</x-offset-m>
-	<y-offset-m> 0.48</y-offset-m>
-	<z-offset-m>-1.4</z-offset-m>
+	<y-offset-m> 0.52</y-offset-m>
+	<z-offset-m>-1.28</z-offset-m>
         <from-model type="bool">true</from-model>
         <heading-offset-deg type="double">0</heading-offset-deg>
         <default-heading-offset-deg>0</default-heading-offset-deg>
@@ -111,6 +111,7 @@
 
     <systems>
       <electrical include="Systems/electrical.xml"></electrical>
+<!--      <failures include="Systems/failures.xml"></failures>-->
     </systems>
 
   </sim>
@@ -163,14 +164,14 @@
     <fuel>
       <tank n="0">
 	<name>Left</name>
-	<capacity-gal_us type="double">28</capacity-gal_us>
-	<level-gal_us type="double" archive="y">28</level-gal_us>
+	<capacity-gal_us type="double">25</capacity-gal_us>
+	<level-gal_us type="double" archive="y">25</level-gal_us>
 	<selected type="bool">true</selected>
       </tank>
       <tank n="1">
 	<name>Right</name>
-	<capacity-gal_us type="double">28</capacity-gal_us>
-	<level-gal_us type="double" archive="y">28</level-gal_us>
+	<capacity-gal_us type="double">25</capacity-gal_us>
+	<level-gal_us type="double" archive="y">25</level-gal_us>
 	<selected type="bool">false</selected>
       </tank>
       <tank n="2">
@@ -297,6 +298,10 @@
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <!-- <file>Aircraft/pa28-181/Nasal/performance.nas</file> -->
     </performance>
+<!--    <failures>
+      <file>Aircraft/pa28-181/Nasal/util.nas</file>
+      <file>Aircraft/pa28-181/Nasal/failures.nas</file>
+    </failures>-->
   </nasal>
 
 </PropertyList>

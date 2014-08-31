@@ -208,6 +208,7 @@
       <path>Sounds/stall.wav</path>
       <condition>
         <and>
+          <property>electrical/outputs/stall-horn/powered</property>
           <property>sim/current-view/internal</property>
           <greater-than>
 	    <property>velocities/airspeed-kt</property>
@@ -239,7 +240,7 @@
       <property>electrical/outputs/fuel-pump/powered</property>
       <volume>
         <property>engines/engine[0]/fuel-pressure_psi</property>
-        <factor>0.005</factor>
+        <factor>0.02</factor>
         <max>0.1</max>
       </volume>
     </fuel-pump>
