@@ -30,7 +30,7 @@
     <rpm-source>/engines/engine[0]</rpm-source>
     <min-rpm type="double">600</min-rpm>
     <max-rpm type="double">2400</max-rpm>
-    <power type="double">200</power> <!-- 100 watt alternator-->
+    <power type="double">200</power>
 
     <switch>/controls/switches/alternator</switch>
 
@@ -69,6 +69,21 @@
     <prop type="string">/electrical/outputs/panel-lights</prop>
 
     <switch>/controls/switches/panel-lights</switch>
+
+    <input>power bus</input>
+  </component>
+  
+  <component>
+    <name>landing lights</name>
+    <type>needs-power</type>
+
+    <power type="double">50</power>
+    <min-voltage type="double">8</min-voltage>
+    <nominal-voltage type="double">14</nominal-voltage>
+
+    <prop type="string">/electrical/outputs/landing-lights</prop>
+
+    <switch>/controls/switches/landing-lights</switch>
 
     <input>power bus</input>
   </component>

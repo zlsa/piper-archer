@@ -164,6 +164,47 @@
     </action>
   </animation>
 
+  <!-- LANDING LIGHTS -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>landing lights</object-name>
+    <property>controls/switches/landing-lights</property>
+    <interpolation>
+      <entry>
+        <ind> 0.0</ind>
+        <dep>-15.0</dep>
+      </entry>
+      <entry>
+        <ind>  1.0</ind>
+        <dep> 15.0</dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+    <center>
+      <x-m> 0.0  </x-m>
+      <y-m> 0.0  </y-m>
+      <z-m>-0.002</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>landing lights</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/landing-lights</property>
+      </binding>
+    </action>
+  </animation>
+
   <!-- PANEL LIGHTING -->
 
   <animation>

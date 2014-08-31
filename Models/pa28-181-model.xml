@@ -314,6 +314,8 @@
     </emission>
   </animation>
 
+  <!-- Rembrandt -->
+
   <animation>
     <type>light</type>
     <light-type>point</light-type>
@@ -345,32 +347,25 @@
     </specular>
     <dim-factor>
       <property>electrical/outputs/cockpit-lights/brightness</property>
-      <factor>0.15</factor>
+      <factor>1.0</factor>
     </dim-factor>
     <attenuation>
       <c>1.0</c>
-      <l>1.0</l>
-      <q>1.0</q>
+      <l>3.0</l>
+      <q>0.5</q>
     </attenuation>
     <near-m>0.05</near-m>
-    <far-m> 1.10</far-m>
+    <far-m> 1.30</far-m>
   </animation>
 
   <animation>
     <type>select</type>
     <object-name>cockpit light</object-name>
     <condition>
-      <and>
-        <property>/sim/rendering/rembrandt/enabled</property>
-        <greater-than>
-          <property>/sim/rendering/shaders/lights</property>
-          <value>2.0</value>
-        </greater-than>
-        <greater-than>
-          <property>electrical/outputs/cockpit-lights/brightness</property>
-          <value>0.05</value>
-        </greater-than>
-      </and>
+      <greater-than>
+        <property>electrical/outputs/cockpit-lights/brightness</property>
+        <value>0.05</value>
+      </greater-than>
     </condition>
   </animation>
 
@@ -415,6 +410,8 @@
     <object-name>window 5</object-name>
     <object-name>window 6</object-name>
     <object-name>door window</object-name>
+    <object-name>left landing light cover</object-name>
+    <object-name>right landing light cover</object-name>
   </animation>
 
   <!-- INTERNAL/EXTERNAL -->
@@ -1109,6 +1106,136 @@
       <y2-m> 2.5458</y2-m>
       <z2-m>-0.2188</z2-m>
     </axis>
+  </animation>
+
+  <!-- REMBRANDT EXTERNAL -->
+
+  <animation>
+    <type>light</type>
+    <light-type>spot</light-type>
+    <name>left landing light</name>
+    <object-name>left landing light volume</object-name>
+    <nopreview />
+    <position>
+      <x>-2.23</x>
+      <y>-5.53</y>
+      <z> 0.20</z>
+    </position>
+    <direction>
+      <x>-0.91</x>
+      <y> 0.00</y>
+      <z>-0.05</z>
+    </direction>
+    <ambient>
+      <r>0.03</r>
+      <g>0.03</g>
+      <b>0.03</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>38.00</r>
+      <g>37.00</g>
+      <b>40.00</b>
+      <a> 1.00</a>
+    </diffuse>
+    <specular>
+      <r>5.00</r>
+      <g>5.00</g>
+      <b>5.00</b>
+      <a>1.00</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/landing-lights/brightness</property>
+      <factor>0.8</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.2</c>
+      <l>0.08</l>
+      <q>0.01</q>
+    </attenuation>
+    <exponent>50.0</exponent>
+    <cutoff>90.0</cutoff>
+    <near-m> 1.0</near-m>
+    <far-m> 110.0</far-m>
+  </animation>
+
+  <animation>
+    <type>light</type>
+    <light-type>spot</light-type>
+    <name>right landing light</name>
+    <object-name>right landing light volume</object-name>
+    <nopreview />
+    <position>
+      <x>-2.23</x>
+      <y> 5.53</y>
+      <z> 0.20</z>
+    </position>
+    <direction>
+      <x>-0.91</x>
+      <y> 0.00</y>
+      <z>-0.05</z>
+    </direction>
+    <ambient>
+      <r>0.03</r>
+      <g>0.03</g>
+      <b>0.03</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>38.00</r>
+      <g>37.00</g>
+      <b>40.00</b>
+      <a> 1.00</a>
+    </diffuse>
+    <specular>
+      <r>5.00</r>
+      <g>5.00</g>
+      <b>5.00</b>
+      <a>1.00</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/landing-lights/brightness</property>
+      <factor>0.8</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.2</c>
+      <l>0.08</l>
+      <q>0.01</q>
+    </attenuation>
+    <exponent>50.0</exponent>
+    <cutoff>90.0</cutoff>
+    <near-m> 1.0</near-m>
+    <far-m> 110.0</far-m>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>left landing light</object-name>
+    <object-name>right landing light</object-name>
+    <condition>
+      <greater-than>
+        <property>electrical/outputs/landing-lights/brightness</property>
+        <value>0.05</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <!-- Final rembrandt -->
+
+  <animation>
+    <type>select</type>
+    <object-name>cockpit light</object-name>
+    <object-name>left landing light</object-name>
+    <object-name>right landing light</object-name>
+    <condition>
+      <and>
+        <property>/sim/rendering/rembrandt/enabled</property>
+        <greater-than>
+          <property>/sim/rendering/shaders/lights</property>
+          <value>2.0</value>
+        </greater-than>
+      </and>
+    </condition>
   </animation>
 
 </PropertyList>
