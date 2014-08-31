@@ -947,7 +947,7 @@
     <object-name>elevator</object-name>
     <object-name>elevator trim tab</object-name>
     <property>controls/flight/elevator</property>
-    <factor>5</factor>
+    <factor>8</factor>
     <center>
       <x-m> 2.74</x-m>
       <y-m> 0.00</y-m>
@@ -962,27 +962,9 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>elevator</object-name>
     <object-name>elevator trim tab</object-name>
-    <property>controls/flight/elevator-trim</property>
-    <factor>3</factor>
-    <center>
-      <x-m> 3.388</x-m>
-      <y-m> 0.000</y-m>
-      <z-m> 0.110</z-m>
-    </center>
-    <axis>
-      <x>0.0</x>
-      <y>1.0</y>
-      <z>0.0</z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>elevator trim tab</object-name>
-    <property>controls/flight/elevator-trim</property>
-    <factor>-30</factor>
+    <property>controls/flight/elevator</property>
+    <factor>8</factor>
     <center>
       <x-m> 3.388</x-m>
       <y-m> 0.000</y-m>
@@ -1108,7 +1090,58 @@
     </axis>
   </animation>
 
-  <!-- REMBRANDT EXTERNAL -->
+  <!-- LANDING LIGHTS -->
+
+  <animation>
+    <type>blend</type>
+    <object-name>left landing light flare</object-name>
+    <object-name>right landing light flare</object-name>
+    <property>electrical/outputs/landing-lights/brightness</property>
+    <offset>1</offset>
+    <factor>-1.0</factor>
+  </animation>
+
+  <animation>
+    <type>flash</type>
+    <object-name>left landing light flare</object-name>
+    <offset>0.0</offset>
+    <factor>1.0</factor>
+    <power>1.5</power>
+    <two-sides type="bool">false</two-sides>
+    <min>0.0</min>
+    <max>1.0</max>
+    <center>
+      <x-m>-1.36</x-m>
+      <y-m>-5.52</y-m>
+      <z-m> 0.21</z-m>
+    </center>
+    <axis>
+      <x>-0.9</x>
+      <y>-0.1</y>
+      <z>-0.1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>flash</type>
+    <object-name>right landing light flare</object-name>
+    <offset>0.0</offset>
+    <factor>1.0</factor>
+    <power>1.5</power>
+    <two-sides type="bool">false</two-sides>
+    <min>0.0</min>
+    <max>1.0</max>
+    <center>
+      <x-m>-1.36</x-m>
+      <y-m> 5.52</y-m>
+      <z-m> 0.21</z-m>
+    </center>
+    <axis>
+      <x>-0.9</x>
+      <y> 0.1</y>
+      <z>-0.1</z>
+    </axis>
+  </animation>
 
   <animation>
     <type>light</type>
@@ -1275,7 +1308,7 @@
     <type>flash</type>
     <object-name>left navigation light flare</object-name>
     <offset>0.0</offset>
-    <factor>0.8</factor>
+    <factor>1.0</factor>
     <power>1.5</power>
     <two-sides type="bool">false</two-sides>
     <min>0.0</min>
@@ -1296,7 +1329,7 @@
     <type>flash</type>
     <object-name>right navigation light flare</object-name>
     <offset>0.0</offset>
-    <factor>0.8</factor>
+    <factor>1.0</factor>
     <power>1.5</power>
     <two-sides type="bool">false</two-sides>
     <min>0.0</min>
@@ -1311,6 +1344,51 @@
       <y> 1.0</y>
       <z> 0.0</z>
     </axis>
+  </animation>
+
+  <!-- Strobe lights -->
+
+  <animation>
+    <type>blend</type>
+    <object-name>left strobe light flare</object-name>
+    <object-name>right strobe light flare</object-name>
+    <property>electrical/outputs/strobe/light/state</property>
+    <offset>1</offset>
+    <factor>-0.8</factor>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>left strobe light flare</object-name>
+    <offset-m>1</offset-m>
+    <axis>
+      <x-m>-0.79</x-m>
+      <y-m>-5.65</y-m>
+      <z-m> 0.21</z-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>left strobe light flare</object-name>
+    <spherical type="bool">true</spherical>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>right strobe light flare</object-name>
+    <offset-m>1</offset-m>
+    <axis>
+      <x-m>-0.79</x-m>
+      <y-m> 5.65</y-m>
+      <z-m> 0.21</z-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>right strobe light flare</object-name>
+    <spherical type="bool">true</spherical>
   </animation>
 
 </PropertyList>

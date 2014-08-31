@@ -106,6 +106,24 @@
     <input>power bus</input>
   </component>
 
+  <!-- strobe -->
+  
+  <component>
+    <name>strobe</name>
+    <type>needs-power</type>
+
+    <power type="double">40</power>
+    <min-voltage type="double">8</min-voltage>
+    <nominal-voltage type="double">14</nominal-voltage>
+
+    <prop type="string">/electrical/outputs/strobe</prop>
+
+    <switch>/controls/switches/strobe</switch>
+
+    <input>power bus</input>
+  </component>
+  
+
   <!-- STARTER -->
   
   <component>

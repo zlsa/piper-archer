@@ -44,57 +44,6 @@
     </emission>
   </animation>
 
-  <!-- NAV LIGHTS -->
-
-  <animation>
-    <type>knob</type>
-    <object-name>navigation light brightness</object-name>
-    <property>controls/switches/navigation-lights</property>
-    <interpolation>
-      <entry>
-	<ind>  0.0</ind>
-	<dep>-25.0</dep>
-      </entry>
-      <entry>
-	<ind>  1.0</ind>
-	<dep> 25.0</dep>
-      </entry>
-    </interpolation>
-    <drag-direction>vertical</drag-direction>
-    <axis>
-      <x>0.0</x>
-      <y>1.0</y>
-      <z>0.0</z>
-    </axis>
-    <center>
-      <x-m> 0.0  </x-m>
-      <y-m> 0.0  </y-m>
-      <z-m>-0.01 </z-m>
-    </center>
-
-    <action>
-      <binding>
-	<command>property-adjust</command>
-        <property>controls/switches/navigation-lights</property>
-	<factor>0.05</factor>
-	<min>0.0</min>
-	<max>1.0</max>
-	<wrap>false</wrap>
-      </binding>
-    </action>
-
-    <hovered>
-      <binding>
-	<command>set-tooltip</command>
-	<tooltip-id>throttle</tooltip-id>
-	<label>Navigation light brightness: %d%%</label>
-	<mapping>percent</mapping>
-        <property>controls/switches/navigation-lights</property>
-      </binding>
-    </hovered>
-
-  </animation>
-
   <!-- BATTERY -->
 
   <animation>
@@ -259,12 +208,12 @@
     </action>
   </animation>
 
-  <!-- BEACON -->
+  <!-- NAVIGATION LIGHTS -->
 
   <animation>
     <type>rotate</type>
-    <object-name>beacon</object-name>
-    <property>controls/switches/beacon</property>
+    <object-name>navigation lights</object-name>
+    <property>controls/switches/navigation-lights</property>
     <interpolation>
       <entry>
         <ind> 0.0</ind>
@@ -289,13 +238,13 @@
 
   <animation>
     <type>pick</type>
-    <object-name>beacon</object-name>
+    <object-name>navigation lights</object-name>
     <action>
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>controls/switches/beacon</property>
+        <property>controls/switches/navigation-lights</property>
       </binding>
     </action>
   </animation>

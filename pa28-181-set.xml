@@ -190,12 +190,13 @@
     <start type="bool">false</start>
     <fuel-selector type="int">-1</fuel-selector>
     <switches>
-      <navigation-lights type="double"> 0.0   </navigation-lights>
+      <path></path>
+      <taxi-lights       type="bool">   false </taxi-lights>
       <battery           type="bool">   false </battery>
       <alternator        type="bool">   false </alternator>
       <fuel-pump         type="bool">   false </fuel-pump>
       <landing-lights    type="bool">   false </landing-lights>
-      <beacon            type="bool">   false </beacon>
+      <navigation-lights type="bool">   false </navigation-lights>
       <strobe            type="bool">   false </strobe>
       <pitot             type="bool">   false </pitot>
       <panel-lights      type="double"> 0.0   </panel-lights>
