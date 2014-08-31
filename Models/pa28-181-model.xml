@@ -1360,11 +1360,11 @@
   <animation>
     <type>translate</type>
     <object-name>left strobe light flare</object-name>
-    <offset-m>1</offset-m>
+    <offset-m>5.7088</offset-m>
     <axis>
-      <x-m>-0.79</x-m>
-      <y-m>-5.65</y-m>
-      <z-m> 0.21</z-m>
+      <x>-0.79</x>
+      <y>-5.65</y>
+      <z> 0.21</z>
     </axis>
   </animation>
 
@@ -1377,11 +1377,11 @@
   <animation>
     <type>translate</type>
     <object-name>right strobe light flare</object-name>
-    <offset-m>1</offset-m>
+    <offset-m>5.7088</offset-m>
     <axis>
-      <x-m>-0.79</x-m>
-      <y-m> 5.65</y-m>
-      <z-m> 0.21</z-m>
+      <x>-0.79</x>
+      <y> 5.65</y>
+      <z> 0.21</z>
     </axis>
   </animation>
 
