@@ -1264,9 +1264,94 @@
   </animation>
 
   <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>left landing light glow</name>
+    <object-name>left landing light glow volume</object-name>
+    <nopreview />
+    <position>
+      <x>-2.23</x>
+      <y>-5.53</y>
+      <z> 0.40</z>
+    </position>
+    <ambient>
+      <r>0.03</r>
+      <g>0.03</g>
+      <b>0.03</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>30.00</r>
+      <g>30.00</g>
+      <b>30.00</b>
+      <a> 1.00</a>
+    </diffuse>
+    <specular>
+      <r>100.00</r>
+      <g>100.00</g>
+      <b>100.00</b>
+      <a>10.00</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/landing-lights/brightness</property>
+      <factor>1.0</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.00</c>
+      <l>30.00</l>
+      <q>30.00</q>
+    </attenuation>
+    <near-m> 0.05</near-m>
+    <far-m>  8.00</far-m>
+  </animation>
+
+  <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>right landing light glow</name>
+    <object-name>right landing light glow volume</object-name>
+    <nopreview />
+    <position>
+      <x>-2.23</x>
+      <y> 5.53</y>
+      <z> 0.40</z>
+    </position>
+    <ambient>
+      <r>0.03</r>
+      <g>0.03</g>
+      <b>0.03</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>30.00</r>
+      <g>30.00</g>
+      <b>30.00</b>
+      <a> 1.00</a>
+    </diffuse>
+    <specular>
+      <r>100.00</r>
+      <g>100.00</g>
+      <b>100.00</b>
+      <a>10.00</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/landing-lights/brightness</property>
+      <factor>1.0</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.00</c>
+      <l>30.00</l>
+      <q>30.00</q>
+    </attenuation>
+    <near-m> 0.05</near-m>
+    <far-m>  8.00</far-m>
+  </animation>
+
+  <animation>
     <type>select</type>
     <object-name>left landing light</object-name>
     <object-name>right landing light</object-name>
+    <object-name>left landing light glow</object-name>
     <condition>
       <greater-than>
         <property>electrical/outputs/landing-lights/brightness</property>
@@ -1552,7 +1637,7 @@
     </dim-factor>
     <attenuation>
       <c>0.5</c>
-      <l>3.0</l>
+      <l>5.0</l>
       <q>0.8</q>
     </attenuation>
     <near-m> 0.15</near-m>
@@ -1634,7 +1719,7 @@
     </dim-factor>
     <attenuation>
       <c>0.5</c>
-      <l>3.0</l>
+      <l>5.0</l>
       <q>0.8</q>
     </attenuation>
     <near-m> 0.15</near-m>
@@ -1648,8 +1733,8 @@
     <object-name>tail beacon light source</object-name>
     <emission>
       <red>1.0</red>
-      <green>0.0</green>
-      <blue>0.0</blue>
+      <green>0.4</green>
+      <blue>0.4</blue>
       <factor-prop>electrical/outputs/beacon/brightness</factor-prop>
     </emission>
   </animation>
@@ -1759,6 +1844,22 @@
         <property>electrical/outputs/beacon/brightness</property>
         <value>0.05</value>
       </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>left strobe light flare</object-name>
+    <object-name>right strobe light flare</object-name>
+    <object-name>left navigation light flare</object-name>
+    <object-name>right navigation light flare</object-name>
+    <object-name>left landing light flare</object-name>
+    <object-name>right landing light flare</object-name>
+    <object-name>tail beacon light flare</object-name>
+    <condition>
+      <not>
+        <property>/sim/rendering/rembrandt/enabled</property>
+      </not>
     </condition>
   </animation>
 
