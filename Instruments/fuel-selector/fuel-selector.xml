@@ -17,11 +17,10 @@
   </animation>
 
   <animation>
-    <type>knob</type>
+    <type>rotate</type>
     <object-name>knob</object-name>
     <property>controls/fuel-selector</property>
     <factor>-90</factor>
-    <drag-direction>horizontal</drag-direction>
     <axis>
       <x>0</x>
       <y>0</y>
@@ -32,35 +31,46 @@
       <y-m>0.0</y-m>
       <z-m>0.0</z-m>
     </center>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>knob</object-name>
+    <object-name>mount</object-name>
 
     <action>
-      <drag-scale>90</drag-scale>
+      <button>0</button>
+      <repeatable>false</repeatable>
+
       <binding>
-	<command>property-adjust</command>
-	<property>controls/fuel-selector</property>
-	<factor>1</factor>
-	<min>-1.0</min>
-	<max> 1.0</max>                
-	<wrap>false</wrap>
+        <command>property-adjust</command>
+        <property>controls/fuel-selector</property>
+        <step> 1</step>
+        <min> -1</min>
+        <max>  1</max>
+        <wrap>false</wrap>
       </binding>
     </action>
+  </animation>
 
-    <hovered>
+  <animation>
+    <type>pick</type>
+    <object-name>knob</object-name>
+    <object-name>mount</object-name>
+
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+
       <binding>
-	<command>set-tooltip</command>
-	<tooltip-id>fuel-selector</tooltip-id>
-	<mapping>nasal</mapping>
-	<property>controls/fuel-selector</property>
-        <label>%s fuel tank selected</label>
-        <script>
-          if(arg[0] == -1)
-            return "No";
-          var modes = ["Left", "Right"];
-          return modes[arg[0]];
-        </script>
+        <command>property-adjust</command>
+        <property>controls/fuel-selector</property>
+        <step>-1</step>
+        <min> -1</min>
+        <max>  1</max>
+        <wrap>false</wrap>
       </binding>
-    </hovered>
-
+    </action>
   </animation>
 
 </PropertyList>
