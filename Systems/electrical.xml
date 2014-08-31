@@ -33,8 +33,8 @@
     <max-voltage type="double">15</max-voltage>
     <rpm-source>/engines/engine[0]</rpm-source>
     <min-rpm type="double">450</min-rpm>
-    <max-rpm type="double">2400</max-rpm>
-    <power type="double">200</power>
+    <max-rpm type="double">2800</max-rpm>
+    <power type="double">350</power>
 
     <switch>/controls/switches/alternator</switch>
 
@@ -78,7 +78,7 @@
     <name>landing lights</name>
     <type>needs-power</type>
 
-    <power type="double">50</power>
+    <power type="double">30</power>
     <min-voltage type="double">8</min-voltage>
     <nominal-voltage type="double">14</nominal-voltage>
 
@@ -95,7 +95,7 @@
     <name>navigation lights</name>
     <type>needs-power</type>
     
-    <power type="double">10</power>
+    <power type="double">5</power>
     <min-voltage type="double">8</min-voltage>
     <nominal-voltage type="double">12</nominal-voltage>
 
@@ -112,7 +112,7 @@
     <name>strobe</name>
     <type>needs-power</type>
 
-    <power type="double">40</power>
+    <power type="double">20</power>
     <min-voltage type="double">8</min-voltage>
     <nominal-voltage type="double">14</nominal-voltage>
 
@@ -131,8 +131,8 @@
     <type>needs-power</type>
 
     <power type="double">700</power>
-    <min-voltage type="double">8</min-voltage>
-    <nominal-voltage type="double">12</nominal-voltage>
+    <min-voltage type="double">10</min-voltage>
+    <nominal-voltage type="double">14</nominal-voltage>
 
     <prop type="string">/electrical/outputs/starter</prop>
 

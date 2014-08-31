@@ -398,7 +398,6 @@
     <object-name>right yoke</object-name>
   </animation>
 
-  <!-- Cannot have duplicate shaders; either rembrandt or chromey windows -->
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
@@ -412,6 +411,7 @@
     <object-name>door window</object-name>
     <object-name>left landing light cover</object-name>
     <object-name>right landing light cover</object-name>
+    <object-name>tail beacon light cover</object-name>
   </animation>
 
   <!-- INTERNAL/EXTERNAL -->
@@ -1356,14 +1356,16 @@
     <offset>1</offset>
     <factor>-0.8</factor>
   </animation>
+  
+  <!-- left -->
 
   <animation>
     <type>translate</type>
     <object-name>left strobe light flare</object-name>
-    <offset-m>5.7088</offset-m>
+    <offset-m>5.8</offset-m>
     <axis>
       <x>-0.79</x>
-      <y>-5.65</y>
+      <y>-5.80</y>
       <z> 0.21</z>
     </axis>
   </animation>
@@ -1375,12 +1377,33 @@
   </animation>
 
   <animation>
+    <type>dist-scale</type>
+    <object-name>left strobe light flare</object-name>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>1</dep>
+      </entry>
+      <entry>
+        <ind>500</ind>
+        <dep>5</dep>
+      </entry>
+      <entry>
+        <ind>16000</ind>
+        <dep>30</dep>
+      </entry>
+    </interpolation>
+  </animation>
+
+  <!-- right -->
+
+  <animation>
     <type>translate</type>
     <object-name>right strobe light flare</object-name>
-    <offset-m>5.7088</offset-m>
+    <offset-m>5.8</offset-m>
     <axis>
       <x>-0.79</x>
-      <y> 5.65</y>
+      <y> 5.80</y>
       <z> 0.21</z>
     </axis>
   </animation>
@@ -1389,6 +1412,82 @@
     <type>billboard</type>
     <object-name>right strobe light flare</object-name>
     <spherical type="bool">true</spherical>
+  </animation>
+
+  <animation>
+    <type>dist-scale</type>
+    <object-name>right strobe light flare</object-name>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>1</dep>
+      </entry>
+      <entry>
+        <ind>500</ind>
+        <dep>5</dep>
+      </entry>
+      <entry>
+        <ind>16000</ind>
+        <dep>30</dep>
+      </entry>
+    </interpolation>
+  </animation>
+
+  <!-- Tail beacon light -->
+
+  <animation>
+    <type>material</type>
+    <object-name>tail beacon light source</object-name>
+    <emission>
+      <red>1.0</red>
+      <green>0.0</green>
+      <blue>0.0</blue>
+      <factor-prop>electrical/outputs/beacon/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>blend</type>
+    <object-name>tail beacon light flare</object-name>
+    <property>electrical/outputs/beacon/brightness</property>
+    <offset>1</offset>
+    <factor>-0.7</factor>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>tail beacon light flare</object-name>
+    <offset-m>3.66</offset-m>
+    <axis>
+      <x> 3.28</x>
+      <y> 0.00</y>
+      <z> 1.60</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>tail beacon light flare</object-name>
+    <spherical type="bool">true</spherical>
+  </animation>
+
+  <animation>
+    <type>dist-scale</type>
+    <object-name>tail beacon light flare</object-name>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>1</dep>
+      </entry>
+      <entry>
+        <ind>500</ind>
+        <dep>3</dep>
+      </entry>
+      <entry>
+        <ind>16000</ind>
+        <dep>25</dep>
+      </entry>
+    </interpolation>
   </animation>
 
 </PropertyList>
