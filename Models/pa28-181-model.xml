@@ -21,6 +21,13 @@
     </condition>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>prop disc</object-name>
+    <object-name>left landing light flare</object-name>
+    <object-name>right landing light flare</object-name>
+    <object-name>left navigation light flare</object-name>
+    <object-name>right navigation light flare</object-name>
+    <object-name>left strobe light flare</object-name>
+    <object-name>right strobe light flare</object-name>
+    <object-name>tail beacon light flare</object-name>
   </effect>
 
   <!-- COCKPIT -->
@@ -424,6 +431,8 @@
     <object-name>door window</object-name>
     <object-name>left landing light cover</object-name>
     <object-name>right landing light cover</object-name>
+    <object-name>left navigation light cover</object-name>
+    <object-name>right navigation light cover</object-name>
     <object-name>tail beacon light cover</object-name>
   </animation>
 
@@ -1168,9 +1177,9 @@
       <z> 0.20</z>
     </position>
     <direction>
-      <x>-0.91</x>
-      <y> 0.00</y>
-      <z>-0.05</z>
+      <x>-0.90</x>
+      <y> 0.10</y>
+      <z> 0.00</z>
     </direction>
     <ambient>
       <r>0.03</r>
@@ -1192,15 +1201,15 @@
     </specular>
     <dim-factor>
       <property>electrical/outputs/landing-lights/brightness</property>
-      <factor>0.8</factor>
+      <factor>1.0</factor>
     </dim-factor>
     <attenuation>
       <c>0.2</c>
       <l>0.08</l>
       <q>0.01</q>
     </attenuation>
-    <exponent>50.0</exponent>
-    <cutoff>90.0</cutoff>
+    <exponent>40.0</exponent>
+    <cutoff>150.0</cutoff>
     <near-m> 1.0</near-m>
     <far-m> 110.0</far-m>
   </animation>
@@ -1217,9 +1226,9 @@
       <z> 0.20</z>
     </position>
     <direction>
-      <x>-0.91</x>
+      <x>-1.00</x>
       <y> 0.00</y>
-      <z>-0.05</z>
+      <z> 0.00</z>
     </direction>
     <ambient>
       <r>0.03</r>
@@ -1241,15 +1250,15 @@
     </specular>
     <dim-factor>
       <property>electrical/outputs/landing-lights/brightness</property>
-      <factor>0.8</factor>
+      <factor>1.0</factor>
     </dim-factor>
     <attenuation>
       <c>0.2</c>
       <l>0.08</l>
       <q>0.01</q>
     </attenuation>
-    <exponent>50.0</exponent>
-    <cutoff>90.0</cutoff>
+    <exponent>40.0</exponent>
+    <cutoff>150.0</cutoff>
     <near-m> 1.0</near-m>
     <far-m> 110.0</far-m>
   </animation>
@@ -1359,6 +1368,104 @@
     </axis>
   </animation>
 
+  <!-- rembrandt -->
+
+  <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>left navigation light</name>
+    <object-name>left navigation light volume</object-name>
+    <nopreview />
+    <position>
+      <x>-0.83</x>
+      <y>-5.75</y>
+      <z> 0.62</z>
+    </position>
+    <ambient>
+      <r>0.05</r>
+      <g>0.05</g>
+      <b>0.04</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>3.0</r>
+      <g>0.1</g>
+      <b>0.1</b>
+      <a>1.0</a>
+    </diffuse>
+    <specular>
+      <r>0.7</r>
+      <g>0.1</g>
+      <b>0.1</b>
+      <a>1.0</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/navigation-lights/brightness</property>
+      <factor>1.0</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.5</c>
+      <l>4.4</l>
+      <q>1.0</q>
+    </attenuation>
+    <near-m> 0.15</near-m>
+    <far-m> 10.0</far-m>
+  </animation>
+
+  <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>right navigation light</name>
+    <object-name>right navigation light volume</object-name>
+    <nopreview />
+    <position>
+      <x>-0.83</x>
+      <y> 5.75</y>
+      <z> 0.62</z>
+    </position>
+    <ambient>
+      <r>0.05</r>
+      <g>0.05</g>
+      <b>0.04</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>0.1</r>
+      <g>3.0</g>
+      <b>0.1</b>
+      <a>1.0</a>
+    </diffuse>
+    <specular>
+      <r>0.1</r>
+      <g>0.7</g>
+      <b>0.1</b>
+      <a>1.0</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/navigation-lights/brightness</property>
+      <factor>1.0</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.5</c>
+      <l>4.4</l>
+      <q>1.0</q>
+    </attenuation>
+    <near-m> 0.15</near-m>
+    <far-m> 10.0</far-m>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>left navigation light</object-name>
+    <object-name>right navigation light</object-name>
+    <condition>
+      <greater-than>
+        <property>electrical/outputs/navigation-lights/brightness</property>
+        <value>0.05</value>
+      </greater-than>
+    </condition>
+  </animation>
+
   <!-- Strobe lights -->
 
   <animation>
@@ -1408,6 +1515,50 @@
     </interpolation>
   </animation>
 
+  <!-- rembrandt -->
+
+  <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>left strobe light</name>
+    <object-name>left strobe light volume</object-name>
+    <nopreview />
+    <position>
+      <x>-0.83</x>
+      <y>-5.75</y>
+      <z> 0.62</z>
+    </position>
+    <ambient>
+      <r>0.05</r>
+      <g>0.05</g>
+      <b>0.04</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>5.0</r>
+      <g>5.0</g>
+      <b>5.0</b>
+      <a>1.0</a>
+    </diffuse>
+    <specular>
+      <r>0.7</r>
+      <g>0.7</g>
+      <b>0.7</b>
+      <a>1.0</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/strobe/light/state</property>
+      <factor>1.0</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.5</c>
+      <l>3.0</l>
+      <q>0.8</q>
+    </attenuation>
+    <near-m> 0.15</near-m>
+    <far-m> 16.0</far-m>
+  </animation>
+
   <!-- right -->
 
   <animation>
@@ -1444,6 +1595,50 @@
         <dep>30</dep>
       </entry>
     </interpolation>
+  </animation>
+
+  <!-- rembrandt -->
+
+  <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>right strobe light</name>
+    <object-name>right strobe light volume</object-name>
+    <nopreview />
+    <position>
+      <x>-0.83</x>
+      <y> 5.75</y>
+      <z> 0.62</z>
+    </position>
+    <ambient>
+      <r>0.05</r>
+      <g>0.05</g>
+      <b>0.04</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>5.0</r>
+      <g>5.0</g>
+      <b>5.0</b>
+      <a>1.0</a>
+    </diffuse>
+    <specular>
+      <r>0.7</r>
+      <g>0.7</g>
+      <b>0.7</b>
+      <a>1.0</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/strobe/light/state</property>
+      <factor>1.0</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.5</c>
+      <l>3.0</l>
+      <q>0.8</q>
+    </attenuation>
+    <near-m> 0.15</near-m>
+    <far-m> 16.0</far-m>
   </animation>
 
   <!-- Tail beacon light -->
@@ -1501,6 +1696,70 @@
         <dep>25</dep>
       </entry>
     </interpolation>
+  </animation>
+
+  <!-- rembrandt -->
+
+  <animation>
+    <type>light</type>
+    <light-type>point</light-type>
+    <name>tail beacon light</name>
+    <object-name>tail beacon light volume</object-name>
+    <nopreview />
+    <position>
+      <x> 3.28</x>
+      <y> 0.00</y>
+      <z> 1.70</z>
+    </position>
+    <ambient>
+      <r>0.05</r>
+      <g>0.05</g>
+      <b>0.04</b>
+      <a>1.0</a>
+    </ambient>
+    <diffuse>
+      <r>3.0</r>
+      <g>0.1</g>
+      <b>0.1</b>
+      <a>1.0</a>
+    </diffuse>
+    <specular>
+      <r>0.7</r>
+      <g>0.1</g>
+      <b>0.1</b>
+      <a>1.0</a>
+    </specular>
+    <dim-factor>
+      <property>electrical/outputs/beacon/brightness</property>
+      <factor>1.0</factor>
+    </dim-factor>
+    <attenuation>
+      <c>0.5</c>
+      <l>4.4</l>
+      <q>1.0</q>
+    </attenuation>
+    <near-m> 0.15</near-m>
+    <far-m> 16.00</far-m>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>left strobe light</object-name>
+    <object-name>right strobe light</object-name>
+    <condition>
+      <property>electrical/outputs/strobe/light/state</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>tail beacon light</object-name>
+    <condition>
+      <greater-than>
+        <property>electrical/outputs/beacon/brightness</property>
+        <value>0.05</value>
+      </greater-than>
+    </condition>
   </animation>
 
 </PropertyList>

@@ -7,7 +7,7 @@ var navigation_lights_brightness=aircraft.lowpass.new(0.05);
 var landing_lights_brightness=aircraft.lowpass.new(0.05);
 var beacon_brightness=aircraft.lowpass.new(0.05);
 
-var strobe_lights=aircraft.light.new("/electrical/outputs/strobe/light", [0.1, 1.0], "/electrical/outputs/strobe/powered");
+var strobe_lights=aircraft.light.new("/electrical/outputs/strobe/light", [0.05, 1.0, 0.05, 0.08], "/electrical/outputs/strobe/powered");
 
 var update_lighting=func {
   var bright = 0;
