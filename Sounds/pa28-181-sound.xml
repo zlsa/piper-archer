@@ -208,7 +208,6 @@
       <path>Sounds/stall.wav</path>
       <condition>
         <and>
-          <property>electrical/outputs/stall-horn/powered</property>
           <property>sim/current-view/internal</property>
           <greater-than>
 	    <property>velocities/airspeed-kt</property>

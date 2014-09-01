@@ -15,6 +15,7 @@
 # *.svg              (all source SVG files)
 # .*                 (all hidden files)
 # *~                 (all autosaved files)
+# info.md            (aircraft specifications)
 
 import zipfile
 import time
@@ -38,6 +39,8 @@ def list_files(w):
       continue
     if filename == "update_textures.sh":
       continue
+    if filename == "info.md":
+      continue
     ext = os.path.splitext(filename)[1]
     if filename.endswith("~"):
       continue
@@ -60,7 +63,7 @@ def pack():
   name += time.strftime("%Y%m%d", time.gmtime(time.time()))
   name += ".zip"
   files = filelist("./")
-#  for f in files: print(f)
+  for f in files: print(f)
   path  = "../releases"
   path  = os.path.join(path, name)
   try:
