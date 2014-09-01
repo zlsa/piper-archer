@@ -3,83 +3,13 @@
 
 #header {
 
-  color:            $header-foreground-color;
-  font-size:        $header-font-size;
-
   width: 100%;
-  height: $header-height + $header-margin * 2 + $header-padding * 2;
-  padding: $header-margin;
+  margin: $header-margin * 2 0;
+  text-align: center;
 
-  z-index: 1000;
-
-  .wrapper {
-
-    background-color:    $header-background-color;
-
-    @include border-radius(0px);
-    @include box-shadow(0 $header-bar-height 0 $header-bar-color);
-
-    position: relative;
-    height: $header-height;
-    padding-left: $header-height;
-
-    > * {
-      display: inline-block;
-      height: $header-height;
-      overflow: hidden;
-    }
-
-    ul.aircraft {
-
-      li {
-        display: inline-block;
-        height: 100%;
-        margin-right: $header-padding;
-        
-        a {
-          display: block;
-          height: 100%;
-          padding: $header-padding $header-padding * 2;
-        }
-
-        &.active {
-          background-color: $header-bar-color;
-          font-weight:      bold;
-        }
-        
-        &:hover {
-          background-color: lighten($header-background-color, 20);
-        }
-        
-      }
-
-    }
+  .aircraft {
+    font-size: 200%;
+    color: #444;
+  }
     
-    > a {
-      padding: $header-padding $header-padding * 2;
-    }
-
-    a.image {
-      width: $header-height;
-      opacity: 0.9;
-
-      &:hover {
-        opacity: 1.0;
-      }
-    }
-  }
-
-  a.image {
-    padding: 0;
-  }
-
-  a.homepage {
-    position: absolute;
-    left: 0;
-  }
-
-  a.author {
-    float: right;
-  }
-
 }

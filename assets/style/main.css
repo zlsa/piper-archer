@@ -34,56 +34,12 @@
     background-color: #27d; }
 
 #header {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
   width: 100%;
-  height: 74px;
-  padding: 16px;
-  z-index: 1000; }
-  #header .wrapper {
-    background-color: rgba(48, 48, 48, 0.8);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    border-radius: 0px;
-    -webkit-box-shadow: 0 4px 0 #3388ff;
-    -moz-box-shadow: 0 4px 0 #3388ff;
-    -ms-box-shadow: 0 4px 0 #3388ff;
-    box-shadow: 0 4px 0 #3388ff;
-    position: relative;
-    height: 32px;
-    padding-left: 32px; }
-    #header .wrapper > * {
-      display: inline-block;
-      height: 32px;
-      overflow: hidden; }
-    #header .wrapper ul.aircraft li {
-      display: inline-block;
-      height: 100%;
-      margin-right: 5px; }
-      #header .wrapper ul.aircraft li a {
-        display: block;
-        height: 100%;
-        padding: 5px 10px; }
-      #header .wrapper ul.aircraft li.active {
-        background-color: #3388ff;
-        font-weight: bold; }
-      #header .wrapper ul.aircraft li:hover {
-        background-color: rgba(99, 99, 99, 0.8); }
-    #header .wrapper > a {
-      padding: 5px 10px; }
-    #header .wrapper a.image {
-      width: 32px;
-      opacity: 0.9; }
-      #header .wrapper a.image:hover {
-        opacity: 1.0; }
-  #header a.image {
-    padding: 0; }
-  #header a.homepage {
-    position: absolute;
-    left: 0; }
-  #header a.author {
-    float: right; }
+  margin: 48px 0;
+  text-align: center; }
+  #header .aircraft {
+    font-size: 200%;
+    color: #444; }
 
 #top {
   background-color: #fff;
@@ -92,14 +48,15 @@
   -ms-border-radius: 4px;
   border-radius: 4px;
   position: relative;
-  margin: 32px 16px;
+  margin: 48px 24px;
   margin-top: 0;
   padding: 20px;
   color: rgba(0, 0, 0, 0.7); }
   #top .last-update, #top .size {
     margin-left: 4px; }
   #top .size {
-    font-weight: bold; }
+    font-weight: bold;
+    padding-left: 16px; }
   #top .last-update {
     color: rgba(0, 0, 0, 0.5); }
   #top #last-commit {
@@ -125,8 +82,8 @@ section {
   position: relative;
   min-height: 400px;
   padding: 20px;
-  margin: 0 16px;
-  margin-bottom: 32px;
+  margin: 0 24px;
+  margin-bottom: 48px;
   overflow: hidden;
   color: #555; }
   section header {
@@ -176,7 +133,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 40px;
-  padding-bottom: 72px; }
+  padding-bottom: 88px; }
 
 html, body {
   width: 100%; }
