@@ -63,7 +63,7 @@ def pack():
   name += time.strftime("%Y%m%d", time.gmtime(time.time()))
   name += ".zip"
   files = filelist("./")
-  for f in files: print(f)
+#  for f in files: print(f)
   path  = "../releases"
   path  = os.path.join(path, name)
   try:
