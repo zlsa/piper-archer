@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+# This script collects files in ../releases/AIRCRAFT-*.zip and copies them to releases/AIRCRAFT-*.zip.
+# It also copies the newest to releases/AIRCRAFT-latest.zip.
+
 import os
 import shutil
 import sys
