@@ -3,6 +3,7 @@
 # This script collects files in ../releases/AIRCRAFT-*.zip and copies them to releases/AIRCRAFT-*.zip.
 # It also copies the newest to releases/AIRCRAFT-latest.zip.
 
+import json
 import os
 import shutil
 import sys
@@ -18,11 +19,11 @@ def collect(path_from = "../releases/", path_to = "releases/"):
   for filename in os.listdir(path_from):
     if os.path.splitext(filename)[1] == ".zip" and filename.startswith(AIRCRAFT):
       shutil.copy(os.path.join(path_from, filename), os.path.join(path_to, filename))
-      ctime = max(os.stat(os.path.join(path_to, filename)).st_ctime, latest)
-      files.append((filename, ctime)
-      if ctime > latest:
+      date = int(os.path.splitext(filename)[0][len(AIRCRAFT)+1:])
+      files.append((filename, date))
+      if date > latest:
         latest_filename = filename
-        latest = ctime
+        latest = date
       print(filename)
       sys.stdout.flush()
   if latest:
@@ -30,6 +31,12 @@ def collect(path_from = "../releases/", path_to = "releases/"):
     print(AIRCRAFT+"-latest.zip")
   else:
     print("no aircraft copied")
+  info = {}
+  info["releases"] = []
+  for filename in files:
+    info["releases"].append(filename)
+  with open("assets/scripts/info.js", "w") as f:
+    f.write("var info = " + json.dumps(info))
 
 if __name__ == "__main__":
   collect()
