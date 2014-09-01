@@ -246,7 +246,7 @@ html, body {
   width: 100%; }
 
 html {
-  background-color: #ccc;
+  background: #cccccc url("../images/background.svg") left top repeat fixed;
   font-family: sans-serif;
   line-height: 140%;
   overflow-y: scroll; }
