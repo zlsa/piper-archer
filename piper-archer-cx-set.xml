@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-
-<PropertyList include="pa28-181-set.xml">
-  <sim>
-    <description>Alias for pa28-181</description>
-  </sim>
-</PropertyList>
-
