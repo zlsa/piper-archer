@@ -1,0 +1,32 @@
+#header {
+  background-color: rgba(48, 48, 48, 0.8);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  -ms-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  -moz-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  -ms-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: bold;
+  position: fixed;
+  width: calc(100% - 32px);
+  margin: 16px;
+  padding-left: 30px; }
+  #header > * {
+    padding: 8px 16px;
+    display: inline-block; }
+  #header a {
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9; }
+    #header a:hover {
+      opacity: 1.0; }
