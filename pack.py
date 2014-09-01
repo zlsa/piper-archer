@@ -55,10 +55,12 @@ def filelist(path):
   return files
 
 def pack():
+  os.system("./Models/update-textures.sh Models/")
   name  = AIRCRAFT + "-"
   name += time.strftime("%Y%m%d", time.gmtime(time.time()))
   name += ".zip"
   files = filelist("./")
+#  for f in files: print(f)
   path  = "../releases"
   path  = os.path.join(path, name)
   try:
@@ -72,7 +74,7 @@ def pack():
         print(name + ": " + str(percent) + "%                \r", end="")
         sys.stdout.flush()
       z.close()
-      size = round(os.path.getsize(path) / 1000 / 1000, 2)
+      size = round(os.path.getsize(path) / 1024 / 1024, 2)
       print(name + ": " + str(size) + " MB")
   except FileNotFoundError:
     print("! directory not writable; make sure the path '" + os.path.split(path)[0] + "' exists")
