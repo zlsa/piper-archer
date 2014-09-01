@@ -15,8 +15,12 @@ def list_files(w):
     return []
   if w[0].find("/screenshots") >= 0:
     return []
+  if w[0].find("/textures") >= 0:
+    return []
   for filename in w[2]:
     if filename == "pack.py":
+      continue
+    if filename == "update_textures.sh":
       continue
     ext = os.path.splitext(filename)[1]
     if filename.endswith("~"):
