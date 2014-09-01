@@ -7,32 +7,72 @@
 
   @include border-radius(0px);
   @include box-shadow(0 $header-bar-height 0 $header-bar-color);
-  @include text-shadow(0 1px 0 $header-bar-color);
 
   color:            $header-foreground-color;
   font-size:        $header-font-size;
-  font-weight:      bold;
 
   position: fixed;
   width: calc(100% - 32px);
+  height: $header-height;
   margin: 16px;
-
-  padding-left: 30px;
+  padding-left: $header-height;
 
   > * {
-    padding: ($header-height - $header-font-size) / 2 ($header-height - $header-font-size);
     display: inline-block;
+    height: $header-height;
+    overflow: hidden;
   }
 
-  a {
-    padding: 3px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  ul.aircraft {
+
+    li {
+      display: inline-block;
+      height: 100%;
+      margin-right: $header-padding;
+      
+      a {
+        display: block;
+        height: 100%;
+        padding: $header-padding $header-padding * 2;
+      }
+
+      &.active {
+        background-color: $header-bar-color;
+        font-weight:      bold;
+      }
+    
+      &:hover {
+        background-color: lighten($header-background-color, 20);
+      }
+    
+    }
+
+  }
+  
+  > a {
+    padding: $header-padding $header-padding * 2;
+  }
+
+  a.image {
+    width: $header-height;
     opacity: 0.9;
 
     &:hover {
       opacity: 1.0;
     }
   }
+
+  a.image {
+    padding: 0;
+  }
+
+  a.homepage {
+    position: absolute;
+    left: 0;
+  }
+
+  a.author {
+    float: right;
+  }
+
 }

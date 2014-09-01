@@ -3,8 +3,10 @@ $header-background-color: rgba(48, 48, 48, 0.8);
 $header-foreground-color: rgba(255, 255, 255, 0.9);
 $header-font-size:        16px;
 $header-height:           32px;
-$header-bar-height:       1px;
+$header-bar-height:       4px;
 $header-bar-color:        darken($header-background-color, 20);
+$header-bar-color:        #67f;
+$header-padding:          ($header-height - $header-font-size) / 2 - 3;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;

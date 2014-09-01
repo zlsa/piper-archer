@@ -1,55 +1,60 @@
-* {
-  background: none;
-  border: none;
-  outline: none;
-  font-family: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  color: inherit;
-  text-decoration: inherit;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+/*
+Syntax error: File to import not found or unreadable: sections.
+              Load path: /home/forest/projects/fgfs/pa28-181/assets/style
+        on line 4 of ./main.scss
 
-#header {
-  background-color: rgba(48, 48, 48, 0.8);
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  border-radius: 0px;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  -ms-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  -moz-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  -ms-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
-  font-weight: bold;
-  position: fixed;
-  width: calc(100% - 32px);
-  margin: 16px;
-  padding-left: 30px; }
-  #header > * {
-    padding: 8px 16px;
-    display: inline-block; }
-  #header a {
-    padding: 3px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.9; }
-    #header a:hover {
-      opacity: 1.0; }
+1: 
+2: @import "reset";
+3: @import "header";
+4: @import "sections";
+5: 
+6: html,body {
+7:   width: 100%;
+8: }
+9: 
 
-html, body {
-  width: 100%; }
-
-html {
-  background-color: #ddd;
-  font-family: sans-serif; }
+Backtrace:
+./main.scss:4
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/import_node.rb:45:in `import'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:121:in `with_frame'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/engine.rb:274:in `render'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `each'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:357:in `on_file_changed'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:250:in `block in watch'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:252:in `call'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:252:in `on_change'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:252:in `call'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:252:in `report_changes'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:321:in `poll_changed_directories'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:297:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: sections.\A               Load path: /home/forest/projects/fgfs/pa28-181/assets/style\A         on line 4 of ./main.scss\A \A 1: \A 2: @import \"reset\";\A 3: @import \"header\";\A 4: @import \"sections\";\A 5: \A 6: html,body {\A 7:   width: 100%;\A 8: }\A 9: "; }
