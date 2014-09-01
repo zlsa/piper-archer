@@ -29,7 +29,7 @@ $(document).ready(function() {
     s         += time.getFullYear();
     $(".last-update .date").text(s);
   });
-  for(var i=0;i<info.releases.length;i++) {
+  for(var i=info.releases.length-1;i>=0;i--) {
     var release = info.releases[i];
     if(release[0] == "pa28-181-latest.zip") {
       $(".size").text(release[2] + " MB");
