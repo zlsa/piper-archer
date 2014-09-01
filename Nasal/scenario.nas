@@ -11,7 +11,7 @@ var init_scenario=func {
 
     if(getprop("/position/altitude-agl-ft") > 10) {
         setprop("/controls/key", 3);
-        key(0);
+        engine.key(0);
         setprop("/engines/engine[0]/rpm", 1000);
         setprop("/velocities/airspeed-kt", 70);
         setprop("/engines/engine[0]/running", 1);
