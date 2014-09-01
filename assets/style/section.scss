@@ -4,7 +4,7 @@
 section {
   background-color: #fff;
 
-  @include border-radius(4px);
+  @include border-radius();
 
   position: relative;
   min-height: $section-height;
@@ -50,7 +50,7 @@ section {
     }
   }
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     padding-right: $section-width + $section-padding * 2;
 
     header {
@@ -62,7 +62,7 @@ section {
     }
   }
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     padding-left: $section-width + $section-padding * 2;
 
     header {

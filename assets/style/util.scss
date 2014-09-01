@@ -11,7 +11,7 @@ $section-height:          400px;
 $section-padding:         20px;
 $section-margin:          $header-margin * 2;
 
-@mixin border-radius($radius) {
+@mixin border-radius($radius: 4px) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;

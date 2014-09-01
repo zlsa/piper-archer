@@ -1,11 +1,11 @@
 
 @import "util";
 
-.button {
-  background-color: #38f;
+@mixin button($color) {
+  background-color: $color;
 
-  @include border-radius(4px);
   @include box-shadow(inset 0 -2px rgba(0, 0, 0, 0.2));
+  @include border-radius();
 
   color: #fff;
 
@@ -14,10 +14,10 @@
   padding: 5px 20px;
 
   &:hover {
-    background-color: #49f;
+    background-color: lighten($color, 5);
   }
 
   &:active {
-    background-color: #27d;
+    background-color: darken($color, 5);
   }
 }

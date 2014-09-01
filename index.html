@@ -8,19 +8,34 @@
   </head>
   <body>
     <header id="header">
-      <span href="http://zlsa.github.io/pa28-181/" class="aircraft">Piper Archer CX</span>
+      <h1 href="http://zlsa.github.io/pa28-181/" class="aircraft">Piper Archer CX <span class="beta" title="This is a beta release; not all features are available and crashes will occur">beta</span></h1>
+      <h2>for the <a href="http://www.flightgear.org/" class="link">FlightGear</a> flight simulator</h2>
     </header>
     <div id="top">
-      <a class="download button" href="http://zlsa.github.io/pa28-181/pa28-181.zip">
-        <span class="title">Download</span>
+      <a class="download button beta" href="http://zlsa.github.io/pa28-181/pa28-181.zip" title="Download beta aircraft zip">
+        <span class="title">Download beta</span>
       </a>
       <span class="size">12MB</span>
-      <span class="last-update">Model last updated on <span class="date">&hellip;</span></span>
-      <span id="last-commit" class="fetching">
+      <span class="last-update">Aircraft last updated on <span class="date">&hellip;</span></span>
+      <a id="last-commit" class="fetching" href="http://github.com/zlsa/pa28-181/" title="Go to GitHub repository">
         <span class="message">fetching latest commit...</span>
-      </span>
+      </a>
     </div>
     <main>
+      <section id="model">
+        <header>Realistic exterior model</header>
+        <p>The exterior model features fully animated flight control
+        surfaces and landing gear with struts and scissors.</p>
+        <p>Currently featured in the exterior model:</p>
+        <ul>
+          <li><span>Ailerons, elevator, and rudder</span></li>
+          <li><span>Elevator trim tab</span></li>
+          <li><span>Landing gear suspension</span></li>
+          <li><span>Flaps and flap arm</span></li>
+        </ul>
+        <p>Note that at this time, there are no textures on the exterior.</p>
+        <img src="assets/images/sections/runway.png" />
+      </section>
       <section id="lighting">
         <header>Lighting</header>
         <p>The Piper Archer CX has been tested extensively with
@@ -38,6 +53,22 @@
         </ul>
         <img src="assets/images/sections/night.png" />
       </section>
+      <section id="systems">
+        <header>Accurate systems</header>
+        <p>The Piper Archer CX features detailed and accurate
+          fuel and electrical systems.</p>
+        <p>The electrical system simulation currently features:</p>
+        <ul>
+          <li><span>Battery charging</span></li>
+          <li><span>Voltage drop under load</span></li>
+          <li><span>Switches for all powered components</span></li>
+        </ul>
+        <p>The fuel system currently features:</p>
+        <ul>
+          <li><span>Fuel pump with collection tank</span></li>
+        </ul>
+        <img src="assets/images/sections/runway.png" />
+      </section>
       <section id="cockpit">
         <header>Detailed cockpit</header>
         <p>The fictional Piper Archer CX, unlike the TX and LX
@@ -53,23 +84,9 @@
           <li><span>Fuel level / fuel pressure</span></li>
           <li><span>Tachometer</span></li>
         </ul>
+        <p>In addition to the above instruments, many switches and
+        controls are present as well.</p>
         <img src="assets/images/sections/cockpit.png" />
-      </section>
-      <section id="Systems">
-        <header>Accurate systems</header>
-        <p>The Piper Archer CX features detailed and accurate
-          fuel and electrical systems.</p>
-        <p>The electrical system simulation currently features:</p>
-        <ul>
-          <li><span>Battery charging</span></li>
-          <li><span>Voltage drop under load</span></li>
-          <li><span>Switches for all powered components</span></li>
-        </ul>
-        <p>The fuel system currently features:</p>
-        <ul>
-          <li><span>Fuel pump with collection tank (tied to the electrical system)</span></li>
-        </ul>
-        <img src="assets/images/sections/runway.png" />
       </section>
     </main>
     <footer>

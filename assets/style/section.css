@@ -37,15 +37,15 @@ section {
       color: #ccc; }
       section ul li span {
         color: #555; }
-  section:nth-child(even) {
-    padding-right: 640px; }
-    section:nth-child(even) header {
-      float: left; }
-    section:nth-child(even) img {
-      right: 0; }
   section:nth-child(odd) {
-    padding-left: 640px; }
+    padding-right: 640px; }
     section:nth-child(odd) header {
       float: left; }
     section:nth-child(odd) img {
+      right: 0; }
+  section:nth-child(even) {
+    padding-left: 640px; }
+    section:nth-child(even) header {
+      float: left; }
+    section:nth-child(even) img {
       left: 0; }

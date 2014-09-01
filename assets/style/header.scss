@@ -7,9 +7,32 @@
   margin: $header-margin * 2 0;
   text-align: center;
 
-  .aircraft {
+  h1.aircraft {
     font-size: 200%;
     color: #444;
+
+    .beta {
+      background-color: #f83;
+
+      @include border-radius();
+
+      color: #fff;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 70%;
+
+      position: relative;
+      top: -3px;
+      padding: 3px 10px;
+      margin: 0 5px;
+    }
+  }
+
+  h2 {
+    color: #666;
+    font-style: italic;
+
+    margin: 10px;
   }
     
 }

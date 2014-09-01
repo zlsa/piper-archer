@@ -4,7 +4,7 @@
 #top {
   background-color: #fff;
 
-  @include border-radius(4px);
+  @include border-radius();
 
   position: relative;
   margin: $section-margin $header-margin;
@@ -14,12 +14,11 @@
   color: rgba(0, 0, 0, 0.7);
 
   .last-update, .size {
-    margin-left: 4px;
+    margin-left: 20px;
   }
 
   .size {
     font-weight: bold;
-    padding-left: 16px;
   }
 
   .last-update {
@@ -28,7 +27,7 @@
 
   #last-commit {
     float: right;
-    padding: 4px;
+    padding: 5px 20px;
 
     &.fetching {
       color: #aaa;
@@ -37,15 +36,12 @@
   }
   
   .download.button {
+    @include button(#38f);
     font-weight: bold;
+  }
 
-    .size {
-      margin-left: 4px;
-      font-size: 80%;
-      position: relative;
-      top: -1px;
-      left: 1px;
-    }
+  .download.button.beta {
+    @include button(#f83);
   }
   
 }
