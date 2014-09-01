@@ -2,18 +2,23 @@
 @import "util";
 
 footer {
-  border-top: 3px solid #aaa;
-  background-color: #ccc;
+  background: #fff;
+
+  border: 2px solid #888;
+  @include box-shadow(0 0 0 4px #fff);
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+
   color: rgba(0, 0, 0, 0.7);
-  font-size: 95%;
+  font-size: 90%;
   text-align: center;
 
   position: fixed;
-  
-  left: 0;
+  left: 50%;
   bottom: 0;
-  width: 100%;
-  padding: 20px 0;
+  width: 60em;
+  margin-left: -30em;
+  padding: 10px 0;
 
   z-index: 10000;
 }

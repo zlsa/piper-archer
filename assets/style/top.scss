@@ -26,14 +26,9 @@
     color: rgba(0, 0, 0, 0.5);
   }
 
-  #last-commit {
+  #github-link {
     float: right;
     padding: 4px 20px;
-
-    &.fetching {
-      color: #aaa;
-    }
-
   }
   
   .download.button {

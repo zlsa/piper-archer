@@ -23,7 +23,7 @@ def collect(path_from = "../releases/", path_to = "releases/"):
       shutil.copy(os.path.join(path_from, filename), os.path.join(path_to, filename))
       date = int(os.path.splitext(filename)[0][len(AIRCRAFT)+1:])
       size = round(os.path.getsize(os.path.join(path_to, filename)) / 1024 / 1024, 2)
-      files.append((filename, date, size))
+      files.append((filename, str(date), size))
       if date > latest:
         latest_filename = filename
         latest_size = size
@@ -34,7 +34,7 @@ def collect(path_from = "../releases/", path_to = "releases/"):
   if latest:
     shutil.copy(os.path.join(path_to, latest_filename), os.path.join(path_to, AIRCRAFT + "-latest.zip"))
     print(AIRCRAFT+"-latest.zip  " + (str(size) + " MB").rjust(10, " "))
-    files.append((AIRCRAFT+"-latest.zip", latest_date, latest_size))
+    files.append((AIRCRAFT+"-latest.zip", str(latest_date), latest_size))
   else:
     print("no aircraft copied")
   info = {}

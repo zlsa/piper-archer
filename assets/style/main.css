@@ -56,11 +56,9 @@
     font-weight: bold; }
   #top .last-update {
     color: rgba(0, 0, 0, 0.5); }
-  #top #last-commit {
+  #top #github-link {
     float: right;
     padding: 4px 20px; }
-    #top #last-commit.fetching {
-      color: #aaa; }
   #top .download.button {
     background-color: #3388ff;
     -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
@@ -230,23 +228,30 @@
     padding-top: 12px; }
 
 footer {
-  border-top: 3px solid #aaa;
-  background-color: #ccc;
+  background: #fff;
+  border: 2px solid #888;
+  -webkit-box-shadow: 0 0 0 4px white;
+  -moz-box-shadow: 0 0 0 4px white;
+  -ms-box-shadow: 0 0 0 4px white;
+  box-shadow: 0 0 0 4px white;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
   color: rgba(0, 0, 0, 0.7);
-  font-size: 95%;
+  font-size: 90%;
   text-align: center;
   position: fixed;
-  left: 0;
+  left: 50%;
   bottom: 0;
-  width: 100%;
-  padding: 20px 0;
+  width: 60em;
+  margin-left: -30em;
+  padding: 10px 0;
   z-index: 10000; }
 
 html, body {
   width: 100%; }
 
 html {
-  background: #cccccc url("../images/background.svg") left top repeat fixed;
+  background: #cccccc url("../images/background.png") left top repeat fixed;
   font-family: sans-serif;
   line-height: 140%;
   overflow-y: scroll; }
