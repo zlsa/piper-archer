@@ -12,7 +12,7 @@
     color: #444;
 
     .beta {
-      background-color: #f83;
+      background-color: $beta-color;
 
       @include border-radius();
 

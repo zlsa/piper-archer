@@ -12,12 +12,14 @@ AIRCRAFT = "pa28-181"
 def collect(path_from = "../releases/", path_to = "releases/"):
 #  for filename in os.listdir(path_to):
 #    os.remove(os.path.join(path_to, filename))
+  files = []
   latest = 0
   latest_filename = ""
   for filename in os.listdir(path_from):
     if os.path.splitext(filename)[1] == ".zip" and filename.startswith(AIRCRAFT):
       shutil.copy(os.path.join(path_from, filename), os.path.join(path_to, filename))
       ctime = max(os.stat(os.path.join(path_to, filename)).st_ctime, latest)
+      files.append((filename, ctime)
       if ctime > latest:
         latest_filename = filename
         latest = ctime

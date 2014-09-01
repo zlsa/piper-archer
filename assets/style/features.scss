@@ -1,7 +1,7 @@
 
 @import "util";
 
-section {
+#tab-features section {
   background-color: #fff;
 
   @include border-radius();
@@ -37,18 +37,6 @@ section {
   }
 
   color: #555;
-
-  ul {
-    margin: 1em 0;
-    margin-left: 2em;
-
-    li {
-      color: #ccc;
-      span {
-        color: #555;
-      }
-    }
-  }
 
   &:nth-child(odd) {
     padding-right: $section-width + $section-padding * 2;

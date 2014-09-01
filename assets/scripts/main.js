@@ -1,9 +1,18 @@
 
 var repo="pa28-181";
 
+function tab(t) {
+  $(".tab").removeClass("active");
+  $("#tab-"+t).addClass("active");
+  $("#tab-"+t).css("display", "block");
+  $("#tabs a").removeClass("active");
+  $("#tabs a."+t).addClass("active");
+  $(".tab").not(".active").css("display", "none");
+  console.log(t);
+}
+
 $(document).ready(function() {
   $.get("https://api.github.com/repos/zlsa/"+repo+"/commits/master", function(data) {
-    console.log(data);
     if(data.length >= 1) {
       var c = data[0];
     } else {

@@ -1,4 +1,4 @@
-section {
+#tab-features section {
   background-color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -11,7 +11,7 @@ section {
   margin-bottom: 48px;
   overflow: hidden;
   color: #555; }
-  section header {
+  #tab-features section header {
     color: rgba(48, 48, 48, 0.9);
     font-size: 200%;
     font-weight: 100;
@@ -25,27 +25,20 @@ section {
     z-index: 100;
     margin: 0 20px;
     width: 100%; }
-  section img {
+  #tab-features section img {
     position: absolute;
     top: 0; }
-  section p + p {
+  #tab-features section p + p {
     margin-top: 0.5em; }
-  section ul {
-    margin: 1em 0;
-    margin-left: 2em; }
-    section ul li {
-      color: #ccc; }
-      section ul li span {
-        color: #555; }
-  section:nth-child(odd) {
+  #tab-features section:nth-child(odd) {
     padding-right: 640px; }
-    section:nth-child(odd) header {
+    #tab-features section:nth-child(odd) header {
       float: left; }
-    section:nth-child(odd) img {
+    #tab-features section:nth-child(odd) img {
       right: 0; }
-  section:nth-child(even) {
+  #tab-features section:nth-child(even) {
     padding-left: 640px; }
-    section:nth-child(even) header {
+    #tab-features section:nth-child(even) header {
       float: left; }
-    section:nth-child(even) img {
+    #tab-features section:nth-child(even) img {
       left: 0; }

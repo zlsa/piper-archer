@@ -1,5 +1,6 @@
 
 @import "util";
+@import "button";
 
 #top {
   background-color: #fff;
@@ -36,12 +37,12 @@
   }
   
   .download.button {
-    @include button(#38f);
+    @include button($production-color);
     font-weight: bold;
   }
 
   .download.button.beta {
-    @include button(#f83);
+    @include button($beta-color);
   }
   
 }

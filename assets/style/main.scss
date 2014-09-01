@@ -6,7 +6,9 @@
 
 @import "header";
 @import "top";
-@import "section";
+@import "tabs";
+@import "features";
+@import "previous";
 @import "footer";
 
 html, body {
@@ -18,8 +20,35 @@ html {
 
   font-family: sans-serif;
   line-height: 140%;
+  
+  overflow-y: scroll;
 }
 
 a.link {
   text-decoration: underline;
 }
+
+ul {
+  margin: 1em 0;
+  margin-left: 2em;
+
+  li {
+    color: #ccc;
+    span {
+      color: #555;
+    }
+  }
+}
+
+ol {
+  margin: 1em 0;
+  margin-left: 3em;
+
+  li {
+    color: #888;
+    span {
+      color: #555;
+    }
+  }
+}
+

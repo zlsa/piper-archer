@@ -22,80 +22,96 @@
         <span class="message">fetching latest commit...</span>
       </a>
     </div>
-    <main>
-      <section id="model">
-        <header>Realistic exterior model</header>
-        <p>The exterior model features fully animated flight control
-        surfaces and landing gear with struts and scissors.</p>
-        <p>Currently featured in the exterior model:</p>
-        <ul>
-          <li><span>Ailerons, elevator, and rudder</span></li>
-          <li><span>Elevator trim tab</span></li>
-          <li><span>Landing gear suspension</span></li>
-          <li><span>Flaps and flap arm</span></li>
-          <li><span>Propeller with blur</span></li>
-        </ul>
-        <p>Note that at this time, there are no textures on the
-        exterior and only provisional textures on the interior.</p>
-        <img src="assets/images/sections/runway.png" />
-      </section>
-      <section id="lighting">
-        <header>Lighting</header>
-        <p>The Piper Archer CX has been tested extensively with
-        Rembrandt and atmospheric light scattering; the aircraft
-        should work well with either one enabled. All of the lights
-        will dim when the electrical system is under load, such as
-        when the starter is cranking the engine.</p>
-        <p>The following lights fully support Rembrandt lighting:</p>
-        <ul>
-          <li><span>Cockpit lighting</span></li>
-          <li><span>Landing lights</span></li>
-          <li><span>Navigation lights</span></li>
-          <li><span>Strobe lights</span></li>
-          <li><span>Tail beacon light</span></li>
-        </ul>
-        <img src="assets/images/sections/night.png" />
-      </section>
-      <section id="systems">
-        <header>Accurate systems</header>
-        <p>The Piper Archer CX features detailed and accurate
-          fuel and electrical systems.</p>
-        <p>The electrical system simulation currently features:</p>
-        <ul>
-          <li><span>Battery charging</span></li>
-          <li><span>Voltage drop under load</span></li>
-          <li><span>Switches for all powered components</span></li>
-        </ul>
-        <p>The fuel system currently features:</p>
-        <ul>
-          <li><span>Fuel pump with collection tank</span></li>
-        </ul>
-        <img src="assets/images/sections/runway.png" />
-      </section>
-      <section id="cockpit">
-        <header>Detailed cockpit</header>
-        <p>The fictional Piper Archer CX, unlike the existing TX and
-        LX variants, has analog instruments (such as in the Piper
-        Archer II) instead of a glass panel. Each instrument is
-        modeled to fit the instrument panel and should mimic its
-        real-life counterpart as closely as possible.</p>
-        <p>The following instruments are present:</p>
-        <ul>
-          <li><span>Flight instruments (six pack)</span></li>
-          <li><span>Oil temperature / oil pressure</span></li>
-          <li><span>Battery voltage</span></li>
-          <li><span>Fuel level / fuel pressure</span></li>
-          <li><span>Tachometer</span></li>
-        </ul>
-        <p>In addition to the above instruments, many switches and
-        controls are present as well.</p>
-        <img src="assets/images/sections/cockpit.png" />
-      </section>
+    <nav id="tabs">
+      <a class="features active" href="javascript:tab('features')">Features</a>
+<!--      <a class="installation" href="javascript:tab('installation')">Installation</a>-->
+      <a class="previous" href="javascript:tab('previous')">Previous versions</a>
+    </nav>
+    <main id="tab-views">
+      <div id="tab-features" class="tab active">
+        <section id="model">
+          <header>Realistic exterior model</header>
+          <p>The exterior model features fully animated flight control
+            surfaces and landing gear with struts and scissors.</p>
+          <p>Currently featured in the exterior model:</p>
+          <ul>
+            <li><span>Ailerons, elevator, and rudder</span></li>
+            <li><span>Elevator trim tab</span></li>
+            <li><span>Landing gear suspension</span></li>
+            <li><span>Flaps and flap arm</span></li>
+            <li><span>Propeller with blur</span></li>
+          </ul>
+          <p>Note that at this time, there are no textures on the
+            exterior and only provisional textures on the interior.</p>
+          <img src="assets/images/sections/runway.png" />
+        </section>
+        <section id="lighting">
+          <header>Lighting</header>
+          <p>The Piper Archer CX has been tested extensively with
+            Rembrandt and atmospheric light scattering; the aircraft
+            should work well with either one enabled. All of the lights
+            will dim when the electrical system is under load, such as
+            when the starter is cranking the engine.</p>
+          <p>The following lights fully support Rembrandt lighting:</p>
+          <ul>
+            <li><span>Cockpit lighting</span></li>
+            <li><span>Landing lights</span></li>
+            <li><span>Navigation lights</span></li>
+            <li><span>Strobe lights</span></li>
+            <li><span>Tail beacon light</span></li>
+          </ul>
+          <img src="assets/images/sections/night.png" />
+        </section>
+        <section id="systems">
+          <header>Accurate systems</header>
+          <p>The Piper Archer CX features detailed and accurate
+            fuel and electrical systems.</p>
+          <p>The electrical system simulation currently features:</p>
+          <ul>
+            <li><span>Battery charging</span></li>
+            <li><span>Voltage drop under load</span></li>
+            <li><span>Switches for all powered components</span></li>
+          </ul>
+          <p>The fuel system currently features:</p>
+          <ul>
+            <li><span>Fuel pump with collection tank</span></li>
+          </ul>
+          <img src="assets/images/sections/runway.png" />
+        </section>
+        <section id="cockpit">
+          <header>Detailed cockpit</header>
+          <p>The fictional Piper Archer CX, unlike the existing TX and
+            LX variants, has analog instruments (such as in the Piper
+            Archer II) instead of a glass panel. Each instrument is
+            modeled to fit the instrument panel and should mimic its
+            real-life counterpart as closely as possible.</p>
+          <p>The following instruments are present:</p>
+          <ul>
+            <li><span>Flight instruments (six pack)</span></li>
+            <li><span>Oil temperature / oil pressure</span></li>
+            <li><span>Battery voltage</span></li>
+            <li><span>Fuel level / fuel pressure</span></li>
+            <li><span>Tachometer</span></li>
+          </ul>
+          <p>In addition to the above instruments, many switches and
+            controls are present as well.</p>
+          <img src="assets/images/sections/cockpit.png" />
+        </section>
+      </div>
+      <div id="tab-installation" class="tab">
+        <ol>
+          <li><span>Download the <a href="http://zlsa.github.io/pa28-181/releases/pa28-181-latest.zip">latest</a> version of this aircraft</span></li>
+          <li><span>Unzip the aircraft; there should be a single folder: <code>pa28-181/</code> inside</span></li>
+          <li><span>Copy <code>pa28-181</code> to either <code>$FG_ROOT/Aircraft/pa28-181/</code> or <code>$HOME/.</code></span></li>
+        </ol>
+      </div>
+      <div id="tab-previous" class="tab">
+      </div>
     </main>
     <footer>
       <span class="disclaimer">The production of this fictional
-      aircraft model is not related to either Piper Aircraft or the
-      FlightGear project.</span>
+        aircraft model is not related to either Piper Aircraft or the
+        FlightGear project.</span>
     </footer>
   </body>
 </html>

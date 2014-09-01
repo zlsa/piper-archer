@@ -1,0 +1,40 @@
+
+@import "util";
+
+#tabs {
+  border-bottom: 2px solid #aaa;
+  color: #444;
+  margin-bottom: $section-margin;
+  height: 0;
+  text-align: center;
+
+  a {
+
+    background-color: #ddd;
+    @include border-radius();
+
+    top: -15px;
+    color: #888;
+
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 10px;
+
+    &.active {
+      @include button($theme-color);
+    }
+  }
+}
+
+.tab {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  margin-bottom: 3em;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

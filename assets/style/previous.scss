@@ -1,0 +1,14 @@
+
+@import "util";
+
+#tab-previous {
+  background-color: #fff;
+
+  @include border-radius();
+
+  position: relative;
+  padding: $section-padding;
+  margin: 0 $header-margin;
+  overflow: hidden;
+
+}
