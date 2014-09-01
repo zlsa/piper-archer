@@ -1,7 +1,10 @@
 
 @import "reset";
+@import "util";
+
 @import "header";
-@import "sections";
+@import "section";
+@import "footer";
 
 html,body {
   width: 100%;
@@ -10,4 +13,8 @@ html,body {
 html {
   background-color: #ddd;
   font-family: sans-serif;
+}
+
+main {
+  padding-top: $header-height + $header-margin * 2;
 }

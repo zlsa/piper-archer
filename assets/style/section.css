@@ -1,0 +1,31 @@
+section {
+  background-color: #fff;
+  position: relative;
+  height: 400px;
+  padding: 10px;
+  padding-right: 620px;
+  margin: 0 16px; }
+  section header {
+    background-color: #303030;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 200%;
+    font-weight: 100;
+    -webkit-text-shadow: 0 1px 0 black;
+    -moz-text-shadow: 0 1px 0 black;
+    -ms-text-shadow: 0 1px 0 black;
+    text-shadow: 0 1px 0 black;
+    position: absolute;
+    top: 15px;
+    padding: 5px 10px;
+    z-index: 100; }
+    section header:nth-child(even) {
+      right: 30px; }
+    section header:nth-child(odd) {
+      left: 30px; }
+  section img {
+    position: absolute;
+    top: 0; }
+    section img:nth-child(even) {
+      left: 0; }
+    section img:nth-child(odd) {
+      right: 0; }

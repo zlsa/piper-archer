@@ -4,10 +4,10 @@
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   border-radius: 0px;
-  -webkit-box-shadow: 0 4px 0 #6677ff;
-  -moz-box-shadow: 0 4px 0 #6677ff;
-  -ms-box-shadow: 0 4px 0 #6677ff;
-  box-shadow: 0 4px 0 #6677ff;
+  -webkit-box-shadow: 0 4px 0 #3388ff;
+  -moz-box-shadow: 0 4px 0 #3388ff;
+  -ms-box-shadow: 0 4px 0 #3388ff;
+  box-shadow: 0 4px 0 #3388ff;
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   position: fixed;
@@ -28,7 +28,7 @@
       height: 100%;
       padding: 5px 10px; }
     #header ul.aircraft li.active {
-      background-color: #6677ff;
+      background-color: #3388ff;
       font-weight: bold; }
     #header ul.aircraft li:hover {
       background-color: rgba(99, 99, 99, 0.8); }

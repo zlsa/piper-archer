@@ -5,8 +5,14 @@ $header-font-size:        16px;
 $header-height:           32px;
 $header-bar-height:       4px;
 $header-bar-color:        darken($header-background-color, 20);
-$header-bar-color:        #67f;
+$header-bar-color:        #38f;
 $header-padding:          ($header-height - $header-font-size) / 2 - 3;
+$header-margin:           $header-height / 2;
+
+$section-header-padding:  30px;
+$section-width:           600px;
+$section-height:          400px;
+$section-padding:         10px;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
