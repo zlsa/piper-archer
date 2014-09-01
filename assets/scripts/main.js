@@ -29,4 +29,11 @@ $(document).ready(function() {
     s         += time.getFullYear();
     $(".last-update .date").text(s);
   });
+  for(var i=0;i<info.releases.length;i++) {
+    var release = info.releases[i];
+    if(release[0] == "pa28-181-latest.zip") {
+      $(".size").text(release[2] + " MB");
+    }
+    $("#tab-previous").append("<div class='release'><a class='download' href='http://zlsa.github.io/pa28-181/releases/"+release[0]+"' title='Download this older release'>"+release[0]+"</a><span class='size'>"+release[2]+" MB</span></div>");
+  }
 });

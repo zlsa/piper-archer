@@ -1,10 +1,96 @@
-#tab-previous {
-  background-color: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-  position: relative;
-  padding: 20px;
-  margin: 0 24px;
-  overflow: hidden; }
+/*
+Syntax error: Undefined mixin 'button'.
+        on line 18 of ./previous.scss, in `button'
+        from line 18 of ./previous.scss
+
+13: 
+14:   .release {
+15:     font-weight: bold;
+16: 
+17:     .download {
+18:       @include button($theme-color);
+19:     }
+20: 
+21:     .size {
+22:       color: #666;
+23:       display: inline-block;
+
+Backtrace:
+./previous.scss:18:in `button'
+./previous.scss:18
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:98:in `block in with_mixin'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:121:in `with_frame'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:98:in `with_mixin'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:121:in `with_frame'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `map'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:121:in `with_frame'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `map'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:121:in `with_frame'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `map'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:121:in `with_frame'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/engine.rb:274:in `render'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `each'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:357:in `on_file_changed'
+/usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:250:in `block in watch'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:252:in `call'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:252:in `on_change'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:252:in `call'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:252:in `report_changes'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:321:in `poll_changed_directories'
+/home/forest/.gem/ruby/2.1.0/gems/listen-1.3.1/lib/listen/adapter.rb:297:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'button'.\A         on line 18 of ./previous.scss, in `button'\A         from line 18 of ./previous.scss\A \A 13: \A 14:   .release {\A 15:     font-weight: bold;\A 16: \A 17:     .download {\A 18:       @include button($theme-color);\A 19:     }\A 20: \A 21:     .size {\A 22:       color: #666;\A 23:       display: inline-block;"; }

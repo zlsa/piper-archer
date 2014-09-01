@@ -11,4 +11,24 @@
   margin: 0 $header-margin;
   overflow: hidden;
 
+  .release {
+    font-weight: bold;
+
+    .download {
+      @include button($theme-color);
+    }
+
+    .size {
+      color: #666;
+      display: inline-block;
+      margin-left: 30px;
+    }
+  }
+
+  .release + .release {
+    border-top: 1px solid #aaa;
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+  
 }
