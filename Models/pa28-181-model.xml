@@ -984,9 +984,44 @@
 
   <animation>
     <type>rotate</type>
+    <object-name>elevator</object-name>
+    <object-name>elevator trim tab</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>4</factor>
+    <center>
+      <x-m> 2.74</x-m>
+      <y-m> 0.00</y-m>
+      <z-m> 0.12</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
     <object-name>elevator trim tab</object-name>
     <property>controls/flight/elevator</property>
     <factor>8</factor>
+    <center>
+      <x-m> 3.388</x-m>
+      <y-m> 0.000</y-m>
+      <z-m> 0.110</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>elevator trim tab</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>-12</factor>
     <center>
       <x-m> 3.388</x-m>
       <y-m> 0.000</y-m>

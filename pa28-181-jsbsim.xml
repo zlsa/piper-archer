@@ -8,7 +8,7 @@
    <author>Aeromatic v 0.95</author>
    <filecreationdate>2014-02-09</filecreationdate>
    <version>Revision: 1.15</version>
-   <description>Models a pa28-181 Archer TX</description>
+   <description>Models a PA28-181 Archer TX/LX</description>
  </fileheader>
 
  <metrics>
@@ -505,17 +505,6 @@
    </axis>
 
    <axis name="ROLL">
-
-     <function name="aero/moment/Roll_dihedral">
-       <description>Roll moment due to dihedral</description>
-       <product>
-         <property>aero/qbar-psf</property>
-         <property>metrics/Sw-sqft</property>
-         <property>metrics/bw-ft</property>
-         <property>attitude/roll-rad</property>
-         <value>-0.005</value>
-       </product>
-     </function>
 
      <function name="aero/moment/Roll_beta">
        <description>Roll moment due to beta</description>
