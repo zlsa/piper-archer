@@ -619,6 +619,57 @@
 
   </animation>
 
+  <!-- mixture lever -->
+  
+  <animation>
+    <type>knob</type>
+    <object-name>mixture lever</object-name>
+    <property>controls/engines/engine/mixture</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>1</ind>
+	<dep>-60</dep>
+      </entry>
+    </interpolation>
+    <drag-direction>vertical</drag-direction>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>-1.950</x-m>
+      <y-m> 0.000</y-m>
+      <z-m>-0.095</z-m>
+    </center>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+	<property>controls/engines/engine/mixture</property>
+	<factor>0.02</factor>
+	<min>0.0</min>
+	<max>1.0</max>                
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>mixture</tooltip-id>
+	<label>Mixture: %d%%</label>
+	<mapping>percent</mapping>
+	<property>controls/engines/engine/mixture</property>
+      </binding>
+    </hovered>
+
+  </animation>
+
   <!-- ENGINE -->
   
   <!-- prop -->
