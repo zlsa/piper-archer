@@ -404,7 +404,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/pa28-181/Models/Effects/interior-chrome.png</texture>
+    <texture>Aircraft/pa28-181/Models/Effects/exterior-chrome.png</texture>
     <object-name>yoke rod</object-name>
     <object-name>yoke rod gasket</object-name>
   </animation>
