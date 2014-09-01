@@ -1,5 +1,21 @@
 #!/usr/bin/python3
 
+# Automatically zips up all files with some exceptions.
+#
+# Directory exceptions:
+# .git        (obvious)
+# blueprints  (images for reference)
+# screenshots (technically shouldn't even be committed)
+# textures    (for the source SVG/PNG files before they've been copied over)
+#
+# Filename exceptions:
+# pack.sh            (this file)
+# update_textures.sh (copies all textures from the source paths)
+# *.blend*           (all blender models)
+# *.svg              (all source SVG files)
+# .*                 (all hidden files)
+# *~                 (all autosaved files)
+
 import zipfile
 import time
 import os
