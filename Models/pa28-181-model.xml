@@ -925,7 +925,7 @@
     <object-name>right main fairing</object-name>
     <object-name>right main axle</object-name>
     <object-name>right main gear lower arm</object-name>
-    <property>gear/gear[1]/compression-ft</property>
+    <property>gear/gear[2]/compression-ft</property>
     <factor>0.3</factor>
     <axis>
       <x>0</x>
