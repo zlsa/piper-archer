@@ -9,7 +9,9 @@ import sys
 
 AIRCRAFT = "pa28-181"
 
-def collect(path_from = "../releases", path_to = "releases"):
+def collect(path_from = "../releases/", path_to = "releases/"):
+#  for filename in os.listdir(path_to):
+#    os.remove(os.path.join(path_to, filename))
   latest = 0
   latest_filename = ""
   for filename in os.listdir(path_from):
@@ -21,8 +23,11 @@ def collect(path_from = "../releases", path_to = "releases"):
         latest = ctime
       print(filename)
       sys.stdout.flush()
-  shutil.copy(os.path.join(path_to, latest_filename), os.path.join(path_to, AIRCRAFT + "-latest.zip"))
-  print(AIRCRAFT+"-latest.zip")
+  if latest:
+    shutil.copy(os.path.join(path_to, latest_filename), os.path.join(path_to, AIRCRAFT + "-latest.zip"))
+    print(AIRCRAFT+"-latest.zip")
+  else:
+    print("no aircraft copied")
 
 if __name__ == "__main__":
   collect()
