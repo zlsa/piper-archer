@@ -7,6 +7,7 @@
 # blueprints  (images for reference)
 # screenshots (technically shouldn't even be committed)
 # textures    (for the source SVG/PNG files before they've been copied over)
+# archive     (currently only the old model)
 #
 # Filename exceptions:
 # pack.sh            (this file)
@@ -29,6 +30,8 @@ def list_files(w):
   if w[0].find(".git") >= 0:
     return []
   if w[0].find("/blueprints") >= 0:
+    return []
+  if w[0].find("/archive") >= 0:
     return []
   if w[0].find("/screenshots") >= 0:
     return []
