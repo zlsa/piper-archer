@@ -1,0 +1,50 @@
+
+@import "util";
+
+#top {
+  background-color: #fff;
+
+  @include border-radius(4px);
+
+  position: relative;
+  margin: $section-margin $header-margin;
+  margin-top: 0;
+  padding: $section-padding;
+
+  color: rgba(0, 0, 0, 0.7);
+
+  .last-update, .size {
+    margin-left: 4px;
+  }
+
+  .size {
+    font-weight: bold;
+  }
+
+  .last-update {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  #last-commit {
+    float: right;
+    padding: 4px;
+
+    &.fetching {
+      color: #aaa;
+    }
+
+  }
+  
+  .download.button {
+    font-weight: bold;
+
+    .size {
+      margin-left: 4px;
+      font-size: 80%;
+      position: relative;
+      top: -1px;
+      left: 1px;
+    }
+  }
+  
+}

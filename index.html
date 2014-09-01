@@ -3,25 +3,87 @@
   <head>
     <title>Piper PA28-181 Archer CX</title>
     <link rel="stylesheet" href="assets/style/main.css" />
+    <script src="assets/scripts/jquery.js"></script>
+    <script src="assets/scripts/main.js"></script>
   </head>
   <body>
     <header id="header">
-      <a href="http://www.flightgear.org/" class="homepage image">
-        <img src="assets/images/logo-32.svg" title="Go to the official FlightGear website" alt="Official FlightGear website" />
-      </a>
-      <ul class="aircraft">
-        <li class="active"><a href="http://zlsa.github.io/pa28-181/" class="active">Piper Archer CX</a></li>
-      </ul>
-      <a class="author">Jon Ross</a>
+      <div class="wrapper">
+        <a href="http://www.flightgear.org/" class="homepage image">
+          <img src="assets/images/logo-32.svg" title="Go to the official FlightGear website" alt="Official FlightGear website" />
+        </a>
+        <ul class="aircraft">
+          <li class="active"><a href="http://zlsa.github.io/pa28-181/" class="active">Piper Archer CX</a></li>
+        </ul>
+        <a class="author">Jon Ross</a>
+      </div>
     </header>
+    <div id="top">
+      <a class="download button" href="http://zlsa.github.io/pa28-181/pa28-181.zip">
+        <span class="title">Download</span>
+      </a>
+      <span class="size">12MB</span>
+      <span class="last-update">Model last updated on <span class="date">&hellip;</span></span>
+      <span id="last-commit" class="fetching">
+        <span class="message">fetching latest commit...</span>
+      </span>
+    </div>
     <main>
-      <section>
-        <header>Rembrandt-ready</header>
+      <section id="lighting">
+        <header>Lighting</header>
+        <p>The Piper Archer CX has been tested extensively with
+        Rembrandt and atmospheric light scattering; the aircraft
+        should work well with either one enabled. All of the lights
+        will dim when the electrical system is under load, such as
+        when the starter is cranking the engine.</p>
+        <p>The following lights fully support Rembrandt lighting:</p>
+        <ul>
+          <li><span>Cockpit lighting</span></li>
+          <li><span>Landing lights</span></li>
+          <li><span>Navigation lights</span></li>
+          <li><span>Strobe lights</span></li>
+          <li><span>Tail beacon light</span></li>
+        </ul>
+        <img src="assets/images/sections/night.png" />
+      </section>
+      <section id="cockpit">
+        <header>Detailed cockpit</header>
+        <p>The fictional Piper Archer CX, unlike the TX and LX
+        variants, has analog instruments (such as in the Piper Archer
+        II) instead of a glass panel. Each instrument is hand-modeled
+        to fit the instrument panel and should mimic its real-life
+        counterpart as closely as possible.</p>
+        <p>The following instruments are present:</p>
+        <ul>
+          <li><span>Flight instruments (six pack)</span></li>
+          <li><span>Oil temperature / oil pressure</span></li>
+          <li><span>Battery voltage</span></li>
+          <li><span>Fuel level / fuel pressure</span></li>
+          <li><span>Tachometer</span></li>
+        </ul>
+        <img src="assets/images/sections/cockpit.png" />
+      </section>
+      <section id="Systems">
+        <header>Accurate systems</header>
+        <p>The Piper Archer CX features detailed and accurate
+          fuel and electrical systems.</p>
+        <p>The electrical system simulation currently features:</p>
+        <ul>
+          <li><span>Battery charging</span></li>
+          <li><span>Voltage drop under load</span></li>
+          <li><span>Switches for all powered components</span></li>
+        </ul>
+        <p>The fuel system currently features:</p>
+        <ul>
+          <li><span>Fuel pump with collection tank (tied to the electrical system)</span></li>
+        </ul>
         <img src="assets/images/sections/runway.png" />
       </section>
     </main>
     <footer>
-      <span class="disclaimer">The production of this aircraft model is not related to either Piper Aircraft or the FlightGear project.</span>
+      <span class="disclaimer">The production of this fictional
+      aircraft model is not related to either Piper Aircraft or the
+      FlightGear project.</span>
     </footer>
   </body>
 </html>

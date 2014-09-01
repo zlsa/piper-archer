@@ -3,62 +3,69 @@
 
 #header {
 
-  background-color:    $header-background-color;
-
-  @include border-radius(0px);
-  @include box-shadow(0 $header-bar-height 0 $header-bar-color);
-
   color:            $header-foreground-color;
   font-size:        $header-font-size;
 
-  position: fixed;
-  width: calc(100% - 32px);
-  height: $header-height;
-  margin: 16px;
-  padding-left: $header-height;
+  width: 100%;
+  height: $header-height + $header-margin * 2 + $header-padding * 2;
+  padding: $header-margin;
 
-  > * {
-    display: inline-block;
+  z-index: 1000;
+
+  .wrapper {
+
+    background-color:    $header-background-color;
+
+    @include border-radius(0px);
+    @include box-shadow(0 $header-bar-height 0 $header-bar-color);
+
+    position: relative;
     height: $header-height;
-    overflow: hidden;
-  }
+    padding-left: $header-height;
 
-  ul.aircraft {
-
-    li {
+    > * {
       display: inline-block;
-      height: 100%;
-      margin-right: $header-padding;
-      
-      a {
-        display: block;
-        height: 100%;
-        padding: $header-padding $header-padding * 2;
-      }
-
-      &.active {
-        background-color: $header-bar-color;
-        font-weight:      bold;
-      }
-    
-      &:hover {
-        background-color: lighten($header-background-color, 20);
-      }
-    
+      height: $header-height;
+      overflow: hidden;
     }
 
-  }
-  
-  > a {
-    padding: $header-padding $header-padding * 2;
-  }
+    ul.aircraft {
 
-  a.image {
-    width: $header-height;
-    opacity: 0.9;
+      li {
+        display: inline-block;
+        height: 100%;
+        margin-right: $header-padding;
+        
+        a {
+          display: block;
+          height: 100%;
+          padding: $header-padding $header-padding * 2;
+        }
 
-    &:hover {
-      opacity: 1.0;
+        &.active {
+          background-color: $header-bar-color;
+          font-weight:      bold;
+        }
+        
+        &:hover {
+          background-color: lighten($header-background-color, 20);
+        }
+        
+      }
+
+    }
+    
+    > a {
+      padding: $header-padding $header-padding * 2;
+    }
+
+    a.image {
+      width: $header-height;
+      opacity: 0.9;
+
+      &:hover {
+        opacity: 1.0;
+      }
     }
   }
 

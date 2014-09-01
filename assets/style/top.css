@@ -1,0 +1,30 @@
+#top {
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  margin: 32px 16px;
+  margin-top: 0;
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.7); }
+  #top .last-update, #top .size {
+    margin-left: 4px; }
+  #top .size {
+    font-weight: bold; }
+  #top .last-update {
+    color: rgba(0, 0, 0, 0.5); }
+  #top #last-commit {
+    float: right;
+    padding: 4px; }
+    #top #last-commit.fetching {
+      color: #aaa; }
+  #top .download.button {
+    font-weight: bold; }
+    #top .download.button .size {
+      margin-left: 4px;
+      font-size: 80%;
+      position: relative;
+      top: -1px;
+      left: 1px; }

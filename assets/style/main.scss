@@ -2,19 +2,20 @@
 @import "reset";
 @import "util";
 
+@import "button";
+
 @import "header";
+@import "top";
 @import "section";
 @import "footer";
 
-html,body {
+html, body {
   width: 100%;
 }
 
 html {
-  background-color: #ddd;
-  font-family: sans-serif;
-}
+  background-color: #ccc;
 
-main {
-  padding-top: $header-height + $header-margin * 2;
+  font-family: sans-serif;
+  line-height: 140%;
 }

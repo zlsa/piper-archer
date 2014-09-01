@@ -12,7 +12,8 @@ $header-margin:           $header-height / 2;
 $section-header-padding:  30px;
 $section-width:           600px;
 $section-height:          400px;
-$section-padding:         10px;
+$section-padding:         20px;
+$section-margin:          $header-margin * 2;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
