@@ -10,7 +10,7 @@
     <rating>
       <FDM type="int">1</FDM>
       <systems type="int">3</systems>
-      <cockpit type="int">4</cockpit>
+      <cockpit type="int">3</cockpit>
       <model type="int">4</model>
       <!-- 1 + 3 + 4 + 4 = 12: beta -->
     </rating>
