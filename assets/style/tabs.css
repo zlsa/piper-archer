@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'button'.
-        on line 25 of ./tabs.scss, in `button'
-        from line 25 of ./tabs.scss
+        on line 34 of ./tabs.scss, in `button'
+        from line 34 of ./tabs.scss
 
-20:     display: inline-block;
-21:     padding: 5px 20px;
-22:     margin: 0 10px;
-23: 
-24:     &.active {
-25:       @include button($theme-color);
-26:     }
-27:   }
-28: }
-29: 
-30: .tab {
+29:       background-color: $theme-color;
+30:       color: #fff;
+31:     }
+32: 
+33:     &.active {
+34:       @include button($theme-color);
+35:     }
+36:   }
+37: }
+38: 
+39: .tab {
 
 Backtrace:
-./tabs.scss:25:in `button'
-./tabs.scss:25
+./tabs.scss:34:in `button'
+./tabs.scss:34
 /usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:98:in `block in with_mixin'
 /usr/lib/ruby/gems/2.1.0/gems/sass-3.3.9/lib/sass/stack.rb:121:in `with_frame'
@@ -93,4 +93,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'button'.\A         on line 25 of ./tabs.scss, in `button'\A         from line 25 of ./tabs.scss\A \A 20:     display: inline-block;\A 21:     padding: 5px 20px;\A 22:     margin: 0 10px;\A 23: \A 24:     &.active {\A 25:       @include button($theme-color);\A 26:     }\A 27:   }\A 28: }\A 29: \A 30: .tab {"; }
+  content: "Syntax error: Undefined mixin 'button'.\A         on line 34 of ./tabs.scss, in `button'\A         from line 34 of ./tabs.scss\A \A 29:       background-color: $theme-color;\A 30:       color: #fff;\A 31:     }\A 32: \A 33:     &.active {\A 34:       @include button($theme-color);\A 35:     }\A 36:   }\A 37: }\A 38: \A 39: .tab {"; }

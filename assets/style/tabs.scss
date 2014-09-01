@@ -21,6 +21,15 @@
     padding: 5px 20px;
     margin: 0 10px;
 
+    &:hover {
+      background-color: #e6e6e6;
+    }
+
+    &:active {
+      background-color: $theme-color;
+      color: #fff;
+    }
+
     &.active {
       @include button($theme-color);
     }
