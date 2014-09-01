@@ -8,6 +8,7 @@ function tab(t) {
   $("#tabs a").removeClass("active");
   $("#tabs a."+t).addClass("active");
   $(".tab").not(".active").css("display", "none");
+  location.hash = t;
   console.log(t);
 }
 
@@ -42,7 +43,8 @@ $(document).ready(function() {
       $(".last-update .date").text(s);
       $(".size").text(release[2] + " MB");
     } else {
-      $("#tab-previous").append("<div class='release'><a class='download' href='http://zlsa.github.io/pa28-181/releases/"+release[0]+"' title='Download this older release'>"+release[0]+"</a><span class='size'>"+release[2]+" MB</span></div>");
+      $("#tab-releases").append("<div class='release'><a class='download' href='http://zlsa.github.io/pa28-181/releases/"+release[0]+"' title='Download this older release'>"+release[0]+"</a><span class='size'>"+release[2]+" MB</span></div>");
     }
   }
+  if(location.hash) tab(location.hash.substr(1))
 });

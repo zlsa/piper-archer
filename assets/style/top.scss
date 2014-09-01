@@ -34,6 +34,12 @@
     a {
       margin: 0 20px;
       position: relative;
+      
+      &:hover {
+        color: #444;
+
+        text-decoration: underline;
+      }
     }
 
     a + a:before {
@@ -45,7 +51,7 @@
       display: inline-block;
       position: absolute;
       top: 0;
-      left: -20px;
+      left: -21px;
       height: 100%;
     }
 
