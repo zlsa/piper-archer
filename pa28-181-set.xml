@@ -298,10 +298,10 @@
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <!-- <file>Aircraft/pa28-181/Nasal/performance.nas</file> -->
     </performance>
-<!--    <failures>
+    <failures>
       <file>Aircraft/pa28-181/Nasal/util.nas</file>
       <file>Aircraft/pa28-181/Nasal/failures.nas</file>
-    </failures>-->
+    </failures>
   </nasal>
 
 </PropertyList>
