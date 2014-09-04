@@ -334,6 +334,41 @@
     </emission>
   </animation>
 
+  <animation>
+    <type>range</type>
+    <object-name>fuel selector</object-name>
+    <object-name>left yoke</object-name>
+    <object-name>left yoke logo</object-name>
+    <object-name>left yoke</object-name>
+    <object-name>right yoke logo</object-name>
+    <object-name>yoke rod</object-name>
+    <object-name>yoke rod trim</object-name>
+    <min-m>   0</min-m>
+    <min-m>1000</min-m>
+  </animation>
+
+  <animation>
+    <type>range</type>
+    <object-name>clock</object-name>
+    <object-name>airspeed</object-name>
+    <object-name>attitude</object-name>
+    <object-name>altimeter</object-name>
+    <object-name>bank</object-name>
+    <object-name>compass</object-name>
+    <object-name>vsi</object-name>
+    <object-name>placeholder</object-name>
+    <object-name>fuel-left</object-name>
+    <object-name>fuel-pressure</object-name>
+    <object-name>fuel-right</object-name>
+    <object-name>oil-pressure</object-name>
+    <object-name>oil-temperature</object-name>
+    <object-name>switches</object-name>
+    <object-name>key</object-name>
+    <object-name>tachometer</object-name>
+    <min-m>   0</min-m>
+    <min-m> 500</min-m>
+  </animation>
+
   <!-- Rembrandt -->
 
   <animation>
