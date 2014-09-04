@@ -37,6 +37,8 @@ def list_files(w):
     return []
   if w[0].find("/textures") >= 0:
     return []
+  if w[0].find("/uv") >= 0:
+    return []
   for filename in w[2]:
     if filename == "pack.py":
       continue
@@ -66,7 +68,7 @@ def pack():
   name += time.strftime("%Y%m%d", time.gmtime(time.time()))
   name += ".zip"
   files = filelist("./")
-#  for f in files: print(f)
+ # for f in files: print(f)
   path  = "../releases"
   path  = os.path.join(path, name)
   try:
