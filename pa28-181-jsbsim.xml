@@ -370,12 +370,15 @@
          <table>
            <independentVar lookup="row">aero/alpha-deg</independentVar>
            <tableData>
-              -10 -0.750
+              -90  0
+              -45 -0.950
+              -10 -0.600
                00  0.400
                10  1.210
                14  1.300
                22  1.200
                45  0.800
+               90  0.100
            </tableData>
          </table>
        </product>
@@ -419,14 +422,14 @@
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <table>
-           <independentVar lookup="row">aero/alpha-rad</independentVar>
+           <independentVar lookup="row">aero/alpha-deg</independentVar>
            <tableData>
-              -1.57  1.500
-              -0.26  0.400
-               0.00  0.028
-               0.17  0.036
-               0.40  0.080
-               1.57  1.500
+              -90  1.500
+              -30  0.400
+                0  0.028
+               15  0.036
+               40  0.080
+               90  1.500
            </tableData>
          </table>
        </product>
@@ -466,13 +469,13 @@
          <property>aero/qbar-psf</property>
          <property>metrics/Sw-sqft</property>
          <table>
-           <independentVar lookup="row">aero/beta-rad</independentVar>
+           <independentVar lookup="row">aero/beta-deg</independentVar>
            <tableData>
-              -1.57  1.230
-              -0.26  0.050
-               0.00  0.000
-               0.26  0.050
-               1.57  1.230
+              -90   1.230
+              -30   0.050
+                0   0.000
+               30   0.050
+               90   1.230
            </tableData>
          </table>
        </product>
@@ -600,6 +603,7 @@
          <table>
            <independentVar lookup="row">aero/alpha-deg</independentVar>
            <tableData>
+              -90 -0.80
               -45 -0.95
               -10 -1.05
                00  1.00
@@ -607,6 +611,7 @@
                14  1.05
                22  0.85
                45  0.65
+               90  0.15
            </tableData>
          </table>
        </product>

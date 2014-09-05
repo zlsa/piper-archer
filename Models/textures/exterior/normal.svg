@@ -17,8 +17,8 @@
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="normal.svg"
    inkscape:export-filename="/home/forest/projects/fgfs/pa28-181/Models/textures/exterior/bump.png"
-   inkscape:export-xdpi="180"
-   inkscape:export-ydpi="180">
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <linearGradient
@@ -47,15 +47,6 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3960"
-       id="linearGradient3966"
-       x1="100"
-       y1="944"
-       x2="100"
-       y2="964"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3960"
        id="linearGradient3970"
        gradientUnits="userSpaceOnUse"
        x1="100"
@@ -63,16 +54,6 @@
        x2="100"
        y2="964"
        gradientTransform="matrix(1,0,0,0.1,0,877.96218)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3960"
-       id="linearGradient3976"
-       gradientUnits="userSpaceOnUse"
-       x1="100"
-       y1="944"
-       x2="100"
-       y2="964"
-       gradientTransform="translate(0,-1916.3622)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3960"
@@ -163,26 +144,6 @@
        y1="944"
        x2="100"
        y2="964" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4008"
-       id="linearGradient4022"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.4242425,0,0,0.44999997,132,579.56221)"
-       x1="100"
-       y1="944"
-       x2="100"
-       y2="964" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4008"
-       id="linearGradient4024"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.4242425,0,0,0.44999997,132,-1429.1622)"
-       x1="100"
-       y1="944"
-       x2="100"
-       y2="964" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -192,8 +153,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="764.6741"
-     inkscape:cy="302.10575"
+     inkscape:cx="342.29498"
+     inkscape:cy="52.742167"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -252,91 +213,22 @@
        x="0"
        y="0"
        transform="translate(0,28.362183)" />
-    <rect
-       style="fill:url(#linearGradient3966);fill-opacity:1;stroke:none"
-       id="rect3958"
-       width="132"
-       height="20"
-       x="0"
-       y="944"
-       transform="translate(0,28.362183)"
-       inkscape:transform-center-y="10" />
-    <rect
-       inkscape:transform-center-y="-9.9999996"
-       transform="scale(1,-1)"
-       y="-972.36218"
-       x="0"
-       height="20"
-       width="132"
-       id="rect3972"
-       style="fill:url(#linearGradient3976);fill-opacity:1;stroke:none" />
-    <rect
-       inkscape:transform-center-y="10"
-       y="1018.3622"
-       x="904"
-       height="20"
-       width="116"
-       id="rect3980"
-       style="fill:url(#linearGradient3988);fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:url(#linearGradient3992);fill-opacity:1;stroke:none"
-       id="rect3984"
-       width="116"
-       height="20"
-       x="904"
-       y="-1018.3622"
-       transform="scale(1,-1)"
-       inkscape:transform-center-y="-9.9999996" />
-    <rect
-       inkscape:transform-center-y="10"
-       y="640.36218"
-       x="892"
-       height="20"
-       width="132"
-       id="rect3996"
-       style="fill:url(#linearGradient4000);fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:url(#linearGradient4002);fill-opacity:1;stroke:none"
-       id="rect3998"
-       width="132"
-       height="20"
-       x="892"
-       y="-640.36218"
-       transform="scale(1,-1)"
-       inkscape:transform-center-y="-9.9999996" />
-    <rect
-       style="fill:url(#linearGradient4014);fill-opacity:1;stroke:none"
-       id="rect4004"
-       width="452"
-       height="8.999999"
-       x="440"
-       y="669.36218"
-       inkscape:transform-center-y="4.4999979" />
-    <rect
-       inkscape:transform-center-y="-4.5000011"
-       transform="scale(1,-1)"
-       y="-669.36218"
-       x="440"
-       height="8.999999"
-       width="452"
-       id="rect4006"
-       style="fill:url(#linearGradient4016);fill-opacity:1;stroke:none" />
-    <rect
-       inkscape:transform-center-y="4.4999979"
-       y="1004.3622"
-       x="132"
-       height="8.999999"
-       width="452"
-       id="rect4018"
-       style="fill:url(#linearGradient4022);fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:url(#linearGradient4024);fill-opacity:1;stroke:none"
-       id="rect4020"
-       width="452"
-       height="8.999999"
-       x="132"
-       y="-1004.3622"
-       transform="scale(1,-1)"
-       inkscape:transform-center-y="-4.5000011" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,968.36218 132,0"
+       id="path3103"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3873"
+       d="m 132,1004.3622 452,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3875"
+       d="m 904,1016.3622 120,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>
