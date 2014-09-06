@@ -20,7 +20,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/pa28-181/Models/Effects/glossy-black-plastic.png</texture>
+    <texture>Models/Effects/glossy-black-plastic.png</texture>
     <object-name>case</object-name>
     <object-name>tas adjustment knob</object-name>
   </animation>

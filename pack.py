@@ -12,7 +12,7 @@
 #
 # Filename exceptions:
 # pack.sh            (this file)
-# update_textures.sh (copies all textures from the source paths)
+# update-textures.sh (copies all textures from the source paths)
 # *.blend*           (all blender models)
 # *.svg              (all source SVG files)
 # .*                 (all hidden files)
@@ -43,7 +43,7 @@ def list_files(w):
   for filename in w[2]:
     if filename == "pack.py":
       continue
-    if filename == "update_textures.sh":
+    if filename == "update-textures.sh":
       continue
     if filename == "info.md":
       continue

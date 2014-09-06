@@ -31,19 +31,39 @@
   </effect>
 
   <effect>
-    <inherits-from>Aircraft/pa28-181/Models/Effects/fuselage</inherits-from>
+    <inherits-from>Models/Effects/fuselage</inherits-from>
+    <object-name>fuselage</object-name>
+
+    <object-name>left flap</object-name>
+    <object-name>left flap arm</object-name>
+    <object-name>right flap</object-name>
+    <object-name>right flap arm</object-name>
+
+    <object-name>left aileron</object-name>
+    <object-name>right aileron</object-name>
+
+    <object-name>rudder</object-name>
+
+    <object-name>elevator</object-name>
+    <object-name>elevator trim tab</object-name>
+
+    <object-name>main gear fairing</object-name>
+
+    <object-name>left main fairing</object-name>
+    <object-name>right main fairing</object-name>
+    <object-name>nose gear fairing</object-name>
   </effect>
 
   <!-- COCKPIT -->
 
   <!-- <effect> -->
-  <!--   <inherits-from>Aircraft/pa28-181/Models/Effects/brown-plastic</inherits-from> -->
+  <!--   <inherits-from>Models/Effects/brown-plastic</inherits-from> -->
   <!--   <object-name>dashboard</object-name> -->
   <!--   <object-name>throttle quadrant</object-name> -->
   <!-- </effect> -->
 
   <!-- <effect> -->
-  <!--   <inherits-from>Aircraft/pa28-181/Models/Effects/black-plastic</inherits-from> -->
+  <!--   <inherits-from>Models/Effects/black-plastic</inherits-from> -->
   <!--   <object-name>engine gauge trim</object-name> -->
   <!--   <object-name>yoke mount trim</object-name> -->
   <!--   <object-name>throttle quadrant trim</object-name> -->
@@ -51,13 +71,13 @@
   <!-- </effect> -->
 
   <effect>
-    <inherits-from>Aircraft/pa28-181/Models/Effects/carpet</inherits-from>
+    <inherits-from>Models/Effects/carpet</inherits-from>
     <object-name>floor</object-name>
   </effect>
 
   <model>
     <name>fuel selector</name>
-    <path>Aircraft/pa28-181/Instruments/fuel-selector/fuel-selector.xml</path>
+    <path>Instruments/fuel-selector/fuel-selector.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -70,7 +90,7 @@
 
   <model>
     <name>clock</name>
-    <path>Aircraft/pa28-181/Instruments/clock/clock.xml</path>
+    <path>Instruments/clock/clock.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -82,7 +102,7 @@
 
   <model>
     <name>airspeed</name>
-    <path>Aircraft/pa28-181/Instruments/airspeed/airspeed.xml</path>
+    <path>Instruments/airspeed/airspeed.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -94,7 +114,7 @@
 
   <model>
     <name>attitude</name>
-    <path>Aircraft/pa28-181/Instruments/attitude/attitude.xml</path>
+    <path>Instruments/attitude/attitude.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -106,7 +126,7 @@
 
   <model>
     <name>altimeter</name>
-    <path>Aircraft/pa28-181/Instruments/altimeter/altimeter.xml</path>
+    <path>Instruments/altimeter/altimeter.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -118,7 +138,7 @@
 
   <model>
     <name>bank</name>
-    <path>Aircraft/pa28-181/Instruments/bank/bank.xml</path>
+    <path>Instruments/bank/bank.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -130,7 +150,7 @@
 
   <model>
     <name>compass</name>
-    <path>Aircraft/pa28-181/Instruments/compass/compass.xml</path>
+    <path>Instruments/compass/compass.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -142,7 +162,7 @@
 
   <model>
     <name>vsi</name>
-    <path>Aircraft/pa28-181/Instruments/vsi/vsi.xml</path>
+    <path>Instruments/vsi/vsi.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -156,7 +176,7 @@
 
   <model>
     <name>placeholder</name>
-    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <path>Instruments/placeholder/placeholder.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -168,7 +188,7 @@
 
   <model>
     <name>fuel-left</name>
-    <path>Aircraft/pa28-181/Instruments/fuel/fuel-left.xml</path>
+    <path>Instruments/fuel/fuel-left.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -180,7 +200,7 @@
 
   <model>
     <name>fuel-pressure</name>
-    <path>Aircraft/pa28-181/Instruments/fuel-pressure/fuel-pressure.xml</path>
+    <path>Instruments/fuel-pressure/fuel-pressure.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -192,7 +212,7 @@
 
   <model>
     <name>fuel-right</name>
-    <path>Aircraft/pa28-181/Instruments/fuel/fuel-right.xml</path>
+    <path>Instruments/fuel/fuel-right.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -204,7 +224,7 @@
 
   <model>
     <name>placeholder</name>
-    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <path>Instruments/placeholder/placeholder.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -218,7 +238,7 @@
 
   <model>
     <name>placeholder</name>
-    <path>Aircraft/pa28-181/Instruments/placeholder/placeholder.xml</path>
+    <path>Instruments/placeholder/placeholder.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -230,7 +250,7 @@
 
   <model>
     <name>oil-pressure</name>
-    <path>Aircraft/pa28-181/Instruments/oil-pressure/oil-pressure.xml</path>
+    <path>Instruments/oil-pressure/oil-pressure.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -242,7 +262,7 @@
 
   <model>
     <name>battery</name>
-    <path>Aircraft/pa28-181/Instruments/battery/battery.xml</path>
+    <path>Instruments/battery/battery.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -254,7 +274,7 @@
 
   <model>
     <name>oil-temperature</name>
-    <path>Aircraft/pa28-181/Instruments/oil-temperature/oil-temperature.xml</path>
+    <path>Instruments/oil-temperature/oil-temperature.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -268,7 +288,7 @@
 
   <model>
     <name>switches</name>
-    <path>Aircraft/pa28-181/Instruments/switches/switches.xml</path>
+    <path>Instruments/switches/switches.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -282,7 +302,7 @@
 
   <model>
     <name>key</name>
-    <path>Aircraft/pa28-181/Instruments/key/key.xml</path>
+    <path>Instruments/key/key.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -294,7 +314,7 @@
 
   <model>
     <name>tachometer</name>
-    <path>Aircraft/pa28-181/Instruments/tachometer/tachometer.xml</path>
+    <path>Instruments/tachometer/tachometer.xml</path>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <roll-deg>180</roll-deg>
@@ -433,7 +453,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/pa28-181/Models/Effects/exterior-chrome.png</texture>
+    <texture>Models/Effects/exterior-chrome.png</texture>
     <object-name>prop spinner</object-name>
     <object-name>left main piston</object-name>
     <object-name>right main piston</object-name>
@@ -443,7 +463,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/pa28-181/Models/Effects/exterior-chrome.png</texture>
+    <texture>Models/Effects/exterior-chrome.png</texture>
     <object-name>yoke rod</object-name>
     <object-name>yoke rod gasket</object-name>
   </animation>
@@ -451,7 +471,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/pa28-181/Models/Effects/glossy-black-plastic.png</texture>
+    <texture>Models/Effects/glossy-black-plastic.png</texture>
     <object-name>throttle lever</object-name>
     <object-name>left yoke</object-name>
     <object-name>right yoke</object-name>
@@ -460,7 +480,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/pa28-181/Models/Effects/glass.png</texture>
+    <texture>Models/Effects/glass.png</texture>
     <object-name>windshield</object-name>
     <object-name>window 1</object-name>
     <object-name>window 3</object-name>

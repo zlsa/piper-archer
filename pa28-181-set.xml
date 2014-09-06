@@ -16,7 +16,7 @@
     </rating>
 
     <startup>
-      <splash-texture>Aircraft/pa28-181/splash.png</splash-texture>
+      <splash-texture>splash.png</splash-texture>
     </startup>
 
     <flight-model>jsb</flight-model>
@@ -35,7 +35,7 @@
     <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
     
     <model>
-      <path>Aircraft/pa28-181/Models/pa28-181-model.xml</path>
+      <path>Models/pa28-181-model.xml</path>
       <livery>
         <file type="string">trainer</file>
         <index type="int">0</index>
@@ -43,7 +43,7 @@
     </model>
 
     <sound>
-      <path>Aircraft/pa28-181/Sounds/pa28-181-sound.xml</path>
+      <path>Sounds/pa28-181-sound.xml</path>
     </sound>
 
     <view n="0">
@@ -276,31 +276,31 @@
 
   <nasal>
     <pa28_181>
-      <file>Aircraft/pa28-181/Nasal/util.nas</file>
+      <file>Nasal/util.nas</file>
 
-      <file>Aircraft/pa28-181/Nasal/fuel.nas</file>
+      <file>Nasal/fuel.nas</file>
 
-      <file>Aircraft/pa28-181/Nasal/liveries.nas</file>
-      <file>Aircraft/pa28-181/Nasal/lighting.nas</file>
-      <file>Aircraft/pa28-181/Nasal/electrical.nas</file>
+      <file>Nasal/liveries.nas</file>
+      <file>Nasal/lighting.nas</file>
+      <file>Nasal/electrical.nas</file>
 
-      <file>Aircraft/pa28-181/Nasal/scenario.nas</file>
+      <file>Nasal/scenario.nas</file>
 
-      <file>Aircraft/pa28-181/Nasal/pa28-181.nas</file>
+      <file>Nasal/pa28-181.nas</file>
 
       <file>Aircraft/Generic/limits.nas</file>
     </pa28_181>
     <engine>
-      <file>Aircraft/pa28-181/Nasal/util.nas</file>
-      <file>Aircraft/pa28-181/Nasal/engine.nas</file>
+      <file>Nasal/util.nas</file>
+      <file>Nasal/engine.nas</file>
     </engine>
     <performance>
-      <file>Aircraft/pa28-181/Nasal/util.nas</file>
-      <!-- <file>Aircraft/pa28-181/Nasal/performance.nas</file> -->
+      <file>Nasal/util.nas</file>
+      <!-- <file>Nasal/performance.nas</file> -->
     </performance>
     <failures>
-      <file>Aircraft/pa28-181/Nasal/util.nas</file>
-      <file>Aircraft/pa28-181/Nasal/failures.nas</file>
+      <file>Nasal/util.nas</file>
+      <file>Nasal/failures.nas</file>
     </failures>
   </nasal>
 
