@@ -1,0 +1,48 @@
+
+@import "util";
+
+#tab-about {
+
+  width: 100%;
+  padding: 0 $header-margin;
+
+  section {
+    background-color: #fff;
+
+    color: #555;
+
+    @include border-radius();
+
+    padding: $section-padding;
+    margin-bottom: $section-margin;
+    overflow: hidden;
+    width: 100%;
+
+    p+p {
+      margin-top: 0.5em;
+    }
+
+    header {
+      color: rgba(48, 48, 48, 0.9);
+      font-size: 200%;
+      font-weight: 100;
+      @include text-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
+
+      float: right;
+      padding: 15px 30px;
+    }
+
+    code {
+      background-color: #e8e8e8;
+
+      @include border-radius();
+
+      font-family: monoOne, monospace;
+      font-size: 90%;
+
+      display: inline-block;
+      padding: 0 4px;
+      margin: 0 2px;
+    }
+  }
+}
