@@ -32,7 +32,6 @@
 
   <effect>
     <inherits-from>Aircraft/pa28-181/Models/Effects/fuselage</inherits-from>
-    <object-name>fuselage</object-name>
   </effect>
 
   <!-- COCKPIT -->
