@@ -18,7 +18,10 @@ def collect(path_from = "../releases/", path_to = "releases/"):
   latest_filename = ""
   latest_size = 0
   latest_date = 0
-  for filename in os.listdir(path_from):
+  f = os.listdir(path_from)
+  f.sort()
+  print(f)
+  for filename in f:
     if os.path.splitext(filename)[1] == ".zip" and filename.startswith(AIRCRAFT):
       shutil.copy(os.path.join(path_from, filename), os.path.join(path_to, filename))
       date = int(os.path.splitext(filename)[0][len(AIRCRAFT)+1:])
