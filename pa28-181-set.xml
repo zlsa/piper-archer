@@ -53,7 +53,6 @@
 	<x-offset-m>-0.23</x-offset-m>
 	<y-offset-m> 0.52</y-offset-m>
 	<z-offset-m>-1.30</z-offset-m>
-	<default-field-of-view-deg type="double">70</default-field-of-view-deg>
 	<pitch-offset-deg>-10</pitch-offset-deg>
       </config>
     </view>
@@ -69,7 +68,6 @@
         <from-model type="bool">true</from-model>
         <heading-offset-deg type="double">0</heading-offset-deg>
         <default-heading-offset-deg>0</default-heading-offset-deg>
-	<default-field-of-view-deg type="double">70</default-field-of-view-deg>
 	<pitch-offset-deg>-10</pitch-offset-deg>
         <limits>
           <enabled type="bool">true</enabled>

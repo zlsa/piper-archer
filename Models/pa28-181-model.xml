@@ -795,14 +795,15 @@
     <object-name>left main wheel</object-name>
     <object-name>right main wheel</object-name>
     <object-name>nose wheel</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-toggle</command>
-        <property>options/wheel-fairing</property>
-      </binding>
-    </action>
+
+    <!-- <action> -->
+    <!--   <button>0</button> -->
+    <!--   <repeatable>false</repeatable> -->
+    <!--   <binding> -->
+    <!--     <command>property-toggle</command> -->
+    <!--     <property>options/wheel-fairing</property> -->
+    <!--   </binding> -->
+    <!-- </action> -->
   </animation>
 
   <!-- steering -->
