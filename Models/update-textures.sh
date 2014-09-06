@@ -1,5 +1,5 @@
 #!/bin/sh
 
 cd $1
-cp textures/exterior/*.png .
-cp textures/interior/*.png .
+cp ../Blender/textures/exterior/*.png .
+cp ../Blender/textures/interior/*.png .
