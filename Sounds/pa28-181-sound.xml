@@ -127,9 +127,9 @@
       </condition>
       <volume>
 	<property>velocities/groundspeed-kt</property>
-	<factor>0.01</factor>
+	<factor>0.005</factor>
 	<min>0.0</min>
-	<max>0.5</max>
+	<max>0.25</max>
       </volume>
     </rattle>
 
