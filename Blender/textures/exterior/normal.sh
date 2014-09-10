@@ -10,5 +10,6 @@ svg2png bump.svg
 convert bump.png +level 30%,60% bump.png
 nvcompress -fast -tonormal bump.png $TMP/normal.dds
 nvdecompress $TMP/normal.dds
-convert $TMP/normal.tga normal.png
+convert $TMP/normal.tga -resize 2048x2048 normal.png
+rm bump.png
 rm $TMP -rf
