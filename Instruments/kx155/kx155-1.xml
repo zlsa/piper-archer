@@ -103,8 +103,8 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-swap</command>
-        <property>/instrumentation/comm[1]/frequencies/selected-mhz</property>
-        <property>/instrumentation/comm[1]/frequencies/standby-mhz</property>
+        <property>instrumentation/comm[1]/frequencies/selected-mhz</property>
+        <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
       </binding>
     </action>
 
@@ -120,8 +120,44 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-swap</command>
-        <property>/instrumentation/nav[1]/frequencies/selected-mhz</property>
-        <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
+        <property>instrumentation/nav[1]/frequencies/selected-mhz</property>
+        <property>instrumentation/nav[1]/frequencies/standby-mhz</property>
+      </binding>
+    </action>
+
+  </animation>
+
+  <!-- Comm adjustment -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>comm knob outer ring</object-name>
+    
+    <action>
+      <binding>
+	<command>property-adjust</command>
+        <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
+        <factor>1</factor>
+        <min>118.0</min>
+        <max>136.0</max>
+	<wrap>true</wrap>
+      </binding>
+    </action>
+
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>comm knob inner ring</object-name>
+    
+    <action>
+      <binding>
+	<command>property-adjust</command>
+        <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
+        <factor>0.05</factor>
+        <min>118.0</min>
+        <max>136.0</max>
+	<wrap>true</wrap>
       </binding>
     </action>
 
@@ -132,7 +168,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 00</object-name>
-    <property>/instrumentation/comm[1]/display/digit-00</property>
+    <property>instrumentation/comm[1]/display/digit-00</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -146,7 +182,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 01</object-name>
-    <property>/instrumentation/comm[1]/display/digit-01</property>
+    <property>instrumentation/comm[1]/display/digit-01</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -160,7 +196,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 02</object-name>
-    <property>/instrumentation/comm[1]/display/digit-02</property>
+    <property>instrumentation/comm[1]/display/digit-02</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -174,7 +210,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 03</object-name>
-    <property>/instrumentation/comm[1]/display/digit-03</property>
+    <property>instrumentation/comm[1]/display/digit-03</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -188,7 +224,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 04</object-name>
-    <property>/instrumentation/comm[1]/display/digit-04</property>
+    <property>instrumentation/comm[1]/display/digit-04</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -202,7 +238,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 05</object-name>
-    <property>/instrumentation/comm[1]/display/digit-05</property>
+    <property>instrumentation/comm[1]/display/digit-05</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -218,7 +254,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 10</object-name>
-    <property>/instrumentation/comm[1]/display/digit-10</property>
+    <property>instrumentation/comm[1]/display/digit-10</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -232,7 +268,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 11</object-name>
-    <property>/instrumentation/comm[1]/display/digit-11</property>
+    <property>instrumentation/comm[1]/display/digit-11</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -246,7 +282,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 12</object-name>
-    <property>/instrumentation/comm[1]/display/digit-12</property>
+    <property>instrumentation/comm[1]/display/digit-12</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -260,7 +296,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 13</object-name>
-    <property>/instrumentation/comm[1]/display/digit-13</property>
+    <property>instrumentation/comm[1]/display/digit-13</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -274,7 +310,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 14</object-name>
-    <property>/instrumentation/comm[1]/display/digit-14</property>
+    <property>instrumentation/comm[1]/display/digit-14</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -288,7 +324,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 15</object-name>
-    <property>/instrumentation/comm[1]/display/digit-15</property>
+    <property>instrumentation/comm[1]/display/digit-15</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -304,7 +340,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 00</object-name>
-    <property>/instrumentation/nav[1]/display/digit-00</property>
+    <property>instrumentation/nav[1]/display/digit-00</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -318,7 +354,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 01</object-name>
-    <property>/instrumentation/nav[1]/display/digit-01</property>
+    <property>instrumentation/nav[1]/display/digit-01</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -332,7 +368,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 02</object-name>
-    <property>/instrumentation/nav[1]/display/digit-02</property>
+    <property>instrumentation/nav[1]/display/digit-02</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -346,7 +382,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 03</object-name>
-    <property>/instrumentation/nav[1]/display/digit-03</property>
+    <property>instrumentation/nav[1]/display/digit-03</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -360,7 +396,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 04</object-name>
-    <property>/instrumentation/nav[1]/display/digit-04</property>
+    <property>instrumentation/nav[1]/display/digit-04</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -374,7 +410,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 05</object-name>
-    <property>/instrumentation/nav[1]/display/digit-05</property>
+    <property>instrumentation/nav[1]/display/digit-05</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -390,7 +426,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 10</object-name>
-    <property>/instrumentation/nav[1]/display/digit-10</property>
+    <property>instrumentation/nav[1]/display/digit-10</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -404,7 +440,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 11</object-name>
-    <property>/instrumentation/nav[1]/display/digit-11</property>
+    <property>instrumentation/nav[1]/display/digit-11</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -418,7 +454,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 12</object-name>
-    <property>/instrumentation/nav[1]/display/digit-12</property>
+    <property>instrumentation/nav[1]/display/digit-12</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -432,7 +468,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 13</object-name>
-    <property>/instrumentation/nav[1]/display/digit-13</property>
+    <property>instrumentation/nav[1]/display/digit-13</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -446,7 +482,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 14</object-name>
-    <property>/instrumentation/nav[1]/display/digit-14</property>
+    <property>instrumentation/nav[1]/display/digit-14</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -460,7 +496,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>nav 15</object-name>
-    <property>/instrumentation/nav[1]/display/digit-15</property>
+    <property>instrumentation/nav[1]/display/digit-15</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>

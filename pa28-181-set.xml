@@ -118,6 +118,12 @@
     <magnetic-compass>
       <heading-bug-deg type="double" archive="y">0</heading-bug-deg>
     </magnetic-compass>
+    <comm n="1">
+      <frequencies>
+        <selected-mhz type="double">118.3</selected-mhz>
+        <standby-mhz type="double">124.5</standby-mhz>
+      </frequencies>
+    </comm>
   </instrumentation>
 
   <options>
