@@ -27,6 +27,72 @@
   </animation>
 
   <animation>
+    <name>display digits</name>
+    <object-name>comm 00</object-name>
+    <object-name>comm 01</object-name>
+    <object-name>comm 02</object-name>
+    <object-name>comm 03</object-name>
+    <object-name>comm 04</object-name>
+    <object-name>comm 05</object-name>
+
+    <object-name>comm 10</object-name>
+    <object-name>comm 11</object-name>
+    <object-name>comm 12</object-name>
+    <object-name>comm 13</object-name>
+    <object-name>comm 14</object-name>
+    <object-name>comm 15</object-name>
+
+    <object-name>nav 00</object-name>
+    <object-name>nav 01</object-name>
+    <object-name>nav 02</object-name>
+    <object-name>nav 03</object-name>
+    <object-name>nav 04</object-name>
+    <object-name>nav 05</object-name>
+
+    <object-name>nav 10</object-name>
+    <object-name>nav 11</object-name>
+    <object-name>nav 12</object-name>
+    <object-name>nav 13</object-name>
+    <object-name>nav 14</object-name>
+    <object-name>nav 15</object-name>
+
+    <object-name>decimals</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+
+    <object-name>display digits</object-name>
+
+    <emission>
+      <red>1.0</red>
+      <green>0.1</green>
+      <blue>0.1</blue>
+      <factor-prop>electrical/outputs/avionics/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>blend</type>
+
+    <object-name>display digits</object-name>
+
+    <property>electrical/outputs/avionics/brightness</property>
+    <factor>-1</factor>
+    <offset>1</offset>
+
+  </animation>
+
+  <animation>
+    <type>blend</type>
+
+    <object-name>display backlight</object-name>
+
+    <offset>0.8</offset>
+
+  </animation>
+
+  <animation>
     <type>pick</type>
 
     <object-name>comm toggle</object-name>
@@ -67,7 +133,7 @@
     <object-name>comm 00</object-name>
     <property>/instrumentation/comm[1]/display/comm-00</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -81,7 +147,7 @@
     <object-name>comm 01</object-name>
     <property>/instrumentation/comm[1]/display/comm-01</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -95,7 +161,7 @@
     <object-name>comm 02</object-name>
     <property>/instrumentation/comm[1]/display/comm-02</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -109,7 +175,7 @@
     <object-name>comm 03</object-name>
     <property>/instrumentation/comm[1]/display/comm-03</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -123,7 +189,21 @@
     <object-name>comm 04</object-name>
     <property>/instrumentation/comm[1]/display/comm-04</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 05</object-name>
+    <property>/instrumentation/comm[1]/display/comm-05</property>
+    <step>1</step>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -139,7 +219,7 @@
     <object-name>comm 10</object-name>
     <property>/instrumentation/comm[1]/display/comm-10</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -153,7 +233,7 @@
     <object-name>comm 11</object-name>
     <property>/instrumentation/comm[1]/display/comm-11</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -167,7 +247,7 @@
     <object-name>comm 12</object-name>
     <property>/instrumentation/comm[1]/display/comm-12</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -181,7 +261,7 @@
     <object-name>comm 13</object-name>
     <property>/instrumentation/comm[1]/display/comm-13</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>
@@ -195,7 +275,21 @@
     <object-name>comm 14</object-name>
     <property>/instrumentation/comm[1]/display/comm-14</property>
     <step>1</step>
-    <factor>0.047</factor>
+    <factor>0.0469</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 15</object-name>
+    <property>/instrumentation/comm[1]/display/comm-15</property>
+    <step>1</step>
+    <factor>0.0469</factor>
     <bias>0.0001</bias>
     <axis>
       <x>1</x>

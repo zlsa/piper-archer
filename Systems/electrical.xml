@@ -130,12 +130,28 @@
     <type>needs-power</type>
 
     <power type="double">700</power>
-    <min-voltage type="double">10</min-voltage>
+    <min-voltage type="double">8</min-voltage>
     <nominal-voltage type="double">14</nominal-voltage>
 
     <prop type="string">/electrical/outputs/starter</prop>
 
     <switch>/controls/start</switch>
+
+    <input>power bus</input>
+
+  </component>
+  
+  <!-- Avionics -->
+  
+  <component>
+    <name>avionics</name>
+    <type>needs-power</type>
+
+    <power type="double">10</power>
+    <min-voltage type="double">10</min-voltage>
+    <nominal-voltage type="double">14</nominal-voltage>
+
+    <prop type="string">/electrical/outputs/avionics</prop>
 
     <input>power bus</input>
 

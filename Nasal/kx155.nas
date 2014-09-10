@@ -1,0 +1,46 @@
+#     Piper PA-28-181
+#       KX155 logic
+###########################
+
+var INIT=false;
+
+var update = func(prop) {
+    var root = props.globals.getNode("instrumentation").getNode(prop);
+
+    var selected = sprintf("%0.3f", root.getNode("frequencies/selected-mhz").getValue());
+    var standby  = sprintf("%0.3f", root.getNode("frequencies/standby-mhz").getValue());
+
+    print(selected);
+    print(standby);
+
+    root.setValue("display/comm-00", substr(selected, 0, 1));
+    root.setValue("display/comm-01", substr(selected, 1, 1));
+    root.setValue("display/comm-02", substr(selected, 2, 1));
+    root.setValue("display/comm-03", substr(selected, 4, 1));
+    root.setValue("display/comm-04", substr(selected, 5, 1));
+    root.setValue("display/comm-05", substr(selected, 6, 1));
+
+    root.setValue("display/comm-10", substr(standby, 0, 1));
+    root.setValue("display/comm-11", substr(standby, 1, 1));
+    root.setValue("display/comm-12", substr(standby, 2, 1));
+    root.setValue("display/comm-13", substr(standby, 4, 1));
+    root.setValue("display/comm-14", substr(standby, 5, 1));
+    root.setValue("display/comm-15", substr(standby, 6, 1));
+};
+
+var update_comm_1 = func {
+    update("comm[1]");
+};
+
+var update_nav_1 = func {
+    update("nav[1]");
+};
+
+setlistener("instrumentation/comm[1]/frequencies/selected-mhz", update_comm_1);
+setlistener("instrumentation/comm[1]/frequencies/standby-mhz",  update_comm_1);
+
+setlistener("instrumentation/nav[1]/frequencies/selected-mhz", update_nav_1);
+setlistener("instrumentation/nav[1]/frequencies/standby-mhz",  update_nav_1);
+
+setlistener("/sim/signals/fdm-initialized", update_comm_1);
+setlistener("/sim/signals/fdm-initialized", update_nav_1);

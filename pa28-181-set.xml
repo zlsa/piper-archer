@@ -303,6 +303,10 @@
 
       <file>Aircraft/Generic/limits.nas</file>
     </pa28_181>
+    <kx155>
+      <file>Nasal/util.nas</file>
+      <file>Nasal/kx155.nas</file>
+    </kx155>
     <engine>
       <file>Nasal/util.nas</file>
       <file>Nasal/engine.nas</file>
