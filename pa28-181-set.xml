@@ -123,12 +123,14 @@
         <selected-mhz type="double">118.3</selected-mhz>
         <standby-mhz type="double">124.5</standby-mhz>
       </frequencies>
+      <volume type="double">0.0</volume>
     </comm>
     <nav n="1">
       <frequencies>
         <selected-mhz type="double">118.3</selected-mhz>
         <standby-mhz type="double">124.5</standby-mhz>
       </frequencies>
+      <volume type="double">0.0</volume>
     </nav>
   </instrumentation>
 

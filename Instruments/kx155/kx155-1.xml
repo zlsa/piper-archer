@@ -102,6 +102,14 @@
 
     <object-name>comm toggle</object-name>
 
+    <condition>
+      <greater-than>
+        <property>instrumentation/comm[1]/volume</property>
+        <value>0</value>
+      </greater-than>
+      <property>electrical/outputs/avionics/powered</property>
+    </condition>
+
     <action>
       <button>0</button>
       <repeatable>false</repeatable>
@@ -130,6 +138,14 @@
     <type>translate</type>
     <object-name>comm toggle</object-name>
 
+    <condition>
+      <greater-than>
+        <property>instrumentation/comm[1]/volume</property>
+        <value>0</value>
+      </greater-than>
+      <property>electrical/outputs/avionics/powered</property>
+    </condition>
+
     <property>instrumentation/comm[1]/swap-button</property>
     <factor>0.002</factor>
     <axis>
@@ -145,6 +161,10 @@
     <type>pick</type>
 
     <object-name>nav toggle</object-name>
+
+    <condition>
+      <property>electrical/outputs/avionics/powered</property>
+    </condition>
 
     <action>
       <button>0</button>
@@ -174,6 +194,10 @@
     <type>translate</type>
     <object-name>nav toggle</object-name>
 
+    <condition>
+      <property>electrical/outputs/avionics/powered</property>
+    </condition>
+
     <property>instrumentation/nav[1]/swap-button</property>
     <factor>0.002</factor>
     <axis>
@@ -188,7 +212,31 @@
   <animation>
     <type>knob</type>
     <object-name>comm knob outer ring</object-name>
+
+    <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
+
+    <factor>20</factor>
     
+    <center>
+      <x-m>-0.010</x-m>
+      <y-m> 0.015</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+
+    <axis>
+      <x> 0</x>
+      <y> 0</y>
+      <z>-1</z>
+    </axis>
+    
+    <condition>
+      <greater-than>
+        <property>instrumentation/comm[1]/volume</property>
+        <value>0</value>
+      </greater-than>
+      <property>electrical/outputs/avionics/powered</property>
+    </condition>
+
     <action>
       <binding>
 	<command>property-adjust</command>
@@ -206,6 +254,30 @@
     <type>knob</type>
     <object-name>comm knob inner ring</object-name>
     
+    <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
+
+    <factor>40</factor>
+    
+    <center>
+      <x-m>-0.010</x-m>
+      <y-m> 0.015</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+
+    <axis>
+      <x> 0</x>
+      <y> 0</y>
+      <z>-1</z>
+    </axis>
+    
+    <condition>
+      <greater-than>
+        <property>instrumentation/comm[1]/volume</property>
+        <value>0</value>
+      </greater-than>
+      <property>electrical/outputs/avionics/powered</property>
+    </condition>
+
     <action>
       <binding>
 	<command>property-adjust</command>
@@ -225,6 +297,10 @@
     <type>knob</type>
     <object-name>nav knob outer ring</object-name>
     
+    <condition>
+      <property>electrical/outputs/avionics/powered</property>
+    </condition>
+
     <action>
       <binding>
 	<command>property-adjust</command>
@@ -242,6 +318,10 @@
     <type>knob</type>
     <object-name>nav knob inner ring</object-name>
     
+    <condition>
+      <property>electrical/outputs/avionics/powered</property>
+    </condition>
+
     <action>
       <binding>
 	<command>property-adjust</command>
