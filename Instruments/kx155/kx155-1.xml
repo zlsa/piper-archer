@@ -95,6 +95,42 @@
 
   </animation>
 
+  <!-- Comm volume-->
+
+  <animation>
+    <type>knob</type>
+    <object-name>comm volume</object-name>
+    
+    <property>instrumentation/comm[1]/volume</property>
+
+    <factor>270</factor>
+    <offset-deg>-135</offset-deg>
+    
+    <center>
+      <x-m>-0.014</x-m>
+      <y-m> 0.064</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+
+    <axis>
+      <x> 0</x>
+      <y> 0</y>
+      <z>-1</z>
+    </axis>
+    
+    <action>
+      <binding>
+	<command>property-adjust</command>
+        <property>instrumentation/comm[1]/volume</property>
+        <factor>0.025</factor>
+        <min>0</min>
+        <max>1</max>
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+  </animation>
+
   <!-- Comm toggle -->
 
   <animation>
