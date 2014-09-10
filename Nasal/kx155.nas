@@ -13,19 +13,19 @@ var update = func(prop) {
     print(selected);
     print(standby);
 
-    root.setValue("display/comm-00", substr(selected, 0, 1));
-    root.setValue("display/comm-01", substr(selected, 1, 1));
-    root.setValue("display/comm-02", substr(selected, 2, 1));
-    root.setValue("display/comm-03", substr(selected, 4, 1));
-    root.setValue("display/comm-04", substr(selected, 5, 1));
-    root.setValue("display/comm-05", substr(selected, 6, 1));
+    root.setValue("display/digit-00", substr(selected, 0, 1));
+    root.setValue("display/digit-01", substr(selected, 1, 1));
+    root.setValue("display/digit-02", substr(selected, 2, 1));
+    root.setValue("display/digit-03", substr(selected, 4, 1));
+    root.setValue("display/digit-04", substr(selected, 5, 1));
+    root.setValue("display/digit-05", substr(selected, 6, 1));
 
-    root.setValue("display/comm-10", substr(standby, 0, 1));
-    root.setValue("display/comm-11", substr(standby, 1, 1));
-    root.setValue("display/comm-12", substr(standby, 2, 1));
-    root.setValue("display/comm-13", substr(standby, 4, 1));
-    root.setValue("display/comm-14", substr(standby, 5, 1));
-    root.setValue("display/comm-15", substr(standby, 6, 1));
+    root.setValue("display/digit-10", substr(standby, 0, 1));
+    root.setValue("display/digit-11", substr(standby, 1, 1));
+    root.setValue("display/digit-12", substr(standby, 2, 1));
+    root.setValue("display/digit-13", substr(standby, 4, 1));
+    root.setValue("display/digit-14", substr(standby, 5, 1));
+    root.setValue("display/digit-15", substr(standby, 6, 1));
 };
 
 var update_comm_1 = func {

@@ -5,28 +5,6 @@
   <path>Instruments/kx155/kx155.ac</path>
 
   <animation>
-    <type>material</type>
-    <object-name>front panel</object-name>
-
-    <object-name>comm volume</object-name>
-    <object-name>comm toggle</object-name>
-    <object-name>comm knob inner ring</object-name>
-    <object-name>comm knob outer ring</object-name>
-
-    <object-name>nav volume</object-name>
-    <object-name>nav toggle</object-name>
-    <object-name>nav knob inner ring</object-name>
-    <object-name>nav knob outer ring</object-name>
-
-    <emission>
-      <red>0.2</red>
-      <green>0.15</green>
-      <blue>0.05</blue>
-      <factor-prop>electrical/outputs/panel-lights/brightness</factor-prop>
-    </emission>
-  </animation>
-
-  <animation>
     <name>display digits</name>
     <object-name>comm 00</object-name>
     <object-name>comm 01</object-name>
@@ -59,6 +37,38 @@
     <object-name>decimals</object-name>
   </animation>
 
+  <effect>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <inherits-from>Effects/model-transparent</inherits-from>
+
+    <object-name>display digits</object-name>
+    <object-name>display backlight</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>front panel</object-name>
+
+    <object-name>comm volume</object-name>
+    <object-name>comm toggle</object-name>
+    <object-name>comm knob inner ring</object-name>
+    <object-name>comm knob outer ring</object-name>
+
+    <object-name>nav volume</object-name>
+    <object-name>nav toggle</object-name>
+    <object-name>nav knob inner ring</object-name>
+    <object-name>nav knob outer ring</object-name>
+
+    <emission>
+      <red>0.2</red>
+      <green>0.15</green>
+      <blue>0.05</blue>
+      <factor-prop>electrical/outputs/panel-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
   <animation>
     <type>material</type>
 
@@ -80,15 +90,6 @@
     <property>electrical/outputs/avionics/brightness</property>
     <factor>-1</factor>
     <offset>1</offset>
-
-  </animation>
-
-  <animation>
-    <type>blend</type>
-
-    <object-name>display backlight</object-name>
-
-    <offset>0.8</offset>
 
   </animation>
 
@@ -131,7 +132,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 00</object-name>
-    <property>/instrumentation/comm[1]/display/comm-00</property>
+    <property>/instrumentation/comm[1]/display/digit-00</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -145,7 +146,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 01</object-name>
-    <property>/instrumentation/comm[1]/display/comm-01</property>
+    <property>/instrumentation/comm[1]/display/digit-01</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -159,7 +160,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 02</object-name>
-    <property>/instrumentation/comm[1]/display/comm-02</property>
+    <property>/instrumentation/comm[1]/display/digit-02</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -173,7 +174,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 03</object-name>
-    <property>/instrumentation/comm[1]/display/comm-03</property>
+    <property>/instrumentation/comm[1]/display/digit-03</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -187,7 +188,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 04</object-name>
-    <property>/instrumentation/comm[1]/display/comm-04</property>
+    <property>/instrumentation/comm[1]/display/digit-04</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -201,7 +202,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 05</object-name>
-    <property>/instrumentation/comm[1]/display/comm-05</property>
+    <property>/instrumentation/comm[1]/display/digit-05</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -217,7 +218,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 10</object-name>
-    <property>/instrumentation/comm[1]/display/comm-10</property>
+    <property>/instrumentation/comm[1]/display/digit-10</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -231,7 +232,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 11</object-name>
-    <property>/instrumentation/comm[1]/display/comm-11</property>
+    <property>/instrumentation/comm[1]/display/digit-11</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -245,7 +246,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 12</object-name>
-    <property>/instrumentation/comm[1]/display/comm-12</property>
+    <property>/instrumentation/comm[1]/display/digit-12</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -259,7 +260,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 13</object-name>
-    <property>/instrumentation/comm[1]/display/comm-13</property>
+    <property>/instrumentation/comm[1]/display/digit-13</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -273,7 +274,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 14</object-name>
-    <property>/instrumentation/comm[1]/display/comm-14</property>
+    <property>/instrumentation/comm[1]/display/digit-14</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
@@ -287,7 +288,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>comm 15</object-name>
-    <property>/instrumentation/comm[1]/display/comm-15</property>
+    <property>/instrumentation/comm[1]/display/digit-15</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
