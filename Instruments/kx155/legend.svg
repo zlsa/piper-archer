@@ -197,9 +197,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="860.24686"
-     inkscape:cy="315.87348"
+     inkscape:zoom="4"
+     inkscape:cx="78.152891"
+     inkscape:cy="352.53723"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -1413,11 +1413,11 @@
        sodipodi:nodetypes="ccccccc"
        inkscape:connector-curvature="0"
        id="path5764"
-       d="m 51.99999,691.36218 1e-5,-34 4.00001,-4 3.99999,4 -1e-5,34 -4,4 z"
+       d="m 87.99999,691.36218 1e-5,-34 4.00001,-4 3.99999,4 -1e-5,34 -4,4 z"
        style="fill:#c52c0e;fill-opacity:1;stroke:none" />
     <path
        style="fill:#c52c0e;fill-opacity:1;stroke:none"
-       d="m 52,647.36218 1e-5,-34 4,-4 4,4 -1e-5,34 -4.00001,4 z"
+       d="m 88,647.36218 1e-5,-34 4,-4 4,4 -1e-5,34 -4.00001,4 z"
        id="path5772"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />

@@ -10,8 +10,8 @@ var update = func(prop) {
     var selected = sprintf("%0.3f", root.getNode("frequencies/selected-mhz").getValue());
     var standby  = sprintf("%0.3f", root.getNode("frequencies/standby-mhz").getValue());
 
-    print(selected);
-    print(standby);
+#    print(selected);
+#    print(standby);
 
     root.setValue("display/digit-00", substr(selected, 0, 1));
     root.setValue("display/digit-01", substr(selected, 1, 1));
