@@ -118,6 +118,13 @@
     <magnetic-compass>
       <heading-bug-deg type="double" archive="y">0</heading-bug-deg>
     </magnetic-compass>
+    <comm n="0">
+      <frequencies>
+        <selected-mhz type="double">118.3</selected-mhz>
+        <standby-mhz type="double">124.5</standby-mhz>
+      </frequencies>
+      <volume type="double">0.0</volume>
+    </comm>
     <comm n="1">
       <frequencies>
         <selected-mhz type="double">118.3</selected-mhz>
@@ -125,6 +132,13 @@
       </frequencies>
       <volume type="double">0.0</volume>
     </comm>
+    <nav n="0">
+      <frequencies>
+        <selected-mhz type="double">118.3</selected-mhz>
+        <standby-mhz type="double">124.5</standby-mhz>
+      </frequencies>
+      <volume type="double">0.0</volume>
+    </nav>
     <nav n="1">
       <frequencies>
         <selected-mhz type="double">118.3</selected-mhz>

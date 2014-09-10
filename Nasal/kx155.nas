@@ -28,6 +28,14 @@ var update = func(prop) {
     root.setValue("display/digit-15", substr(standby, 6, 1));
 };
 
+var update_comm_0 = func {
+    update("comm[0]");
+};
+
+var update_nav_0 = func {
+    update("nav[0]");
+};
+
 var update_comm_1 = func {
     update("comm[1]");
 };
@@ -36,11 +44,21 @@ var update_nav_1 = func {
     update("nav[1]");
 };
 
+setlistener("instrumentation/comm[0]/frequencies/selected-mhz", update_comm_0);
+setlistener("instrumentation/comm[0]/frequencies/standby-mhz",  update_comm_0);
+
+setlistener("instrumentation/nav[0]/frequencies/selected-mhz", update_nav_0);
+setlistener("instrumentation/nav[0]/frequencies/standby-mhz",  update_nav_0);
+
 setlistener("instrumentation/comm[1]/frequencies/selected-mhz", update_comm_1);
 setlistener("instrumentation/comm[1]/frequencies/standby-mhz",  update_comm_1);
 
 setlistener("instrumentation/nav[1]/frequencies/selected-mhz", update_nav_1);
 setlistener("instrumentation/nav[1]/frequencies/standby-mhz",  update_nav_1);
 
-setlistener("/sim/signals/fdm-initialized", update_comm_1);
-setlistener("/sim/signals/fdm-initialized", update_nav_1);
+setlistener("/sim/signals/fdm-initialized", func {
+    update_comm_0();
+    update_comm_1();
+    update_nav_0();
+    update_nav_1();
+            });
