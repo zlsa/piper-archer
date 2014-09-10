@@ -70,7 +70,7 @@
        x2="560"
        y2="288"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.66666672,0,-988.36221)" />
+       gradientTransform="matrix(1,0,0,0.66666672,-16,-1020.3622)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3940"
@@ -81,18 +81,6 @@
        x2="560"
        y2="288"
        gradientTransform="matrix(1.3333333,0,0,1,-608,-1116.3622)" />
-    <filter
-       inkscape:collect="always"
-       id="filter5612"
-       x="-0.10392305"
-       width="1.2078461"
-       y="-0.13856406"
-       height="1.2771281">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.69282032"
-         id="feGaussianBlur5614" />
-    </filter>
     <filter
        inkscape:collect="always"
        id="filter6058"
@@ -197,9 +185,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313708"
-     inkscape:cx="954.23648"
-     inkscape:cy="361.09503"
+     inkscape:zoom="2"
+     inkscape:cx="781.37743"
+     inkscape:cy="246.36579"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -517,10 +505,10 @@
     <rect
        style="opacity:0.5;fill:url(#linearGradient3946);fill-opacity:1;stroke:none"
        id="rect3938"
-       width="216"
-       height="32.000004"
-       x="480"
-       y="-828.36218"
+       width="32"
+       height="32"
+       x="464"
+       y="-860.36218"
        transform="scale(1,-1)" />
     <rect
        y="-876.36218"
@@ -1733,5 +1721,13 @@
        id="path6044"
        style="opacity:0.2;fill:#c52c0e;fill-opacity:1;stroke:none;filter:url(#filter6058)"
        sodipodi:type="arc" />
+    <rect
+       transform="scale(1,-1)"
+       y="-860.36218"
+       x="496"
+       height="96"
+       width="320"
+       id="rect9060"
+       style="fill:#140b09;fill-opacity:1;stroke:none" />
   </g>
 </svg>

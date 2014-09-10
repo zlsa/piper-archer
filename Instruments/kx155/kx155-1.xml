@@ -55,11 +55,13 @@
     <object-name>comm toggle</object-name>
     <object-name>comm knob inner ring</object-name>
     <object-name>comm knob outer ring</object-name>
+    <object-name>comm channel button</object-name>
 
     <object-name>nav volume</object-name>
     <object-name>nav toggle</object-name>
     <object-name>nav knob inner ring</object-name>
     <object-name>nav knob outer ring</object-name>
+    <object-name>nav mode button</object-name>
 
     <emission>
       <red>0.2</red>
@@ -93,6 +95,8 @@
 
   </animation>
 
+  <!-- Comm toggle -->
+
   <animation>
     <type>pick</type>
 
@@ -102,13 +106,40 @@
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
-        <command>property-swap</command>
-        <property>instrumentation/comm[1]/frequencies/selected-mhz</property>
-        <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
+        <command>property-assign</command>
+        <property>instrumentation/comm[1]/swap-button</property>
+        <value>1</value>
       </binding>
+      <mod-up>
+        <binding>
+          <command>property-swap</command>
+          <property>instrumentation/comm[1]/frequencies/selected-mhz</property>
+          <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>instrumentation/comm[1]/swap-button</property>
+          <value>0</value>
+        </binding>
+      </mod-up>
     </action>
 
   </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>comm toggle</object-name>
+
+    <property>instrumentation/comm[1]/swap-button</property>
+    <factor>0.002</factor>
+    <axis>
+      <x> 0</x>
+      <y> 0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
+  <!-- Nav toggle -->
 
   <animation>
     <type>pick</type>
@@ -119,12 +150,37 @@
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
-        <command>property-swap</command>
-        <property>instrumentation/nav[1]/frequencies/selected-mhz</property>
-        <property>instrumentation/nav[1]/frequencies/standby-mhz</property>
+        <command>property-assign</command>
+        <property>instrumentation/nav[1]/swap-button</property>
+        <value>1</value>
       </binding>
+      <mod-up>
+        <binding>
+          <command>property-swap</command>
+          <property>instrumentation/nav[1]/frequencies/selected-mhz</property>
+          <property>instrumentation/nav[1]/frequencies/standby-mhz</property>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>instrumentation/nav[1]/swap-button</property>
+          <value>0</value>
+        </binding>
+      </mod-up>
     </action>
 
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>nav toggle</object-name>
+
+    <property>instrumentation/nav[1]/swap-button</property>
+    <factor>0.002</factor>
+    <axis>
+      <x> 0</x>
+      <y> 0</y>
+      <z>-1</z>
+    </axis>
   </animation>
 
   <!-- Comm adjustment -->
@@ -139,7 +195,7 @@
         <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
         <factor>1</factor>
         <min>118.0</min>
-        <max>136.0</max>
+        <max>136.01</max>
 	<wrap>true</wrap>
       </binding>
     </action>
@@ -156,7 +212,43 @@
         <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
         <factor>0.05</factor>
         <min>118.0</min>
-        <max>136.0</max>
+        <max>136.01</max>
+	<wrap>true</wrap>
+      </binding>
+    </action>
+
+  </animation>
+
+  <!-- Nav adjustment -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>nav knob outer ring</object-name>
+    
+    <action>
+      <binding>
+	<command>property-adjust</command>
+        <property>instrumentation/nav[1]/frequencies/standby-mhz</property>
+        <factor>1</factor>
+        <min>108.0</min>
+        <max>117.95</max>
+	<wrap>true</wrap>
+      </binding>
+    </action>
+
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>nav knob inner ring</object-name>
+    
+    <action>
+      <binding>
+	<command>property-adjust</command>
+        <property>instrumentation/nav[1]/frequencies/standby-mhz</property>
+        <factor>0.05</factor>
+        <min>108.0</min>
+        <max>117.95</max>
 	<wrap>true</wrap>
       </binding>
     </action>
@@ -407,20 +499,6 @@
     </axis>
   </animation>
 
-  <animation>
-    <type>textranslate</type>
-    <object-name>nav 05</object-name>
-    <property>instrumentation/nav[1]/display/digit-05</property>
-    <step>1</step>
-    <factor>0.0469</factor>
-    <bias>0.0001</bias>
-    <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
-  </animation>
-
   <!-- Standby -->
 
   <animation>
@@ -483,20 +561,6 @@
     <type>textranslate</type>
     <object-name>nav 14</object-name>
     <property>instrumentation/nav[1]/display/digit-14</property>
-    <step>1</step>
-    <factor>0.0469</factor>
-    <bias>0.0001</bias>
-    <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>textranslate</type>
-    <object-name>nav 15</object-name>
-    <property>instrumentation/nav[1]/display/digit-15</property>
     <step>1</step>
     <factor>0.0469</factor>
     <bias>0.0001</bias>
