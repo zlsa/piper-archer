@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Instruments/kx155/kx155.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>front panel</object-name>
+
+    <object-name>comm volume</object-name>
+    <object-name>comm toggle</object-name>
+    <object-name>comm knob inner ring</object-name>
+    <object-name>comm knob outer ring</object-name>
+
+    <object-name>nav volume</object-name>
+    <object-name>nav toggle</object-name>
+    <object-name>nav knob inner ring</object-name>
+    <object-name>nav knob outer ring</object-name>
+
+    <emission>
+      <red>0.2</red>
+      <green>0.15</green>
+      <blue>0.05</blue>
+      <factor-prop>electrical/outputs/panel-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+
+    <object-name>comm toggle</object-name>
+
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-swap</command>
+        <property>/instrumentation/comm[1]/frequencies/selected-mhz</property>
+        <property>/instrumentation/comm[1]/frequencies/standby-mhz</property>
+      </binding>
+    </action>
+
+  </animation>
+
+  <animation>
+    <type>pick</type>
+
+    <object-name>nav toggle</object-name>
+
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-swap</command>
+        <property>/instrumentation/nav[1]/frequencies/selected-mhz</property>
+        <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
+      </binding>
+    </action>
+
+  </animation>
+
+  <!-- Display -->
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 00</object-name>
+    <property>/instrumentation/comm[1]/display/comm-00</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 01</object-name>
+    <property>/instrumentation/comm[1]/display/comm-01</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 02</object-name>
+    <property>/instrumentation/comm[1]/display/comm-02</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 03</object-name>
+    <property>/instrumentation/comm[1]/display/comm-03</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 04</object-name>
+    <property>/instrumentation/comm[1]/display/comm-04</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- Standby -->
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 10</object-name>
+    <property>/instrumentation/comm[1]/display/comm-10</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 11</object-name>
+    <property>/instrumentation/comm[1]/display/comm-11</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 12</object-name>
+    <property>/instrumentation/comm[1]/display/comm-12</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 13</object-name>
+    <property>/instrumentation/comm[1]/display/comm-13</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>comm 14</object-name>
+    <property>/instrumentation/comm[1]/display/comm-14</property>
+    <step>1</step>
+    <factor>0.047</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+</PropertyList>

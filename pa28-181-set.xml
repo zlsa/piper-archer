@@ -52,7 +52,7 @@
       <config>
 	<x-offset-m>-0.23</x-offset-m>
 	<y-offset-m> 0.52</y-offset-m>
-	<z-offset-m>-1.30</z-offset-m>
+	<z-offset-m>-1.25</z-offset-m>
 	<pitch-offset-deg>-10</pitch-offset-deg>
       </config>
     </view>
@@ -64,7 +64,7 @@
       <config>
 	<x-offset-m> 0.23</x-offset-m>
 	<y-offset-m> 0.52</y-offset-m>
-	<z-offset-m>-1.30</z-offset-m>
+	<z-offset-m>-1.25</z-offset-m>
         <from-model type="bool">true</from-model>
         <heading-offset-deg type="double">0</heading-offset-deg>
         <default-heading-offset-deg>0</default-heading-offset-deg>
@@ -118,6 +118,21 @@
     <magnetic-compass>
       <heading-bug-deg type="double" archive="y">0</heading-bug-deg>
     </magnetic-compass>
+    <comm n="1">
+      <display>
+        <comm-00 type="int">0</comm-00>
+        <comm-01 type="int">0</comm-01>
+        <comm-02 type="int">0</comm-02>
+        <comm-03 type="int">0</comm-03>
+        <comm-04 type="int">0</comm-04>
+
+        <comm-10 type="int">0</comm-10>
+        <comm-11 type="int">0</comm-11>
+        <comm-12 type="int">0</comm-12>
+        <comm-13 type="int">0</comm-13>
+        <comm-14 type="int">0</comm-14>
+      </display>
+    </comm>
   </instrumentation>
 
   <options>

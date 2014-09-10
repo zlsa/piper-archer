@@ -324,6 +324,20 @@
     </offsets>
   </model>
 
+  <!-- Radio stack -->
+
+  <model>
+    <name>radio 1</name>
+    <path>Instruments/kx155/kx155-1.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m> 0.10</y-m>
+      <z-m> 0.20</z-m>
+    </offsets>
+  </model>
+
   <!-- COCKPIT LIGHTING -->
 
   <animation>
