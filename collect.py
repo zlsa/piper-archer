@@ -20,20 +20,26 @@ def collect(path_from = "../releases/", path_to = "releases/"):
   latest_date = 0
   f = os.listdir(path_from)
   f.sort()
-  print(f)
   for filename in f:
     if os.path.splitext(filename)[1] == ".zip" and filename.startswith(AIRCRAFT):
       shutil.copy(os.path.join(path_from, filename), os.path.join(path_to, filename))
       date = int(os.path.splitext(filename)[0][len(AIRCRAFT)+1:])
       size = round(os.path.getsize(os.path.join(path_to, filename)) / 1024 / 1024, 2)
-      files.append((filename, str(date), size))
       if date > latest:
         latest_filename = filename
         latest_size = size
         latest_date = date
         latest = date
-      print(filename + (str(size) + " MB").rjust(10, " "))
       sys.stdout.flush()
+  f = os.listdir(path_to)
+  f.sort()
+  for filename in f:
+    if filename.find("latest") >= 0: continue
+    if os.path.splitext(filename)[1] == ".zip" and filename.startswith(AIRCRAFT):
+      date = int(os.path.splitext(filename)[0][len(AIRCRAFT)+1:])
+      size = round(os.path.getsize(os.path.join(path_to, filename)) / 1024 / 1024, 2)
+      print(filename + (str(size) + " MB").rjust(10, " "))
+      files.append((filename, str(date), size))
   if latest:
     shutil.copy(os.path.join(path_to, latest_filename), os.path.join(path_to, AIRCRAFT + "-latest.zip"))
     print(AIRCRAFT+"-latest.zip  " + (str(size) + " MB").rjust(10, " "))
