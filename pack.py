@@ -4,7 +4,7 @@
 #
 # Directory exceptions:
 # .git        (obvious)
-# blueprints  (images for reference)
+# References  (images for reference)
 # screenshots (technically shouldn't even be committed)
 # textures    (for the source SVG/PNG files before they've been copied over)
 # archive     (currently only the old model)
@@ -30,7 +30,7 @@ def list_files(w):
   files = []
   if w[0].find(".git") >= 0:
     return []
-  if w[0].find("/blueprints") >= 0:
+  if w[0].find("/References") >= 0:
     return []
   if w[0].find("/archive") >= 0:
     return []
@@ -49,7 +49,7 @@ def list_files(w):
       continue
     if filename == "update-textures.sh":
       continue
-    if filename == "info.md":
+    if filename == "normal.sh":
       continue
     ext = os.path.splitext(filename)[1]
     if filename.endswith("~"):
