@@ -47,9 +47,7 @@ def list_files(w):
       continue
     if filename.endswith("uv.png"):
       continue
-    if filename == "update-textures.sh":
-      continue
-    if filename == "normal.sh":
+    if filename.endswith(".sh"):
       continue
     ext = os.path.splitext(filename)[1]
     if filename.endswith("~"):

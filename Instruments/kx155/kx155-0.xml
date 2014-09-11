@@ -71,6 +71,23 @@
     </emission>
   </animation>
 
+  <effect>
+    <inherits-from>Instruments/kx155/Effects/plastic</inherits-from>
+    <object-name>front panel</object-name>
+
+    <object-name>comm volume</object-name>
+    <object-name>comm toggle</object-name>
+    <object-name>comm knob inner ring</object-name>
+    <object-name>comm knob outer ring</object-name>
+    <object-name>comm channel button</object-name>
+
+    <object-name>nav volume</object-name>
+    <object-name>nav toggle</object-name>
+    <object-name>nav knob inner ring</object-name>
+    <object-name>nav knob outer ring</object-name>
+    <object-name>nav mode button</object-name>
+  </effect>
+
   <animation>
     <type>material</type>
 
