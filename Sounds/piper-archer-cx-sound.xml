@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <fx>
+
+    <engine>
+      <name>engine</name>
+      <mode>looped</mode>
+      <path>Sounds/wasp.wav</path>
+      <property>engines/engine[0]/running</property>
+      <position>
+        <x>-3.0</x>
+        <y> 0.0</y>
+        <z> 0.0</z>
+      </position>
+      <pitch>
+	<property>engines/engine[0]/rpm</property>
+	<factor>0.0004</factor>
+	<min>0.3</min>
+	<max>1000.0</max>
+	<offset>0.1</offset>
+      </pitch>
+      <volume>
+	<property>sim/current-view/internal</property>
+	<factor>-0.25</factor>
+	<offset>0.8</offset>
+      </volume>
+      <reference-dist>10.0</reference-dist>
+      <max-dist>10000.0</max-dist>
+    </engine>
+
+    <crank>
+      <name>cough</name>
+      <path>Sounds/coughing.wav</path>
+      <property>engines/engine/running</property>
+      <position>
+        <x>-3.0</x>
+        <y> 0.0</y>
+        <z> 0.0</z>
+      </position>
+      <volume>
+        <offset>0.3</offset>
+      </volume>
+    </crank>
+
+    <engine>
+      <name>cranking</name>
+      <mode>looped</mode>
+      <path>Sounds/cranking.wav</path>
+      <position>
+        <x>-3.0</x>
+        <y> 0.0</y>
+        <z> 0.0</z>
+      </position>
+      <condition>
+        <and>
+          <property>engines/engine[0]/cranking</property>
+        </and>
+      </condition>
+      <volume>
+	<property>sim/current-view/internal</property>
+	<factor>-0.2</factor>
+	<offset>0.9</offset>
+      </volume>
+      <pitch>
+        <property>engines/engine/rpm</property>
+        <factor>0.002</factor>
+        <min>0.2</min>
+        <max>1.2</max>
+        <offset>0.04</offset>
+      </pitch>
+      <reference-dist>10.0</reference-dist>
+      <max-dist>10000.0</max-dist>
+    </engine>
+
+    <propeller>
+      <name>propeller</name>
+      <mode>looped</mode>
+      <path>Sounds/wasp.wav</path>
+      <position>
+        <x>-3.0</x>
+        <y> 0.0</y>
+        <z> 0.0</z>
+      </position>
+      <condition>
+        <greater-than>
+          <property>engines/engine/rpm</property>
+          <value>10</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>engines/engine/rpm</property>
+        <factor>0.0001</factor>
+        <max>0.25</max>
+      </volume>
+      <pitch>
+        <property>engines/engine/rpm</property>
+        <factor>0.0004</factor>
+        <min>0.0</min>
+        <max>2.0</max>
+        <offset>0.01</offset>
+      </pitch>
+    </propeller>
+
+    <wind>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>Sounds/wind.wav</path>
+      <volume>
+	<property>velocities/airspeed-kt</property>
+	<factor>0.0005</factor>
+	<min>0.01</min>
+	<max>0.4</max>
+      </volume>
+    </wind>
+
+    <rattle>
+      <name>rattle</name>
+      <mode>looped</mode>
+      <path>Sounds/rattleroll.wav</path>
+      <condition>
+        <and>
+          <or>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+          </or>
+          <property>sim/current-view/internal</property>
+        </and>
+      </condition>
+      <volume>
+	<property>velocities/groundspeed-kt</property>
+	<factor>0.005</factor>
+	<min>0.0</min>
+	<max>0.25</max>
+      </volume>
+    </rattle>
+
+    <touchdown>
+      <name>nose</name>
+      <mode>once</mode>
+      <path>Sounds/squeal.wav</path>
+      <property>gear/gear[0]/wow</property>
+      <volume>
+	<property>velocities/groundspeed-kt</property>
+	<factor>0.02</factor>
+	<min>0.01</min>
+	<max>0.5</max>
+      </volume>
+      <volume>
+	<property>velocities/speed-down-fps</property>
+	<factor>0.1</factor>
+	<min>0.01</min>
+	<max>0.5</max>
+      </volume>
+    </touchdown>
+
+    <touchdown>
+      <name>left</name>
+      <mode>once</mode>
+      <path>Sounds/squeal.wav</path>
+      <property>gear/gear[0]/wow</property>
+      <volume>
+	<property>velocities/groundspeed-kt</property>
+	<factor>0.02</factor>
+	<min>0.01</min>
+	<max>0.5</max>
+      </volume>
+      <volume>
+	<property>velocities/speed-down-fps</property>
+	<factor>0.17</factor>
+	<min>0.01</min>
+	<max>0.5</max>
+      </volume>
+    </touchdown>
+
+    <touchdown>
+      <name>right</name>
+      <mode>once</mode>
+      <path>Sounds/squeal.wav</path>
+      <property>gear/gear[2]/wow</property>
+      <volume>
+	<property>velocities/groundspeed-kt</property>
+	<factor>0.02</factor>
+	<min>0.01</min>
+	<max>0.5</max>
+      </volume>
+      <volume>
+	<property>velocities/speed-down-fps</property>
+	<factor>0.17</factor>
+	<min>0.01</min>
+	<max>0.5</max>
+      </volume>
+    </touchdown>
+
+    <flaps>
+      <name>flaps</name>
+      <mode>in-transit</mode>
+      <path>Sounds/flaps.wav</path>
+      <property>surface-positions/flap-pos-norm</property>
+      <volume>
+        <property>sim/current-view/internal</property>
+        <factor>-0.2</factor>
+        <offset>0.5</offset>
+      </volume>
+    </flaps>
+
+    <stall>
+      <name>stall</name>
+      <mode>looped</mode>
+      <path>Sounds/stall.wav</path>
+      <condition>
+        <and>
+          <property>sim/current-view/internal</property>
+          <greater-than>
+	    <property>velocities/airspeed-kt</property>
+            <value>10</value>
+          </greater-than>
+          <not>
+            <property>gear/gear[0]/wow</property>
+            <property>gear/gear[1]/wow</property>
+            <property>gear/gear[2]/wow</property>
+          </not>
+        </and>
+      </condition>
+      <volume>
+        <property>fdm/jsbsim/aero/alpha-deg</property>
+        <offset>-0.6</offset>
+        <factor>0.08</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>10.0</reference-dist>
+      <max-dist>50.0</max-dist>
+    </stall>
+
+    <!-- -->
+
+    <fuel-pump>
+      <name>fuel-pump</name>
+      <mode>looped</mode>
+      <path>Sounds/gear.wav</path>
+      <property>electrical/outputs/fuel-pump/powered</property>
+      <volume>
+        <property>engines/engine[0]/fuel-pressure_psi</property>
+        <factor>0.02</factor>
+        <max>0.1</max>
+      </volume>
+    </fuel-pump>
+
+  </fx>
+  
+</PropertyList>

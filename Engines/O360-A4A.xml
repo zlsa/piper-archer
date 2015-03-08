@@ -23,5 +23,6 @@ injected?       no
   <maxthrottle>               1.0  </maxthrottle>
   <minthrottle>               0.1  </minthrottle>
   <sparkfaildrop>             0.1 </sparkfaildrop>
+  <starter-torque>           70.0 </starter-torque>
   <feed>2</feed>
 </piston_engine>
