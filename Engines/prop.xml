@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 
+<!-- Uses AndersG's propeller values for now. -->
+
 <propeller name="prop">
   <ixx>1.7</ixx>
   <diameter unit="IN">76.0</diameter>

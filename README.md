@@ -22,6 +22,8 @@ __Please note that the aircraft is currently not even in alpha yet.__
 
 Will be CC0 when released; currently GPLV2 due to some textures.
 
+Currently, `Engines/prop.xml` is made up of AndersG's propeller values. This will be fixed soon.
+
 # Contact
 
 Reddit: [/u/zlsa](http://www.reddit.com/u/zlsa)
