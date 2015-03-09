@@ -8,7 +8,7 @@ import os
 import shutil
 import sys
 
-AIRCRAFT = "pa28-181"
+AIRCRAFT = "piper-archer"
 
 def collect(path_from = "../releases/", path_to = "releases/"):
 #  for filename in os.listdir(path_to):
