@@ -54,7 +54,7 @@
     </view>
 
     <view n="101">
-      <name type="string">Copilot</name>
+      <name type="string">Co-Pilot</name>
       <internal>true</internal>
       <type>lookfrom</type>
       <config>
@@ -73,36 +73,6 @@
 
     <menubar include="Dialogs/menu.xml"/>
 
-    <weight n="0">
-      <name>Pilot</name>
-      <weight-lb archive="y">180</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
-
-    <weight n="1">
-      <name>Copilot</name>
-      <weight-lb archive="y">180</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
-
-    <weight n="2">
-      <name>Left passenger</name>
-      <weight-lb archive="y">0</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
-
-    <weight n="3">
-      <name>Right passenger</name>
-      <weight-lb archive="y">0</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
-
-    <weight n="4">
-      <name>Baggage</name>
-      <weight-lb archive="y">50</weight-lb>
-      <max-lb>200</max-lb>
-    </weight>
-
     <systems>
       <electrical include="Systems/electrical.xml"></electrical>
       <!--      <failures include="Systems/failures.xml"></failures>-->
@@ -114,6 +84,15 @@
       </property-rule>
 
     </systems>
+
+    <rendering>
+      <als-secondary-lights>
+        <landing-light1-offset-deg type="float"> 5</landing-light1-offset-deg>
+        <landing-light2-offset-deg type="float">-5</landing-light2-offset-deg>
+        <use-alt-landing-light type="bool">false</use-alt-landing-light>
+        <use-landing-light type="bool">false</use-landing-light>
+      </als-secondary-lights>
+    </rendering>
 
   </sim>
 
@@ -171,21 +150,21 @@
     <replay-config type="int">0</replay-config>
     <config n="0" include="/Aircraft/Generic/flightrecorder/generic-piston-propeller-1.xml">
       <name type="string">Piper Archer CX Flight Recorder</name>
-        <signal>
-          <type>float</type>
-          <property type="string">/gear/gear[0]/compression-m</property>
-          <interpolation>linear</interpolation>
-        </signal>
-        <signal>
-          <type>float</type>
-          <property type="string">/gear/gear[1]/compression-m</property>
-          <interpolation>linear</interpolation>
-        </signal>
-        <signal>
-          <type>float</type>
-          <property type="string">/gear/gear[2]/compression-m</property>
-          <interpolation>linear</interpolation>
-        </signal>
+      <signal>
+        <type>float</type>
+        <property type="string">/gear/gear[0]/compression-m</property>
+        <interpolation>linear</interpolation>
+      </signal>
+      <signal>
+        <type>float</type>
+        <property type="string">/gear/gear[1]/compression-m</property>
+        <interpolation>linear</interpolation>
+      </signal>
+      <signal>
+        <type>float</type>
+        <property type="string">/gear/gear[2]/compression-m</property>
+        <interpolation>linear</interpolation>
+      </signal>
     </config>
   </flight-recorder>
 
@@ -245,6 +224,50 @@
       <fuel-pressure_psi type="double">0</fuel-pressure_psi>
     </engine>
   </engines>
+
+  <payload>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[0]"/>
+      <min-lb>0</min-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Copilot</name>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[1]"/>
+      <min-lb>0</min-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Left passenger</name>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[2]"/>
+      <min-lb>0</min-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="3">
+      <name>Right passenger</name>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]"/>
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[3]"/>
+      <min-lb>0</min-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="4">
+      <name>Baggage</name>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[4]"/>
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[4]"/>
+      <min-lb>0</min-lb>
+      <max-lb>60</max-lb>
+    </weight>
+    
+  </payload>
 
   <!-- Keybindings -->
 
@@ -323,7 +346,7 @@
       <file>Nasal/piper-archer.nas</file>
 
       <file>Aircraft/Generic/limits.nas</file>
-      </piper_archer>
+    </piper_archer>
     <kx155>
       <file>Nasal/util.nas</file>
       <file>Nasal/kx155.nas</file>

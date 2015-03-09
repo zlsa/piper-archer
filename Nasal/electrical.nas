@@ -12,7 +12,7 @@ var switch_props=props.globals.getNode(config_path).getChildren("switch");
 
 var update_electrical=func {
 
-    var delta=1/30;
+    var delta=1/30 * getprop("/sim/speed-up");
     
     foreach(var i;keys(devices)) {
         var device=devices[i];
