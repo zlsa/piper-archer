@@ -1,10 +1,10 @@
 footer {
   background: #fff;
   border: 2px solid #888;
-  -webkit-box-shadow: 0 0 0 4px white;
-  -moz-box-shadow: 0 0 0 4px white;
-  -ms-box-shadow: 0 0 0 4px white;
-  box-shadow: 0 0 0 4px white;
+  -webkit-box-shadow: 0 0 0 4px #fff;
+  -moz-box-shadow: 0 0 0 4px #fff;
+  -ms-box-shadow: 0 0 0 4px #fff;
+  box-shadow: 0 0 0 4px #fff;
   border-radius: 4px 4px 0 0;
   border-bottom: none;
   color: rgba(0, 0, 0, 0.7);
@@ -17,3 +17,5 @@ footer {
   margin-left: -30em;
   padding: 10px 0;
   z-index: 10000; }
+
+/*# sourceMappingURL=footer.css.map */

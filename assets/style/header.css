@@ -6,7 +6,7 @@
     font-size: 200%;
     color: #444; }
     #header h1.aircraft .beta {
-      background-color: #ff8833;
+      background-color: #f83;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
@@ -22,3 +22,5 @@
     color: #666;
     font-style: italic;
     margin: 10px; }
+
+/*# sourceMappingURL=header.css.map */

@@ -35,7 +35,7 @@
       left: -21px;
       height: 100%; }
   #top .download.button {
-    background-color: #3388ff;
+    background-color: #38f;
     -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
     -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
@@ -55,7 +55,7 @@
     #top .download.button:active {
       background-color: #1a79ff; }
   #top .download.button.beta {
-    background-color: #ff8833;
+    background-color: #f83;
     -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
     -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
@@ -73,3 +73,5 @@
       background-color: #ff974d; }
     #top .download.button.beta:active {
       background-color: #ff791a; }
+
+/*# sourceMappingURL=top.css.map */
