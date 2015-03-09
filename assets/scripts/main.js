@@ -1,5 +1,5 @@
 
-var repo="pa28-181";
+var repo="piper-archer";
 
 function tab(t) {
   $(".tab").removeClass("active");
@@ -34,7 +34,7 @@ $(document).ready(function() {
   }
   for(var i=info.releases.length-1;i>=0;i--) {
     var release = info.releases[i];
-    if(release[0] == "pa28-181-latest.zip") {
+    if(release[0] == "piper-archer-latest.zip") {
       var s      = "";
       var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
       s         += release[1].substr(6, 2) + " ";
@@ -43,7 +43,7 @@ $(document).ready(function() {
       $(".last-update .date").text(s);
       $(".size").text(release[2] + " MB");
     } else {
-      $("#tab-releases").append("<div class='release'><a class='download' href='http://zlsa.github.io/pa28-181/releases/"+release[0]+"' title='Download this older release'>"+release[0]+"</a><span class='size'>"+release[2]+" MB</span></div>");
+      $("#tab-releases").append("<div class='release'><a class='download' href='http://zlsa.github.io/piper-archer/releases/"+release[0]+"' title='Download this older release'>"+release[0]+"</a><span class='size'>"+release[2]+" MB</span></div>");
     }
   }
   if(location.hash) tab(location.hash.substr(1))
