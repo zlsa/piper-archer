@@ -1,4 +1,4 @@
-#     Piper PA-28-181
+#      Piper Archer
 #   Non-random failures
 ###########################
 

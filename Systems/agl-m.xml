@@ -7,7 +7,7 @@
     <gain>0.295</gain>
     <input>/position/altitude-agl-ft</input>
     <reference>1.0</reference>
-    <offset>-0.6</offset>
+    <offset>0.8</offset>
     <output>/position/altitude-agl-m</output>
   </filter>
 

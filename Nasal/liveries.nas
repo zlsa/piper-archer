@@ -1,5 +1,5 @@
-#    Piper PA-28-181
+#      Piper Archer
 #      Livery init
 ###########################
 
-aircraft.livery.init("Aircraft/pa28-181/Models/Liveries","sim/model/livery/name");
+aircraft.livery.init("Models/Liveries", "sim/model/livery/name");

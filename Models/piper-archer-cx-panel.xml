@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>piper-archer-cx-panel.ac</path>
+
+  <!-- COCKPIT -->
+
+  <!-- <effect> -->
+  <!--   <inherits-from>Models/Effects/brown-plastic</inherits-from> -->
+  <!--   <object-name>dashboard</object-name> -->
+  <!--   <object-name>throttle quadrant</object-name> -->
+  <!-- </effect> -->
+
+  <!-- <effect> -->
+  <!--   <inherits-from>Models/Effects/black-plastic</inherits-from> -->
+  <!--   <object-name>engine gauge trim</object-name> -->
+  <!--   <object-name>yoke mount trim</object-name> -->
+  <!--   <object-name>throttle quadrant trim</object-name> -->
+  <!--   <object-name>dashboard top</object-name> -->
+  <!-- </effect> -->
+
+  <effect>
+    <inherits-from>Models/Effects/carpet</inherits-from>
+    <object-name>floor</object-name>
+  </effect>
+
+  <model>
+    <name>fuel selector</name>
+    <path>Instruments/fuel-selector/fuel-selector.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <heading-deg>90</heading-deg>
+      <x-m>-1.710</x-m>
+      <y-m>-0.485</y-m>
+      <z-m>-0.080</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>clock</name>
+    <path>Instruments/clock/clock.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.39</y-m>
+      <z-m>0.24</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>airspeed</name>
+    <path>Instruments/airspeed/airspeed.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.31</y-m>
+      <z-m>0.25</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>attitude</name>
+    <path>Instruments/attitude/attitude.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.22</y-m>
+      <z-m>0.25</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>altimeter</name>
+    <path>Instruments/altimeter/altimeter.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.13</y-m>
+      <z-m>0.25</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>bank</name>
+    <path>Instruments/bank/bank.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.31</y-m>
+      <z-m>0.16</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>compass</name>
+    <path>Instruments/compass/compass.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.22</y-m>
+      <z-m> 0.16</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>vsi</name>
+    <path>Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.13</y-m>
+      <z-m> 0.16</z-m>
+    </offsets>
+  </model>
+
+  <!-- fuel row -->
+
+  <model>
+    <name>placeholder</name>
+    <path>Instruments/placeholder/placeholder.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.19</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>fuel-left</name>
+    <path>Instruments/fuel/fuel-left.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.15</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>fuel-pressure</name>
+    <path>Instruments/fuel-pressure/fuel-pressure.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.11</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>fuel-right</name>
+    <path>Instruments/fuel/fuel-right.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.07</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>placeholder</name>
+    <path>Instruments/placeholder/placeholder.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.03</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <!-- battery row -->
+
+  <model>
+    <name>placeholder</name>
+    <path>Instruments/placeholder/placeholder.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.43</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>oil-pressure</name>
+    <path>Instruments/oil-pressure/oil-pressure.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.39</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>battery</name>
+    <path>Instruments/battery/battery.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.35</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>oil-temperature</name>
+    <path>Instruments/oil-temperature/oil-temperature.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.96</x-m>
+      <y-m>-0.31</y-m>
+      <z-m> 0.07</z-m>
+    </offsets>
+  </model>
+
+  <!-- Switches -->
+
+  <model>
+    <name>switches</name>
+    <path>Instruments/switches/switches.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.9610</x-m>
+      <y-m> 0.1000</y-m>
+      <z-m> 0.0505</z-m>
+    </offsets>
+  </model>
+
+  <!-- engine instruments -->
+
+  <model>
+    <name>key</name>
+    <path>Instruments/key/key.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.952</x-m>
+      <y-m>-0.213</y-m>
+      <z-m>-0.060</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>tachometer</name>
+    <path>Instruments/tachometer/tachometer.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m>-0.06</y-m>
+      <z-m>-0.04</z-m>
+    </offsets>
+  </model>
+
+  <!-- Radio stack -->
+
+  <model>
+    <name>radio 0</name>
+    <path>Instruments/kx155/kx155-0.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.95</x-m>
+      <y-m> 0.10</y-m>
+      <z-m> 0.255</z-m>
+    </offsets>
+  </model>
+
+  <!-- <model> -->
+  <!--   <name>radio 1</name> -->
+  <!--   <path>Instruments/kx155/kx155-1.xml</path> -->
+  <!--   <offsets> -->
+  <!--     <pitch-deg>90</pitch-deg> -->
+  <!--     <roll-deg>180</roll-deg> -->
+  <!--     <x-m>-1.95</x-m> -->
+  <!--     <y-m> 0.10</y-m> -->
+  <!--     <z-m> 0.18</z-m> -->
+  <!--   </offsets> -->
+  <!-- </model> -->
+
+  <!-- SHADERS -->
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Models/Effects/exterior-chrome.png</texture>
+    <object-name>yoke rod gasket</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Models/Effects/glossy-black-plastic.png</texture>
+    <object-name>throttle lever</object-name>
+  </animation>
+
+  <!-- Lighting -->
+
+  <animation>
+    <type>material</type>
+    <condition>
+      <not>
+        <property>/sim/rendering/rembrandt/enabled</property>
+      </not>
+    </condition>
+    <object-name>dashboard</object-name>
+    <object-name>cockpit registration</object-name>
+    <object-name>yoke mount trim</object-name>
+    <object-name>throttle quadrant trim</object-name>
+    <object-name>throttle quadrant</object-name>
+    <object-name>knee padding</object-name>
+
+    <!-- <object-name>yoke rod</object-name> -->
+    <!-- <object-name>yoke rod gasket</object-name> -->
+    <!-- <object-name>left yoke</object-name> -->
+    <!-- <object-name>right yoke</object-name> -->
+    <!-- <object-name>throttle lever</object-name> -->
+    <emission>
+      <red>0.3</red>
+      <green>0.2</green>
+      <blue>0.2</blue>
+      <factor-prop>electrical/outputs/cockpit-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
+  <!-- Range -->
+
+  <animation>
+    <type>range</type>
+    <object-name>fuel selector</object-name>
+    <object-name>left yoke</object-name>
+    <object-name>left yoke logo</object-name>
+    <object-name>left yoke</object-name>
+    <object-name>right yoke logo</object-name>
+    <object-name>yoke rod</object-name>
+    <object-name>yoke rod trim</object-name>
+    <min-m>   0</min-m>
+    <min-m>1000</min-m>
+  </animation>
+
+  <animation>
+    <type>range</type>
+    <object-name>clock</object-name>
+    <object-name>airspeed</object-name>
+    <object-name>attitude</object-name>
+    <object-name>altimeter</object-name>
+    <object-name>bank</object-name>
+    <object-name>compass</object-name>
+    <object-name>vsi</object-name>
+    <object-name>placeholder</object-name>
+    <object-name>fuel-left</object-name>
+    <object-name>fuel-pressure</object-name>
+    <object-name>fuel-right</object-name>
+    <object-name>oil-pressure</object-name>
+    <object-name>oil-temperature</object-name>
+    <object-name>switches</object-name>
+    <object-name>key</object-name>
+    <object-name>tachometer</object-name>
+    <min-m>   0</min-m>
+    <min-m> 500</min-m>
+  </animation>
+
+  <!-- Yoke hiding -->
+
+  <animation>
+    <type>pick</type>
+    <object-name>yoke mount trim</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>options/yoke-visible</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- throttle lever -->
+  
+  <animation>
+    <type>knob</type>
+    <object-name>throttle lever</object-name>
+    <property>controls/engines/engine/throttle</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>1</ind>
+	<dep>-60</dep>
+      </entry>
+    </interpolation>
+    <drag-direction>vertical</drag-direction>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>-1.95</x-m>
+      <y-m>0.3</y-m>
+      <z-m>-0.095</z-m>
+    </center>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+	<property>controls/engines/engine/throttle</property>
+	<factor>0.02</factor>
+	<min>0.0</min>
+	<max>1.0</max>                
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>throttle</tooltip-id>
+	<label>Throttle: %d%%</label>
+	<mapping>percent</mapping>
+	<property>controls/engines/engine/throttle</property>
+      </binding>
+    </hovered>
+
+  </animation>
+
+  <!-- mixture lever -->
+  
+  <animation>
+    <type>knob</type>
+    <object-name>mixture lever</object-name>
+    <property>controls/engines/engine/mixture</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>1</ind>
+	<dep>-60</dep>
+      </entry>
+    </interpolation>
+    <drag-direction>vertical</drag-direction>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>-1.950</x-m>
+      <y-m> 0.000</y-m>
+      <z-m>-0.095</z-m>
+    </center>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+	<property>controls/engines/engine/mixture</property>
+	<factor>0.02</factor>
+	<min>0.0</min>
+	<max>1.0</max>                
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>mixture</tooltip-id>
+	<label>Mixture: %d%%</label>
+	<mapping>percent</mapping>
+	<property>controls/engines/engine/mixture</property>
+      </binding>
+    </hovered>
+
+  </animation>
+
+</PropertyList>
