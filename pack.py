@@ -14,6 +14,7 @@
 # pack.sh            (this file)
 # update-textures.sh (copies all textures from the source paths)
 # *.blend*           (all blender models)
+# *.xcf              (all source XCF files)
 # *.svg              (all source SVG files)
 # .*                 (all hidden files)
 # *~                 (all autosaved files)
@@ -52,7 +53,7 @@ def list_files(w):
     ext = os.path.splitext(filename)[1]
     if filename.endswith("~"):
       continue
-    if ext.startswith(".blend") or ext == ".svg":
+    if ext.startswith(".blend") or ext == ".svg" or ext == ".svg":
       continue
     if filename.startswith("."):
       continue
