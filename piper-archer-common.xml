@@ -229,40 +229,40 @@
 
     <weight n="0">
       <name>Pilot</name>
-      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
-      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[0]"/>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]" archive="y" />
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[0]" />
       <min-lb>0</min-lb>
       <max-lb>300</max-lb>
     </weight>
 
     <weight n="1">
       <name>Copilot</name>
-      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
-      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[1]"/>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]" archive="y" />
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[1]" />
       <min-lb>0</min-lb>
       <max-lb>300</max-lb>
     </weight>
 
     <weight n="2">
       <name>Left passenger</name>
-      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
-      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[2]"/>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]" archive="y" />
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[2]" />
       <min-lb>0</min-lb>
       <max-lb>300</max-lb>
     </weight>
 
     <weight n="3">
       <name>Right passenger</name>
-      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]"/>
-      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[3]"/>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]" archive="y" />
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[3]" />
       <min-lb>0</min-lb>
       <max-lb>300</max-lb>
     </weight>
 
     <weight n="4">
       <name>Baggage</name>
-      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[4]"/>
-      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[4]"/>
+      <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[4]"  archive="y" />
+      <arm-in alias="/fdm/jsbsim/inertia/pointmass-location-X-inches[4]" />
       <min-lb>0</min-lb>
       <max-lb>60</max-lb>
     </weight>
@@ -357,7 +357,6 @@
     </engine>
     <performance>
       <file>Nasal/util.nas</file>
-      <!-- <file>Nasal/performance.nas</file> -->
     </performance>
     <failures>
       <file>Nasal/util.nas</file>

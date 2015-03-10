@@ -24,6 +24,10 @@ Will be CC0 when released; currently GPLV2 due to some textures.
 
 Currently, `Engines/prop.xml` is made up of AndersG's propeller values. This will be fixed soon.
 
+Note that the entire `References` directory is not part of the
+aircraft and is copyrighted by many people. I am saving it here only
+to avoid having to search for them every time.
+
 # Contact
 
 Reddit: [/u/zlsa](http://www.reddit.com/u/zlsa)

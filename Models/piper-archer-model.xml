@@ -20,7 +20,8 @@
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
     <inherits-from>Effects/model-transparent</inherits-from>
-<!--    <object-name>prop disc</object-name>-->
+    <object-name>prop disc front</object-name>
+    <object-name>prop disc rear</object-name>
     <object-name>left landing light flare</object-name>
     <object-name>right landing light flare</object-name>
     <object-name>left navigation light flare</object-name>
@@ -71,7 +72,6 @@
     <!-- <object-name>yoke rod gasket</object-name> -->
     <!-- <object-name>left yoke</object-name> -->
     <!-- <object-name>right yoke</object-name> -->
-    <!-- <object-name>throttle lever</object-name> -->
     <emission>
       <red>0.3</red>
       <green>0.2</green>
@@ -136,6 +136,11 @@
   </animation>
 
   <!-- SHADERS -->
+
+  <effect>
+    <inherits-from>Models/Effects/carpet</inherits-from>
+    <object-name>floor</object-name>
+  </effect>
 
   <animation>
     <type>shader</type>
@@ -319,23 +324,6 @@
     </center>
   </animation>
 
-  <animation>
-    <type>spin</type>
-    <factor>0.01</factor>
-    <object-name>prop disc</object-name>
-    <property>engines/engine/rpm</property>
-    <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-  </animation>
-
   <!-- prop fade-->
 
   <animation>
@@ -351,7 +339,8 @@
   
   <animation>
     <type>select</type>
-    <object-name>prop disc</object-name>
+    <object-name>prop disc front</object-name>
+    <object-name>prop disc rear</object-name>
     <condition>
       <greater-than>
         <property>engines/engine/rpm</property>
@@ -362,13 +351,21 @@
   
   <animation>
     <type>blend</type>
-    <object-name>prop disc</object-name>
+    <object-name>prop disc front</object-name>
+    <object-name>prop disc rear</object-name>
     <property>engines/engine[0]/rpm</property>
-    <factor>0.0003</factor>
+    <factor>0.00015</factor>
     <max>1.0</max>
-    <min>0.0</min>
+    <min>0.8</min>
   </animation>
 
+  <!-- shader-->
+
+  <!-- <effect> -->
+  <!--   <inherits-from>Models/Effects/prop-disc</inherits-from> -->
+  <!--   <object-name>prop disc</object-name> -->
+  <!-- </effect> -->
+  
   <!-- GEAR -->
 
   <!-- fairing select -->
@@ -421,6 +418,22 @@
   <!-- compression -->
   
   <animation>
+    <type>translate</type>
+    <object-name>nose wheel</object-name>
+    <object-name>nose gear fairing</object-name>
+    <object-name>nose gear piston</object-name>
+    <object-name>nose gear axle</object-name>
+    <object-name>nose gear lower arm</object-name>
+    <property>gear/gear[0]/compression-ft</property>
+    <factor>0.3</factor>
+    <axis>
+      <x> 0.2</x>
+      <y> 0.0</y>
+      <z> 0.8</z>
+    </axis>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>nose gear lower arm</object-name>
     <property>gear/gear[0]/compression-ft</property>
@@ -430,8 +443,12 @@
         <dep>0</dep>
       </entry>
       <entry>
+        <ind>0.5</ind>
+        <dep>50</dep>
+      </entry>
+      <entry>
         <ind>1</ind>
-        <dep>70</dep>
+        <dep>80</dep>
       </entry>
     </interpolation>
     <center>
@@ -457,7 +474,7 @@
       </entry>
       <entry>
         <ind>0.6666</ind>
-        <dep>-80</dep>
+        <dep>-65</dep>
       </entry>
     </interpolation>
     <center>
@@ -469,22 +486,6 @@
       <x>0</x>
       <y>1</y>
       <z>0</z>
-    </axis>
-  </animation>
-  
-  <animation>
-    <type>translate</type>
-    <object-name>nose wheel</object-name>
-    <object-name>nose gear fairing</object-name>
-    <object-name>nose gear piston</object-name>
-    <object-name>nose gear axle</object-name>
-    <object-name>nose gear lower arm</object-name>
-    <property>gear/gear[0]/compression-ft</property>
-    <factor>0.3</factor>
-    <axis>
-      <x> 0.2</x>
-      <y> 0.0</y>
-      <z> 0.8</z>
     </axis>
   </animation>
   
@@ -1601,6 +1602,7 @@
   <animation>
     <type>select</type>
     <object-name>shadow</object-name>
+    <object-name>shadow volume</object-name>
     <condition>
       <and>
         <greater-than>
@@ -1610,24 +1612,24 @@
         <not>
           <property>/sim/rendering/rembrandt/enabled</property>
         </not>
-        <property>/sim/</property>
+        <property>/sim/rendering/shaders/skydome</property>
       </and>
     </condition>
   </animation>
 
   <effect>
     <inherits-from>Effects/shadow-vol</inherits-from>
-    <object-name>shadow</object-name>
+    <object-name>shadow volume</object-name>
   </effect>
 
   <animation>
     <type>noshadow</type>
-    <object-name>shadow</object-name>
+    <object-name>shadow volume</object-name>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>shadow</object-name>
+    <object-name>shadow volume</object-name>
     <property>/orientation/pitch-deg</property>
     <factor>-1.0</factor>
     <center>
@@ -1644,7 +1646,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>shadow</object-name>
+    <object-name>shadow volume</object-name>
     <property>/orientation/roll-deg</property>
     <factor>1.0</factor>
     <center>

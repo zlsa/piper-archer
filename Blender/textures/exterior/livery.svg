@@ -14,9 +14,9 @@
    height="1024"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="livery.svg"
-   inkscape:export-filename="/home/forest/projects/fgfs/pa28-181/Models/textures/exterior/livery.png"
+   inkscape:export-filename="/home/zlsa/projects/fgfs/piper-archer/Blender/textures/exterior/livery.png"
    inkscape:export-xdpi="180"
    inkscape:export-ydpi="180">
   <defs
@@ -28,19 +28,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="611.85137"
-     inkscape:cy="174.68349"
+     inkscape:zoom="1"
+     inkscape:cx="44.107355"
+     inkscape:cy="157.11201"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="727"
+     inkscape:window-width="1600"
+     inkscape:window-height="859"
      inkscape:window-x="0"
      inkscape:window-y="20"
      inkscape:window-maximized="0"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid2985"
@@ -65,7 +68,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -75,18 +78,26 @@
      id="layer1"
      transform="translate(0,-28.362183)">
     <image
+       sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Blender/textures/exterior/../../uv/uv.png"
+       xlink:href="../../uv/uv.png"
        y="28.362183"
        x="0"
        id="image3049"
-       xlink:href="file:///home/forest/projects/fgfs/pa28-181/Models/uv/uv.png"
        height="1024"
        width="1024" />
     <rect
+       y="28.362183"
+       x="0"
+       height="1012"
+       width="12"
+       id="rect3676"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect3841"
-       width="1024"
+       width="1016"
        height="1024"
-       x="0"
+       x="8"
        y="28.362183" />
     <path
        sodipodi:nodetypes="ccccccc"
@@ -354,10 +365,11 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />
     <image
+       sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Blender/textures/exterior/../../uv/ao.png"
+       xlink:href="../../uv/ao.png"
        y="28.362183"
        x="0"
        id="image4068"
-       xlink:href="file:///home/forest/projects/fgfs/pa28-181/Models/uv/ao.png"
        height="1024"
        width="1024" />
     <path
@@ -366,5 +378,12 @@
        id="path4071"
        inkscape:connector-curvature="0"
        transform="translate(0,28.362183)" />
+    <rect
+       style="opacity:0.2;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3690"
+       width="12"
+       height="12"
+       x="0"
+       y="1040.3622" />
   </g>
 </svg>

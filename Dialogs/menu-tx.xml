@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="menu.xml">
+
+  <default>
+    <menu n="10">
+      <label>Piper Archer TX</label>
+    </menu>
+  </default>
+
+</PropertyList>
+

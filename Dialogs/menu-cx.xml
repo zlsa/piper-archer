@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<PropertyList>
+<PropertyList include="menu.xml">
 
   <default>
     <menu n="10">
       <label>Piper Archer CX</label>
-      <enabled type="bool">true</enabled>
-      <item>
-        <name>autostart</name>
-        <binding>
-          <command>nasal</command>
-          <script>piper_archer.autostart()</script>
-        </binding>
-      </item>
-      <item>
-        <name>select-livery</name>
-        <binding>
-          <command>nasal</command>
-          <script>aircraft.livery.dialog.toggle()</script>
-        </binding>
-      </item>
     </menu>
   </default>
 

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<PropertyList include="piper-archer-model.xml">
+
+  <model>
+    <name>panel</name>
+    <path>piper-archer-tx-panel.xml</path>
+  </model>
+
+</PropertyList>

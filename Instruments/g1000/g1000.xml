@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>g1000.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>bezel</object-name>
+    <emission>
+      <red>0.2</red>
+      <green>0.15</green>
+      <blue>0.05</blue>
+      <factor-prop>electrical/outputs/panel-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>

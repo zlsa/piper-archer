@@ -244,7 +244,7 @@
       <volume>
         <property>engines/engine[0]/fuel-pressure_psi</property>
         <factor>0.02</factor>
-        <max>0.1</max>
+        <max>0.2</max>
       </volume>
     </fuel-pump>
 

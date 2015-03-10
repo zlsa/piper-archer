@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <PropertyList>
-  <name>Aircraft/pa28-181/Models/Effects/fuselage</name>
+  <name>Aircraft/piper-archer/Models/Effects/fuselage</name>
   <inherits-from>Effects/model-combined-deferred</inherits-from>
   <parameters>
     <!-- Normal Map -->
@@ -9,7 +9,7 @@
     <normalmap-dds type="int">      0   </normalmap-dds>
     <normalmap-tiling type="float"> 1.0 </normalmap-tiling>
     <texture n="2">
-      <image>Aircraft/pa28-181/Models/normal.png</image>
+      <image>Aircraft/piper-archer/Models/normal.png</image>
     </texture>
     <!-- Reflection -->
     <reflection-enabled type="int">      1   </reflection-enabled>

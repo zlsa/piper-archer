@@ -20,11 +20,6 @@
   <!--   <object-name>dashboard top</object-name> -->
   <!-- </effect> -->
 
-  <effect>
-    <inherits-from>Models/Effects/carpet</inherits-from>
-    <object-name>floor</object-name>
-  </effect>
-
   <model>
     <name>fuel selector</name>
     <path>Instruments/fuel-selector/fuel-selector.xml</path>
@@ -300,7 +295,7 @@
   <!--   </offsets> -->
   <!-- </model> -->
 
-  <!-- SHADERS -->
+  <!-- Shaders -->
 
   <animation>
     <type>shader</type>
@@ -331,12 +326,6 @@
     <object-name>throttle quadrant trim</object-name>
     <object-name>throttle quadrant</object-name>
     <object-name>knee padding</object-name>
-
-    <!-- <object-name>yoke rod</object-name> -->
-    <!-- <object-name>yoke rod gasket</object-name> -->
-    <!-- <object-name>left yoke</object-name> -->
-    <!-- <object-name>right yoke</object-name> -->
-    <!-- <object-name>throttle lever</object-name> -->
     <emission>
       <red>0.3</red>
       <green>0.2</green>
@@ -354,7 +343,6 @@
     <object-name>left yoke logo</object-name>
     <object-name>left yoke</object-name>
     <object-name>right yoke logo</object-name>
-    <object-name>yoke rod</object-name>
     <object-name>yoke rod trim</object-name>
     <min-m>   0</min-m>
     <min-m>1000</min-m>
