@@ -34,7 +34,7 @@
     <rpm-source>/engines/engine[0]</rpm-source>
     <min-rpm type="double">450</min-rpm>
     <max-rpm type="double">2800</max-rpm>
-    <power type="double">350</power>
+    <power type="double">150</power>
 
     <switch>/controls/switches/alternator</switch>
 

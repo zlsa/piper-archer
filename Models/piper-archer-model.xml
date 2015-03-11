@@ -500,7 +500,7 @@
       </entry>
       <entry>
         <ind>1</ind>
-        <dep>-40</dep>
+        <dep>-60</dep>
       </entry>
     </interpolation>
     <center>
@@ -572,7 +572,7 @@
       </entry>
       <entry>
         <ind>1</ind>
-        <dep>40</dep>
+        <dep>50</dep>
       </entry>
     </interpolation>
     <center>
