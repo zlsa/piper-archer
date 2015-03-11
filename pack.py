@@ -25,7 +25,7 @@ import time
 import os
 import sys
 
-AIRCRAFT = "pa28-181"
+AIRCRAFT = "piper-archer"
 
 def list_files(w):
   files = []
