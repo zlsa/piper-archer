@@ -1601,7 +1601,6 @@
 
   <animation>
     <type>select</type>
-    <object-name>shadow</object-name>
     <object-name>shadow volume</object-name>
     <condition>
       <and>
@@ -1613,6 +1612,7 @@
           <property>/sim/rendering/rembrandt/enabled</property>
         </not>
         <property>/sim/rendering/shaders/skydome</property>
+        <property>/options/shadow</property>
       </and>
     </condition>
   </animation>

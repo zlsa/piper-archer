@@ -74,6 +74,20 @@
     </emission>
   </animation>
 
+  <!-- Switches -->
+
+  <model>
+    <name>switches</name>
+    <path>Instruments/switches/switches.xml</path>
+    <offsets>
+      <pitch-deg>90</pitch-deg>
+      <roll-deg>180</roll-deg>
+      <x-m>-1.9610</x-m>
+      <y-m> 0.1000</y-m>
+      <z-m> 0.0505</z-m>
+    </offsets>
+  </model>
+
   <!-- Range -->
 
   <!-- controls -->

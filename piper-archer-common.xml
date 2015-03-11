@@ -133,6 +133,7 @@
   <options>
     <yoke-visible  type="bool" userarchive="y">true</yoke-visible>
     <wheel-fairing type="bool" userarchive="y">false</wheel-fairing>
+    <shadow        type="bool" userarchive="y">false</shadow>
   </options>
 
   <multiplay>

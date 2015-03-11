@@ -15,4 +15,15 @@
     </emission>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>display</object-name>
+    <emission>
+      <red>1.0</red>
+      <green>1.0</green>
+      <blue>1.0</blue>
+      <factor-prop>electrical/outputs/panel-lights/brightness</factor-prop>
+    </emission>
+  </animation>
+
 </PropertyList>
