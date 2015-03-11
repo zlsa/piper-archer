@@ -147,6 +147,7 @@
     <shader>chrome</shader>
     <texture>Models/Effects/exterior-chrome.png</texture>
     <object-name>prop spinner</object-name>
+    <object-name>prop spinner fast</object-name>
     <object-name>left main piston</object-name>
     <object-name>right main piston</object-name>
     <object-name>nose gear piston</object-name>
@@ -311,6 +312,7 @@
   <animation>
     <type>spin</type>
     <object-name>prop blade</object-name>
+    <object-name>prop spinner</object-name>
     <property>engines/engine/rpm</property>
     <axis>
       <x>-1</x>
@@ -329,6 +331,7 @@
   <animation>
     <type>select</type>
     <object-name>prop blade</object-name>
+    <object-name>prop spinner</object-name>
     <condition>
       <less-than>
         <property>engines/engine/rpm</property>
@@ -341,6 +344,7 @@
     <type>select</type>
     <object-name>prop disc front</object-name>
     <object-name>prop disc rear</object-name>
+    <object-name>prop spinner fast</object-name>
     <condition>
       <greater-than>
         <property>engines/engine/rpm</property>

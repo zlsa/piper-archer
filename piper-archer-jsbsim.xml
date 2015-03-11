@@ -38,9 +38,9 @@
  </metrics>
 
  <mass_balance>
-   <ixx unit="SLUG*FT2">982</ixx>
-   <iyy unit="SLUG*FT2">754</iyy>
-   <izz unit="SLUG*FT2">1631</izz>
+   <ixx unit="SLUG*FT2">800</ixx>
+   <iyy unit="SLUG*FT2">500</iyy>
+   <izz unit="SLUG*FT2">1400</izz>
    <emptywt unit="LBS">1416</emptywt>
    <location name="CG" unit="M">
      <x>-1.60</x>
@@ -230,7 +230,7 @@
 
  <propulsion>
 
-   <engine file="O360-A4A">
+   <engine file="o360-a4a">
      <location unit="M">
        <x>0.38</x>
        <y>0.00</y>
@@ -242,7 +242,7 @@
        <yaw>0.00</yaw>
      </orient>
      <feed>2</feed>
-     <thruster file="prop">
+     <thruster file="76em8">
        <sense>-1</sense>
        <location unit="M">
          <x>0.38</x>
@@ -505,8 +505,8 @@
            <tableData>
               0.00 0.00
               0.10 0.03
-              0.40 0.04
-              0.70 0.12
+              0.40 0.09
+              0.70 0.15
               1.00 0.20
            </tableData>
          </table>
@@ -565,10 +565,10 @@
            <independentVar lookup="row">fcs/flap-pos-norm</independentVar>
            <tableData>
               0.00 0.000
-              0.10 0.003
-              0.40 0.013
-              0.70 0.038
-              1.00 0.110
+              0.10 0.009
+              0.40 0.035
+              0.70 0.085
+              1.00 0.120
            </tableData>
          </table>
        </product>

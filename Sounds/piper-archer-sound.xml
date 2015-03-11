@@ -225,6 +225,13 @@
         </and>
       </condition>
       <volume>
+        <property>velocities/airspeed-kt</property>
+        <offset>-0.2</offset>
+        <factor>0.03</factor>
+        <min>0.0</min>
+        <max>1.0</max>
+      </volume>
+      <volume>
         <property>fdm/jsbsim/aero/alpha-deg</property>
         <offset>-0.6</offset>
         <factor>0.08</factor>
@@ -247,6 +254,26 @@
         <max>0.2</max>
       </volume>
     </fuel-pump>
+
+    <rain>
+      <name>rain</name>
+      <mode>looped</mode>
+      <path>Sounds/rain.wav</path>
+      <volume>
+        <property>/environment/rain-norm</property>
+        <factor>1.2</factor>
+        <max>0.8</max>
+      </volume>
+      <volume>
+	<property>sim/current-view/internal</property>
+        <factor>0.3</factor>
+        <min>0.5</min>
+      </volume>
+      <pitch>
+	<property>sim/current-view/internal</property>
+        <factor>0.5</factor>
+      </pitch>
+    </rain>
 
   </fx>
   

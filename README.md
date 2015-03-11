@@ -20,9 +20,13 @@ __Please note that the aircraft is currently not even in alpha yet.__
 
 # License
 
-Will be CC0 when released; currently GPLV2 due to some textures.
+<!-- Will be CC0 when released; currently GPLV2 due to some textures. -->
 
-Currently, `Engines/prop.xml` is made up of AndersG's propeller values. This will be fixed soon.
+Code and XML: GPLv2
+Art: CC-BY-NC-SA 4.0
+
+Currently, `Engines/prop.xml` is made up of AndersG's propeller
+values. This will be fixed soon.
 
 Note that the entire `References` directory is not part of the
 aircraft and is copyrighted by many people. I am saving it here only

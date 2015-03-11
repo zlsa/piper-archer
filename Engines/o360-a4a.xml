@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<piston_engine name="o360-a4a">
+  <minmp unit="INHG">         8.3  </minmp>
+  <maxmp unit="INHG">        28.5  </maxmp>
+  
+  <maxhp>                   180.0  </maxhp>
+  <displacement unit="IN3"> 361.0  </displacement>
+  
+  <bore unit="IN">          5.125  </bore>
+  <stroke unit="IN">        4.375  </stroke>
+  
+  <cycles>                    4.0  </cycles>
+  
+  <idlerpm>                 600.0  </idlerpm>
+  <maxrpm>                 2700.0  </maxrpm>
+  
+  <maxthrottle>               1.0  </maxthrottle>
+  <minthrottle>               0.1  </minthrottle>
+  
+  <sparkfaildrop>             0.1 </sparkfaildrop>
+  
+  <starter-torque>           70.0 </starter-torque>
+  <feed>2</feed>
+</piston_engine>
