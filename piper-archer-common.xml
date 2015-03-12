@@ -342,6 +342,8 @@
       <file>Nasal/lighting.nas</file>
       <file>Nasal/electrical.nas</file>
 
+      <file>Nasal/glass.nas</file>
+      
       <file>Nasal/scenario.nas</file>
 
       <file>Nasal/piper-archer.nas</file>

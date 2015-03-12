@@ -2,6 +2,8 @@
 #       Engine file
 ###########################
 
+var oil_pressure_lowpass=aircraft.lowpass.new(0.5);
+
 var push=0;
 
 var get_key=func {
@@ -41,8 +43,13 @@ var start=func(mode) {
   }
 };
 
-var starter_changed=func {
+var starter_changed = func {
   setprop("/controls/engines/engine[0]/starter", getprop("/electrical/outputs/starter/powered"));
+};
+
+var update = func {
+  oil_pressure_lowpass.filter(crange(600, getprop("/engines/engine[0]/rpm"), 2700, 30, 75));
+  setprop("/engines/engine[0]/oil-pressure", oil_pressure_lowpass.get());
 };
 
 setlistener("/electrical/outputs/starter/powered", starter_changed);

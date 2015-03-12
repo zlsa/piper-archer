@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+  <name>Aircraft/piper-archer/Models/Effects/glass</name>
+  <inherits-from>Effects/glass</inherits-from>
+
+  <parameters>
+    <glass-tint type="vec4d" n="0"> 0.95 0.96 1.0 1.0</glass-tint>
+  </parameters>
+  
+</PropertyList>

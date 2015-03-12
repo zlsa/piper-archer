@@ -565,8 +565,8 @@
            <independentVar lookup="row">fcs/flap-pos-norm</independentVar>
            <tableData>
               0.00 0.000
-              0.10 0.009
-              0.40 0.035
+              0.10 0.015
+              0.40 0.040
               0.70 0.085
               1.00 0.120
            </tableData>

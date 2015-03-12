@@ -4,15 +4,22 @@
 
 var INIT=false;
 
-var oil_pressure_lowpass=aircraft.lowpass.new(0.5);
+var version_gt_3_4 = substr(getprop("/sim/version/flightgear"), 0, 3) > 3.4;
 
 var update=func {
   update_electrical();
   update_fuel();
   update_lighting();
+  engine.update();
+  
+  if(version_gt_3_4)
+    update_glass();
 
-  oil_pressure_lowpass.filter(crange(600, getprop("/engines/engine[0]/rpm"), 2700, 30, 75));
-  setprop("/engines/engine[0]/oil-pressure", oil_pressure_lowpass.get());
+  if(getprop("/sim/current-view/internal")) {
+    setprop("/sim/rendering/precipitation-aircraft-enable", false);
+  } else {
+    setprop("/sim/rendering/precipitation-aircraft-enable", true);
+  }
 
   settimer(update, 0);
 };

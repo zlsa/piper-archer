@@ -19,6 +19,7 @@
     <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
+    
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>prop disc front</object-name>
     <object-name>prop disc rear</object-name>
@@ -172,6 +173,7 @@
     <type>shader</type>
     <shader>chrome</shader>
     <texture>Models/Effects/glass.png</texture>
+    
     <object-name>windshield</object-name>
     <object-name>window 1</object-name>
     <object-name>window 3</object-name>
@@ -186,13 +188,25 @@
     <object-name>tail beacon light cover</object-name>
   </animation>
 
+  <effect>
+    <inherits-from>Models/Effects/glass</inherits-from>
+    
+    <object-name>interior windshield</object-name>
+    <object-name>interior window 1</object-name>
+    <object-name>interior window 3</object-name>
+    <object-name>interior window 4</object-name>
+    <object-name>interior window 5</object-name>
+    <object-name>interior window 6</object-name>
+    <object-name>interior door window</object-name>
+  </effect>
+  
   <!-- INTERNAL/EXTERNAL -->
 
   <animation>
     <type>select</type>
     <condition>
       <not>
-        <property>sim/current-view/internal</property>
+        <property>/sim/current-view/internal</property>
       </not>
     </condition>
     <object-name>windshield</object-name>
@@ -202,6 +216,20 @@
     <object-name>window 5</object-name>
     <object-name>window 6</object-name>
     <object-name>door window</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <property>/sim/current-view/internal</property>
+    </condition>
+    <object-name>interior windshield</object-name>
+    <object-name>interior window 1</object-name>
+    <object-name>interior window 3</object-name>
+    <object-name>interior window 4</object-name>
+    <object-name>interior window 5</object-name>
+    <object-name>interior window 6</object-name>
+    <object-name>interior door window</object-name>
   </animation>
 
   <!-- fairings-->

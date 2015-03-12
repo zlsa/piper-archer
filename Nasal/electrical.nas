@@ -490,7 +490,7 @@ var init_electrical=func {
     devices[device.name]=device;
   }
 
-  print("Electrical system initialized");
+  print("Piper Archer electrical system initialized");
 
   settimer(update_electrical, 0);
 };

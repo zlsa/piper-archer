@@ -6,6 +6,8 @@
   
   <maxhp>                   180.0  </maxhp>
   <displacement unit="IN3"> 361.0  </displacement>
+
+  <compression-ratio>         8.5  </compression-ratio>
   
   <bore unit="IN">          5.125  </bore>
   <stroke unit="IN">        4.375  </stroke>
