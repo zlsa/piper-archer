@@ -12,8 +12,8 @@ var switch_props=props.globals.getNode(config_path).getChildren("switch");
 
 var update_electrical=func {
 
-  var delta=1/30 * getprop("/sim/speed-up");
-  
+  var delta=1/30;
+
   foreach(var i;keys(devices)) {
     var device=devices[i];
     var role = device.role;
@@ -491,7 +491,5 @@ var init_electrical=func {
   }
 
   print("Piper Archer electrical system initialized");
-
-  settimer(update_electrical, 0);
 };
 

@@ -279,12 +279,12 @@
         <desc>Start engines</desc>
         <binding>
           <command>nasal</command>
-          <script>engine.start(1)</script>
+          <script>piper_archer.start(1)</script>
         </binding>
         <mod-up>
           <binding>
             <command>nasal</command>
-            <script>engine.start(0)</script>
+            <script>piper_archer.start(0)</script>
           </binding>
         </mod-up>
       </key>
@@ -295,12 +295,12 @@
         <repeat>false</repeat>
         <binding>
           <command>nasal</command>
-          <script>engine.key(-1)</script>
+          <script>piper_archer.key(-1)</script>
         </binding>
         <mod-up>
           <binding>
             <command>nasal</command>
-            <script>engine.key(0)</script>
+            <script>piper_archer.key(0)</script>
           </binding>
         </mod-up>
       </key>
@@ -311,12 +311,12 @@
         <repeat>false</repeat>
         <binding>
           <command>nasal</command>
-          <script>engine.key(1)</script>
+          <script>piper_archer.key(1)</script>
         </binding>
         <mod-up>
           <binding>
             <command>nasal</command>
-            <script>engine.key(0)</script>
+            <script>piper_archer.key(0)</script>
           </binding>
         </mod-up>
       </key>
@@ -342,6 +342,8 @@
       <file>Nasal/lighting.nas</file>
       <file>Nasal/electrical.nas</file>
 
+      <file>Nasal/engine.nas</file>
+      
       <file>Nasal/glass.nas</file>
       
       <file>Nasal/scenario.nas</file>
@@ -354,10 +356,6 @@
       <file>Nasal/util.nas</file>
       <file>Nasal/kx155.nas</file>
     </kx155>
-    <engine>
-      <file>Nasal/util.nas</file>
-      <file>Nasal/engine.nas</file>
-    </engine>
     <performance>
       <file>Nasal/util.nas</file>
     </performance>

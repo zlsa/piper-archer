@@ -6,21 +6,21 @@ var INIT=false;
 
 var version_gt_3_4 = substr(getprop("/sim/version/flightgear"), 0, 3) > 3.4;
 
-var update=func {
+var update = func {
   update_electrical();
   update_fuel();
   update_lighting();
-  engine.update();
+  update_engine();
   
   if(version_gt_3_4)
     update_glass();
-
+  
   if(getprop("/sim/current-view/internal")) {
     setprop("/sim/rendering/precipitation-aircraft-enable", false);
   } else {
     setprop("/sim/rendering/precipitation-aircraft-enable", true);
   }
-
+  
   settimer(update, 0);
 };
 

@@ -16,21 +16,17 @@ var fog_lowpass                = aircraft.lowpass.new(100);
 
 var update_rain = func {
 
-  var ubody_max = 150;
-  var vbody_max = 30;
-  var wbody_max = 6;
-  
   ubody_lowpass.filter(getprop("/velocities/uBody-fps"));
   vbody_lowpass.filter(getprop("/velocities/vBody-fps"));
   wbody_lowpass.filter(getprop("/velocities/wBody-fps"));
   
-  var ubody = ubody_lowpass.get();
-  var vbody = vbody_lowpass.get();
-  var wbody = wbody_lowpass.get();
+  var ubody = squared(ubody_lowpass.get());
+  var vbody = squared(vbody_lowpass.get());
+  var wbody = squared(wbody_lowpass.get());
 
   var magnitude = math.sqrt(squared(ubody) + squared(vbody) + squared(wbody));
 
-  var length = crange(0, magnitude, 200, 0.2, 2);
+  var length = crange(0, magnitude, 40000, 0.2, 2);
   magnitude = magnitude / length;
 
   # x = forwards
@@ -38,7 +34,7 @@ var update_rain = func {
   # z = up
 
   var splash_x =    -(ubody / magnitude) * 1.1;
-  var splash_y =     (vbody / magnitude) * 0.5;
+  var splash_y =     (vbody / magnitude) * 0.05;
   var splash_z = max(-wbody / magnitude, 1.0);
 
   setprop("/environment/aircraft-effects/splash-vector-x", splash_x);
