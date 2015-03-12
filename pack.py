@@ -72,9 +72,13 @@ def pack():
   name += time.strftime("%Y%m%d", time.gmtime(time.time()))
   name += ".zip"
   files = filelist("./")
+  sizes = []
   for f in files:
     size = round(os.path.getsize(f) / 1024, 2)
-    print(str(size).rjust(7) + "KB: " + f)
+    sizes.append([size, f])
+  sizes.sort()
+  for f in sizes:
+    print("{0:5.2f}".format(f[0]).rjust(10) + " KB: " + f[1])
   path  = "../releases"
   path  = os.path.join(path, name)
   try:
