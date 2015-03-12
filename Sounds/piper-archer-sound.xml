@@ -258,7 +258,7 @@
     <rain>
       <name>rain</name>
       <mode>looped</mode>
-      <path>Sounds/rain.ogg</path>
+      <path>Sounds/rain.wav</path>
       <volume>
         <property>/environment/rain-norm</property>
         <factor>1.2</factor>

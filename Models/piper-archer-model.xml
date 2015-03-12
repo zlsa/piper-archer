@@ -254,7 +254,6 @@
     <condition>
       <property>options/yoke-visible</property>
     </condition>
-    <object-name>yoke rod gasket</object-name>
     <object-name>yoke rod</object-name>
     <object-name>left yoke</object-name>
     <object-name>right yoke</object-name>
