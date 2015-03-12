@@ -15,7 +15,7 @@ $beta-color: #f83;
 
 $theme-color: $beta-color;
 
-@mixin border-radius($radius: 4px) {
+@mixin border-radius($radius: 2px) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;

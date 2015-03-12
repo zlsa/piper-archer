@@ -6,10 +6,10 @@
   text-align: center; }
   #tabs a {
     background-color: #ddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
     top: -15px;
     color: #888;
     position: relative;
@@ -31,10 +31,10 @@
       -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
       -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
       box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
       color: #fff;
       position: relative;
       display: inline-block;

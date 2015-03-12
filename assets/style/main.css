@@ -23,10 +23,10 @@
     color: #444; }
     #header h1.aircraft .beta {
       background-color: #f83;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
       color: #fff;
       font-weight: bold;
       font-size: 50%;
@@ -41,10 +41,10 @@
 
 #top {
   background-color: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
   position: relative;
   margin: 48px 24px;
   margin-top: 0;
@@ -81,10 +81,10 @@
     -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
     -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
     color: #fff;
     position: relative;
     display: inline-block;
@@ -101,10 +101,10 @@
     -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
     -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
     color: #fff;
     position: relative;
     display: inline-block;
@@ -123,10 +123,10 @@
   text-align: center; }
   #tabs a {
     background-color: #ddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
     top: -15px;
     color: #888;
     position: relative;
@@ -148,10 +148,10 @@
       -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
       -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
       box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
       color: #fff;
       position: relative;
       display: inline-block;
@@ -193,10 +193,10 @@ footer {
 
 #tab-features section {
   background-color: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
   position: relative;
   min-height: 400px;
   padding: 20px;
@@ -238,10 +238,10 @@ footer {
 
 #tab-releases {
   background-color: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
   position: relative;
   padding: 20px;
   margin: 0 24px;
@@ -254,10 +254,10 @@ footer {
       -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
       -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
       box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
       color: #fff;
       position: relative;
       display: inline-block;
@@ -276,23 +276,27 @@ footer {
     margin-top: 12px;
     padding-top: 12px; }
 
-#tab-about {
+#tab-about,
+#tab-changelog {
   width: 100%;
   padding: 0 24px; }
-  #tab-about section {
+  #tab-about section,
+  #tab-changelog section {
     background-color: #fff;
     color: #555;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
     padding: 20px;
     margin-bottom: 48px;
     overflow: hidden;
     width: 100%; }
-    #tab-about section p + p {
+    #tab-about section p + p,
+    #tab-changelog section p + p {
       margin-top: 0.5em; }
-    #tab-about section header {
+    #tab-about section > header,
+    #tab-changelog section > header {
       color: rgba(48, 48, 48, 0.9);
       font-size: 200%;
       font-weight: 100;
@@ -302,17 +306,44 @@ footer {
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
       float: right;
       padding: 15px 30px; }
-    #tab-about section code {
+    #tab-about section code,
+    #tab-changelog section code {
       background-color: #e8e8e8;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
       font-family: monoOne, monospace;
       font-size: 90%;
       display: inline-block;
       padding: 0 4px;
       margin: 0 2px; }
+
+#tab-changelog ul.releases {
+  margin-left: 1em; }
+  #tab-changelog ul.releases li {
+    list-style-type: none; }
+    #tab-changelog ul.releases li > header {
+      background-color: #666;
+      font-weight: bold;
+      display: inline-block;
+      color: #fff;
+      padding: 4px 1em;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px; }
+      #tab-changelog ul.releases li > header .month {
+        color: inherit; }
+        #tab-changelog ul.releases li > header .month:before, #tab-changelog ul.releases li > header .month:after {
+          content: '.';
+          display: inline; }
+    #tab-changelog ul.releases li ul {
+      color: #444; }
+      #tab-changelog ul.releases li ul * {
+        color: inherit; }
+      #tab-changelog ul.releases li ul li {
+        list-style-type: disc; }
 
 html, body {
   width: 100%; }

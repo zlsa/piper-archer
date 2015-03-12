@@ -1,7 +1,8 @@
 
 @import "util";
 
-#tab-about {
+#tab-about,
+#tab-changelog {
 
   width: 100%;
   padding: 0 $header-margin;
@@ -21,8 +22,8 @@
     p+p {
       margin-top: 0.5em;
     }
-
-    header {
+    
+    > header {
       color: rgba(48, 48, 48, 0.9);
       font-size: 200%;
       font-weight: 100;
@@ -43,6 +44,46 @@
       display: inline-block;
       padding: 0 4px;
       margin: 0 2px;
+    }
+  }
+}
+
+#tab-changelog {
+  ul.releases {
+    margin-left: 1em;
+    li {
+      list-style-type: none;
+      > header {
+        background-color: #666;
+        font-weight: bold;
+        display: inline-block;
+        color: #fff;
+        padding: 4px 1em;
+
+        @include border-radius();
+
+        .month {
+          color: inherit;
+
+          &:before,
+          &:after {
+            content: '.';
+            display: inline;
+          }
+        }
+      }
+
+      ul {
+        color: #444;
+        
+        * {
+          color: inherit;
+        }
+
+        li {
+          list-style-type: disc;
+        }
+      }
     }
   }
 }
