@@ -22,15 +22,13 @@
     }
     
     > header {
-      background-color: $theme-color;
-      color: #fff;
+      color: $theme-color;
       font-size: 200%;
       font-weight: 100;
 
       padding: 15px 30px;
       z-index: 100;
       display: inline-block;
-      margin-bottom: 30px;
     }
 
     code {

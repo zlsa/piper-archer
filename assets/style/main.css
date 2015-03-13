@@ -231,14 +231,12 @@ footer {
       margin-top: 0.5em; }
     #tab-about section > header,
     #tab-changelog section > header {
-      background-color: #f83;
-      color: #fff;
+      color: #f83;
       font-size: 200%;
       font-weight: 100;
       padding: 15px 30px;
       z-index: 100;
-      display: inline-block;
-      margin-bottom: 30px; }
+      display: inline-block; }
     #tab-about section code,
     #tab-changelog section code {
       background-color: #e8e8e8;
