@@ -64,12 +64,12 @@
   </animation>
 
   <animation>
-    <type>textranslate</type>
+    <type>translate</type>
     <object-name>horizon</object-name>
     <property>instrumentation/attitude-indicator/indicated-pitch-deg</property>
-    <factor>-0.0008</factor>
-    <min-m>-0.03</min-m>
-    <max-m>0.03</max-m>
+    <factor>-0.0007</factor>
+    <min-m>-0.015</min-m>
+    <max-m>0.015</max-m>
     <axis>
       <x>1</x>
       <y>0</y>

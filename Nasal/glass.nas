@@ -50,8 +50,8 @@ var update_frost = func {
   window_temperature_lowpass.filter(window_temperature);
   var dewpoint_degc            = getprop("/environment/dewpoint-degc");
 
-  var frost = crange(dewpoint_degc - 1,  dewpoint_degc - 10, window_temperature_lowpass.get(), 0, 1);
-  var fog   = crange(dewpoint_degc + 10, dewpoint_degc - 10, window_temperature_lowpass.get(), 0, 0.3);
+  var frost = crange(-5, -30, window_temperature_lowpass.get(), 0, 1);
+  var fog   = crange(dewpoint_degc - 5, dewpoint_degc - 20, window_temperature_lowpass.get(), 0, 0.4);
   
   setprop("/environment/aircraft-effects/frost-level", frost_lowpass.filter(frost));
   setprop("/environment/aircraft-effects/fog-level",   fog_lowpass.filter(fog));

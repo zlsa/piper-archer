@@ -27,6 +27,23 @@
 
   <animation>
     <type>rotate</type>
+    <object-name>ten thousands needle</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.00365</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
     <object-name>thousands needle</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.0365</factor>
