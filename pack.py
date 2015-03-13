@@ -69,7 +69,7 @@ def filelist(path):
 def pack():
   os.system("./Models/update-textures.sh Models/")
   name  = AIRCRAFT + "-"
-  name += time.strftime("%Y%m%d", time.gmtime(time.time()))
+  name += time.strftime("%Y%m%d", time.localtime(time.time()))
   name += ".zip"
   files = filelist("./")
   sizes = []
