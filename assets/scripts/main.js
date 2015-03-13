@@ -26,6 +26,9 @@ function convert_date(d) {
 }
 
 $(document).ready(function() {
+  $(".github").click(function() {
+    $(this).select();
+  });
   for(var i=info.releases.length-1;i>=0;i--) {
     var release = info.releases[i];
     if(release[0] == "piper-archer-latest.zip") {

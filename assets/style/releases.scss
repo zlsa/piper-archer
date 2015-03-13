@@ -38,6 +38,20 @@
       font-weight: bold;
       margin-left: 30px;
     }
+
+    .github-link {
+      color: white;
+      font-weight: bold;
+      float: right;
+      
+      .github {
+        background-color: white;
+        color: $theme-color;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: 20px;
+      }
+    }
     
   }
   
