@@ -1,0 +1,15 @@
+#tab-gallery {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5em; }
+  #tab-gallery .disclaimer {
+    display: block;
+    text-align: center;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 20px; }
+  #tab-gallery img {
+    width: 100%; }
+  #tab-gallery img + img {
+    margin-top: 20px; }

@@ -1,0 +1,25 @@
+
+@import 'util';
+
+#tab-gallery {
+  background-color: #fff;
+  width: 100%;
+  padding: $section-padding;
+  margin-bottom: 5em;
+
+  .disclaimer {
+    display: block;
+    text-align: center;
+    color: #444;
+    font-style: italic;
+    margin-bottom: $section-padding;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  img + img {
+    margin-top: $section-padding;
+  }
+}
