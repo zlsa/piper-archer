@@ -12,35 +12,24 @@ function tab(t) {
   console.log(t);
 }
 
+function convert_date(d) {
+  var date = moment();
+  date.year(  d.substr(0, 4));
+  date.month( d.substr(4, 2));
+  date.date(  d.substr(6, 2));
+  date.hour(  0);
+  date.minute(0);
+  date.second(0);
+  if(moment().diff(date, 'days') < 1)
+    return "today";
+  return date.fromNow();
+}
+
 $(document).ready(function() {
-  if(false) {
-    $.get("https://api.github.com/repos/zlsa/"+repo+"/commits/master", function(data) {
-      if(data.length >= 1) {
-        var c = data[0];
-      } else {
-        var c = data;
-      }
-      var commit = c.commit.message;
-      var time   = new Date(Date.parse(c.commit.committer.date));
-      $("#last-commit .message").text(commit);
-      $("#last-commit").removeClass("fetching");
-      var s      = "";
-      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-      s         += time.getDate() + " ";
-      s         += months[time.getMonth()] + " ";
-      s         += time.getFullYear();
-      $(".last-update .date").text(s);
-    });
-  }
   for(var i=info.releases.length-1;i>=0;i--) {
     var release = info.releases[i];
     if(release[0] == "piper-archer-latest.zip") {
-      var s      = "";
-      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-      s         += release[1].substr(6, 2) + " ";
-      s         += months[parseInt(release[1].substr(4, 2)) - 1] + " ";
-      s         += release[1].substr(0, 4);
-      $(".last-update .date").text(s);
+      $(".last-update .date").text(convert_date(release[1]));
       $(".size").text(release[2] + " MB");
     } else {
       $("#tab-releases").append("<div class='release'><a class='download' href='http://zlsa.github.io/piper-archer/releases/"+release[0]+"' title='Download this older release'>"+release[0]+"</a><span class='size'>"+release[2]+" MB</span></div>");
