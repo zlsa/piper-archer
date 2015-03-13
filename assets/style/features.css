@@ -7,32 +7,29 @@
   min-height: 400px;
   padding: 20px;
   margin: 0 24px;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
   overflow: hidden;
   color: #555; }
   #tab-features section header {
-    background-color: #f83;
-    color: #fff;
+    color: #555;
     font-size: 200%;
-    font-weight: 100;
-    position: absolute;
-    top: 10px;
+    font-weight: bold;
+    display: block;
     padding: 15px 30px;
     z-index: 100; }
   #tab-features section img {
     position: absolute;
-    top: 0; }
+    top: 20px; }
   #tab-features section p + p {
     margin-top: 0.5em; }
   #tab-features section:nth-child(odd) {
     padding-right: 640px; }
-    #tab-features section:nth-child(odd) header {
-      right: 0; }
     #tab-features section:nth-child(odd) img {
       right: 0; }
   #tab-features section:nth-child(even) {
     padding-left: 640px; }
-    #tab-features section:nth-child(even) header {
-      left: 0; }
     #tab-features section:nth-child(even) img {
       left: 0; }
+
+#tab-features section + section {
+  border-top: 2px solid #aaa; }

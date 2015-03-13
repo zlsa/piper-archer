@@ -3,7 +3,8 @@
   position: absolute;
   top: 48px;
   right: 24px;
-  padding: 5px 20px; }
+  padding: 5px 20px;
+  width: auto; }
   .links a {
     margin: 0 20px;
     position: relative; }
