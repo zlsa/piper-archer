@@ -8,17 +8,17 @@
     <texture n="4">
       <type>cubemap</type>
       <images>
-        <positive-x>Models/Effects/interior-1.png</positive-x>
-        <negative-x>Models/Effects/interior-1.png</negative-x>
-        <positive-y>Models/Effects/interior-1.png</positive-y>
-        <negative-y>Models/Effects/interior-1.png</negative-y>
-        <positive-z>Models/Effects/interior-1.png</positive-z>
-        <negative-z>Models/Effects/interior-1.png</negative-z>
+        <positive-x>Aircraft/piper-archer/Models/Effects/interior-1.png</positive-x>
+        <negative-x>Aircraft/piper-archer/Models/Effects/interior-2.png</negative-x>
+        <positive-y>Aircraft/piper-archer/Models/Effects/interior-3.png</positive-y>
+        <negative-y>Aircraft/piper-archer/Models/Effects/interior-4.png</negative-y>
+        <positive-z>Aircraft/piper-archer/Models/Effects/interior-5.png</positive-z>
+        <negative-z>Aircraft/piper-archer/Models/Effects/interior-6.png</negative-z>
       </images>
     </texture>
-    <opacity-cube-center type="vec3d" n="0">-1.3 0.5 0.0 </opacity-cube-center>
-    <opacity-cube-scale type="vec3d"  n="0"> 2.0 2.0 2.0 </opacity-cube-scale>
-    <opacity-cube-angle type="float">        0.0         </opacity-cube-angle>
+    <opacity-cube-center type="vec3d" n="0"> -1.3 0.5 0.0 </opacity-cube-center>
+    <opacity-cube-scale  type="vec3d" n="0">  2.0 2.0 2.0 </opacity-cube-scale>
+    <opacity-cube-angle  type="float">        0.0         </opacity-cube-angle>
   </parameters>
   
 </PropertyList>
