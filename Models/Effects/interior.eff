@@ -8,12 +8,12 @@
     <texture n="4">
       <type>cubemap</type>
       <images>
-        <positive-x>Aircraft/piper-archer/Models/Effects/interior-1.png</positive-x>
-        <negative-x>Aircraft/piper-archer/Models/Effects/interior-2.png</negative-x>
-        <positive-y>Aircraft/piper-archer/Models/Effects/interior-3.png</positive-y>
-        <negative-y>Aircraft/piper-archer/Models/Effects/interior-4.png</negative-y>
-        <positive-z>Aircraft/piper-archer/Models/Effects/interior-5.png</positive-z>
-        <negative-z>Aircraft/piper-archer/Models/Effects/interior-6.png</negative-z>
+        <positive-x>Aircraft/piper-archer/Models/Effects/interior-px.png</positive-x>
+        <negative-x>Aircraft/piper-archer/Models/Effects/interior-nx.png</negative-x>
+        <positive-y>Aircraft/piper-archer/Models/Effects/interior-pz.png</positive-y>
+        <negative-y>Aircraft/piper-archer/Models/Effects/interior-nz.png</negative-y>
+        <positive-z>Aircraft/piper-archer/Models/Effects/interior-py.png</positive-z>
+        <negative-z>Aircraft/piper-archer/Models/Effects/interior-ny.png</negative-z>
       </images>
     </texture>
     <opacity-cube-center type="vec3d" n="0"> -1.3 0.5 0.0 </opacity-cube-center>
