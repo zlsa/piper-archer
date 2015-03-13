@@ -2,68 +2,35 @@
 @import "util";
 @import "button";
 
-#top {
-  background-color: #fff;
+.links {
+  color: #666;
+  position: absolute;
+  top: $header-margin * 2;
+  right: $header-margin;
+  padding: 5px 20px;
 
-  @include border-radius();
+  a {
+    margin: 0 20px;
+    position: relative;
+    
+    &:hover {
+      color: #444;
 
-  position: relative;
-  margin: $section-margin $header-margin;
-  margin-top: 0;
-  padding: $section-padding;
-
-  color: rgba(0, 0, 0, 0.7);
-
-  .last-update, .size {
-    margin-left: 20px;
-  }
-
-  .size {
-    font-weight: bold;
-  }
-
-  .last-update {
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  .links {
-    color: #666;
-    float: right;
-    padding: 5px 20px;
-
-    a {
-      margin: 0 20px;
-      position: relative;
-      
-      &:hover {
-        color: #444;
-
-        text-decoration: underline;
-      }
+      text-decoration: underline;
     }
-
-    a + a:before {
-      border-left: 2px solid #aaa;
-      font-weight: bold;
-
-      content: "";
-
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: -21px;
-      height: 100%;
-    }
-
   }
-  
-  .download.button {
-    @include button($production-color);
+
+  a + a:before {
+    border-left: 2px solid #aaa;
     font-weight: bold;
+
+    content: "";
+
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -21px;
+    height: 100%;
   }
 
-  .download.button.beta {
-    @include button($beta-color);
-  }
-  
 }

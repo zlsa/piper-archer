@@ -1,9 +1,8 @@
-#tab-features section {
+#tab-features {
   background-color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
+  padding-top: 20px; }
+
+#tab-features section {
   position: relative;
   min-height: 400px;
   padding: 20px;
@@ -12,19 +11,14 @@
   overflow: hidden;
   color: #555; }
   #tab-features section header {
-    color: rgba(48, 48, 48, 0.9);
+    background-color: #f83;
+    color: #fff;
     font-size: 200%;
     font-weight: 100;
-    -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    -moz-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    -ms-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-    top: -5px;
+    position: absolute;
+    top: 10px;
     padding: 15px 30px;
-    z-index: 100;
-    margin: 0 20px;
-    width: 100%; }
+    z-index: 100; }
   #tab-features section img {
     position: absolute;
     top: 0; }
@@ -33,12 +27,12 @@
   #tab-features section:nth-child(odd) {
     padding-right: 640px; }
     #tab-features section:nth-child(odd) header {
-      float: left; }
+      right: 0; }
     #tab-features section:nth-child(odd) img {
       right: 0; }
   #tab-features section:nth-child(even) {
     padding-left: 640px; }
     #tab-features section:nth-child(even) header {
-      float: left; }
+      left: 0; }
     #tab-features section:nth-child(even) img {
       left: 0; }

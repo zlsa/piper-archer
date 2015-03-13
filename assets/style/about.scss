@@ -6,13 +6,11 @@
 
   width: 100%;
   padding: 0 $header-margin;
+  background-color: #fff;
 
   section {
-    background-color: #fff;
 
     color: #555;
-
-    @include border-radius();
 
     padding: $section-padding;
     margin-bottom: $section-margin;
@@ -24,13 +22,15 @@
     }
     
     > header {
-      color: rgba(48, 48, 48, 0.9);
+      background-color: $theme-color;
+      color: #fff;
       font-size: 200%;
       font-weight: 100;
-      @include text-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
 
-      float: right;
       padding: 15px 30px;
+      z-index: 100;
+      display: inline-block;
+      margin-bottom: 30px;
     }
 
     code {

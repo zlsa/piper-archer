@@ -1,11 +1,12 @@
 
 @import "util";
 
-#tab-features section {
+#tab-features {
   background-color: #fff;
+  padding-top: $section-padding;
+}
 
-  @include border-radius();
-
+#tab-features section {
   position: relative;
   min-height: $section-height;
   padding: $section-padding;
@@ -14,17 +15,15 @@
   overflow: hidden;
 
   header {
-    color: rgba(48, 48, 48, 0.9);
+    background-color: $theme-color;
+    color: #fff;
     font-size: 200%;
     font-weight: 100;
-    @include text-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
 
-    position: relative;
-    top: -5px;
+    position: absolute;
+    top: 10px;
     padding: 15px 30px;
     z-index: 100;
-    margin: 0 20px;
-    width: 100%;
   }
 
   img {
@@ -42,7 +41,7 @@
     padding-right: $section-width + $section-padding * 2;
 
     header {
-      float: left;
+      right: 0;
     }
 
     img {
@@ -54,7 +53,7 @@
     padding-left: $section-width + $section-padding * 2;
 
     header {
-      float: left;
+      left: 0;
     }
 
     img {

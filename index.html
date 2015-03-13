@@ -12,28 +12,21 @@
     <header id="header">
       <h1 href="http://zlsa.github.io/piper-archer/" class="aircraft">Piper Archer <span class="beta" title="This is a beta release; not all features are available and crashes will occur">beta</span></h1>
       <h2>for the <a href="http://www.flightgear.org/" class="link">FlightGear</a> flight simulator</h2>
-    </header>
-    <div id="top">
-      <a class="download button beta" href="http://zlsa.github.io/piper-archer/releases/piper-archer-latest.zip" title="Download beta aircraft zip">
-        <span class="title">Download beta</span>
-      </a>
-      <span class="size">...</span>
-      <span class="last-update">Aircraft last updated <span class="date">&hellip;</span></span>
       <span class="links">
         <a href="http://wiki.flightgear.org/Piper_Archer_CX" title="Go to the FlightGear wiki's page on this aircraft">Wiki</a>
         <a href="http://forum.flightgear.org/viewtopic.php?t=23962" title="Go to the FlightGear forum topic for this aircraft">Forum</a>
         <a href="http://github.com/zlsa/piper-archer/" title="Go to GitHub repository">GitHub</a>
       </span>
-    </div>
+    </header>
     <nav id="tabs">
-      <a class="features active" href="javascript:tab('features')">Features</a>
+      <a class="releases active" href="javascript:tab('releases')">Download</a>
+      <a class="features" href="javascript:tab('features')">Features</a>
       <!--      <a class="installation" href="javascript:tab('installation')">Installation</a>-->
-      <a class="releases" href="javascript:tab('releases')">Previous releases</a>
       <a class="about" href="javascript:tab('about')">About</a>
       <a class="changelog" href="javascript:tab('changelog')">Changelog</a>
     </nav>
     <main id="tab-views">
-      <div id="tab-features" class="tab active">
+      <div id="tab-features" class="tab">
         <section id="model">
           <header>Realistic exterior model</header>
           <p>The exterior model features fully animated flight control
@@ -131,14 +124,23 @@
           </p>
         </section>
       </div>
-      <div id="tab-releases" class="tab">
+      <div id="tab-releases" class="tab active">
+        <div id="latest-release">
+          <a class="download button beta" href="http://zlsa.github.io/piper-archer/releases/piper-archer-latest.zip" title="Download beta aircraft zip">
+            <span class="title">Download beta</span>
+          </a>
+          <span class="size">Fetching size...</span>
+          <span class="last-update">
+            Last updated <span class="date">time is being fetched</span>.
+          </span>
+        </div>
       </div>
       <div id="tab-about" class="tab">
         <section>
           <header>Recommended installation</header>
           <p>If you know how to use Git, it's highly recommended
             to clone the repository and use it directly:
-            <code>git clone http://github.com/zlsa/piper-archer-cx.git</code>
+            <code>git clone http://github.com/zlsa/piper-archer.git</code>
             and pull once a day or so. <code>master</code> will
             occasionally have graphical problems or minor bugs but
             should always fly.
@@ -161,7 +163,6 @@
       </div>
       <div id="tab-changelog" class="tab">
         <section>
-          <header>Changelog</header>
           <ul class="releases">
             <li>
               <header>2015<span class="month">03</span>12</header>

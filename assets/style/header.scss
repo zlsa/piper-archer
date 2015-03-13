@@ -3,8 +3,9 @@
 
 #header {
 
+  background-color: #eee;
   width: 100%;
-  margin: $header-margin * 2 0;
+  padding: $header-margin * 2 0;
   text-align: center;
 
   h1.aircraft {
@@ -33,5 +34,6 @@
 
     margin: 10px;
   }
-    
+  
+ 
 }

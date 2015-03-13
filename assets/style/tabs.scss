@@ -3,38 +3,36 @@
 @import "button";
 
 #tabs {
-  border-bottom: 2px solid #aaa;
+  background-color: #eee;
+  border-bottom: 2px solid $theme-color;
   color: #444;
-  margin-bottom: $section-margin;
-  height: 0;
   text-align: center;
+  overflow: hidden;
 
   a {
 
-    background-color: #ddd;
-    @include border-radius();
-
-    top: -15px;
     color: #888;
 
+    font-weight: bold;
     position: relative;
+    bottom: -3px;
     display: inline-block;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin: 0 10px;
 
+    &.releases {
+      color: $theme-color;
+    }
+    
     &:hover {
       background-color: #e6e6e6;
     }
 
-    &:active {
-      background-color: #d8d8d8;
-      color: #999;
-      @include box-shadow(inset 0 1px rgba(0, 0, 0, 0.2));
-    }
-
     &.active {
-      @include button($theme-color);
+      background-color: $theme-color;
+      color: #fff;
     }
+    
   }
 }
 
@@ -42,7 +40,7 @@
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  margin-bottom: 3em;
+  padding-bottom: 5em;
 
   &.active {
     opacity: 1;

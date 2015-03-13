@@ -1,75 +1,21 @@
-#top {
-  background-color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-  position: relative;
-  margin: 48px 24px;
-  margin-top: 0;
-  padding: 20px;
-  color: rgba(0, 0, 0, 0.7); }
-  #top .last-update, #top .size {
-    margin-left: 20px; }
-  #top .size {
-    font-weight: bold; }
-  #top .last-update {
-    color: rgba(0, 0, 0, 0.5); }
-  #top .links {
-    color: #666;
-    float: right;
-    padding: 5px 20px; }
-    #top .links a {
-      margin: 0 20px;
-      position: relative; }
-      #top .links a:hover {
-        color: #444;
-        text-decoration: underline; }
-    #top .links a + a:before {
-      border-left: 2px solid #aaa;
-      font-weight: bold;
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: -21px;
-      height: 100%; }
-  #top .download.button {
-    background-color: #38f;
-    -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    color: #fff;
-    position: relative;
+.links {
+  color: #666;
+  position: absolute;
+  top: 48px;
+  right: 24px;
+  padding: 5px 20px; }
+  .links a {
+    margin: 0 20px;
+    position: relative; }
+    .links a:hover {
+      color: #444;
+      text-decoration: underline; }
+  .links a + a:before {
+    border-left: 2px solid #aaa;
+    font-weight: bold;
+    content: "";
     display: inline-block;
-    padding: 5px 20px;
-    user-select: none;
-    font-weight: bold; }
-    #top .download.button:hover {
-      background-color: #4d97ff; }
-    #top .download.button:active {
-      background-color: #1a79ff; }
-  #top .download.button.beta {
-    background-color: #f83;
-    -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    color: #fff;
-    position: relative;
-    display: inline-block;
-    padding: 5px 20px;
-    user-select: none; }
-    #top .download.button.beta:hover {
-      background-color: #ff974d; }
-    #top .download.button.beta:active {
-      background-color: #ff791a; }
+    position: absolute;
+    top: 0;
+    left: -21px;
+    height: 100%; }

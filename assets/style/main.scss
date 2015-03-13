@@ -18,17 +18,20 @@ html, body {
 }
 
 html {
-  background: #ccc url("../images/background.png") left top repeat fixed;
+  background: #eee;
 
   font-family: sans-serif;
   line-height: 140%;
   
   overflow-y: scroll;
-
 }
 
 body {
+  position: relative;
   margin-bottom: 8em;
+  background-color: #fff;
+  max-width: 90em;
+  margin: 0 auto;
 }
 
 a.link {

@@ -5,18 +5,51 @@
 #tab-releases {
   background-color: #fff;
 
-  @include border-radius();
-
   position: relative;
-  padding: $section-padding;
-  margin: 0 $header-margin;
   overflow: hidden;
 
+  #latest-release {
+    background-color: $theme-color;
+    margin-bottom: $header-margin * 2;
+    padding: $header-margin * 2 $header-margin * 2.5;
+                       
+    .download.button {
+      background-color: #fff;
+      @include box-shadow(0 0 0 1px $theme-color, 0 0 0 3px #fff);
+      padding: 15px 0;
+      color: $theme-color;
+      font-weight: bold;
+      display: inline-block;
+      width: 20em;
+      text-align: center;
+
+      &:active {
+        background-color: #f8f8f8;
+        @include box-shadow(0 0 0 1px $theme-color, 0 0 0 3px #fff, inset 0 10px 15px rgba(black, 0.05));
+      }
+    }
+
+    .last-update, .size {
+      color: white;
+      margin-left: 10px;
+    }
+
+    .size {
+      font-weight: bold;
+      margin-left: 30px;
+    }
+    
+  }
+  
   .release {
+    margin: 0 $section-padding * 2;
+    padding: 0 $section-padding;
     font-weight: bold;
 
     .download {
       @include button($theme-color);
+      width: 20em;
+      text-align: center;
     }
 
     .size {
@@ -24,10 +57,10 @@
       display: inline-block;
       margin-left: 30px;
     }
+    
   }
 
   .release + .release {
-    border-top: 2px solid #aaa;
     margin-top: 12px;
     padding-top: 12px;
   }

@@ -15,8 +15,9 @@
   padding: 0; }
 
 #header {
+  background-color: #eee;
   width: 100%;
-  margin: 48px 0;
+  padding: 48px 0;
   text-align: center; }
   #header h1.aircraft {
     font-size: 200%;
@@ -39,148 +40,69 @@
     font-style: italic;
     margin: 10px; }
 
-#top {
-  background-color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-  position: relative;
-  margin: 48px 24px;
-  margin-top: 0;
-  padding: 20px;
-  color: rgba(0, 0, 0, 0.7); }
-  #top .last-update, #top .size {
-    margin-left: 20px; }
-  #top .size {
-    font-weight: bold; }
-  #top .last-update {
-    color: rgba(0, 0, 0, 0.5); }
-  #top .links {
-    color: #666;
-    float: right;
-    padding: 5px 20px; }
-    #top .links a {
-      margin: 0 20px;
-      position: relative; }
-      #top .links a:hover {
-        color: #444;
-        text-decoration: underline; }
-    #top .links a + a:before {
-      border-left: 2px solid #aaa;
-      font-weight: bold;
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: -21px;
-      height: 100%; }
-  #top .download.button {
-    background-color: #38f;
-    -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    color: #fff;
-    position: relative;
+.links {
+  color: #666;
+  position: absolute;
+  top: 48px;
+  right: 24px;
+  padding: 5px 20px; }
+  .links a {
+    margin: 0 20px;
+    position: relative; }
+    .links a:hover {
+      color: #444;
+      text-decoration: underline; }
+  .links a + a:before {
+    border-left: 2px solid #aaa;
+    font-weight: bold;
+    content: "";
     display: inline-block;
-    padding: 5px 20px;
-    user-select: none;
-    font-weight: bold; }
-    #top .download.button:hover {
-      background-color: #4d97ff; }
-    #top .download.button:active {
-      background-color: #1a79ff; }
-  #top .download.button.beta {
-    background-color: #f83;
-    -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    color: #fff;
-    position: relative;
-    display: inline-block;
-    padding: 5px 20px;
-    user-select: none; }
-    #top .download.button.beta:hover {
-      background-color: #ff974d; }
-    #top .download.button.beta:active {
-      background-color: #ff791a; }
+    position: absolute;
+    top: 0;
+    left: -21px;
+    height: 100%; }
 
 #tabs {
-  border-bottom: 2px solid #aaa;
+  background-color: #eee;
+  border-bottom: 2px solid #f83;
   color: #444;
-  margin-bottom: 48px;
-  height: 0;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   #tabs a {
-    background-color: #ddd;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    top: -15px;
     color: #888;
+    font-weight: bold;
     position: relative;
+    bottom: -3px;
     display: inline-block;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin: 0 10px; }
+    #tabs a.releases {
+      color: #f83; }
     #tabs a:hover {
       background-color: #e6e6e6; }
-    #tabs a:active {
-      background-color: #d8d8d8;
-      color: #999;
-      -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
-      -ms-box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
-      box-shadow: inset 0 1px rgba(0, 0, 0, 0.2); }
     #tabs a.active {
       background-color: #f83;
-      -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
-      color: #fff;
-      position: relative;
-      display: inline-block;
-      padding: 5px 20px;
-      user-select: none; }
-      #tabs a.active:hover {
-        background-color: #ff974d; }
-      #tabs a.active:active {
-        background-color: #ff791a; }
+      color: #fff; }
 
 .tab {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  margin-bottom: 3em; }
+  padding-bottom: 5em; }
   .tab.active {
     opacity: 1;
     pointer-events: auto; }
 
 footer {
   background: #fff;
-  border: 2px solid #888;
+  border: 2px solid #f83;
   -webkit-box-shadow: 0 0 0 4px #fff;
   -moz-box-shadow: 0 0 0 4px #fff;
   -ms-box-shadow: 0 0 0 4px #fff;
   box-shadow: 0 0 0 4px #fff;
-  border-radius: 4px 4px 0 0;
   border-bottom: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: #f83;
+  font-weight: bold;
   font-size: 90%;
   text-align: center;
   position: fixed;
@@ -188,15 +110,14 @@ footer {
   bottom: 0;
   width: 60em;
   margin-left: -30em;
-  padding: 10px 0;
+  padding: 5px 0;
   z-index: 10000; }
 
-#tab-features section {
+#tab-features {
   background-color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
+  padding-top: 20px; }
+
+#tab-features section {
   position: relative;
   min-height: 400px;
   padding: 20px;
@@ -205,19 +126,14 @@ footer {
   overflow: hidden;
   color: #555; }
   #tab-features section header {
-    color: rgba(48, 48, 48, 0.9);
+    background-color: #f83;
+    color: #fff;
     font-size: 200%;
     font-weight: 100;
-    -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    -moz-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    -ms-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-    top: -5px;
+    position: absolute;
+    top: 10px;
     padding: 15px 30px;
-    z-index: 100;
-    margin: 0 20px;
-    width: 100%; }
+    z-index: 100; }
   #tab-features section img {
     position: absolute;
     top: 0; }
@@ -226,68 +142,88 @@ footer {
   #tab-features section:nth-child(odd) {
     padding-right: 640px; }
     #tab-features section:nth-child(odd) header {
-      float: left; }
+      right: 0; }
     #tab-features section:nth-child(odd) img {
       right: 0; }
   #tab-features section:nth-child(even) {
     padding-left: 640px; }
     #tab-features section:nth-child(even) header {
-      float: left; }
+      left: 0; }
     #tab-features section:nth-child(even) img {
       left: 0; }
 
 #tab-releases {
   background-color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
   position: relative;
-  padding: 20px;
-  margin: 0 24px;
   overflow: hidden; }
+  #tab-releases #latest-release {
+    background-color: #f83;
+    margin-bottom: 48px;
+    padding: 48px 60px; }
+    #tab-releases #latest-release .download.button {
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff;
+      -moz-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff;
+      -ms-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff;
+      box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff;
+      padding: 15px 0;
+      color: #f83;
+      font-weight: bold;
+      display: inline-block;
+      width: 20em;
+      text-align: center; }
+      #tab-releases #latest-release .download.button:active {
+        background-color: #f8f8f8;
+        -webkit-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff, inset 0 10px 15px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff, inset 0 10px 15px rgba(0, 0, 0, 0.05);
+        -ms-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff, inset 0 10px 15px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff, inset 0 10px 15px rgba(0, 0, 0, 0.05); }
+    #tab-releases #latest-release .last-update, #tab-releases #latest-release .size {
+      color: white;
+      margin-left: 10px; }
+    #tab-releases #latest-release .size {
+      font-weight: bold;
+      margin-left: 30px; }
   #tab-releases .release {
+    margin: 0 40px;
+    padding: 0 20px;
     font-weight: bold; }
     #tab-releases .release .download {
       background-color: #f83;
-      -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
+      -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83;
+      -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83;
+      -ms-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83;
+      box-shadow: 0 0 0 1px white, 0 0 0 3px #f83;
       color: #fff;
-      position: relative;
       display: inline-block;
       padding: 5px 20px;
-      user-select: none; }
+      user-select: none;
+      width: 20em;
+      text-align: center; }
       #tab-releases .release .download:hover {
         background-color: #ff974d; }
       #tab-releases .release .download:active {
-        background-color: #ff791a; }
+        background-color: #e66000;
+        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83, inset 0 5px 5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83, inset 0 5px 5px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83, inset 0 5px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 1px white, 0 0 0 3px #f83, inset 0 5px 5px rgba(0, 0, 0, 0.1); }
     #tab-releases .release .size {
       color: #666;
       display: inline-block;
       margin-left: 30px; }
   #tab-releases .release + .release {
-    border-top: 2px solid #aaa;
     margin-top: 12px;
     padding-top: 12px; }
 
 #tab-about,
 #tab-changelog {
   width: 100%;
-  padding: 0 24px; }
+  padding: 0 24px;
+  background-color: #fff; }
   #tab-about section,
   #tab-changelog section {
-    background-color: #fff;
     color: #555;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
     padding: 20px;
     margin-bottom: 48px;
     overflow: hidden;
@@ -297,15 +233,14 @@ footer {
       margin-top: 0.5em; }
     #tab-about section > header,
     #tab-changelog section > header {
-      color: rgba(48, 48, 48, 0.9);
+      background-color: #f83;
+      color: #fff;
       font-size: 200%;
       font-weight: 100;
-      -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-      -moz-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-      -ms-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-      float: right;
-      padding: 15px 30px; }
+      padding: 15px 30px;
+      z-index: 100;
+      display: inline-block;
+      margin-bottom: 30px; }
     #tab-about section code,
     #tab-changelog section code {
       background-color: #e8e8e8;
@@ -349,13 +284,17 @@ html, body {
   width: 100%; }
 
 html {
-  background: #ccc url("../images/background.png") left top repeat fixed;
+  background: #eee;
   font-family: sans-serif;
   line-height: 140%;
   overflow-y: scroll; }
 
 body {
-  margin-bottom: 8em; }
+  position: relative;
+  margin-bottom: 8em;
+  background-color: #fff;
+  max-width: 90em;
+  margin: 0 auto; }
 
 a.link {
   text-decoration: underline; }

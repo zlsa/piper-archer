@@ -1,6 +1,7 @@
 #header {
+  background-color: #eee;
   width: 100%;
-  margin: 48px 0;
+  padding: 48px 0;
   text-align: center; }
   #header h1.aircraft {
     font-size: 200%;

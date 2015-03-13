@@ -1,39 +1,63 @@
 #tab-releases {
   background-color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
   position: relative;
-  padding: 20px;
-  margin: 0 24px;
   overflow: hidden; }
+  #tab-releases #latest-release {
+    background-color: #f83;
+    margin-bottom: 48px;
+    padding: 48px 60px; }
+    #tab-releases #latest-release .download.button {
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff;
+      -moz-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff;
+      -ms-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff;
+      box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff;
+      padding: 15px 0;
+      color: #f83;
+      font-weight: bold;
+      display: inline-block;
+      width: 20em;
+      text-align: center; }
+      #tab-releases #latest-release .download.button:active {
+        background-color: #f8f8f8;
+        -webkit-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff, inset 0 10px 15px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff, inset 0 10px 15px rgba(0, 0, 0, 0.05);
+        -ms-box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff, inset 0 10px 15px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0 0 1px #f83, 0 0 0 3px #fff, inset 0 10px 15px rgba(0, 0, 0, 0.05); }
+    #tab-releases #latest-release .last-update, #tab-releases #latest-release .size {
+      color: white;
+      margin-left: 10px; }
+    #tab-releases #latest-release .size {
+      font-weight: bold;
+      margin-left: 30px; }
   #tab-releases .release {
+    margin: 0 40px;
+    padding: 0 20px;
     font-weight: bold; }
     #tab-releases .release .download {
       background-color: #f83;
-      -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
+      -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83;
+      -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83;
+      -ms-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83;
+      box-shadow: 0 0 0 1px white, 0 0 0 3px #f83;
       color: #fff;
-      position: relative;
       display: inline-block;
       padding: 5px 20px;
-      user-select: none; }
+      user-select: none;
+      width: 20em;
+      text-align: center; }
       #tab-releases .release .download:hover {
         background-color: #ff974d; }
       #tab-releases .release .download:active {
-        background-color: #ff791a; }
+        background-color: #e66000;
+        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83, inset 0 5px 5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83, inset 0 5px 5px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 0 0 1px white, 0 0 0 3px #f83, inset 0 5px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 1px white, 0 0 0 3px #f83, inset 0 5px 5px rgba(0, 0, 0, 0.1); }
     #tab-releases .release .size {
       color: #666;
       display: inline-block;
       margin-left: 30px; }
   #tab-releases .release + .release {
-    border-top: 2px solid #aaa;
     margin-top: 12px;
     padding-top: 12px; }

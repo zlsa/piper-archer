@@ -1,55 +1,30 @@
 #tabs {
-  border-bottom: 2px solid #aaa;
+  background-color: #eee;
+  border-bottom: 2px solid #f83;
   color: #444;
-  margin-bottom: 48px;
-  height: 0;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   #tabs a {
-    background-color: #ddd;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    top: -15px;
     color: #888;
+    font-weight: bold;
     position: relative;
+    bottom: -3px;
     display: inline-block;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin: 0 10px; }
+    #tabs a.releases {
+      color: #f83; }
     #tabs a:hover {
       background-color: #e6e6e6; }
-    #tabs a:active {
-      background-color: #d8d8d8;
-      color: #999;
-      -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
-      -ms-box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
-      box-shadow: inset 0 1px rgba(0, 0, 0, 0.2); }
     #tabs a.active {
       background-color: #f83;
-      -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -ms-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
-      color: #fff;
-      position: relative;
-      display: inline-block;
-      padding: 5px 20px;
-      user-select: none; }
-      #tabs a.active:hover {
-        background-color: #ff974d; }
-      #tabs a.active:active {
-        background-color: #ff791a; }
+      color: #fff; }
 
 .tab {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  margin-bottom: 3em; }
+  padding-bottom: 5em; }
   .tab.active {
     opacity: 1;
     pointer-events: auto; }
