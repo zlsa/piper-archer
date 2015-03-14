@@ -1,0 +1,58 @@
+
+@import 'util';
+
+$tab-bar-thickness: 4px;
+
+nav {
+
+  background-color: $theme-color;
+  color:            $theme-fg;
+  
+  font-weight: bold;
+  text-align: center;
+
+  width: 100%;
+
+  transition: box-shadow 0.2s ease;
+
+  height: $unit6;
+
+  max-width: 90em;
+  margin: 0 auto;
+
+  // Fix jittery scrolling on WebKit mobile
+  -webkit-backface-visibility: hidden;
+
+  .tab {
+    border-bottom: $tab-bar-thickness solid transparent;
+
+    display: inline-block;
+    height: $unit6;
+    padding: $unit * 1.5 $unit2;
+    padding-bottom: ($unit * 1.5 - $tab-bar-thickness + 2px);
+
+    &.active {
+      border-color: white;
+      // background-color: $theme-fg;
+      // color: $theme-color;
+    }
+    
+  }
+
+}
+
+@include device(large) {
+  html nav {
+    height: $unit10;
+
+    .tab {
+      height: $unit10;
+      padding-top: $unit6;
+    }
+  }
+  
+}
+
+#tabs {
+  
+}

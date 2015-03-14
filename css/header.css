@@ -1,0 +1,42 @@
+body > header {
+  background-color: #e51;
+  color: white;
+  text-align: center;
+  padding: 16px 0;
+  width: 100%;
+  max-width: 90em;
+  margin: 0 auto; }
+  body > header h1 {
+    font-size: 200%; }
+    body > header h1 .beta {
+      background-color: white;
+      color: #e51;
+      font-size: 40%;
+      font-weight: bold;
+      position: relative;
+      top: -1em;
+      padding: 3px 6px;
+      border-radius: 4px;
+      text-transform: uppercase; }
+  body > header h2 {
+    font-style: italic;
+    opacity: 0.75; }
+  @media only screen and (min-width: 1200px) {
+    body > header {
+      position: absolute;
+      left: 0;
+      width: auto;
+      background-color: transparent;
+      height: 80px;
+      padding: 28px 16px;
+      text-align: center;
+      width: 30em; }
+      body > header h1, body > header h2 {
+        display: inline-block; }
+      body > header h1 {
+        font-size: 150%;
+        font-weight: bold; }
+        body > header h1 .beta {
+          font-size: 12px; }
+      body > header h2 {
+        margin-left: 16px; } }

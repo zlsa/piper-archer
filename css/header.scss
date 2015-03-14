@@ -1,0 +1,74 @@
+
+@import 'util';
+
+body > header {
+
+  background-color: $theme-color;
+  color:            $theme-fg;
+
+  text-align: center;
+
+  padding: $unit2 0;
+  
+  width: 100%;
+  max-width: 90em;
+  margin: 0 auto;
+
+  h1 {
+
+    font-size: 200%;
+
+    .beta {
+      background-color: $theme-fg;
+      color:            $theme-color;
+
+      font-size: 40%;
+      font-weight: bold;
+
+      position: relative;
+      top: -1em;
+      padding: 3px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    
+  }
+
+  h2 {
+    font-style: italic;
+    opacity: 0.75;
+  }
+
+  @include device(large) {
+    position: absolute;
+    left: 0;
+    width: auto;
+    background-color: transparent;
+
+    height: $unit10;
+    padding: $unit * 3.5 $unit2;
+
+    text-align: center;
+    width: 30em;
+    
+    h1, h2 {
+      display: inline-block;
+    }
+    
+    h1 {
+      font-size: 150%;
+      font-weight: bold;
+      
+      .beta {
+        font-size: $unit * 1.5;
+      }
+    }
+
+    h2 {
+      margin-left: $unit2;
+    }
+    
+  };
+
+}
+

@@ -1,0 +1,63 @@
+
+@import 'util';
+
+#download {
+
+  .download-panel {
+    display: flex;
+    flex-direction: column;
+
+    > div {
+      flex: 1;
+      text-align: center;
+
+      ol {
+        color: rgba(black, 0.3);
+        text-align: left;
+        
+        width: 30em;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: $unit4 $unit4;
+
+        li {
+          color: $black-fg;
+        }
+      }
+    }
+
+    .download {
+      width: 30em;
+      max-width: 100%;
+      text-align: center;
+
+      &.button {
+        @include button($theme-color, $theme-fg, $unit2);
+      }
+
+      &.url {
+        @include input($theme-fg, $theme-color, $unit2);
+      }
+      
+    }
+
+    @include device(large) {
+      flex-direction: row;
+
+      > div {
+        padding: 0 $unit;
+      }
+      
+    }
+
+    @include device(small) {
+
+    }
+
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,52 @@
+
+@import 'reset';
+@import 'util';
+
+@import 'style';
+
+@import 'header';
+@import 'tabs';
+
+@import 'download';
+
+@import 'footer';
+
+html, body {
+  width: 100%;
+}
+
+html {
+  background-color: #eee;
+
+  height: 100%;
+
+  color: #black-fg;
+  font-family: sans-serif;
+  font-size: $unit2;
+  line-height: 160%;
+}
+
+body {
+  background-color: #fff;
+  box-shadow: 0 0 15px $shadow;
+
+  position: relative;
+
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  
+  max-width: 90em;
+  margin: 0 auto;
+
+  min-height: 100%;
+}
+
+main {
+  width: 100%;
+
+  padding: $unit $unit2;
+ 
+  flex: 1;
+}
+

@@ -1,0 +1,59 @@
+#download .download-panel {
+  display: flex;
+  flex-direction: column; }
+  #download .download-panel > div {
+    flex: 1;
+    text-align: center; }
+    #download .download-panel > div ol {
+      color: rgba(0, 0, 0, 0.3);
+      text-align: left;
+      width: 30em;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 32px 32px; }
+      #download .download-panel > div ol li {
+        color: #333; }
+  #download .download-panel .download {
+    width: 30em;
+    max-width: 100%;
+    text-align: center; }
+    #download .download-panel .download.button {
+      background-color: #e51;
+      border: 1px solid white;
+      box-shadow: 0 0 0 2px #e51;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+      padding: 16px 32px;
+      margin: 8px 0;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease; }
+      #download .download-panel .download.button:hover {
+        background-color: #ef5f1f;
+        box-shadow: 0 0 0 2px #ef5f1f;
+        cursor: pointer; }
+      #download .download-panel .download.button:active {
+        background-color: #d14b0f;
+        box-shadow: 0 0 0 2px #d14b0f, inset 0 1px 3px rgba(0, 0, 0, 0.3);
+        cursor: pointer; }
+    #download .download-panel .download.url {
+      background-color: white;
+      border: 1px solid #e51;
+      box-shadow: 0 0 0 1px #e51;
+      color: #e51;
+      font-weight: bold;
+      display: inline-block;
+      padding: 16px 32px;
+      margin: 8px 0;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease; }
+      #download .download-panel .download.url:focus {
+        background-color: #fafafa;
+        border-color: #e51;
+        box-shadow: 0 0 0 1px #e51, inset 0 1px 3px rgba(0, 0, 0, 0.3);
+        cursor: pointer; }
+  @media only screen and (min-width: 1200px) {
+    #download .download-panel {
+      flex-direction: row; }
+      #download .download-panel > div {
+        padding: 0 8px; } }
+#download h1 {
+  text-align: center; }

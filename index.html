@@ -2,213 +2,148 @@
 <html>
   <head>
     <title>Piper Archer for FlightGear</title>
-    <link rel="stylesheet" href="assets/style/main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-    <script src="assets/scripts/jquery.js"></script>
-    <script src="assets/scripts/info.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+    
   </head>
   <body>
+    
     <header id="header">
-      <h1 href="http://zlsa.github.io/piper-archer/" class="aircraft">Piper Archer <span class="beta" title="This is a beta release; not all features are available and crashes will occur">beta</span></h1>
-      <h2>for the <a href="http://www.flightgear.org/" class="link">FlightGear</a> flight simulator</h2>
-      <span class="links">
-        <a href="http://wiki.flightgear.org/Piper_Archer_CX" title="Go to the FlightGear wiki's page on this aircraft">Wiki</a>
-        <a href="http://forum.flightgear.org/viewtopic.php?t=23962" title="Go to the FlightGear forum topic for this aircraft">Forum</a>
-        <a href="http://github.com/zlsa/piper-archer/" title="Go to GitHub repository">GitHub</a>
-      </span>
+      <h1>Piper Archer <span class="beta">beta</span></h1>
+      <h2>for FlightGear</h2>
+      
+      <!-- <span class="links"> -->
+      <!--   <a href="http://wiki.flightgear.org/Piper_Archer_CX">Wiki</a> -->
+      <!--   <a href="http://forum.flightgear.org/viewtopic.php?t=23962">Forum</a> -->
+      <!--   <a href="http://github.com/zlsa/piper-archer/">GitHub</a> -->
+      <!-- </span> -->
+      
     </header>
-    <nav id="tabs">
-      <a class="releases" href="javascript:tab('releases')">Download</a>
-      <a class="features active" href="javascript:tab('features')">Features</a>
-      <!-- <a class="installation" href="javascript:tab('installation')">Installation</a>-->
-      <a class="about" href="javascript:tab('about')">About</a>
-      <a class="gallery" href="javascript:tab('gallery')">Gallery</a>
-      <a class="changelog" href="javascript:tab('changelog')">Changelog</a>
+
+    <a class="nav-scroll-detect"></a>
+    
+    <nav class="">
+      <a href="#download"  data-tab="download"  class="tab active">Download</a>
+      <a href="#features"  data-tab="features"  class="tab"       >Features</a>
+      <a href="#changelog" data-tab="changelog" class="tab"       >Changelog</a>
     </nav>
-    <main id="tab-views">
-      <div id="tab-features" class="tab active">
-        <section id="model">
-          <header>Realistic exterior model</header>
-          <p>The exterior model features fully animated flight control
-            surfaces and landing gear with struts and scissors.</p>
-          <p>Currently featured in the exterior model:</p>
-          <ul>
-            <li><span>Ailerons, elevator, and rudder</span></li>
-            <li><span>Elevator trim tab</span></li>
-            <li><span>Landing gear suspension</span></li>
-            <li><span>Flaps and flap arm</span></li>
-            <li><span>Propeller with blur</span></li>
-          </ul>
-          <p>Note that at this time, the exterior texture is
-            provisional; the tail number and the livery cannot be
-            changed.</p>
-          <img src="assets/images/sections/flight.png" />
-        </section>
-        <section id="lighting">
-          <header>Lighting</header>
-          <p>The Piper Archer has been tested extensively with
-            Rembrandt and atmospheric light scattering; the aircraft
-            should work well with either one enabled. All of the lights
-            will dim when the electrical system is under load, such as
-            when the starter is cranking the engine.</p>
-          <p>The following lights fully support Rembrandt lighting:</p>
-          <ul>
-            <li><span>Cockpit lighting</span></li>
-            <li><span>Landing lights</span></li>
-            <li><span>Navigation lights</span></li>
-            <li><span>Strobe lights</span></li>
-            <li><span>Tail beacon light</span></li>
-          </ul>
-          <img src="assets/images/sections/night.png" />
-        </section>
-        <section id="systems">
-          <header>Accurate systems</header>
-          <p>The Piper Archer features detailed and accurate
-            fuel and electrical systems.</p>
-          <p>The electrical system simulation currently features:</p>
-          <ul>
-            <li><span>Battery charging</span></li>
-            <li><span>Voltage drop under load</span></li>
-            <li><span>Switches for all powered components</span></li>
-          </ul>
-          <p>The fuel system currently features:</p>
-          <ul>
-            <li><span>Fuel pump with collection tank</span></li>
-          </ul>
-          <img src="assets/images/sections/tail.png" />
-        </section>
-        <section id="cockpit">
-          <header>Detailed cockpit</header>
-          <p>The fictional Piper Archer CX, unlike the existing TX and
-            LX variants, has analog instruments (such as in the Piper
-            Archer II) instead of a glass panel. Each instrument is
-            modeled to fit the instrument panel and should mimic its
-            real-life counterpart as closely as possible.</p>
-          <p>The following instruments are present:</p>
-          <ul>
-            <li><span>Flight instruments (six pack)</span></li>
-            <li><span>Oil temperature / oil pressure</span></li>
-            <li><span>Battery voltage</span></li>
-            <li><span>Fuel level / fuel pressure</span></li>
-            <li><span>Tachometer</span></li>
-          </ul>
-          <p>In addition to the above instruments, many switches and
-            controls are present as well.</p>
-          <img src="assets/images/sections/cockpit.png" />
-        </section>
-        <section id="effects">
-          <header>Advanced effects</header>
-          <p>FlightGear's effects offer a high degree of realism, but
-          only if they're used by aircraft. The Piper Archer series
-          showcases many effects possible in later versions of
-          FlightGear.</p>
-          <p>The following effects have been implemented:</p>
-          <ul>
-            <li><span>Frost and rain on windshield</span></li>
-            <li><span>Fake shadows (in progress)</span></li>
-            <li><span>Advanced fuselage shading with reflections and normal map (in progress)</span></li>
-          </ul>
-          <p>As FlightGear's effects improve, the Piper Archer's effects will be updated as well.</p>
-          <img src="assets/images/sections/frost.png" />
-        </section>
-      </div>
-      <div id="tab-installation" class="tab">
-        <section>
-          <header>Steps</header>
-          <p>
-            <ol>
-              <li><span>Download the <a href="http://zlsa.github.io/piper-archer/releases/piper-archer-latest.zip">latest</a> version of this aircraft</span></li>
-              <li><span>Unzip the aircraft; there should be a single folder: <code>piper-archer/</code> inside</span></li>
-              <li><span>Copy <code>piper-archer</code> to <code>$FG_ROOT/Aircraft/piper-archer/</code>.</span></li>
-            </ol>
-          </p>
-        </section>
-      </div>
-      <div id="tab-releases" class="tab">
-        <div id="latest-release">
-          <a class="download button beta" href="http://zlsa.github.io/piper-archer/releases/piper-archer-latest.zip" title="Download beta aircraft zip">
-            <span class="title">Download beta</span>
-          </a>
-          <span class="size">Fetching size...</span>
-          <span class="last-update">
-            Last updated <span class="date">time is being fetched</span>.
-          </span>
-          <span class="github-link">
-            git clone
-            <input class="github" value="http://github.com/zlsa/piper-archer.git" size="30" />
-          </span>
+    
+    <main>
+      
+      <div id="tabs">
+
+        <!-- DOWNLOAD -->
+        <div id="download" class="tab">
+
+          <div class="download-panel">
+            <div class="from-github">
+              <header>
+                <h1>From GitHub</h1>
+              </header>
+              <input class="download url" value="git clone http://github.com/zlsa/piper-archer.git" />
+              <div class="instructions">
+                <ol>
+                  <li>Make sure Git is installed.</li>
+                  <li>Clone a copy of the aircraft to <code>$FG_ROOT/Aircraft/</code></li>
+                  <li>The aircraft <code>piper-archer-cx</code> and <code>piper-archer-tx</code> should be listed.</li>
+                </ol>
+              </div>
+            </div>
+            
+            <div class="from-latest">
+              <header>
+                <h1>As a ZIP file</h1>
+              </header>
+              <a href="http://zlsa.github.io/piper-archer/releases/piper-archer-latest.zip"
+                 class="download button">Download piper-archer-latest.zip</a>
+            </div>
+          </div>
+          
+          <div class="from-latest">
+            <header>
+              <h1>Past releases</h1>
+            </header>
+            <ul class="releases">
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+              <li>ads;lfjasdlkjasd</li>
+            </ul>
+          </div>
+          
         </div>
+        
       </div>
-      <div id="tab-about" class="tab">
-        <section>
-          <header>Recommended installation</header>
-          <p>If you know how to use Git, it's highly recommended
-            to clone the repository and use it directly:
-            <code>git clone http://github.com/zlsa/piper-archer.git</code>
-            and pull once a day or so. <code>master</code> will
-            occasionally have graphical problems or minor bugs but
-            should always fly.
-          </p>
-          <p>If you use the zip downloaded here, be aware that this
-            aircraft is updated almost daily<a title="Sort of; I've
-            been away from FlightGear for a while so this aircraft has
-            stagnated.">*</a> and you will have to remove the
-            aircraft, download the zip, and unpack it whenever you
-            want the newer changes.</p>
-        </section>
-        <section>
-          <header>Versions</header>
-          <p>Previous releases are not guaranteed to work in any way;
-            use at your own risk. Older versions and newer version are
-            not compatible. This aircraft has been tested with
-            FlightGear version 3.5 (git) and should work with 3.2 and
-            3.4 as well.</p>
-        </section>
-      </div>
-      <div id="tab-gallery" class="tab">
-        <span class="disclaimer">These screenshots are all of
-        in-development aircraft and may be out of date.</span>
-        <img src="assets/images/gallery/foothills-flight-front-quarter.jpg" />
-        <img src="assets/images/gallery/foothills-flight-rear-quarter.jpg" />
-      </div>
-      <div id="tab-changelog" class="tab">
-        <section>
-          <ul class="releases">
-            <li>
-              <header>2015<span class="month">03</span>13</header>
-              <ul>
-                <li>Added cockpit shadow effect.</li>
-                <li>Fixed attitude indicator.</li>
-                <li>Added ten thousands needle to altimeter.</li>
-              </ul>
-            </li>
-            <li>
-              <header>2015<span class="month">03</span>12</header>
-              <ul>
-                <li>Baked ambient occlusion for dashboard cover.</li>
-                <li>Added throttle quadrant decal.</li>
-                <li>Improved rain effect.</li>
-              </ul>
-            </li>
-            <li>
-              <header>2015<span class="month">03</span>11</header>
-              <ul>
-                <li>Added frost and rain effect.</li>
-                <li>Replaced livery with real-life livery.</li>
-                <li>Two versions of prop spinner for fast and slow modes.</li>
-                <li>Improved propeller blade model.</li>
-                <li>Improved FDM; flap drag is more linear.</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-      </div>
+
     </main>
+    
     <footer>
       <span class="disclaimer">The production of this fictional
         aircraft model is not related to either Piper Aircraft or the
         FlightGear project.</span>
     </footer>
+    
   </body>
 </html>
