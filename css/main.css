@@ -65,9 +65,9 @@ body > header {
   width: 100%;
   max-width: 90em;
   margin: 0 auto; }
-  body > header h1 {
+  body > header .name h1 {
     font-size: 200%; }
-    body > header h1 .beta {
+    body > header .name h1 .beta {
       background-color: white;
       color: #f62;
       font-size: 40%;
@@ -78,29 +78,53 @@ body > header {
       border-radius: 4px;
       text-transform: uppercase;
       margin-right: 8px; }
-  body > header h2 {
+  body > header .name h2 {
     font-style: italic;
     opacity: 0.75; }
+  body > header .links {
+    font-weight: bold;
+    display: block;
+    margin-top: 16px;
+    padding: 8px 0; }
+    body > header .links a {
+      margin: 0 8px;
+      opacity: 0.7; }
+      body > header .links a:hover {
+        opacity: 1; }
   @media only screen and (min-width: 1200px) {
     body > header {
-      position: absolute;
-      left: 0;
-      top: 32px;
-      width: auto;
       background-color: transparent;
-      height: 48px;
-      padding: 8px 16px;
-      text-align: center;
-      width: 30em; }
-      body > header h1, body > header h2 {
-        display: inline-block; }
-      body > header h1 {
-        font-size: 150%;
-        font-weight: bold; }
-        body > header h1 .beta {
-          font-size: 12px; }
-      body > header h2 {
-        margin-left: 8px; } }
+      position: absolute;
+      height: 80px;
+      width: 100%; }
+      body > header .name {
+        position: absolute;
+        left: 0;
+        top: 32px;
+        width: auto;
+        padding: 8px 16px;
+        text-align: center;
+        width: 30em; }
+        body > header .name h1, body > header .name h2 {
+          display: inline-block; }
+        body > header .name h1 {
+          font-size: 150%;
+          font-weight: bold; }
+          body > header .name h1 .beta {
+            font-size: 12px; }
+        body > header .name h2 {
+          margin-left: 8px; }
+      body > header .links {
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        bottom: 3px;
+        padding: 8px 16px; }
+        body > header .links a {
+          margin: 0 8px;
+          opacity: 0.7; }
+          body > header .links a:hover {
+            opacity: 1; } }
 
 nav {
   background-color: #f62;
