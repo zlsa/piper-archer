@@ -75,7 +75,7 @@ body > header {
     .name {
       position: absolute;
       left: 0;
-      top: $unit4;
+      top: $unit4 + 1px;
       width: auto;
 
       padding: $unit $unit2;

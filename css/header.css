@@ -41,7 +41,7 @@ body > header {
       body > header .name {
         position: absolute;
         left: 0;
-        top: 32px;
+        top: 33px;
         width: auto;
         padding: 8px 16px;
         text-align: center;
