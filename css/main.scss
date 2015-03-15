@@ -8,6 +8,8 @@
 @import 'tabs';
 
 @import 'download';
+@import 'features';
+@import 'changelog';
 
 @import 'footer';
 
@@ -45,8 +47,6 @@ body {
 main {
   width: 100%;
 
-  padding: $unit $unit2;
- 
   flex: 1;
 }
 

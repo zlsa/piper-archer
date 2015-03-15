@@ -45,14 +45,30 @@ nav {
   html nav {
     height: $unit10;
 
+    padding-top: $unit4;
+
     .tab {
-      height: $unit10;
-      padding-top: $unit6;
+      height: $unit6;
+      padding-top: $unit * 1.5;
+
+      &.active {
+        background-color: $theme-fg;
+        color: $theme-color;
+      }
     }
+    
   }
   
 }
 
 #tabs {
+  
+  .tab {
+    display: none;
+  }
+
+  .tab.active {
+    display: block;
+  }
   
 }

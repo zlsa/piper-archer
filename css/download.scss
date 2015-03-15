@@ -1,11 +1,13 @@
 
 @import 'util';
 
-#download {
+#tab-download {
 
   .download-panel {
     display: flex;
     flex-direction: column;
+
+    padding: 0 $unit2;
 
     > div {
       flex: 1;
@@ -51,13 +53,50 @@
     }
 
     @include device(small) {
-
+      header {
+        border-bottom: none;
+      }
     }
 
   }
 
   h1 {
     text-align: center;
+  }
+
+  .from-latest {
+    
+    padding: 0 $unit2;
+
+    ul {
+      
+      li {
+        list-style-type: none;
+        color: $theme-color;
+        
+        width: 20em;
+        margin: 0 auto;
+        
+        .button {
+          @include button($theme-color, $theme-fg, $unit);
+        }
+
+        .filesize {
+          margin-left: $unit2;
+          font-weight: bold;
+        }
+        
+      }
+      
+      .loading {
+        font-size: 150%;
+        opacity: 0.25;
+        text-align: center;
+        margin: $unit4;
+      }
+      
+    }
+    
   }
 
 }

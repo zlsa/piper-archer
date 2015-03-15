@@ -1,0 +1,44 @@
+
+@import 'util';
+
+#tab-changelog {
+
+  padding: $unit4 $unit8;
+  
+  ul.updates {
+
+    li {
+      list-style-type: none;
+    }
+    
+    h1 {
+      background-color: #888;
+
+      color: #fff;
+      font-size: 100%;
+      font-weight: bold;
+
+      display: inline-block;
+      padding: 4px 8px;
+      margin: 0;
+
+      .month {
+        margin: 0 4px;
+      }
+      
+    }
+
+    ul.changelog {
+      margin: $unit 0;
+      margin-bottom: $unit4;
+      margin-left: 3em;
+      
+      li {
+        list-style-type: none;
+      }
+      
+    }
+    
+  }
+  
+}

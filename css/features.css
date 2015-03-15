@@ -1,0 +1,30 @@
+#tab-features section {
+  position: relative;
+  padding: 16px 32px;
+  min-height: 400px; }
+  @media only screen and (min-width: 1200px) {
+    #tab-features section {
+      padding-right: 632px; }
+      #tab-features section img {
+        position: absolute;
+        top: 0;
+        right: 0; } }
+  @media only screen and (max-width: 1199px) {
+    #tab-features section {
+      padding: 0; }
+      #tab-features section header {
+        text-align: center;
+        padding: 8px 0;
+        margin: 0; }
+      #tab-features section img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 16px; }
+      #tab-features section p {
+        padding: 0 16px; } }
+#tab-features section + section {
+  box-shadow: inset 0 1px 0 #eee; }
+  @media only screen and (max-width: 1199px) {
+    #tab-features section + section {
+      margin-top: 32px; } }

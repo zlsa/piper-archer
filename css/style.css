@@ -1,31 +1,41 @@
-main h1 {
-  border-bottom: 2px solid #e51;
-  color: #e51;
-  font-size: 24px;
-  padding: 8px 0;
-  margin-top: 16px;
-  margin-bottom: 8px; }
-  @media only screen and (max-width: 640px) {
-    main h1 {
-      text-align: center; } }
-  @media only screen and (min-width: 1200px) {
-    main h1 {
-      font-size: 32px; } }
-main .button {
-  background-color: #e51;
-  border: 1px solid white;
-  box-shadow: 0 0 0 2px #e51;
-  color: white;
-  font-weight: bold;
-  display: inline-block;
-  padding: 8px 16px;
-  margin: 8px 0;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease; }
-  main .button:hover {
-    background-color: #ef5f1f;
-    box-shadow: 0 0 0 2px #ef5f1f;
-    cursor: pointer; }
-  main .button:active {
-    background-color: #d14b0f;
-    box-shadow: 0 0 0 2px #d14b0f, inset 0 1px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer; }
+main {
+  color: #222; }
+  main h1 {
+    color: #f62;
+    font-size: 24px;
+    padding: 8px 0;
+    margin-top: 16px;
+    margin-bottom: 8px; }
+    @media only screen and (max-width: 640px) {
+      main h1 {
+        text-align: center; } }
+    @media only screen and (min-width: 1200px) {
+      main h1 {
+        font-size: 32px; } }
+  main p + p {
+    margin-top: 0.5em; }
+  main .button {
+    background-color: #f62;
+    box-shadow: inset 0 0 0 1px white, 0 0 0 2px #f62;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 8px 0;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; }
+    main .button:hover {
+      background-color: #ff7131;
+      box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff7131;
+      cursor: pointer; }
+    main .button:active {
+      background-color: #ff5103;
+      box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff5103;
+      cursor: pointer; }
+  main code {
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: monospace;
+    padding: 2px 8px; }
+  main .in-progress {
+    opacity: 0.5; }

@@ -1,0 +1,20 @@
+#tab-changelog {
+  padding: 32px 64px; }
+  #tab-changelog ul.updates li {
+    list-style-type: none; }
+  #tab-changelog ul.updates h1 {
+    background-color: #888;
+    color: #fff;
+    font-size: 100%;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0; }
+    #tab-changelog ul.updates h1 .month {
+      margin: 0 4px; }
+  #tab-changelog ul.updates ul.changelog {
+    margin: 8px 0;
+    margin-bottom: 32px;
+    margin-left: 3em; }
+    #tab-changelog ul.updates ul.changelog li {
+      list-style-type: none; }

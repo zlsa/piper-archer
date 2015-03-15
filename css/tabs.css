@@ -1,5 +1,5 @@
 nav {
-  background-color: #e51;
+  background-color: #f62;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -20,7 +20,15 @@ nav {
 
 @media only screen and (min-width: 1200px) {
   html nav {
-    height: 80px; }
+    height: 80px;
+    padding-top: 32px; }
     html nav .tab {
-      height: 80px;
-      padding-top: 48px; } }
+      height: 48px;
+      padding-top: 12px; }
+      html nav .tab.active {
+        background-color: white;
+        color: #f62; } }
+#tabs .tab {
+  display: none; }
+#tabs .tab.active {
+  display: block; }

@@ -1,13 +1,18 @@
 
-$beta-color:     #e51;
-$release-color:  #15e;
+$beta:           true;
+$beta-color:     #f62;
+$release-color:  #26f;
 
-$theme-color:    $beta-color;
+$theme-color:    $release-color;
+@if $beta {
+  $theme-color:  $beta-color;
+}
+
 $theme-fg:       white;
 
 $light-background-color: #eee;
 
-$black-fg:               #333;
+$black-fg:               #222;
 
 $shadow: rgba(black, 0.3);
 
@@ -27,6 +32,12 @@ $unit8:          $unit * 8;
 $unit10:         $unit * 10;
 $unit12:         $unit * 12;
 
+@if not $beta {
+  .beta {
+    display: none;
+  }
+}
+
 // devices
 
 $break-small: 640px;
@@ -35,6 +46,9 @@ $break-large: 1200px;
 @mixin device($media) {
   @if $media == small {
     @media only screen and (max-width: $break-small) { @content; }
+  }
+  @if $media == lt-medium {
+    @media only screen and (max-width: $break-large - 1) { @content; }
   }
   @else if $media == medium {
     @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
@@ -48,8 +62,7 @@ $break-large: 1200px;
 
 @mixin button($bg: $theme-color, $fg: $theme-fg, $padding: $unit) {
   background-color: $bg;
-  border: 1px solid $fg;
-  box-shadow: 0 0 0 2px $bg;
+  box-shadow: inset 0 0 0 1px $fg, 0 0 0 2px $bg;
   
   color: $fg;
   font-weight: bold;
@@ -67,7 +80,7 @@ $break-large: 1200px;
     }
 
     background-color: $hover-bg;
-    box-shadow: 0 0 0 2px $hover-bg;
+    box-shadow: inset 0 0 0 1px $fg, 0 0 0 2px $hover-bg;
     
     cursor: pointer;
   }
@@ -76,7 +89,7 @@ $break-large: 1200px;
     $active-bg: darken($bg, 6);
 
     background-color: $active-bg;
-    box-shadow: 0 0 0 2px $active-bg, inset 0 1px 3px $shadow;
+    box-shadow: inset 0 0 0 1px $fg, 0 0 0 2px $active-bg;
     
     cursor: pointer;
   }
@@ -87,8 +100,9 @@ $break-large: 1200px;
 
 @mixin input($bg: $theme-color, $fg: $theme-fg, $padding: $unit) {
   background-color: $bg;
-  border: 1px solid $fg;
-  box-shadow: 0 0 0 1px $fg;
+  box-shadow: 0 0 0 2px $fg;
+
+  height: $unit3 + $padding * 2;
   
   color: $fg;
   font-weight: bold;
@@ -101,8 +115,7 @@ $break-large: 1200px;
 
   &:focus {
     background-color: darken($bg, 2);
-    border-color: $fg;
-    box-shadow: 0 0 0 1px $fg, inset 0 1px 3px $shadow;
+    box-shadow: 0 0 0 2px $fg, inset 0 1px 3px $shadow;
     
     cursor: pointer;
   }

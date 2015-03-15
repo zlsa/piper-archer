@@ -14,43 +14,54 @@
   margin: 0;
   padding: 0; }
 
-main h1 {
-  border-bottom: 2px solid #e51;
-  color: #e51;
-  font-size: 24px;
-  padding: 8px 0;
-  margin-top: 16px;
-  margin-bottom: 8px; }
-  @media only screen and (max-width: 640px) {
-    main h1 {
-      text-align: center; } }
-  @media only screen and (min-width: 1200px) {
-    main h1 {
-      font-size: 32px; } }
-main .button {
-  background-color: #e51;
-  border: 1px solid white;
-  box-shadow: 0 0 0 2px #e51;
-  color: white;
-  font-weight: bold;
-  display: inline-block;
-  padding: 8px 16px;
-  margin: 8px 0;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease; }
-  main .button:hover {
-    background-color: #ef5f1f;
-    box-shadow: 0 0 0 2px #ef5f1f;
-    cursor: pointer; }
-  main .button:active {
-    background-color: #d14b0f;
-    box-shadow: 0 0 0 2px #d14b0f, inset 0 1px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer; }
+main {
+  color: #222; }
+  main h1 {
+    color: #f62;
+    font-size: 24px;
+    padding: 8px 0;
+    margin-top: 16px;
+    margin-bottom: 8px; }
+    @media only screen and (max-width: 640px) {
+      main h1 {
+        text-align: center; } }
+    @media only screen and (min-width: 1200px) {
+      main h1 {
+        font-size: 32px; } }
+  main p + p {
+    margin-top: 0.5em; }
+  main .button {
+    background-color: #f62;
+    box-shadow: inset 0 0 0 1px white, 0 0 0 2px #f62;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 8px 0;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; }
+    main .button:hover {
+      background-color: #ff7131;
+      box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff7131;
+      cursor: pointer; }
+    main .button:active {
+      background-color: #ff5103;
+      box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff5103;
+      cursor: pointer; }
+  main code {
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: monospace;
+    padding: 2px 8px; }
+  main .in-progress {
+    opacity: 0.5; }
 
 body > header {
-  background-color: #e51;
+  background-color: #f62;
   color: white;
   text-align: center;
   padding: 16px 0;
+  padding-top: 48px;
   width: 100%;
   max-width: 90em;
   margin: 0 auto; }
@@ -58,14 +69,15 @@ body > header {
     font-size: 200%; }
     body > header h1 .beta {
       background-color: white;
-      color: #e51;
+      color: #f62;
       font-size: 40%;
       font-weight: bold;
       position: relative;
       top: -1em;
       padding: 3px 6px;
       border-radius: 4px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-right: 8px; }
   body > header h2 {
     font-style: italic;
     opacity: 0.75; }
@@ -73,10 +85,11 @@ body > header {
     body > header {
       position: absolute;
       left: 0;
+      top: 32px;
       width: auto;
       background-color: transparent;
-      height: 80px;
-      padding: 28px 16px;
+      height: 48px;
+      padding: 8px 16px;
       text-align: center;
       width: 30em; }
       body > header h1, body > header h2 {
@@ -87,10 +100,10 @@ body > header {
         body > header h1 .beta {
           font-size: 12px; }
       body > header h2 {
-        margin-left: 16px; } }
+        margin-left: 8px; } }
 
 nav {
-  background-color: #e51;
+  background-color: #f62;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -111,69 +124,164 @@ nav {
 
 @media only screen and (min-width: 1200px) {
   html nav {
-    height: 80px; }
+    height: 80px;
+    padding-top: 32px; }
     html nav .tab {
-      height: 80px;
-      padding-top: 48px; } }
-#download .download-panel {
+      height: 48px;
+      padding-top: 12px; }
+      html nav .tab.active {
+        background-color: white;
+        color: #f62; } }
+#tabs .tab {
+  display: none; }
+#tabs .tab.active {
+  display: block; }
+
+#tab-download .download-panel {
   display: flex;
-  flex-direction: column; }
-  #download .download-panel > div {
+  flex-direction: column;
+  padding: 0 16px; }
+  #tab-download .download-panel > div {
     flex: 1;
     text-align: center; }
-    #download .download-panel > div ol {
+    #tab-download .download-panel > div ol {
       color: rgba(0, 0, 0, 0.3);
       text-align: left;
       width: 30em;
       max-width: 100%;
       margin: 0 auto;
       padding: 32px 32px; }
-      #download .download-panel > div ol li {
-        color: #333; }
-  #download .download-panel .download {
+      #tab-download .download-panel > div ol li {
+        color: #222; }
+  #tab-download .download-panel .download {
     width: 30em;
     max-width: 100%;
     text-align: center; }
-    #download .download-panel .download.button {
-      background-color: #e51;
-      border: 1px solid white;
-      box-shadow: 0 0 0 2px #e51;
+    #tab-download .download-panel .download.button {
+      background-color: #f62;
+      box-shadow: inset 0 0 0 1px white, 0 0 0 2px #f62;
       color: white;
       font-weight: bold;
       display: inline-block;
       padding: 16px 32px;
       margin: 8px 0;
       transition: background-color 0.2s ease, box-shadow 0.2s ease; }
-      #download .download-panel .download.button:hover {
-        background-color: #ef5f1f;
-        box-shadow: 0 0 0 2px #ef5f1f;
+      #tab-download .download-panel .download.button:hover {
+        background-color: #ff7131;
+        box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff7131;
         cursor: pointer; }
-      #download .download-panel .download.button:active {
-        background-color: #d14b0f;
-        box-shadow: 0 0 0 2px #d14b0f, inset 0 1px 3px rgba(0, 0, 0, 0.3);
+      #tab-download .download-panel .download.button:active {
+        background-color: #ff5103;
+        box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff5103;
         cursor: pointer; }
-    #download .download-panel .download.url {
+    #tab-download .download-panel .download.url {
       background-color: white;
-      border: 1px solid #e51;
-      box-shadow: 0 0 0 1px #e51;
-      color: #e51;
+      box-shadow: 0 0 0 2px #f62;
+      height: 56px;
+      color: #f62;
       font-weight: bold;
       display: inline-block;
       padding: 16px 32px;
       margin: 8px 0;
       transition: background-color 0.2s ease, box-shadow 0.2s ease; }
-      #download .download-panel .download.url:focus {
+      #tab-download .download-panel .download.url:focus {
         background-color: #fafafa;
-        border-color: #e51;
-        box-shadow: 0 0 0 1px #e51, inset 0 1px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 0 2px #f62, inset 0 1px 3px rgba(0, 0, 0, 0.3);
         cursor: pointer; }
   @media only screen and (min-width: 1200px) {
-    #download .download-panel {
+    #tab-download .download-panel {
       flex-direction: row; }
-      #download .download-panel > div {
+      #tab-download .download-panel > div {
         padding: 0 8px; } }
-#download h1 {
+  @media only screen and (max-width: 640px) {
+    #tab-download .download-panel header {
+      border-bottom: none; } }
+#tab-download h1 {
   text-align: center; }
+#tab-download .from-latest {
+  padding: 0 16px; }
+  #tab-download .from-latest ul li {
+    list-style-type: none;
+    color: #f62;
+    width: 20em;
+    margin: 0 auto; }
+    #tab-download .from-latest ul li .button {
+      background-color: #f62;
+      box-shadow: inset 0 0 0 1px white, 0 0 0 2px #f62;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 8px 0;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease; }
+      #tab-download .from-latest ul li .button:hover {
+        background-color: #ff7131;
+        box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff7131;
+        cursor: pointer; }
+      #tab-download .from-latest ul li .button:active {
+        background-color: #ff5103;
+        box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff5103;
+        cursor: pointer; }
+    #tab-download .from-latest ul li .filesize {
+      margin-left: 16px;
+      font-weight: bold; }
+  #tab-download .from-latest ul .loading {
+    font-size: 150%;
+    opacity: 0.25;
+    text-align: center;
+    margin: 32px; }
+
+#tab-features section {
+  position: relative;
+  padding: 16px 32px;
+  min-height: 400px; }
+  @media only screen and (min-width: 1200px) {
+    #tab-features section {
+      padding-right: 632px; }
+      #tab-features section img {
+        position: absolute;
+        top: 0;
+        right: 0; } }
+  @media only screen and (max-width: 1199px) {
+    #tab-features section {
+      padding: 0; }
+      #tab-features section header {
+        text-align: center;
+        padding: 8px 0;
+        margin: 0; }
+      #tab-features section img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 16px; }
+      #tab-features section p {
+        padding: 0 16px; } }
+#tab-features section + section {
+  box-shadow: inset 0 1px 0 #eee; }
+  @media only screen and (max-width: 1199px) {
+    #tab-features section + section {
+      margin-top: 32px; } }
+
+#tab-changelog {
+  padding: 32px 64px; }
+  #tab-changelog ul.updates li {
+    list-style-type: none; }
+  #tab-changelog ul.updates h1 {
+    background-color: #888;
+    color: #fff;
+    font-size: 100%;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0; }
+    #tab-changelog ul.updates h1 .month {
+      margin: 0 4px; }
+  #tab-changelog ul.updates ul.changelog {
+    margin: 8px 0;
+    margin-bottom: 32px;
+    margin-left: 3em; }
+    #tab-changelog ul.updates ul.changelog li {
+      list-style-type: none; }
 
 footer {
   background-color: rgba(0, 0, 0, 0.025);
@@ -207,5 +315,4 @@ body {
 
 main {
   width: 100%;
-  padding: 8px 16px;
   flex: 1; }

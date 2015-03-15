@@ -1,0 +1,57 @@
+
+@import 'util';
+
+#tab-features {
+  
+  section {
+    position: relative;
+    padding: $unit2 $unit4;
+    min-height: 400px;
+
+    @include device(large) {
+      padding-right: $unit4 + 600px;
+      
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+    }
+
+    @include device(lt-medium) {
+      
+      padding: 0;
+
+      header {
+        text-align: center;
+        
+        padding: $unit 0;
+        margin: 0;
+      }
+      
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: $unit2;
+      }
+
+      p {
+        padding: 0 $unit2;
+      }
+
+    }
+    
+  }
+
+  section + section {
+    box-shadow: inset 0 1px 0 #eee;
+    
+    @include device(lt-medium) {
+      margin-top: $unit4;
+    }
+    
+  }
+  
+}

@@ -1,59 +1,93 @@
-#download .download-panel {
+#tab-download .download-panel {
   display: flex;
-  flex-direction: column; }
-  #download .download-panel > div {
+  flex-direction: column;
+  padding: 0 16px; }
+  #tab-download .download-panel > div {
     flex: 1;
     text-align: center; }
-    #download .download-panel > div ol {
+    #tab-download .download-panel > div ol {
       color: rgba(0, 0, 0, 0.3);
       text-align: left;
       width: 30em;
       max-width: 100%;
       margin: 0 auto;
       padding: 32px 32px; }
-      #download .download-panel > div ol li {
-        color: #333; }
-  #download .download-panel .download {
+      #tab-download .download-panel > div ol li {
+        color: #222; }
+  #tab-download .download-panel .download {
     width: 30em;
     max-width: 100%;
     text-align: center; }
-    #download .download-panel .download.button {
-      background-color: #e51;
-      border: 1px solid white;
-      box-shadow: 0 0 0 2px #e51;
+    #tab-download .download-panel .download.button {
+      background-color: #f62;
+      box-shadow: inset 0 0 0 1px white, 0 0 0 2px #f62;
       color: white;
       font-weight: bold;
       display: inline-block;
       padding: 16px 32px;
       margin: 8px 0;
       transition: background-color 0.2s ease, box-shadow 0.2s ease; }
-      #download .download-panel .download.button:hover {
-        background-color: #ef5f1f;
-        box-shadow: 0 0 0 2px #ef5f1f;
+      #tab-download .download-panel .download.button:hover {
+        background-color: #ff7131;
+        box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff7131;
         cursor: pointer; }
-      #download .download-panel .download.button:active {
-        background-color: #d14b0f;
-        box-shadow: 0 0 0 2px #d14b0f, inset 0 1px 3px rgba(0, 0, 0, 0.3);
+      #tab-download .download-panel .download.button:active {
+        background-color: #ff5103;
+        box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff5103;
         cursor: pointer; }
-    #download .download-panel .download.url {
+    #tab-download .download-panel .download.url {
       background-color: white;
-      border: 1px solid #e51;
-      box-shadow: 0 0 0 1px #e51;
-      color: #e51;
+      box-shadow: 0 0 0 2px #f62;
+      height: 56px;
+      color: #f62;
       font-weight: bold;
       display: inline-block;
       padding: 16px 32px;
       margin: 8px 0;
       transition: background-color 0.2s ease, box-shadow 0.2s ease; }
-      #download .download-panel .download.url:focus {
+      #tab-download .download-panel .download.url:focus {
         background-color: #fafafa;
-        border-color: #e51;
-        box-shadow: 0 0 0 1px #e51, inset 0 1px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 0 2px #f62, inset 0 1px 3px rgba(0, 0, 0, 0.3);
         cursor: pointer; }
   @media only screen and (min-width: 1200px) {
-    #download .download-panel {
+    #tab-download .download-panel {
       flex-direction: row; }
-      #download .download-panel > div {
+      #tab-download .download-panel > div {
         padding: 0 8px; } }
-#download h1 {
+  @media only screen and (max-width: 640px) {
+    #tab-download .download-panel header {
+      border-bottom: none; } }
+#tab-download h1 {
   text-align: center; }
+#tab-download .from-latest {
+  padding: 0 16px; }
+  #tab-download .from-latest ul li {
+    list-style-type: none;
+    color: #f62;
+    width: 20em;
+    margin: 0 auto; }
+    #tab-download .from-latest ul li .button {
+      background-color: #f62;
+      box-shadow: inset 0 0 0 1px white, 0 0 0 2px #f62;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 8px 0;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease; }
+      #tab-download .from-latest ul li .button:hover {
+        background-color: #ff7131;
+        box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff7131;
+        cursor: pointer; }
+      #tab-download .from-latest ul li .button:active {
+        background-color: #ff5103;
+        box-shadow: inset 0 0 0 1px white, 0 0 0 2px #ff5103;
+        cursor: pointer; }
+    #tab-download .from-latest ul li .filesize {
+      margin-left: 16px;
+      font-weight: bold; }
+  #tab-download .from-latest ul .loading {
+    font-size: 150%;
+    opacity: 0.25;
+    text-align: center;
+    margin: 32px; }

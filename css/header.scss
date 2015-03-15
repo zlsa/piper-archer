@@ -9,6 +9,7 @@ body > header {
   text-align: center;
 
   padding: $unit2 0;
+  padding-top: $unit6;
   
   width: 100%;
   max-width: 90em;
@@ -30,6 +31,7 @@ body > header {
       padding: 3px 6px;
       border-radius: 4px;
       text-transform: uppercase;
+      margin-right: $unit;
     }
     
   }
@@ -42,11 +44,12 @@ body > header {
   @include device(large) {
     position: absolute;
     left: 0;
+    top: $unit4;
     width: auto;
     background-color: transparent;
 
-    height: $unit10;
-    padding: $unit * 3.5 $unit2;
+    height: $unit6;
+    padding: $unit $unit2;
 
     text-align: center;
     width: 30em;
@@ -65,7 +68,7 @@ body > header {
     }
 
     h2 {
-      margin-left: $unit2;
+      margin-left: $unit;
     }
     
   };
