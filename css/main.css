@@ -109,7 +109,6 @@ nav {
   text-align: center;
   width: 100%;
   transition: box-shadow 0.2s ease;
-  height: 48px;
   max-width: 90em;
   margin: 0 auto;
   -webkit-backface-visibility: hidden; }
@@ -125,7 +124,8 @@ nav {
 @media only screen and (min-width: 1200px) {
   html nav {
     height: 80px;
-    padding-top: 32px; }
+    padding-top: 32px;
+    padding-left: 20em; }
     html nav .tab {
       height: 48px;
       padding-top: 12px; }
@@ -234,14 +234,14 @@ nav {
 #tab-features section {
   position: relative;
   padding: 16px 32px;
-  min-height: 400px; }
+  min-height: 432px; }
   @media only screen and (min-width: 1200px) {
     #tab-features section {
-      padding-right: 632px; }
+      padding-right: 664px; }
       #tab-features section img {
         position: absolute;
-        top: 0;
-        right: 0; } }
+        top: 16px;
+        right: 32px; } }
   @media only screen and (max-width: 1199px) {
     #tab-features section {
       padding: 0; }
@@ -261,6 +261,22 @@ nav {
   @media only screen and (max-width: 1199px) {
     #tab-features section + section {
       margin-top: 32px; } }
+
+#tab-gallery {
+  padding: 0 16px;
+  padding-top: 8px; }
+  #tab-gallery .disclaimer {
+    display: block;
+    color: #444;
+    font-style: italic;
+    text-align: center;
+    padding: 32px 0; }
+  #tab-gallery img {
+    margin-top: 8px;
+    max-width: 100%; }
+  @media only screen and (max-width: 640px) {
+    #tab-gallery {
+      padding: 8px 0; } }
 
 #tab-changelog {
   padding: 32px 64px; }
@@ -282,6 +298,11 @@ nav {
     margin-left: 3em; }
     #tab-changelog ul.updates ul.changelog li {
       list-style-type: none; }
+  @media only screen and (max-width: 640px) {
+    #tab-changelog {
+      padding: 32px 16px; }
+      #tab-changelog ul.changelog {
+        margin-left: 8px !important; } }
 
 footer {
   background-color: rgba(0, 0, 0, 0.025);

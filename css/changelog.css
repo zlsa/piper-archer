@@ -18,3 +18,8 @@
     margin-left: 3em; }
     #tab-changelog ul.updates ul.changelog li {
       list-style-type: none; }
+  @media only screen and (max-width: 640px) {
+    #tab-changelog {
+      padding: 32px 16px; }
+      #tab-changelog ul.changelog {
+        margin-left: 8px !important; } }

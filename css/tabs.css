@@ -5,7 +5,6 @@ nav {
   text-align: center;
   width: 100%;
   transition: box-shadow 0.2s ease;
-  height: 48px;
   max-width: 90em;
   margin: 0 auto;
   -webkit-backface-visibility: hidden; }
@@ -21,7 +20,8 @@ nav {
 @media only screen and (min-width: 1200px) {
   html nav {
     height: 80px;
-    padding-top: 32px; }
+    padding-top: 32px;
+    padding-left: 20em; }
     html nav .tab {
       height: 48px;
       padding-top: 12px; }

@@ -6,15 +6,15 @@
   section {
     position: relative;
     padding: $unit2 $unit4;
-    min-height: 400px;
+    min-height: 400px + $unit2 * 2;
 
     @include device(large) {
-      padding-right: $unit4 + 600px;
+      padding-right: $unit4 + 600px + $unit4;
       
       img {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: $unit2;
+        right: $unit4;
       }
 
     }

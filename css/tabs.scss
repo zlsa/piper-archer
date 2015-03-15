@@ -15,8 +15,6 @@ nav {
 
   transition: box-shadow 0.2s ease;
 
-  height: $unit6;
-
   max-width: 90em;
   margin: 0 auto;
 
@@ -46,6 +44,7 @@ nav {
     height: $unit10;
 
     padding-top: $unit4;
+    padding-left: 20em;
 
     .tab {
       height: $unit6;

@@ -40,5 +40,14 @@
     }
     
   }
+
+  @include device(small) {
+    padding: $unit4 $unit2;
+
+    ul.changelog {
+      margin-left: $unit !important;
+    }
+    
+  }
   
 }

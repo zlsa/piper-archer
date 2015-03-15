@@ -1,0 +1,25 @@
+
+@import 'util';
+
+#tab-gallery {
+  padding: 0 $unit2;
+  padding-top: $unit;
+
+  .disclaimer {
+    display: block;
+    color: #444;
+    font-style: italic;
+    text-align: center;
+    padding: $unit4 0;
+  }
+  
+  img {
+    margin-top: $unit;
+    max-width: 100%;
+  }
+
+  @include device(small) {
+    padding: $unit 0;
+  }
+  
+}

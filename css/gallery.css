@@ -1,0 +1,15 @@
+#tab-gallery {
+  padding: 0 16px;
+  padding-top: 8px; }
+  #tab-gallery .disclaimer {
+    display: block;
+    color: #444;
+    font-style: italic;
+    text-align: center;
+    padding: 32px 0; }
+  #tab-gallery img {
+    margin-top: 8px;
+    max-width: 100%; }
+  @media only screen and (max-width: 640px) {
+    #tab-gallery {
+      padding: 8px 0; } }

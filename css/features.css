@@ -1,14 +1,14 @@
 #tab-features section {
   position: relative;
   padding: 16px 32px;
-  min-height: 400px; }
+  min-height: 432px; }
   @media only screen and (min-width: 1200px) {
     #tab-features section {
-      padding-right: 632px; }
+      padding-right: 664px; }
       #tab-features section img {
         position: absolute;
-        top: 0;
-        right: 0; } }
+        top: 16px;
+        right: 32px; } }
   @media only screen and (max-width: 1199px) {
     #tab-features section {
       padding: 0; }
