@@ -19,6 +19,40 @@
 
     }
 
+    &.download {
+      min-height: $unit4 * 3 + $unit;
+      text-align: center;
+      padding-top: $unit4;
+      padding-bottom: $unit4;
+
+      p {
+        font-weight: bold;
+        color: $theme-color;
+        font-size: 125%;
+
+        a {
+          text-decoration: underline;
+        }
+        
+      }
+
+      .download-button-wrapper {
+        
+        .download.button {
+          padding: $unit2 $unit8;
+        }
+
+        @include device(large) {
+          width: 600px;
+          position: absolute;
+          top: $unit4;
+          right: $unit4;
+        }
+        
+      }
+      
+    }
+
     @include device(lt-medium) {
       
       padding: 0;

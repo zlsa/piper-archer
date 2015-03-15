@@ -2,7 +2,7 @@
 var NAME = "piper-archer";
 
 function ui_init() {
-  $('nav a').click(ui_tab_clicked);
+  $('*[data-tab]').click(ui_tab_clicked);
 //  $(window).scroll(ui_onscroll);
 
   $('input.download.url').click(function() {

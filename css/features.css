@@ -9,6 +9,25 @@
         position: absolute;
         top: 16px;
         right: 32px; } }
+  #tab-features section.download {
+    min-height: 104px;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px; }
+    #tab-features section.download p {
+      font-weight: bold;
+      color: #f62;
+      font-size: 125%; }
+      #tab-features section.download p a {
+        text-decoration: underline; }
+    #tab-features section.download .download-button-wrapper .download.button {
+      padding: 16px 64px; }
+    @media only screen and (min-width: 1200px) {
+      #tab-features section.download .download-button-wrapper {
+        width: 600px;
+        position: absolute;
+        top: 32px;
+        right: 32px; } }
   @media only screen and (max-width: 1199px) {
     #tab-features section {
       padding: 0; }
