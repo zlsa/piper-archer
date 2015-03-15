@@ -68,7 +68,6 @@ body > header {
 
   @include device(large) {
 
-    background-color: transparent;
     position: absolute;
     height: $unit10;
     width: 100%;

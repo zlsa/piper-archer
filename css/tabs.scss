@@ -41,10 +41,16 @@ nav {
 
 @include device(large) {
   html nav {
+
+    background-color: transparent;
     height: $unit10;
 
     padding-top: $unit4;
-    padding-left: 20em;
+
+    width: 40em;
+    margin-left: 20em;
+
+    z-index: 100;
 
     .tab {
       height: $unit6;

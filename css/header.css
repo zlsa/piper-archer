@@ -35,7 +35,6 @@ body > header {
         opacity: 1; }
   @media only screen and (min-width: 1200px) {
     body > header {
-      background-color: transparent;
       position: absolute;
       height: 80px;
       width: 100%; }

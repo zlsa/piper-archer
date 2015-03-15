@@ -93,7 +93,6 @@ body > header {
         opacity: 1; }
   @media only screen and (min-width: 1200px) {
     body > header {
-      background-color: transparent;
       position: absolute;
       height: 80px;
       width: 100%; }
@@ -147,9 +146,12 @@ nav {
 
 @media only screen and (min-width: 1200px) {
   html nav {
+    background-color: transparent;
     height: 80px;
     padding-top: 32px;
-    padding-left: 20em; }
+    width: 40em;
+    margin-left: 20em;
+    z-index: 100; }
     html nav .tab {
       height: 48px;
       padding-top: 12px; }
