@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <title>Before Start</title>
+
+  <!-- External inspection: COMPLETE -->
+  <!-- Documents: CHECK / SIGN -->
+
+  <!-- Parking Brake: SET -->
+  <item>
+    <name>Parking Brake</name>
+    <value>SET</value>
+    
+    <condition>
+      <equals>
+        <property>/controls/gear/brake-parking</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/gear/brake-parking</property>
+      <value>1</value>
+    </binding>
+
+  </item>
+
+  <!-- Seats & belts: ADJUST -->
+
+  <!-- Trim: NEUTRAL -->
+  <item>
+    <name>Trim</name>
+    <value>NEUTRAL</value>
+    
+    <condition>
+      <and>
+        <less-than>
+          <property>/controls/flight/elevator-trim</property>
+          <value>0.05</value>
+        </less-than>
+        <greater-than>
+          <property>/controls/flight/elevator-trim</property>
+          <value>-0.05</value>
+        </greater-than>
+      </and>
+    </condition>
+    
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/flight/elevator-trim</property>
+      <value>0</value>
+    </binding>
+
+  </item>
+  
+  <!-- Controls: FREE and CORRECT -->
+  <item>
+    <name>Controls</name>
+    <value>FREE and CORRECT</value>
+    
+    <condition>
+      <and>
+        <property>/sim/failure-manager/controls/flight/aileron/servicable</property>
+        <property>/sim/failure-manager/controls/flight/elevator/servicable</property>
+        <property>/sim/failure-manager/controls/flight/rudder/servicable</property>
+      </and>
+    </condition>
+    
+    <binding>
+      <command>property-assign</command>
+      <property>/sim/failure-manager/controls/flight/aileron/servicable</property>
+      <property>/sim/failure-manager/controls/flight/elevator/servicable</property>
+      <property>/sim/failure-manager/controls/flight/rudder/servicable</property>
+      <value>true</value>
+    </binding>
+
+  </item>
+  
+  <!-- Flaps: CHECK -->
+  <item>
+    <name>Flaps</name>
+    <value>CHECK</value>
+    
+    <condition>
+      <property>/sim/failure-manager/controls/flight/flaps/servicable</property>
+    </condition>
+    
+    <binding>
+      <command>property-assign</command>
+      <property>/sim/failure-manager/controls/flight/flaps/servicable</property>
+      <value>true</value>
+    </binding>
+
+  </item>
+  
+  <!-- Radio master switch: OFF -->
+  <item>
+    <name>Flaps</name>
+    <value>CHECK</value>
+    
+    <condition>
+      <property>/sim/failure-manager/controls/flight/flaps/servicable</property>
+    </condition>
+    
+    <binding>
+      <command>property-assign</command>
+      <property>/sim/failure-manager/controls/flight/flaps/servicable</property>
+      <value>true</value>
+    </binding>
+
+  </item>
+  
+</PropertyList>

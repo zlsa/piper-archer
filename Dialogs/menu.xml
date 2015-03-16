@@ -35,6 +35,15 @@
         </binding>
       </item>
       
+      <!-- <item> -->
+      <!--   <name>repair-all</name> -->
+      <!--   <label>Repair all</label> -->
+      <!--   <binding> -->
+      <!--     <command>property-toggle</command> -->
+      <!--     <property>/options/shadow</property> -->
+      <!--   </binding> -->
+      <!-- </item> -->
+      
     </menu>
   </default>
 
