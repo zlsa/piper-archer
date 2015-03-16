@@ -50,7 +50,7 @@ def collect(path_from = "../releases/", path_to = "releases/"):
   info["releases"] = []
   for filename in files:
     info["releases"].append(filename)
-  with open("assets/scripts/info.js", "w") as f:
+  with open("js/info.js", "w") as f:
     f.write("var info = " + json.dumps(info))
 
 if __name__ == "__main__":
