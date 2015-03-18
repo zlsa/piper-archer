@@ -9,7 +9,7 @@
     <normalmap-dds type="int">      0   </normalmap-dds>
     <normalmap-tiling type="float"> 1.0 </normalmap-tiling>
     <texture n="2">
-      <image>Aircraft/piper-archer/Models/normal.png</image>
+      <image>Aircraft/piper-archer/Models/body-normal.png</image>
     </texture>
     <!-- Reflection -->
     <reflection-enabled type="int">      1   </reflection-enabled>
