@@ -221,6 +221,12 @@
     </engines>
   </controls>
 
+  <environment>
+    <aircraft-effects>
+      <overlay-alpha type="double">0.5</overlay-alpha>
+    </aircraft-effects>
+  </environment>
+
   <engines>
     <engine n="0">
       <rpm type="double">0</rpm>

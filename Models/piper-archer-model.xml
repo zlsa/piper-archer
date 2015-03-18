@@ -191,13 +191,7 @@
   <effect>
     <inherits-from>Models/Effects/glass</inherits-from>
     
-    <object-name>interior windshield</object-name>
-    <object-name>interior window 1</object-name>
-    <object-name>interior window 3</object-name>
-    <object-name>interior window 4</object-name>
-    <object-name>interior window 5</object-name>
-    <object-name>interior window 6</object-name>
-    <object-name>interior door window</object-name>
+    <object-name>interior window</object-name>
   </effect>
   
   <!-- INTERNAL/EXTERNAL -->
@@ -223,13 +217,7 @@
     <condition>
       <property>/sim/current-view/internal</property>
     </condition>
-    <object-name>interior windshield</object-name>
-    <object-name>interior window 1</object-name>
-    <object-name>interior window 3</object-name>
-    <object-name>interior window 4</object-name>
-    <object-name>interior window 5</object-name>
-    <object-name>interior window 6</object-name>
-    <object-name>interior door window</object-name>
+    <object-name>interior window</object-name>
   </animation>
 
   <!-- fairings-->
