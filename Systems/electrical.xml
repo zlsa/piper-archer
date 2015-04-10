@@ -157,4 +157,21 @@
 
   </component>
   
+  <!-- Fuel pump -->
+  
+  <component>
+    <name>fuel-pump</name>
+    <type>needs-power</type>
+
+    <power type="double">10</power>
+    <min-voltage type="double">8</min-voltage>
+    <nominal-voltage type="double">14</nominal-voltage>
+
+    <prop type="string">/electrical/outputs/fuel-pump</prop>
+
+    <switch>/controls/switches/fuel-pump</switch>
+
+    <input>power bus</input>
+  </component>
+  
 </PropertyList>

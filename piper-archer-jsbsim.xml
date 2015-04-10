@@ -297,7 +297,7 @@
      </location>
      <!-- Avgas is 6lb/gallon -->
      <capacity unit="LBS">1</capacity>
-     <contents unit="LBS">0</contents>
+     <contents unit="LBS">0.2</contents>
    </tank>
 
  </propulsion>

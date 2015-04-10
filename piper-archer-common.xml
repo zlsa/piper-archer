@@ -71,9 +71,9 @@
       </config>
     </view>
 
-    <menubar include="Dialogs/menu.xml"/>
+    <menubar include="Dialogs/menu.xml" />
 
-    <checklists include="Checklists/checklists.xml"/>
+    <!-- <checklists include="Checklists/checklists.xml" /> -->
 
     <systems>
       <electrical include="Systems/electrical.xml"></electrical>

@@ -37,7 +37,7 @@
     </switch>
     
     <switch name="propulsion/tank[0]/fuel-pump">
-      <default value="-0.5"/>
+      <default value="-0.1"/>
       <test logic="OR" value="0">
         propulsion/fuel-selector        NE 0
         propulsion/fuel-pump            EQ 0
@@ -48,7 +48,7 @@
     </switch>
     
     <switch name="propulsion/tank[1]/fuel-pump">
-      <default value="-0.5"/>
+      <default value="-0.1"/>
       <test logic="OR" value="0">
         propulsion/fuel-selector        NE 1
         propulsion/fuel-pump            EQ 0

@@ -12,9 +12,6 @@ var update = func {
   update_lighting();
   update_engine();
   
-  if(version_gt_3_4)
-    update_glass();
-  
   if(getprop("/sim/current-view/internal")) {
     setprop("/sim/rendering/precipitation-aircraft-enable", false);
   } else {
@@ -38,6 +35,9 @@ var init=func {
 
     init_electrical();
 
+    if(version_gt_3_4)
+      settimer(update_glass, 0);
+  
     settimer(update, 0);
   }
 };
