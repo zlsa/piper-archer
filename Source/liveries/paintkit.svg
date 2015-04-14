@@ -80,8 +80,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="514.5039"
-     inkscape:cy="421.72291"
+     inkscape:cx="409.5039"
+     inkscape:cy="725.72291"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -134,18 +134,11 @@
     <image
        sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Source/liveries/../uv/ao.png"
        xlink:href="../uv/ao.png"
-       width="1024"
-       height="1024"
-       id="image4068"
-       x="0"
-       y="28.362183" />
-    <rect
        y="28.362183"
        x="0"
-       height="1012"
-       width="12"
-       id="rect3676"
-       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+       id="image4068"
+       height="1024"
+       width="1024" />
     <path
        style="fill:#c5c5c5;fill-opacity:1;stroke:none"
        d="m 268,892.36218 68,8 4,40 -84,0 z"
