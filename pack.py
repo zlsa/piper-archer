@@ -8,7 +8,7 @@
 # screenshots (technically shouldn't even be committed)
 # textures    (for the source SVG/PNG files before they've been copied over)
 # archive     (currently only the old model)
-# Blender     (source files and textures)
+# Source      (source files and textures)
 #
 # Filename exceptions:
 # pack.sh            (this file)
@@ -39,7 +39,7 @@ def list_files(w):
     return []
   if w[0].find("/textures") >= 0:
     return []
-  if w[0].find("/Blender") >= 0:
+  if w[0].find("/Source") >= 0:
     return []
   for filename in w[2]:
     if filename == "pack.py":
