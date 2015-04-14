@@ -32,10 +32,12 @@
     
     <model>
       <path>Models/piper-archer-model.xml</path>
+      
       <livery>
-        <file type="string">trainer</file>
+        <file type="string">N2388Q</file>
         <index type="int">0</index>
       </livery>
+      
     </model>
 
     <sound>
@@ -46,10 +48,10 @@
       <name type="string">Pilot</name>
       <internal>true</internal>
       <config>
-	<x-offset-m>-0.23</x-offset-m>
-	<y-offset-m> 0.52</y-offset-m>
-	<z-offset-m>-1.25</z-offset-m>
-	<pitch-offset-deg>-10</pitch-offset-deg>
+	      <x-offset-m>-0.23</x-offset-m>
+	      <y-offset-m> 0.52</y-offset-m>
+	      <z-offset-m>-1.25</z-offset-m>
+	      <pitch-offset-deg>-10</pitch-offset-deg>
       </config>
     </view>
 
@@ -58,13 +60,13 @@
       <internal>true</internal>
       <type>lookfrom</type>
       <config>
-	<x-offset-m> 0.23</x-offset-m>
-	<y-offset-m> 0.52</y-offset-m>
-	<z-offset-m>-1.25</z-offset-m>
+	      <x-offset-m> 0.23</x-offset-m>
+	      <y-offset-m> 0.52</y-offset-m>
+	      <z-offset-m>-1.25</z-offset-m>
         <from-model type="bool">true</from-model>
         <heading-offset-deg type="double">0</heading-offset-deg>
         <default-heading-offset-deg>0</default-heading-offset-deg>
-	<pitch-offset-deg>-10</pitch-offset-deg>
+	      <pitch-offset-deg>-10</pitch-offset-deg>
         <limits>
           <enabled type="bool">true</enabled>
         </limits>
@@ -174,22 +176,22 @@
   <consumables>
     <fuel>
       <tank n="0">
-	<name>Left</name>
-	<capacity-gal_us type="double">25</capacity-gal_us>
-	<level-gal_us type="double" archive="y">25</level-gal_us>
-	<selected type="bool">true</selected>
+	      <name>Left</name>
+	      <capacity-gal_us type="double">25</capacity-gal_us>
+	      <level-gal_us type="double" archive="y">25</level-gal_us>
+	      <selected type="bool">true</selected>
       </tank>
       <tank n="1">
-	<name>Right</name>
-	<capacity-gal_us type="double">25</capacity-gal_us>
-	<level-gal_us type="double" archive="y">25</level-gal_us>
-	<selected type="bool">false</selected>
+	      <name>Right</name>
+	      <capacity-gal_us type="double">25</capacity-gal_us>
+	      <level-gal_us type="double" archive="y">25</level-gal_us>
+	      <selected type="bool">false</selected>
       </tank>
       <tank n="2">
-	<name>Collector</name>
-	<capacity-gal_us type="double">0.16</capacity-gal_us>
-	<level-gal_us type="double" archive="y">0.0</level-gal_us>
-	<selected type="bool">false</selected>
+	      <name>Collector</name>
+	      <capacity-gal_us type="double">0.16</capacity-gal_us>
+	      <level-gal_us type="double" archive="y">0.0</level-gal_us>
+	      <selected type="bool">false</selected>
       </tank>
     </fuel>
   </consumables>

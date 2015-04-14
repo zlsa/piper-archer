@@ -2,4 +2,4 @@
 #      Livery init
 ###########################
 
-aircraft.livery.init("Models/Liveries", "sim/model/livery/name");
+aircraft.livery.init("Aircraft/piper-archer/Models/Liveries", "sim/model/livery/name");

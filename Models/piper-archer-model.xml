@@ -656,11 +656,37 @@
 
   <animation>
     <type>material</type>
+    
     <object-name>fuselage</object-name>
+    
+    <object-name>left flap</object-name>
+    <object-name>left flap arm</object-name>
+
+    <object-name>right flap</object-name>
+    <object-name>right flap arm</object-name>
+    
+    <object-name>elevator</object-name>
+    <object-name>elevator trim tab</object-name>
+
+    <object-name>rudder</object-name>
+
+    <object-name>left aileron</object-name>
+    <object-name>right aileron</object-name>
+    
     <property-base>sim/model/livery/</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>fuselage-n301dp.png</texture>
+    <texture>Liveries/N2388Q.png</texture>
   </animation>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/piper-archer/Models/Liveries");
+    </load>
+
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
 
   <!-- DOOR -->
 
@@ -1617,6 +1643,12 @@
   </animation>
 
   <!-- ALS shadow volume-->
+
+  <animation>
+    <type>scale</type>
+    <object-name>shadow volume</object-name>
+    <offset>1000</offset>
+  </animation>
 
   <animation>
     <type>select</type>

@@ -9,8 +9,8 @@
   <minpitch>   22 </minpitch>
   <maxpitch>   22 </maxpitch>
   <p_factor>   10 </p_factor>
-  <ct_factor> 0.8 </ct_factor>
-  <cp_factor> 0.8 </cp_factor>
+  <ct_factor> 0.5 </ct_factor>
+  <cp_factor> 0.5 </cp_factor>
 
   <table name="C_THRUST" type="internal">
     <tableData>

@@ -14,10 +14,7 @@
 
     <model>
       <path>Models/piper-archer-cx-model.xml</path>
-      <livery>
-        <file type="string">trainer</file>
-        <index type="int">0</index>
-      </livery>
+      
     </model>
 
     <menubar include="Dialogs/menu-cx.xml"/>
