@@ -5,11 +5,11 @@ This is the semi-fictional Piper Archer CX for the
 
 # How to install
 
-__Please note that the aircraft is currently not even in alpha yet.__
+__This aircraft is in development and things may break and/or explode.__
 
 1. Install Git.
-2. Go to `$FG_ROOT/Aircraft/`.
-3. Run `git clone https://github.com/zlsa/piper-archer-cx.git`
+2. Go to your aircraft directory.
+3. Run `git clone https://github.com/zlsa/piper-archer.git piper-archer`
 4. Run FGFS with the `--aircraft=piper-archer-cx` option.
 5. To update, go to the proper directory and run `git pull`.
 
@@ -20,10 +20,11 @@ __Please note that the aircraft is currently not even in alpha yet.__
 
 # License
 
-<!-- Will be CC0 when released; currently GPLV2 due to some textures. -->
+<!-- -- Will be CC0 when released; currently GPLv2 due to some textures. -->
+<!--    Will probably remain GPLv2 -->
 
-Code and XML: GPLv2
-Art: CC-BY-NC-SA 4.0
+* Code and XML (except `Engines/prop.xml`): **GPLv2**.
+* Art (except `*plastic`): **CC-BY-NC-SA 4.0** _or_ **GPLv2**.
 
 Currently, `Engines/prop.xml` is made up of AndersG's propeller
 values. This will be fixed soon.
