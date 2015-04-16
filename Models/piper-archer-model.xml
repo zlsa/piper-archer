@@ -188,12 +188,6 @@
     <object-name>tail beacon light cover</object-name>
   </animation>
 
-  <effect>
-    <inherits-from>Models/Effects/glass</inherits-from>
-    
-    <object-name>interior window</object-name>
-  </effect>
-  
   <!-- INTERNAL/EXTERNAL -->
 
   <animation>
@@ -210,14 +204,6 @@
     <object-name>window 5</object-name>
     <object-name>window 6</object-name>
     <object-name>door window</object-name>
-  </animation>
-
-  <animation>
-    <type>select</type>
-    <condition>
-      <property>/sim/current-view/internal</property>
-    </condition>
-    <object-name>interior window</object-name>
   </animation>
 
   <!-- fairings-->
@@ -1642,74 +1628,4 @@
     </condition>
   </animation>
 
-  <!-- ALS shadow volume-->
-
-  <animation>
-    <type>scale</type>
-    <object-name>shadow volume</object-name>
-    <offset>1000</offset>
-  </animation>
-
-  <animation>
-    <type>select</type>
-    <object-name>shadow volume</object-name>
-    <condition>
-      <and>
-        <greater-than>
-          <property>/sim/version/flightgear</property>
-          <value>3.4.0</value>
-        </greater-than>
-        <not>
-          <property>/sim/rendering/rembrandt/enabled</property>
-        </not>
-        <property>/sim/rendering/shaders/skydome</property>
-        <property>/options/shadow</property>
-      </and>
-    </condition>
-  </animation>
-
-  <effect>
-    <inherits-from>Effects/shadow-vol</inherits-from>
-    <object-name>shadow volume</object-name>
-  </effect>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>shadow volume</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>shadow volume</object-name>
-    <property>/orientation/pitch-deg</property>
-    <factor>-1.0</factor>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>shadow volume</object-name>
-    <property>/orientation/roll-deg</property>
-    <factor>1.0</factor>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-    <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
-  </animation>
-  
 </PropertyList>
