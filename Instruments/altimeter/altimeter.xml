@@ -78,16 +78,18 @@
 
   <animation>
     <type>rotate</type>
+    
     <object-name>pressure</object-name>
+    
     <property>instrumentation/altimeter/setting-inhg</property>
     <interpolation>
       <entry>
         <ind>21</ind>
-        <dep>-90</dep>
+        <dep>90</dep>
       </entry>
       <entry>
         <ind>39</ind>
-        <dep>90</dep>
+        <dep>-90</dep>
       </entry>
     </interpolation>
     <axis>
@@ -108,12 +110,12 @@
     
     <action>
       <binding>
-	<command>property-adjust</command>
+	      <command>property-adjust</command>
         <property>instrumentation/altimeter/setting-inhg</property>
         <factor>0.01</factor>
         <min>24.0</min>
         <max>34.0</max>
-	<wrap>false</wrap>
+	      <wrap>false</wrap>
       </binding>
     </action>
 
