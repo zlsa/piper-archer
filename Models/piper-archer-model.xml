@@ -1645,12 +1645,6 @@
   <!-- ALS shadow volume-->
 
   <animation>
-    <type>scale</type>
-    <object-name>shadow volume</object-name>
-    <offset>1000</offset>
-  </animation>
-
-  <animation>
     <type>select</type>
     <object-name>shadow volume</object-name>
     <condition>
@@ -1663,7 +1657,8 @@
           <property>/sim/rendering/rembrandt/enabled</property>
         </not>
         <property>/sim/rendering/shaders/skydome</property>
-        <property>/options/shadow</property>
+        <property>/options/exterior-shadow</property>
+        <property>/options/volumetric-shadow</property>
       </and>
     </condition>
   </animation>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <name>about-aircraft</name>
+  <layout>vbox</layout>
+  <modal>false</modal>
+  <draggable>true</draggable>
+  <resizeable>false</resizeable>
+
+  <group>
+    <layout>hbox</layout>
+    <text>
+      <label>About</label>
+    </text>
+  </group>
+
+  <hrule />
+
+  <group>
+    <layout>vbox</layout>
+
+    <pref-width>24</pref-width>
+
+    <!-- Variant -->
+    <text>
+      <halign>left</halign>
+      <label>??????</label>
+      <format>Piper Archer %s</format>
+      <property>/sim/variant</property>
+    </text>
+
+    <!-- Version -->
+    <text>
+      <halign>left</halign>
+      <label>??????</label>
+      <format>Version %s</format>
+      <property>/sim/version/aircraft</property>
+    </text>
+    
+  </group>
+
+  <group>
+    
+    <layout>hbox</layout>
+
+    <empty><stretch>true</stretch></empty>
+    <button>
+      <legend>Close</legend>
+      <equal>true</equal>
+      <default>true</default>
+      <key>Esc</key>
+      <binding><command>dialog-apply</command></binding>
+      <binding><command>dialog-close</command></binding>
+    </button>
+    <empty><stretch>true</stretch></empty>
+    
+  </group>
+
+</PropertyList>
+

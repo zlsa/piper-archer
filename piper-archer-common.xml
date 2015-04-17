@@ -98,6 +98,33 @@
       </als-secondary-lights>
     </rendering>
 
+    <version>
+      <aircraft type="string">0.2 (git)</aircraft>
+    </version>
+
+    <!-- Persistence -->
+    
+    <aircraft-data>
+      <path>/instrumentation/magnetic-compass/heading-bug-deg</path>
+      <path>/instrumentation/altimeter/indicated-altitude-ft</path>
+      
+      <path>/controls/switches/taxi-lights</path>
+      <path>/controls/switches/battery</path>
+      <path>/controls/switches/alternator</path>
+      <path>/controls/switches/fuel-pump</path>
+      <path>/controls/switches/landing-lights</path>
+      <path>/controls/switches/navigation-lights</path>
+      <path>/controls/switches/strobe</path>
+      <path>/controls/switches/pitot</path>
+      <path>/controls/switches/panel-lights</path>
+      
+      <path>/options/yoke-visible</path>
+      <path>/options/wheel-fairing</path>
+      
+      <path>/options/exterior-shadow</path>
+      <path>/options/volumetric-shadow</path>
+    </aircraft-data>
+
   </sim>
 
   <instrumentation>
@@ -135,9 +162,11 @@
   </instrumentation>
 
   <options>
-    <yoke-visible  type="bool" userarchive="y">true</yoke-visible>
-    <wheel-fairing type="bool" userarchive="y">false</wheel-fairing>
-    <shadow        type="bool" userarchive="y">false</shadow>
+    <yoke-visible      type="bool" userarchive="y">true</yoke-visible>
+    <wheel-fairing     type="bool" userarchive="y">false</wheel-fairing>
+    
+    <exterior-shadow   type="bool" userarchive="y">true</exterior-shadow>
+    <volumetric-shadow type="bool" userarchive="y">false</volumetric-shadow>
   </options>
 
   <multiplay>
@@ -216,11 +245,13 @@
       <panel-lights      type="double"> 0.0   </panel-lights>
     </switches>
     <door type="double">0</door>
+    
     <engines>
       <engine n="0">
         <starter-torque type="double">100000</starter-torque>
       </engine>
     </engines>
+    
   </controls>
 
   <environment>

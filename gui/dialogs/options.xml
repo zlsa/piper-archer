@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <name>options</name>
+  <layout>vbox</layout>
+  <modal>false</modal>
+  <draggable>true</draggable>
+
+  <group>
+    <layout>hbox</layout>
+    <text>
+      <label>Options</label>
+    </text>
+  </group>
+
+  <hrule />
+
+  <group>
+    <layout>vbox</layout>
+
+    <!-- Exterior shadows -->
+    <checkbox>
+      <name>exterior-shadows</name>
+      <label>Exterior shadows</label>
+
+      <halign>left</halign>
+      
+      <property>/options/exterior-shadow</property>
+
+      <live>true</live>
+      
+      <binding>
+        <command>property-toggle</command>
+        <property>/options/exterior-shadow</property>
+      </binding>
+      
+    </checkbox>
+
+    <!-- Volumetric shadows -->
+    <checkbox>
+      <name>volumetric-shadows</name>
+      <label>Volumetric shadows</label>
+
+      <halign>left</halign>
+      
+      
+      <live>true</live>
+      
+      <property>/options/volumetric-shadow</property>
+      
+      <binding>
+        <command>property-toggle</command>
+        <property>/options/volumetric-shadow</property>
+      </binding>
+      
+    </checkbox>
+    
+    <button>
+      <legend>Select livery</legend>
+      <binding>
+        <command>nasal</command>
+        <script>aircraft.livery.dialog.toggle()</script>
+      </binding>
+    </button>
+    
+  </group>
+
+  <group>
+    
+    <layout>hbox</layout>
+
+    <empty><stretch>true</stretch></empty>
+    <button>
+      <legend>OK</legend>
+      <equal>true</equal>
+      <default>true</default>
+      <key>Esc</key>
+      <binding><command>dialog-apply</command></binding>
+      <binding><command>dialog-close</command></binding>
+    </button>
+    <empty><stretch>true</stretch></empty>
+    
+  </group>
+
+</PropertyList>
+

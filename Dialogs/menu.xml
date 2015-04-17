@@ -18,20 +18,20 @@
       </item>
 
       <item>
-        <name>select-livery</name>
-        <label>Select livery</label>
+        <name>options</name>
+        <label>Options</label>
         <binding>
-          <command>nasal</command>
-          <script>aircraft.livery.dialog.toggle()</script>
+          <command>dialog-show</command>
+          <dialog-name>options</dialog-name>          
         </binding>
       </item>
-
+      
       <item>
-        <name>toggle-shadows</name>
-        <label>Toggle shadows</label>
+        <name>about-aircraft</name>
+        <label>About</label>
         <binding>
-          <command>property-toggle</command>
-          <property>/options/shadow</property>
+          <command>dialog-show</command>
+          <dialog-name>about-aircraft</dialog-name>          
         </binding>
       </item>
       

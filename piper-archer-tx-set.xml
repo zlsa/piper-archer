@@ -3,6 +3,7 @@
 
   <sim>
     <description>Piper Archer TX</description>
+    <variant type="string">TX</variant>
 
     <rating>
       <cockpit type="int">0</cockpit>
