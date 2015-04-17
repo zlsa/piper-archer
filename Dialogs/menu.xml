@@ -26,15 +26,6 @@
         </binding>
       </item>
       
-      <item>
-        <name>about-aircraft</name>
-        <label>About</label>
-        <binding>
-          <command>dialog-show</command>
-          <dialog-name>about-aircraft</dialog-name>          
-        </binding>
-      </item>
-      
       <!-- <item> -->
       <!--   <name>repair-all</name> -->
       <!--   <label>Repair all</label> -->
