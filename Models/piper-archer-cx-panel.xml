@@ -395,21 +395,6 @@
     <min-m> 500</min-m>
   </animation>
 
-  <!-- Yoke hiding -->
-
-  <animation>
-    <type>pick</type>
-    <object-name>yoke mount trim</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-toggle</command>
-        <property>options/yoke-visible</property>
-      </binding>
-    </action>
-  </animation>
-
   <!-- throttle lever -->
   
   <animation>
@@ -418,12 +403,12 @@
     <property>controls/engines/engine/throttle</property>
     <interpolation>
       <entry>
-	<ind>0</ind>
-	<dep>0</dep>
+	      <ind>0</ind>
+	      <dep>0</dep>
       </entry>
       <entry>
-	<ind>1</ind>
-	<dep>-60</dep>
+	      <ind>1</ind>
+	      <dep>-60</dep>
       </entry>
     </interpolation>
     <drag-direction>vertical</drag-direction>
@@ -440,22 +425,22 @@
 
     <action>
       <binding>
-	<command>property-adjust</command>
-	<property>controls/engines/engine/throttle</property>
-	<factor>0.02</factor>
-	<min>0.0</min>
-	<max>1.0</max>                
-	<wrap>false</wrap>
+	      <command>property-adjust</command>
+	      <property>controls/engines/engine/throttle</property>
+	      <factor>0.02</factor>
+	      <min>0.0</min>
+	      <max>1.0</max>                
+	      <wrap>false</wrap>
       </binding>
     </action>
 
     <hovered>
       <binding>
-	<command>set-tooltip</command>
-	<tooltip-id>throttle</tooltip-id>
-	<label>Throttle: %d%%</label>
-	<mapping>percent</mapping>
-	<property>controls/engines/engine/throttle</property>
+	      <command>set-tooltip</command>
+	      <tooltip-id>throttle</tooltip-id>
+	      <label>Throttle: %d%%</label>
+	      <mapping>percent</mapping>
+	      <property>controls/engines/engine/throttle</property>
       </binding>
     </hovered>
 
@@ -469,12 +454,12 @@
     <property>controls/engines/engine/mixture</property>
     <interpolation>
       <entry>
-	<ind>0</ind>
-	<dep>0</dep>
+	      <ind>0</ind>
+	      <dep>0</dep>
       </entry>
       <entry>
-	<ind>1</ind>
-	<dep>-60</dep>
+	      <ind>1</ind>
+	      <dep>-60</dep>
       </entry>
     </interpolation>
     <drag-direction>vertical</drag-direction>
@@ -491,22 +476,22 @@
 
     <action>
       <binding>
-	<command>property-adjust</command>
-	<property>controls/engines/engine/mixture</property>
-	<factor>0.02</factor>
-	<min>0.0</min>
-	<max>1.0</max>                
-	<wrap>false</wrap>
+	      <command>property-adjust</command>
+	      <property>controls/engines/engine/mixture</property>
+	      <factor>0.02</factor>
+	      <min>0.0</min>
+	      <max>1.0</max>                
+	      <wrap>false</wrap>
       </binding>
     </action>
 
     <hovered>
       <binding>
-	<command>set-tooltip</command>
-	<tooltip-id>mixture</tooltip-id>
-	<label>Mixture: %d%%</label>
-	<mapping>percent</mapping>
-	<property>controls/engines/engine/mixture</property>
+	      <command>set-tooltip</command>
+	      <tooltip-id>mixture</tooltip-id>
+	      <label>Mixture: %d%%</label>
+	      <mapping>percent</mapping>
+	      <property>controls/engines/engine/mixture</property>
       </binding>
     </hovered>
 

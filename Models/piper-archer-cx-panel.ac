@@ -42725,7 +42725,7 @@ kids 0
 OBJECT poly
 name "temporary covers"
 loc -1.9579999 0.0000000 0.0000000
-texture "temporary-cover-ao.png"
+texture "temporary-cover.png"
 texrep 1 1
 numvert 1140
 0.0038192 0.2250584 0.0026721
