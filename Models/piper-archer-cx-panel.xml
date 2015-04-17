@@ -25,18 +25,27 @@
   <effect>
     <inherits-from>Models/Effects/interior</inherits-from>
     
-    <object-name>dashboard</object-name>
-    <object-name>dashboard top</object-name>
-    
-    <object-name>engine gauge trim</object-name>
-    <object-name>yoke mount trim trim</object-name>
+    <object-name>panel</object-name>
     
     <object-name>throttle quadrant trim</object-name>
-    <object-name>throttle quadrant</object-name>
     
     <object-name>temporary covers</object-name>
   </effect>
 
+  <!-- LIVERY -->
+
+  <animation>
+    <type>material</type>
+    
+    <object-name>panel</object-name>
+    
+    <property-base>sim/model/livery/</property-base>
+    <texture-prop>cx-panel</texture-prop>
+    <texture>Models/cx-brown-panel.png</texture>
+  </animation>
+
+  <!-- INSTRUMENTS -->
+  
   <model>
     <name>fuel selector</name>
     <path>Instruments/fuel-selector/fuel-selector.xml</path>

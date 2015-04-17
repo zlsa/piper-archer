@@ -3,10 +3,14 @@
 <PropertyList>
   <sim>
     <model>
+      
       <livery>
         <name type="string">Blank</name>
-        <texture type="string">Liveries/blank.png</texture>
+        <body type="string">Liveries/blank.png</body>
+        
+        <cx-panel type="string">Models/cx-brown-panel.png</cx-panel>
       </livery>
+      
     </model>
   </sim>
 </PropertyList>

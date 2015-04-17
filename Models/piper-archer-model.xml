@@ -674,7 +674,7 @@
     <object-name>right aileron</object-name>
     
     <property-base>sim/model/livery/</property-base>
-    <texture-prop>texture</texture-prop>
+    <texture-prop>body</texture-prop>
     <texture>Liveries/N2388Q.png</texture>
   </animation>
 
