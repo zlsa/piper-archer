@@ -21,8 +21,8 @@
 
     <!-- Exterior shadows -->
     <checkbox>
-      <name>exterior-shadows</name>
-      <label>Exterior shadows</label>
+      <name>exterior-shadow</name>
+      <label>Exterior shadow</label>
 
       <halign>left</halign>
       
@@ -39,11 +39,10 @@
 
     <!-- Volumetric shadows -->
     <checkbox>
-      <name>volumetric-shadows</name>
-      <label>Volumetric shadows</label>
+      <name>volumetric-shadow</name>
+      <label>Volumetric shadow</label>
 
       <halign>left</halign>
-      
       
       <live>true</live>
       
@@ -52,6 +51,26 @@
       <binding>
         <command>property-toggle</command>
         <property>/options/volumetric-shadow</property>
+      </binding>
+      
+    </checkbox>
+
+    <hrule />
+    
+    <!-- Yokes -->
+    <checkbox>
+      <name>yokes-visible</name>
+      <label>Yokes visible</label>
+
+      <halign>left</halign>
+      
+      <live>true</live>
+      
+      <property>/options/yoke-visible</property>
+      
+      <binding>
+        <command>property-toggle</command>
+        <property>/options/yoke-visible</property>
       </binding>
       
     </checkbox>

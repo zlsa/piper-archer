@@ -346,9 +346,8 @@
         <property>/sim/rendering/rembrandt/enabled</property>
       </not>
     </condition>
-    <object-name>dashboard</object-name>
+    <object-name>panel</object-name>
     <object-name>cockpit registration</object-name>
-    <object-name>yoke mount trim</object-name>
     <object-name>throttle quadrant trim</object-name>
     <object-name>throttle quadrant</object-name>
     <object-name>knee padding</object-name>
