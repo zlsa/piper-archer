@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+      
+      <livery>
+        <name type="string">N643FT</name>
+        
+        <body type="string">Liveries/N643FT.png</body>
+        <cx-panel type="string">cx-black-panel.png</cx-panel>
+      </livery>
+      
+    </model>
+  </sim>
+</PropertyList>

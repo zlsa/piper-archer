@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="521.9827"
-     inkscape:cy="865.37331"
+     inkscape:cx="497.9827"
+     inkscape:cy="587.37331"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -81,13 +81,13 @@
      id="layer1"
      transform="translate(0,-28.362183)">
     <image
-       sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Source/liveries/../uv/uv.png"
-       xlink:href="../uv/uv.png"
-       y="28.362183"
-       x="0"
-       id="image3049"
+       sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Source/liveries/../exports/uv.png"
+       xlink:href="../exports/uv.png"
+       width="1024"
        height="1024"
-       width="1024" />
+       id="image3049"
+       x="0"
+       y="28.362183" />
     <rect
        y="28.362183"
        x="0"
@@ -216,11 +216,11 @@
     <image
        sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Source/liveries/paintkit.png"
        xlink:href="paintkit.png"
-       width="1024"
-       height="1024"
-       preserveAspectRatio="none"
-       id="image3568"
+       y="28.362183"
        x="0"
-       y="28.362183" />
+       id="image3568"
+       preserveAspectRatio="none"
+       height="1024"
+       width="1024" />
   </g>
 </svg>

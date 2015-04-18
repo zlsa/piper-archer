@@ -36,9 +36,9 @@ var init=func {
     init_electrical();
 
     if(version_gt_3_4)
-      settimer(update_glass, 0);
+      settimer(update_glass, 1);
   
-    settimer(update, 0);
+    settimer(update, 1);
   }
 };
 

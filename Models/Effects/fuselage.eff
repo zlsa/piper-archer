@@ -26,12 +26,12 @@
       <!-- END CubeCross -->
       <!-- use this form for a 6 image cube map -->
       <images>
-	<positive-x>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_px.png</positive-x>
-	<negative-x>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_nx.png</negative-x>
-	<positive-y>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_py.png</positive-y>
-	<negative-y>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_ny.png</negative-y>
-	<positive-z>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_pz.png</positive-z>
-	<negative-z>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_nz.png</negative-z>
+	      <positive-x>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_px.png</positive-x>
+	      <negative-x>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_nx.png</negative-x>
+	      <positive-y>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_py.png</positive-y>
+	      <negative-y>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_ny.png</negative-y>
+	      <positive-z>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_pz.png</positive-z>
+	      <negative-z>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_nz.png</negative-z>
       </images>
       <!-- END 6 image cube map -->
     </texture>
@@ -57,14 +57,14 @@
   <technique n="4">
     <pass>
       <program>
-	<attribute>
-	  <name>tangent</name>
-	  <index>6</index>
-	</attribute>
-	<attribute>
-	  <name>binormal</name>
-	  <index>7</index>
-	</attribute>
+	      <attribute>
+	        <name>tangent</name>
+	        <index>6</index>
+	      </attribute>
+	      <attribute>
+	        <name>binormal</name>
+	        <index>7</index>
+	      </attribute>
       </program>
     </pass>
   </technique>
@@ -72,14 +72,14 @@
   <technique n="7">
     <pass>
       <program>
-	<attribute>
-	  <name>tangent</name>
-	  <index>6</index>
-	</attribute>
-	<attribute>
-	  <name>binormal</name>
-	  <index>7</index>
-	</attribute>
+	      <attribute>
+	        <name>tangent</name>
+	        <index>6</index>
+	      </attribute>
+	      <attribute>
+	        <name>binormal</name>
+	        <index>7</index>
+	      </attribute>
       </program>
     </pass>
   </technique>
@@ -87,14 +87,14 @@
   <technique n="9">
     <pass>
       <program>
-	<attribute>
-	  <name>tangent</name>
-	  <index>6</index>
-	</attribute>
-	<attribute>
-	  <name>binormal</name>
-	  <index>7</index>
-	</attribute>
+	      <attribute>
+	        <name>tangent</name>
+	        <index>6</index>
+	      </attribute>
+	      <attribute>
+	        <name>binormal</name>
+	        <index>7</index>
+	      </attribute>
       </program>
     </pass>
   </technique>

@@ -25,11 +25,15 @@
   <effect>
     <inherits-from>Models/Effects/interior</inherits-from>
     
-    <object-name>panel</object-name>
-    
     <object-name>throttle quadrant trim</object-name>
     
     <object-name>temporary covers</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Models/Effects/interior-panel</inherits-from>
+    
+    <object-name>panel</object-name>
   </effect>
 
   <!-- LIVERY -->
@@ -39,9 +43,8 @@
     
     <object-name>panel</object-name>
     
-    <property-base>sim/model/livery/</property-base>
-    <texture-prop>cx-panel</texture-prop>
-    <texture>Models/cx-brown-panel.png</texture>
+    <texture-prop>sim/model/livery/cx-panel</texture-prop>
+    <texture>cx-black-panel.png</texture>
   </animation>
 
   <!-- INSTRUMENTS -->

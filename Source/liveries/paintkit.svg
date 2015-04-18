@@ -80,8 +80,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="409.5039"
-     inkscape:cy="725.72291"
+     inkscape:cx="536.29436"
+     inkscape:cy="260.91761"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -97,7 +97,8 @@
      inkscape:bbox-nodes="true"
      inkscape:snap-text-baseline="true"
      inkscape:object-nodes="true"
-     inkscape:snap-smooth-nodes="true">
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
        id="grid2985"
@@ -132,11 +133,12 @@
      id="layer1"
      transform="translate(0,-28.362183)">
     <image
-       sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Source/liveries/../uv/ao.png"
-       xlink:href="../uv/ao.png"
+       sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Source/exports/ao.png"
        y="28.362183"
        x="0"
-       id="image4068"
+       id="image3550"
+       xlink:href="file:///home/zlsa/projects/fgfs/piper-archer/Source/exports/ao.png"
+       preserveAspectRatio="none"
        height="1024"
        width="1024" />
     <path
@@ -153,23 +155,11 @@
        transform="translate(0,28.362183)"
        sodipodi:nodetypes="ccccc" />
     <path
-       style="fill:#787878;fill-opacity:1;stroke:none"
-       d="m 224,696.36218 -52,76 -32,-20 8,-24 36,-48 z"
-       id="path3986"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
-    <path
        sodipodi:nodetypes="cccccccc"
        inkscape:connector-curvature="0"
        id="path3988"
        d="m 452,532.36218 136,0 172,-20 0,-20 -196,4 -12,-12 -104,0 z"
        style="fill:#c5c5c5;fill-opacity:1;stroke:none" />
-    <path
-       style="fill:#6e6e6e;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 448,448 104,8 -8,52 -88,4 -16,-16 z"
-       id="path4071"
-       inkscape:connector-curvature="0"
-       transform="translate(0,28.362183)" />
     <rect
        style="opacity:0.2;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect3690"
@@ -177,20 +167,6 @@
        height="12"
        x="0"
        y="1040.3622" />
-    <rect
-       style="opacity:1;fill:#cbcbcb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4519"
-       width="15"
-       height="3.9999995"
-       x="810"
-       y="659.36218" />
-    <rect
-       y="629.36218"
-       x="810"
-       height="5.0000005"
-       width="15"
-       id="rect4521"
-       style="opacity:1;fill:#cbcbcb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <path
        style="fill:#454545;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 932,164.36218 72,24 0,-131.999997 -72,0 z"
@@ -216,5 +192,26 @@
        cx="332.66138"
        id="circle4567"
        style="opacity:1;fill:url(#radialGradient4569);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4563)" />
+    <rect
+       style="opacity:1;fill:#a3a3a3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3550"
+       width="20"
+       height="56"
+       x="32"
+       y="604.36218" />
+    <rect
+       style="opacity:1;fill:#cbcbcb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4352"
+       width="14.83429"
+       height="3.8838363"
+       x="810.01105"
+       y="659.35358" />
+    <rect
+       y="630.00867"
+       x="810.01105"
+       height="3.8838363"
+       width="14.83429"
+       id="rect4354"
+       style="opacity:1;fill:#cbcbcb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>

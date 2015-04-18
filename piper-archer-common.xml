@@ -37,7 +37,12 @@
         <file type="string">N2388Q</file>
         <index type="int">0</index>
       </livery>
-      
+
+      <livery-panel>
+        <file type="string">N2388Q</file>
+        <index type="int">0</index>
+      </livery-panel>
+
     </model>
 
     <sound>

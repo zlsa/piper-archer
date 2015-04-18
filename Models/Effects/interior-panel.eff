@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+  <name>Aircraft/piper-archer/Models/Effects/interior-panel</name>
+  <inherits-from>Aircraft/piper-archer/Models/Effects/interior</inherits-from>
+
+  <parameters>
+    <lightmap-enabled type="int">1</lightmap-enabled>
+    <texture n="3">
+      <image>Models/cx-panel-lightmap.png</image>
+    </texture>
+  </parameters>
+  
+</PropertyList>

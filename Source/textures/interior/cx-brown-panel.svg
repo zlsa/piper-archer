@@ -23,11 +23,6 @@
   <defs
      id="defs4">
     <pattern
-       inkscape:collect="always"
-       xlink:href="#sand_bitmap"
-       id="pattern6012"
-       patternTransform="scale(1.2732458,1.2732458)" />
-    <pattern
        inkscape:isstock="true"
        inkscape:stockid="Sand (bitmap)"
        id="pattern6008"
@@ -68,9 +63,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="1176.7934"
-     inkscape:cy="1175.1369"
+     inkscape:zoom="0.25"
+     inkscape:cx="485.19062"
+     inkscape:cy="862.05491"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -132,31 +127,5 @@
        width="384"
        id="rect3492"
        style="opacity:1;fill:#626262;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <image
-       sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Source/textures/interior/cx-panel-ao.png"
-       xlink:href="cx-panel-ao.png"
-       width="4096"
-       height="2048"
-       preserveAspectRatio="none"
-       id="image3682"
-       x="0"
-       y="-995.63782" />
-    <image
-       sodipodi:absref="/home/zlsa/projects/fgfs/piper-archer/Source/support/plastic/plastic.png"
-       y="-3043.6377"
-       x="0"
-       id="image3747"
-       xlink:href="file:///home/zlsa/projects/fgfs/piper-archer/Source/support/plastic/plastic.png"
-       preserveAspectRatio="none"
-       height="4096"
-       width="4096"
-       style="opacity:0.3" />
-    <rect
-       style="opacity:0.1;fill:url(#pattern6012);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4550"
-       width="4096"
-       height="2048"
-       x="0"
-       y="-995.63782" />
   </g>
 </svg>

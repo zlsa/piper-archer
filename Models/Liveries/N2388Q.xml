@@ -6,9 +6,9 @@
       
       <livery>
         <name type="string">N2388Q (default)</name>
+
         <body type="string">Liveries/N2388Q.png</body>
-        
-        <cx-panel type="string">Models/cx-brown-panel.png</cx-panel>
+        <cx-panel type="string">cx-brown-panel.png</cx-panel>
       </livery>
       
     </model>
