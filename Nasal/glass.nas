@@ -67,5 +67,5 @@ var update_glass = func {
   
   update_frost();
   
-  settimer(update_glass, 0);
+  settimer(update_glass, 0.2);
 };

@@ -8,8 +8,10 @@
     <type>material</type>
     <object-name>horizon</object-name>
     <object-name>airplane</object-name>
+    <object-name>airplane holder</object-name>
     <object-name>roll ring</object-name>
     <object-name>misc</object-name>
+    <object-name>background</object-name>
     <emission>
       <red>0.2</red>
       <green>0.15</green>
