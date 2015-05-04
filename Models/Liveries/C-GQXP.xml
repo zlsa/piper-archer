@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+      
+      <livery>
+        <name type="string">C-GQXP</name>
+        <body type="string">Liveries/C-GQXP.png</body>
+        
+        <cx-panel type="string">Liveries/C-GQXP-cx-panel.png</cx-panel>
+      </livery>
+      
+    </model>
+  </sim>
+</PropertyList>
